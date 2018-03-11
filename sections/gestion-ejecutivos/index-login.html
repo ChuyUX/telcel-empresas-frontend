@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body>
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container" id="info-content">
+        <div class="container-fluid">
+          <h1 class="h1">Gestión por ejecutivos</h1>
+
+          <h2 class="h2">Índice Login</h2>
+
+          <a href="index.html">< Regresar</a>
+
+          <div class="indice">
+          <!-- Flujo: Login -->
+            <div class="flujo" data-titulo="Login">
+            <!-- Subflujo: Ingreso por primera vez -->
+              <div class="subflujo" data-titulo="Ingreso por primera vez">
+                <div class="paso" data-titulo="Ingreso" data-archivo="login.html" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_ingresar_como_ejecutivo "></div>
+                <div class="paso" data-titulo="Activación de cuenta" data-archivo="activa-tu-cuenta.html" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_1_activar_cuenta"></div>
+                <div class="paso" data-titulo="Éxito" data-archivo="activa-tu-cuenta-2.html#exitoLogin" data-ux=""></div>
+              </div>           
+            <!-- FIN Subflujo: Ingreso por primera vez -->
+
+            <!-- Subflujo: Ingreso por primera vez - error -->
+              <div class="subflujo" data-titulo="Ingreso por primera vez - error">
+                <div class="paso" data-titulo="Ingreso" data-archivo="login.html" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_ingresar_como_ejecutivo "></div>
+                <div class="paso" data-titulo="Activación de cuenta" data-archivo="activa-tu-cuenta.html" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_1_activar_cuenta"></div>
+                <div class="paso" data-titulo="Error" data-archivo="activa-tu-cuenta.html#error" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_1_2_fallo"></div>
+              </div>           
+            <!-- FIN Subflujo: Ingreso por primera vez - error -->
+
+            <!-- Subflujo: Ingreso normal -->
+              <div class="subflujo" data-titulo="Ingreso normal">
+                <div class="paso" data-titulo="Ingreso" data-archivo="login.html" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_ingresar_como_ejecutivo "></div>
+              </div>            
+            <!-- FIN Subflujo: Ingreso normal -->
+
+            <!-- Subflujo: Ingreso - error al recuperar contraseña -->
+              <div class="subflujo" data-titulo="Ingreso - error al recuperar contraseña">
+                <div class="paso" data-titulo="Ingreso" data-archivo="login.html#errorPass"></div>
+              </div>            
+            <!-- FIN Subflujo: Ingreso - error al recuperar contraseña -->
+
+            <!-- Subflujo: Ingreso - error datos incorrectos -->
+              <div class="subflujo" data-titulo="Ingreso - error datos incorrectos">
+                <div class="paso" data-titulo="Ingreso" data-archivo="login.html#errorLogin"></div>
+              </div>            
+            <!-- FIN Subflujo: Ingreso - error datos incorrectos -->
+
+            </div>
+          <!-- FIN Flujo: Login -->
+
+          <!-- Flujo: Mi cuenta -->
+            <div class="flujo" data-titulo="Mi cuenta">
+            <!-- Subflujo: Cambio de datos -->
+              <div class="subflujo" data-titulo="Cambio de datos">
+                <div class="paso" data-titulo="Cambio de datos" data-archivo="mi-cuenta.html" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_2_mi_cuenta"></div>
+
+                <div class="paso" data-titulo="Éxito" data-archivo="mi-cuenta.html#exito" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_2_2__xito"></div>
+              </div>            
+            <!-- FIN Subflujo: Cambio de datos -->
+
+            <!-- Subflujo: Solo cambio de contraseña -->
+              <div class="subflujo" data-titulo="Solo cambio de contraseña">
+                <div class="paso" data-titulo="Cambio de contraseña" data-archivo="mi-cuenta.html" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_2_mi_cuenta"></div>
+
+                <div class="paso" data-titulo="Éxito" data-archivo="mi-cuenta.html#cambioPass" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_2_4__xito_contrase_a"></div>
+              </div>            
+            <!-- FIN Subflujo: Solo cambio de contraseña -->
+
+
+            <!-- Subflujo: Cambio de datos - error -->
+              <div class="subflujo" data-titulo="Cambio de datos - error">
+                <div class="paso" data-titulo="Cambio de datos" data-archivo="mi-cuenta.html#mandarError" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_2_mi_cuenta"></div>
+
+                <div class="paso" data-titulo="Error" data-archivo="mi-cuenta.html#error" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_2_3_fallo_-conexi_n-"></div>
+              </div>            
+            <!-- FIN Subflujo: Cambio de datos - error -->
+
+
+            <!-- Subflujo: Cambio de contraseña - Cambio de contraseña - error contraseña actual -->
+              <div class="subflujo" data-titulo="Cambio de contraseña - error contraseña actual">
+                <div class="paso" data-titulo="Cambio de contraseña" data-archivo="mi-cuenta.html" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_2_mi_cuenta"></div>
+
+                <div class="paso" data-titulo="Error" data-archivo="mi-cuenta.html#passIncorrecto"></div>
+              </div>            
+            <!-- FIN Subflujo: Cambio de contraseña - Cambio de contraseña - error contraseña actual -->
+
+            <!-- Subflujo: Cambio de contraseña - Cambio de contraseña - error confirmar contraseña -->
+              <div class="subflujo" data-titulo="Cambio de contraseña - error confirmar contraseña">
+                <div class="paso" data-titulo="Cambio de contraseña" data-archivo="mi-cuenta.html" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_2_mi_cuenta"></div>
+
+                <div class="paso" data-titulo="Error" data-archivo="mi-cuenta.html#passIgual" data-ux="http://ucnsqq.axshare.com/#g=1&p=5_1_2_5_error_misma_contrase_a"></div>
+              </div>            
+            <!-- FIN Subflujo: Cambio de contraseña - Cambio de contraseña - error confirmar contraseña -->
+
+            </div>
+          <!-- FIN Flujo: Mi cuenta -->
+          </div>
+         
+        </div>
+      </div>
+
+    </div>
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/indice.js?ver=1.4.5"></script>
+
+  </body>
+</html>

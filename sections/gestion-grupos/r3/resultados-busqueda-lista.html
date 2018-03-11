@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content gestion-cuentas-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Gestión de grupos">Gestión de grupos</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 theme-heading">
+                <h2 class="h2">Gestión de grupos</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid gestion-ejecutivos">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container" data-name="buscador">Mostrar buscador</p>
+              <form action="resultados-busqueda-lista.html" id="gestionGrupos" class="wrapper-gfsc con-busqueda-filtrado clearfix">
+                <div class="some-header-filter col-xs-12 no-margin-bottom general-fs-container">
+                  <div class="container">
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-10 col-sm-offset-1 center-block flexbox v-align-center h-align-center flex-col-direction-mobile search-by-container gestion-cuentas-search">
+
+                          <div class="col-xs-12 col-sm-6 flexbox v-align-center flex-col-direction-mobile">
+                            <div class="col-xs-12 col-sm-5 data-write">
+                              <label for="searchby" class="txt-center">Búsqueda por:</label>
+                            </div>
+                          
+                            <div class="col-xs-12 col-sm-7 data-write slt">
+                              <select name="searchby" class="searchby" title="Búsqueda por">
+                                <option value=''>Elige una opción</option>
+                                <option data-value='{"key": "cuenta" ,"min": 1, "view" : "resultados-busqueda-lista.html"  }'>Cuenta</option>
+                                <option data-value='{"key": "grupo" ,"min": 4, "view" : "resultados-busqueda.html"}'>Nombre de grupo</option>
+                                <!-- <option value='grupo'>Por grupo</option> -->
+                                <option data-value='{"key": "numero" ,"min": 4, "view" : "resultados-busqueda-lista.html"}'>Número Telcel</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-6 flexbox v-align-center flex-col-direction-mobile search-input-block">
+                            <div class="col-xs-12 col-sm-7 data-write">
+                              <input type="number" name="cuenta" class="search-input-cuenta only-numbers" value="0101620" placeholder="Mínimo 1 número" data-maxlength="10"/>
+                              <input type="text" name="grupo" class="search-input-grupo meet-regex" value="" placeholder="Mínimo 4 caracteres" maxlength="45" data-regex = "[^A-Za-z-ñÑ\s]+$"/>
+                              <input type="number" class="search-input-numero only-numbers" name="numero" value="" placeholder="Mínimo 4 números" data-maxlength="10"/>
+                            </div>
+                            <div class="col-xs-12 col-sm-5">
+                              <div class="data-write">
+                                <button class="bton no-margin main-btn blue-dark full-width" type="submit">Buscar</button>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+
+              <section class="some-header-info col-xs-12 no-margin-bottom">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 flexbox">
+                      <div class="col-xs-12 col-sm-5 number-info-block">
+                        <div class="col-sm-9 col-xs-12 number-info results-smi one-line flexbox v-align-center">
+                          <span class="size-result">3</span>
+                          <p class="leyend-result">Resultados de búsqueda de: </p>
+                          <span class="element-result">5523</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-7 flexbox v-align-center order-by-cont-shi">
+                        <div class="col-xs-12 col-sm-7 v-align-center flexbox order-by-shi col-sm-offset-5">
+                          <div class="col-xs-12 col-sm-4 data-write">
+                            <label for="orderby-gestiongrupos-a">Ordenar por:</label>
+                          </div>
+                          <div class="col-xs-12 col-sm-9 data-write slt">
+                            <select name="orderby-gestiongrupos-a" id="orderby-gestiongrupos-a" title="Ordenar por">
+                              <option data-value='{"key": "texto" , "orderby": "asc"}'>Elige una opción</option>
+                              <option data-value='{"key": "region" , "orderby": "asc"}'>Región</option>
+                              <option data-value='{"key": "cuenta" , "orderby": "asc"}'>Cuenta hija</option>
+                              <option data-value='{"key": "texto" , "orderby": "asc"}'>Número Telcel</option>
+                              <option data-value='{"key": "titular" , "orderby": "asc"}'>Titular de la línea</option>
+                              <option data-value='{"key": "asignado" , "orderby": "asc"}'>Asignado a</option>
+                              <option data-value='{"key": "responsable" , "orderby": "asc"}'>Responsable</option>
+                            </select>
+
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <section class="group-list-settings listado-general lista-results col-xs-12 no-margin-bottom">
+                <div class="container">
+                  <div class="row">
+                    
+                    <div class="col-sm-12 title-ls flexbox padding-0">
+                      <div class="col-sm-1 col-xs-12 flexbox padding-0">
+                        <div class="col-sm-12 col-xs-12 single-cell-ls flexbox v-align-center">
+                          <p title="Región">Región</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-10 col-xs-12 flexbox v-align-center padding-0">
+                        <div class="col-sm-2 single-cell-ls flexbox v-align-center padding-0">
+                          <p title="Cuenta hija">Cuenta hija</p>
+                        </div>
+
+                        <div class="col-sm-3 single-cell-ls flexbox only-mob-cell-ls padding-0">
+                          <p title="Número">Número</p>
+                        </div>
+                        
+                        <div class="col-sm-3 single-cell-ls flexbox padding-0">
+                          <p title="Titular de la línea">Titular de la línea</p>
+                        </div>
+                        
+                        <div class="col-sm-2 single-cell-ls flexbox padding-0">
+                          <p title="Responsable">Responsable</p>
+                        </div>
+                        <div class="col-sm-2 single-cell-ls flexbox padding-0">
+                          <p title="Asignado a">Asignado a</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                  <div class="col-sm-12 col-xs-12 content-ls">
+
+                      <!-- Simple -->
+                      <div class="col-sm-12 col-xs-12 row-ls" data-item = '{"id": "5523217654" ,"texto": "5523217654", "is_line" : "1", "titular" : "Industrias ATSA, S.A. de C.V.", "cuenta" : "8405095523", "region" : "3", "asignado": "Luis Martinez", "responsable" : "Estela Espinoza" }'>
+                        <div class="flexbox v-align-center main-block-mobile col-xs-12">
+                          <div class="col-sm-1 col-xs-12 half-ls flexbox-mobile">
+                        
+                            <div class="col-xs-8 col-sm-12 single-cell-ls leyend-top-half-ls">
+                              <p class="hidden-xs">3</p>
+                              <p class="hidden-sm hidden-md hidden-lg">5523217654</p>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-5 arrow-ico-ls single-cell-ls flexbox v-align-center hidden-md hidden-lg hidden-sm">
+                              <button class="simple" type="button">
+                                <span class="icon i-angle-down"></span>
+                              </button>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-5 single-cell-ls settings-ico-ls hidden-md hidden-lg hidden-sm">
+                              <button class="simple" type="button">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="col-sm-10 col-xs-12 half-ls main-data-line">
+
+                            <div class="col-xs-12 col-sm-1 single-cell-ls hidden-sm hidden-md hidden-lg
+                            ">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Región:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="3">3</p>
+                            </div>
+
+   
+                            <div class="col-xs-12 col-sm-2 single-cell-ls">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Cuenta hija:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="8405095523">8405095523</p>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 single-cell-ls hidden-xs">
+                              <p title="5523217654">5523217654</p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-3 single-cell-ls">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Titular de la línea:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="Industrias ATSA, S.A. de C.V.">Industrias ATSA, S.A. de C.V.</p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2 single-cell-ls
+                            ">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Responsable:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="Estela Espinoza">Estela Espinoza</p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2 single-cell-ls
+                            ">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Asignado a:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="Luis Martinez">Luis Martinez</p>
+                            </div>
+
+                          </div>
+
+
+                          <div class="col-sm-1 col-xs-12 half-ls hidden-xs">
+                            <div class="col-xs-2 col-sm-5 single-cell-ls settings-ico-ls">
+                              <button class="simple" type="button">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+
+                            <div class="col-sm-2 single-cell-ls">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-xs-12 arrow-breadcrumb">
+                            <ol class="arrow-block col-xs-12">
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Grupos de consultoría</span>
+                                </a>
+                              </li>
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Multiplica</span>
+                                </a>
+                              </li>
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Global</span>
+                                </a>
+                              </li>
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Mexico</span>
+                                </a>
+                              </li>
+                              <li class="arrow active">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Área Operativa</span>
+                                </a>
+                              </li>
+                            </ol>
+                        </div>
+
+                        <div class="col-sm-12 settings-ri">
+                          <div class="col-sm-12 cont-set-ri">
+                            <p class="col-sm-12 title-ri">
+                              <span class="in-text-ri">Configuración</span>
+                              <button class="simple icon-text-ri" title="​Cerrar">
+                                <span class="icon io-Close"></span>
+                              </button>
+                            </p>
+                            <div class="col-sm-12 title-mod">
+                              <span class="icon io-SimpleAvatar col-xs-2 left-icon-ri"></span>
+                              <p class="title-ribon-sri">Industrias ATSA, S.A. de C.V.</p>
+                            </div>
+                            <div class="col-sm-12 submenu-ri">
+                              <div class="first-bloq-ri">
+                                    <button class="simple btn-mover-grupo" type="button">
+                                      <span class="icon io-move-folder"></span>
+                                      <span class="in-text-fbr">Mover línea</span>
+                                      
+                                    </button>
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-cambio-chip/cambio-1.html">
+                                      <span class="icon io-Sim"></span>
+                                      <span class="in-text-fbr">Cambiar chip y/o equipo</span>
+                                      
+                                    </button>
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-suspension/suspension-1.html">
+                                      <span class="icon io-Less"></span>
+                                      <span class="in-text-fbr">Suspender línea</span>
+                                      
+                                    </button>
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-reactivacion/reactivacion-1.html">
+                                      <span class="icon io-More"></span>
+                                      <span class="in-text-fbr">Reactivar línea</span>
+                                      
+                                    </button>
+                                    <!-- <button class="simple btn-single-action" type="button" data-post="../facturacion/reportes-1.html">
+                                      <span class="icon io-Document"></span>
+                                      <span class="in-text-fbr">Gestionar reportes</span>
+                                      
+                                    </button> -->
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-servicios/servicios-1.html">
+                                      <span class="icon io-Gear"></span>
+                                      <span class="in-text-fbr">Gestionar servicios</span>
+                                      
+                                    </button>
+                              </div>
+                              <div class="second-bloq-ri">
+                                <a class="simple" href="../gestion-grupos/gestion-grupos-4.html">
+                                  <span class="icon io-Phone"></span>
+                                  <span class="in-text-fbr">Ver detalle de línea</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="col-sm-12 col-xs-12 row-ls" data-item = '{"id": "5578677888" ,"texto": "5578677888", "is_line" : "1", "titular" : "QUALITATIS, S.C", "cuenta" : "1215523713", "region" : "7", "asignado": "Luke Danes", "responsable" : "Lorelai Gilmore"}'>
+                        <div class="flexbox v-align-center main-block-mobile col-xs-12">
+                          <div class="col-sm-1 col-xs-12 half-ls flexbox-mobile">
+                        
+                            <div class="col-xs-8 col-sm-12 single-cell-ls leyend-top-half-ls">
+                              <p class="hidden-xs" title="7">7</p>
+                              <p class="hidden-sm hidden-md hidden-lg" title="5578677888">5578677888</p>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-5 arrow-ico-ls single-cell-ls flexbox v-align-center hidden-md hidden-lg hidden-sm">
+                              <button class="simple" type="button">
+                                <span class="icon i-angle-down"></span>
+                              </button>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-5 single-cell-ls settings-ico-ls hidden-md hidden-lg hidden-sm">
+                              <button class="simple" type="button">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="col-sm-10 col-xs-12 half-ls main-data-line">
+
+                            <div class="col-xs-12 col-sm-1 single-cell-ls hidden-sm hidden-md hidden-lg
+                            ">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Región:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="7">7</p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2 single-cell-ls">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Cuenta hija:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="1215523713">1215523713</p>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 single-cell-ls hidden-xs">
+                              <p title="5578677888">5578677888</p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-3 single-cell-ls">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Titular de la línea:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="QUALITATIS, S.C">QUALITATIS, S.C</p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2 single-cell-ls
+                            ">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Responsable:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="Lorelai Gilmore">Lorelai Gilmore</p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2 single-cell-ls
+                            ">  
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Asignado a:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="Luke Danes">Luke Danes</p>
+                            </div>
+
+
+                          </div>
+
+
+                          <div class="col-sm-1 col-xs-12 half-ls hidden-xs">
+                            <div class="col-xs-2 col-sm-5 single-cell-ls settings-ico-ls">
+                              <button class="simple" type="button">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+
+                            <div class="col-sm-2 single-cell-ls">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-xs-12 arrow-breadcrumb">
+                            <ol class="arrow-block col-xs-12">
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Grupos de consultoría</span>
+                                </a>
+                              </li>
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Multiplica</span>
+                                </a>
+                              </li>
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Global</span>
+                                </a>
+                              </li>
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Mexico</span>
+                                </a>
+                              </li>
+                              <li class="arrow active">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Área Operativa</span>
+                                </a>
+                              </li>
+                            </ol>
+                        </div>
+
+                        <div class="col-sm-12 settings-ri">
+                          <div class="col-sm-12 cont-set-ri">
+                            <p class="col-sm-12 title-ri">
+                              <span class="in-text-ri">Configuración</span>
+                              <button class="simple icon-text-ri" title="​Cerrar">
+                                <span class="icon io-Close"></span>
+                              </button>
+                            </p>
+                            <div class="col-sm-12 title-mod">
+                              <span class="icon io-SimpleAvatar col-xs-2 left-icon-ri"></span>
+                              <p class="title-ribon-sri">QUALITATIS, S.C</p>
+                            </div>
+                            <div class="col-sm-12 submenu-ri">
+                              <div class="first-bloq-ri">
+                                    <button class="simple btn-mover-grupo" type="button">
+                                      <span class="icon io-move-folder"></span>
+                                      <span class="in-text-fbr">Mover línea</span>
+                                      
+                                    </button>
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-cambio-chip/cambio-1.html">
+                                      <span class="icon io-Sim"></span>
+                                      <span class="in-text-fbr">Cambiar chip y/o equipo</span>
+                                      
+                                    </button>
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-suspension/suspension-1.html">
+                                      <span class="icon io-Less"></span>
+                                      <span class="in-text-fbr">Suspender línea</span>
+                                      
+                                    </button>
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-reactivacion/reactivacion-1.html">
+                                      <span class="icon io-More"></span>
+                                      <span class="in-text-fbr">Reactivar línea</span>
+                                      
+                                    </button>
+                                    <!-- <button class="simple btn-single-action" type="button" data-post="../facturacion/reportes-1.html">
+                                      <span class="icon io-Document"></span>
+                                      <span class="in-text-fbr">Gestionar reportes</span>
+                                      
+                                    </button> -->
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-servicios/servicios-1.html">
+                                      <span class="icon io-Gear"></span>
+                                      <span class="in-text-fbr">Gestionar servicios</span>
+                                      
+                                    </button>
+                              </div>
+                              <div class="second-bloq-ri">
+                                <a class="simple" href="../gestion-grupos/gestion-grupos-4.html">
+                                  <span class="icon io-Phone"></span>
+                                  <span class="in-text-fbr">Ver detalle de línea</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <!-- active-settings -->
+                      <div class="col-sm-12 col-xs-12 row-ls" data-item = '{"id": "5541411414" ,"texto": "5541411414", "is_line" : "1", "titular" : "FIMEX S.A. de C.V.", "cuenta" : "2552339110", "region" : "9", "asignado": "Violet Martinez", "responsable" : "Theodore Finch"}'>
+                        <div class="flexbox v-align-center main-block-mobile col-xs-12">
+                          <div class="col-sm-1 col-xs-12 half-ls flexbox-mobile">
+                        
+                            <div class="col-xs-8 col-sm-12 single-cell-ls leyend-top-half-ls">
+                              <p class="hidden-xs" title="9">9</p>
+                              <p class="hidden-sm hidden-md hidden-lg" title="5541411414">5541411414</p>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-5 arrow-ico-ls single-cell-ls flexbox v-align-center hidden-md hidden-lg hidden-sm">
+                              <button class="simple" type="button">
+                                <span class="icon i-angle-down"></span>
+                              </button>
+                            </div>
+
+                            <div class="col-xs-2 col-sm-5 single-cell-ls settings-ico-ls hidden-md hidden-lg hidden-sm">
+                              <button class="simple" type="button">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="col-sm-10 col-xs-12 half-ls main-data-line">
+
+                            <div class="col-xs-12 col-sm-1 single-cell-ls hidden-sm hidden-md hidden-lg
+                            ">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Región:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="9">9</p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2 single-cell-ls">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Cuenta hija:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="2552339110">2552339110</p>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-3 single-cell-ls hidden-xs">
+                              <p title="5541411414">5541411414</p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-3 single-cell-ls">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Titular de la línea:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="FIMEX S.A. de C.V.">FIMEX S.A. de C.V.</p>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-2 single-cell-ls
+                            ">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Responsable:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="Theodore Finch">Theodore Finch</p>
+                            </div>
+      
+                            <div class="col-xs-12 col-sm-2 single-cell-ls
+                            ">
+                              <p class="col-xs-6 hidden-sm hidden-md hidden-lg"><strong>Asignado a:</strong></p>
+                              <p class="col-sm-12 col-xs-6" title="Violet Martinez">Violet Martinez</p>
+                            </div>
+
+
+                          </div>
+
+
+                          <div class="col-sm-1 col-xs-12 half-ls hidden-xs">
+                            <div class="col-xs-2 col-sm-5 single-cell-ls settings-ico-ls">
+                              <button class="simple" type="button">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+
+                            <div class="col-sm-2 single-cell-ls">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-xs-12 arrow-breadcrumb">
+                            <ol class="arrow-block col-xs-12">
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Grupos de consultoría</span>
+                                </a>
+                              </li>
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Multiplica</span>
+                                </a>
+                              </li>
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Global</span>
+                                </a>
+                              </li>
+                              <li class="arrow">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Mexico</span>
+                                </a>
+                              </li>
+                              <li class="arrow active">
+                                <a href="#">
+                                  <span class="icon io-Maletin"></span>
+                                  <span class="leyend-arrow">Área Operativa</span>
+                                </a>
+                              </li>
+                            </ol>
+                        </div>
+
+                        <div class="col-sm-12 settings-ri">
+                          <div class="col-sm-12 cont-set-ri">
+                            <p class="col-sm-12 title-ri">
+                              <span class="in-text-ri">Configuración</span>
+                              <button class="simple icon-text-ri" title="​Cerrar">
+                                <span class="icon io-Close"></span>
+                              </button>
+                            </p>
+                            <div class="col-sm-12 title-mod">
+                              <span class="icon io-SimpleAvatar col-xs-2 left-icon-ri"></span>
+                              <p class="title-ribon-sri" title="FIMEX S.A. de C.V.">FIMEX S.A. de C.V.</p>
+                            </div>
+                            <div class="col-sm-12 submenu-ri">
+                              <div class="first-bloq-ri">
+                                    <button class="simple btn-mover-grupo" type="button">
+                                      <span class="icon io-move-folder"></span>
+                                      <span class="in-text-fbr">Mover línea</span>
+                                      
+                                    </button>
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-cambio-chip/cambio-1.html">
+                                      <span class="icon io-Sim"></span>
+                                      <span class="in-text-fbr">Cambiar chip y/o equipo</span>
+                                      
+                                    </button>
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-suspension/suspension-1.html">
+                                      <span class="icon io-Less"></span>
+                                      <span class="in-text-fbr">Suspender línea</span>
+                                      
+                                    </button>
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-reactivacion/reactivacion-1.html">
+                                      <span class="icon io-More"></span>
+                                      <span class="in-text-fbr">Reactivar línea</span>
+                                      
+                                    </button>
+                                    <!-- <button class="simple btn-single-action" type="button" data-post="../facturacion/reportes-1.html">
+                                      <span class="icon io-Document"></span>
+                                      <span class="in-text-fbr">Gestionar reportes</span>
+                                      
+                                    </button> -->
+                                    <button class="simple btn-single-action" type="button" data-post="../autogestion-servicios/servicios-1.html">
+                                      <span class="icon io-Gear"></span>
+                                      <span class="in-text-fbr">Gestionar servicios</span>
+                                      
+                                    </button>
+                              </div>
+                              <div class="second-bloq-ri">
+                                <a class="simple" href="../gestion-grupos/gestion-grupos-4.html">
+                                  <span class="icon io-Phone"></span>
+                                  <span class="in-text-fbr">Ver detalle de línea</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- MODAL MOVER GRUPO -->
+        <section class="modal-mte" id="modal-mover-grupo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Mover línea(s)</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-Maletin"></span>
+                          <p class="alias-text">Desarrollo</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod" id="form-mover-grupo">
+
+                        <div class="col-sm-8 col-sm-offset-2 add-lines-ge-mod">
+                          <p class="txt-center">Selecciona la nueva ubicación:</p>
+                          <div class="data-write flexbox col-sm-12 search-box-container">
+                            <input type="text" name="search" placeholder="Ingresa tu búsqueda" class="search-input col-sm-8">
+                            <button class="bton blue-dark btn-search col-sm-4" type="button" disabled>Buscar</button>
+                          </div>
+
+                          <p class="btn-like-a btn-remover-busqueda">Remover búsqueda</p>
+                        </div>
+
+                        <div class="col-sm-8 col-sm-offset-2 tree-groups-asoc">
+
+                          <div id="tree-grupo" class="col-sm-12 view-tga">
+                          </div>
+
+                          <div id="tree-grupo-search" class="col-sm-12 view-tga tree-search">
+                          </div>
+                          
+
+
+                        </div>
+
+                        <div class="col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" id="btn-mover-grupo" type="button">Mover línea</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+                        
+                      </div>
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg">
+                        <p>La(s) línea(s) [<span class="grupo-txt-old"></span>] ha(n) sido movida(s) a [<span class="grupo-txt-new"></span>] correctamente.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL MOVER GRUPO -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

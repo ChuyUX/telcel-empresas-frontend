@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content sertec-block descarga-general-block bloquear-acciones-masivas">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+        <!-- MODAL Bloquear Masivo -->
+        <section class="modal-mte" id="modal-bloquear-masivo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">¡Los cambios solicitados se perderán!</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p> Detectamos una reducción de tamaño en la ventana del navegador, si deseas continuar la información capturada se perderá y deberás iniciar nuevamente tu solicitud. Para conservar la información capturada es necesario ampliar nuevamente el navegador.</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <a class="bton blue-dark" id="btn-resize-window" href="sertec-masivo-1.html">Continuar</a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <!-- FIN MODAL Bloquear Masivo -->
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Servicio técnico">Servicio técnico</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 theme-heading">
+                <h2 class="h2">Servicio técnico de equipos</h2>
+                <p>Conoce el estatus de los folios de servicio técnico de los equipos ingresados los últimos 12 meses.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="filtro-bg-blue">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container">Mostrar filtrado</p>
+              <div class="col-sm-12 col-xs-12 center-block padding-0">
+                <form action="sertec-masivo-3-con-busqueda.html" id="sertec" class="wrapper-gfsc clearfix">
+                  <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container">
+                    <div class="col-sm-pr-20 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Folio:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <input type="text" name="folio" value="001254" placeholder="Mínimo 1 dígito" class="one-field folio only-numbers" maxlength="10" data-field='{ "name" : "folio", "min" : "1" }'/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>IMEI:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <input type="text" name="imei" value="" placeholder="Mínimo 4 dígitos" class="one-field imei only-numbers" maxlength="15" data-field='{ "name" : "imei", "min" : "4" }'/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Estatus:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <div class="data-write slt">
+                          <select name="estatus" class="estatus one-field" id="estatus" data-field='{ "name" : "estatus" }'>
+                            <option value="">Elige una opción</option>
+                            <option value="1">Pendiente</option>
+                            <option value="2">En proceso</option>
+                            <option value="3">Disponible</option>
+                            <option value="4">Expiró</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block">
+                      <button class="bton blue-dark main-btn full-width" type="button" id="btn-filter-sertec">Filtrar</button>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" type="button" data-href="sertec-masivo-3.html">Limpiar filtros</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container">
+            <div class="row">
+            <div class="error-ge" id="sin-resultados"> 
+              <div class="notif-bloq"> 
+                <div class="row"> 
+                  <div class="col-xs-12 col-sm-8 center-block inner-nb no-margin-bottom"> 
+                    <span class="icon io-Alert2"></span> 
+
+                    <p>No existen resultados. Modifica tus criterios de filtrado.</p>
+
+                  </div> 
+                </div> 
+              </div> 
+            </div>
+            </div>
+          </div>
+        </section>
+       
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/sertec.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+
+  </body>
+</html>

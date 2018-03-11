@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado admin-mode first-time">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content facturacion-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="facturacion-1.html" title="Facturación">Facturación</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Reportes">Reportes</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h2">Reportes</h2>
+                <p class="col-sm-8 center-block"><span>En esta sección puedes obtener diferentes reportes, de los últimos 12 meses.</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section> 
+            <form class="form-section-block reportes-block" id="form-facturas" method="POST" action="ingreso-administrador-reportes-2.html">
+              <section class="clearfix back-blue1 facturacion-step">
+                <div class="container padding-20">
+                  <h3 class="h3">Selecciona el tipo de reporte y/o mes que deseas solicitar</h3>
+
+                  <div class="col-sm-7 center-block">
+                    <div class="col-xs-12 col-sm-10 center-block flexbox v-align-center input-block">
+                      <div class="col-xs-12 col-sm-4 general-input-container"> 
+                        <label>Tipo de reporte:</label>
+                      </div>
+                      <div class="col-xs-12 col-sm-8 general-input-container">
+                          <div class="data-write slt">
+                            <select name="factura" class="factura select-change" id="factura">
+                              <option value="">Elige una opción</option>
+                              <option value="1" data-meta='{"post" : "null", "action" : "descarga", "cta" : "Solicitar"}'>Archivos F</option>
+                              <option value="2" data-meta='{"post" : "null", "action" : "descarga", "cta" : "Solicitar"}'>Detalle de Análisis de llamadas externas</option>
+                              <option value="3" data-meta='{"post" : "null", "action" : "descarga", "cta" : "Solicitar"}'>Detalle de Consumo de datos</option>
+                              <option value="4" data-meta='{"post" : "ingreso-administrador-reportes-2.html", "action" : "cuenta-hija", "periodo" : false ,"cta" : "Confirmar líneas", "ctaMobile" : "Solicitar"}'>Detalle de Consumos no facturado</option>
+                              <option value="5" data-meta='{"post" : "ingreso-administrador-reportes-3.html", "action" : "factura", "cta" : "Seleccionar cuentas", "ctaMobile" : "Solicitar"}'>Detalle de Facturación y consumo</option>
+                              <option value="6" data-meta='{"post" : "ingreso-administrador-reportes-3.html", "action" : "factura", "cta" : "Seleccionar cuentas", "ctaMobile" : "Solicitar"}'>Detalle de Llamadas</option>
+                              <option value="7" data-meta='{"post" : "ingreso-administrador-reportes-2.html", "action" : "cuenta-hija", "cta" : "Confirmar líneas", "ctaMobile" : "Solicitar"}'>Detalle de Roaming internacional</option>
+                              <option value="8" data-meta='{"post" : "ingreso-administrador-reportes-2.html", "action" : "cuenta-hija", "cta" : "Confirmar líneas", "ctaMobile" : "Solicitar"}'>Detalle de Servicios adicionales</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-10 center-block flexbox v-align-center input-block periodo-input-block hidden">
+                      <div class="col-xs-12 col-sm-4 general-input-container"> 
+                        <label>Periodo de facturación:</label>
+                      </div>
+                      <div class="col-xs-12 col-sm-8 general-input-container">
+                          <div class="data-write slt">
+                            <select name="periodo" class="periodo select-change" id="periodo">
+                              <option value="">Elige una opción</option>
+                              <option value="1">Agosto 2016</option>
+                              <option value="2">Septiembre 2016</option>
+                              <option value="3">Octubre 2016</option>
+                              <option value="4">Noviembre 2016</option>
+                              <option value="5">Diciembre 2016</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 second-step-container padding-20">
+                  <div class="col-sm-8 col-xs-12 center-block hidden">
+                       <!-- COMPONENTE GENERAL -->
+                      <div id="componente-ingresar-lineas">
+
+                        <!-- Botones -->
+                          <div class="col-sm-12 componente-btn-block">
+                            <div class="col-sm-4">
+                              <button class="btn-al btn-lineas-archivo"  type="button" data-show=".componente-lineas-block .lineas-archivo">
+                                <span class="icon io-File"></span>
+                                <span class="text">Sube un Excel con todas las líneas a gestionar</span>
+                              </button>
+                              
+                            </div>
+
+                            <div class="col-sm-4">
+                              <button class="btn-al btn-lineas-autocomplete" type="button" data-show=".componente-lineas-block .lineas-autocomplete">
+                                <span class="icon io-Ingresar"></span>
+                                <span class="text">Captura las líneas en bloques de hasta 50</span>
+                              </button>
+                              
+                            </div>
+
+                            <div class="col-sm-4">
+                              <button class="btn-al btn-lineas-arbol" type="button" data-show=".componente-lineas-block .lineas-arbol">
+                                <span class="icon io-Listado"></span>
+                                <span class="text">Selecciona de la lista hasta 50 líneas</span>
+                              </button>
+                              
+                            </div>
+                          </div>
+                        <!-- Fin Botones -->
+
+                        
+                          <div class="col-sm-12 form-ge-mod form-modal-agregar-lineas componente-lineas-block">
+
+
+                            <!-- INICIO ARCHIVO -->
+                            <div class= "componente-lb lineas-archivo" data-options='{ "element": "#btn-facturas-servicio", "event" : "show" , "showDependant" : "#archivo"}'>
+                              <div class="triangle-tooltip">
+
+                                <div class="col-sm-10 center-block add-lines-ge-mod">
+                                   <div class="txt-center instructions"><p>Son compatibles los archivos con extensión .xls</p> <p><a href="../../doc/ejemplo-excel.xls" target="_blank">Descarga la plantilla</a>  con el formato necesario.</p></div>
+                                  <div class="data-write clearfix"><label class="data-write flexbox col-sm-12 input-box-container file" title="">
+                                    <input type="file" name="archivo" id="archivo" placeholder="Elige el archivo que quieres subir" class="element-input col-sm-12">
+                                  </label></div>
+
+                                    <p class="extra-info">Tamaño de archivo: 10 MB máximo</p>
+                                </div>
+                              </div>
+
+                            </div>
+                            <!-- FIN ARCHIVO -->
+
+
+                            <!-- INICIO AUTOCOMPLETE -->
+                            <div class="componente-lb lineas-autocomplete"  data-options='{ "element": "#btn-facturas-servicio", "event" : "show"}'>
+
+                              <div class="triangle-tooltip">
+
+                                <div class="col-sm-10 col-xs-12 center-block add-lines-ge-mod clearfix">
+                                   <p class="txt-center">Ingresa el número<span class="hide-mobile">, </span> <span class="only-mobile"> o </span> nombre <span class="hide-mobile">o grupo asociado al alías </span>que deseas agregar.</p>
+                                   <p class="total-autocomplete hidden hidden-xs"><span class="total"></span> línea(s) seleccionada(s) </p>
+                                    <div class="data-write flexbox col-sm-12 col-xs-12 input-box-container">
+                                      <div class="tokenfield-block col-sm-12 col-xs-12 center-block">
+                                        <input type="text" class="form-control token-field-input element-input" id="tokenfield-agregar-lineas" value="" placeholder="Número Telcel, nombre del titular o nombre del grupo" data-options='{ "limit": 0, "placeholder" : "Número Telcel, nombre del titular o nombre del grupo", "placeholderM" : "Número Telcel/nombre del titular", "groups" : true, "show" : "#btn-facturas-servicio", "inSteps" : ".suspension-step" }'/>
+                                    </div>
+                                      
+                                    </div>
+                                </div>
+                              </div>
+
+                            </div>
+                            <!-- FIN AUTOCOMPLETE -->
+
+                            <!-- INICIO ÁRBOLES -->
+                            <div class="componente-lb componente-lb lineas-arbol" data-options='{ "element": "#btn-facturas-servicio", "event" : "show"}'>
+                              <div class="triangle-tooltip">
+                                <div class="col-sm-8 center-block add-lines-ge-mod">
+                                   <p class="txt-center">Elige las líneas de la lista:</p>
+                                    <div class="data-write flexbox col-sm-12 search-box-container input-box-container">
+                                      <input type="text" name="search" placeholder="Nombre del grupo o número Telcel" class="search-input meet-regex element-input col-sm-8" maxlength="45" data-regex = "[^A-Za-z0-9-\s]+$" data-min="4">
+                                      <button class="bton blue-dark btn-search col-sm-4" type="button" disabled>Buscar</button>
+                                    </div>
+
+                                    
+                                    <div class="block-content-arbol-btn hidden">
+                                      <p class="total-arbol col-sm-6"><span class="total">0</span> línea(s) seleccionada(s)</p>
+
+                                      <p class="btn-like-a btn-remover-busqueda col-sm-6">Remover búsqueda</p>
+
+                                      <p class="btn-like-a btn-remover-seleccion col-sm-6">Remover selección</p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-sm-8 center-block tree-groups-asoc">
+                                  <div id="tree-lineas" class="col-sm-12 view-tga">
+                                  </div>
+
+                                  <div id="tree-lineas-search" class="col-sm-12 view-tga tree-search">
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              
+                            </div>
+                            <!-- FIN ÁRBOLES -->
+                             
+                          </div>
+                      </div>
+
+                      <input type="hidden" id="lineas-hidden-input" name="lineas" value=""/>
+                      <!-- FIN COMPONENTE GENERAL -->
+                  </div>
+                  <div class="col-md-8 col-md-offset-2 bton-container">
+                    <div class="col-md-12 col-xs-8 center-block">
+                      <button class="bton orange" id="btn-facturas-servicio" type="submit" disabled>Solicitar</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </form>
+        </section>
+
+        <!-- MODAL DESCARGAR REPORTE-->
+        <section class="modal-mte" id="modal-descargar">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2" data-before="Solicitud de descarga" data-after="Solicitud de descarga">Solicitud de descarga</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8 center-block in-cont-mod">
+                    <div class="row">
+                      <form class="col-sm-12 form-ge-mod" id="form-confirmar-descargar-facturas">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p class="info-error hidden">[4] línea(s) no puede(n) ser contemplada(s). <a class="btn-like-a" href="../../doc/ejemplo-excel.xls" target="_blank">Descargar reporte</a></p>
+                          
+                          <p>Haz clic en "Enviar" para que el Reporte solicitado sea enviado al correo electrónico registrado. Si deseas que se envíe copia a otra dirección, ingrésala en este campo.</p>
+
+                          <div class="data-write col-sm-8 center-block">
+                            <input type="text" name="email" class="required only-email" id="email" placeholder="Correo electrónico" value=""/>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark full-width first-submit" id="btn-descargar-facturas" type="submit">Enviar</button>
+                        </div>
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="descargar-facturas-confirmacion">
+                        <p>Tu solicitud ha sido enviada con éxito. Recibirás en tu correo electrónico el enlace para descargar el Reporte. <br>Para dar seguimiento a tus solicitudes, ingresa a la sección Descargas.</p>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc"> 
+                          <a href="../solicitudes-descargas/descargas-1.html" class="bton blue-dark">Descargas</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL DESCARGAR REPORTE -->
+
+        <!-- MODAL Bloquear Ingreso Masivo -->
+        <section class="modal-mte" id="modal-limitar-masivo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Ingreso de líneas</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Para gestionar tu solicitud es necesario ingresar bloques de hasta 50 líneas. También puedes realizar el ingreso a través de un Excel con todas las líneas.</p>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Bloquear Ingreso Masivo -->
+
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

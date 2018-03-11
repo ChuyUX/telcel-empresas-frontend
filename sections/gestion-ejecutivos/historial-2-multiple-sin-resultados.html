@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE no_footer_cta header-con-degradado header-ejecutivos">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content historial-movimientos-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="#" title="Historial de movimientos">Historial de movimientos</a>
+                  </li>
+                  <li>
+                    <a href="#" title="No. de operación 123512531253">No. de operación 123512531253</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 theme-heading">
+                <h2 class="h2">No. de operación 123512531253</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-gray no-margin-bottom">
+          <div class="txt-center form-section-block susp-list-pick">
+            <div class="container content-slp">
+              <div class="row">
+                <div class="detalle-confirmacion col-sm-8 center-block clearfix collapse-table-block">
+                  
+                  
+                  <div class="col-sm-12 col-xs-12 flexbox v-align-center">
+                      <div class="col-sm-3 col-xs-12">
+                        <p>Tipo de movimiento</p> 
+                        <p><span class="robusta">Suspensión de líneas</span></p>
+                      </div>
+                      
+                      <div class="col-sm-9 col-xs-12 flexbox v-align-center" id="mobile-info">
+                        
+                        <div class="col-sm-4 col-xs-12">
+                          <p>Línea(s) seleccionada(s)</p> 
+                          <p><span class="robusta">[5] línea(s)</span></p>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                          <p>Solicitud</p> 
+                          <p><span class="robusta">03/10/2016 14:30 hrs.</span></p>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                          <p>Realización</p> 
+                          <p><span class="robusta">03/10/2016 16:30 hrs.</span></p>
+                        </div>
+                      </div>
+
+                      <a class="hide-show-table" data-table="#mobile-info">Mostrar detalle</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Listado de Líneas -->
+            </div>
+          </div>
+        </section>
+
+        <section class="filtro-bg-blue">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter mobile-top-margin hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container">Mostrar filtrado</p>
+              <div class="col-sm-12 col-xs-12 center-block padding-0 clearfix">
+                <form action="historial-2-multiple-con-filtrado.html" id="historialMovimientosDetalles" class="wrapper-gfsc con-busqueda-filtrado clearfix">
+                  <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container back-blue1">
+                    <div class="col-sm-pr-20 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3 padding-0">
+                        <label>Número:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <input type="text" name="numero" placeholder="Mínimo 4 números" class="one-field only-numbers numero" maxlength="10" data-field='{ "name" : "numero", "min" : "4" }' value="0101620171"/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-20 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3 padding-0">
+                        <label>Folio:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <input type="text" name="folio" placeholder="Mínimo 1 número" class="one-field only-numbers folio" maxlength="13" data-field='{ "name" : "folio" }'/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-30 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3 padding-0">
+                        <label>Estatus:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <div class="data-write slt">
+                          <select name="estatus" class="estatus one-field" data-field='{ "name" : "estatus" }'>
+                            <option value="">Elige una opción</option>
+                            <option value="completado">Completado</option>
+                            <option value="rechazado" selected>Rechazado</option>
+                            <option value="en-proceso">En proceso</option>
+                            <option value="todos">Todos</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block">
+                      <button class="bton blue-dark main-btn full-width" type="button" id="btn-filter-facturas">Filtrar</button>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" type="button" data-href="historial-2-multiple.html">Limpiar filtros</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="error-ge"> 
+                <div class="notif-bloq"> 
+                  <div class="row"> 
+                    <div class="col-xs-12 col-sm-8 center-block inner-nb no-margin-bottom"> 
+                      <span class="icon io-Alert2"></span> 
+                      
+                      <p>No existen resultados. Modifica tus criterios de filtrado.</p>
+                    </div> 
+                  </div> 
+                </div> 
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        
+
+        
+
+
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

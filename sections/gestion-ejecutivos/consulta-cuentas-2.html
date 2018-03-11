@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE no_footer_cta header-con-degradado header-ejecutivos">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content gestion-ejecutivos-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="gestion-ejecutivos-1.html" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="consulta-cuentas-1.html" title="Cuentas asociadas">Cuentas asociadas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Alias 1">Alias 1</a>
+                  </li>
+                </ol>  
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h3">Cuentas asociadas de [Alias 1]</h2>
+                <p class="col-sm-8 center-block"><span>Estas son las cuentas asociadas actualmente al alias, puedes quitar las seleccionadas o agregar nuevas cuentas (aún cuando no sean tuyas).</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container" data-name="buscador">Mostrar buscador</p>
+
+              <div class="col-sm-10 col-md-10 col-xs-12 padding-0 center-block clearfix">
+                <form action="consulta-cuentas-2-con-busqueda.html" id="consultaCuentas" class="wrapper-gfsc clearfix">
+                  <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container">
+
+                    <div class="col-sm-4 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Cuenta:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <input type="text" name="cuenta" value="" placeholder="Mínimo 1 número" class="one-field cuenta only-numbers" maxlength="10" data-field='{ "name" : "cuenta", "min" : "1" }'/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-2 col-xs-3">
+                        <label>RFC:</label>
+                      </div>
+                      <div class="col-sm-10 col-xs-9">
+                        <input type="text" name="rfc" value="" placeholder="Mínimo 4 caracteres" class="one-field meet-regex rfc" maxlength="13" data-field='{ "name" : "rfc", "min" : "4"}' data-regex = "[^A-Za-z0-9]+$"/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-2 col-xs-8 center-block">
+                      <button class="bton blue-dark main-btn full-width" type="button" disabled="disabled" id="btn-filter-facturas">Buscar</button>
+                    </div>
+
+                    <div class="col-sm-2 col-xs-8 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" type="button" disabled data-href="consulta-cuentas-2.html">Nueva búsqueda</button>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div id="alias-data-info" class="hidden" data-item = '{"id": "1" ,"texto": "Constructora MRT"}'></div>
+
+        <section class="hide-no-cuentas">
+          <div class="container">
+            <div class="row to-fixed-block after-general col-sm-12" data-after="#edit-cuentas-table">
+              <div class="listado-header-autogestion select-all-container col-sm-12 general-block limit-data" id="listado-check-all-container" data-elements="#edit-cuentas-table" data-btn = "#btn-desasociar-cuentas" data-elemento="cuenta(s)" data-limit="50" data-total = "34">
+                <div class="back-blue1 col-sm-12 col-xs-12 header-actions">
+                  <div class="col-sm-10 col-md-9 col-xs-12 center-block flexbox">
+                    <div class="col-sm-5 col-md-3 col-xs-7 flexbox v-align-center flex-col-direction-mobile">
+                        <div class="col-sm-2 col-xs-2 checkbox-container" id="checkall">
+                          <input type="checkbox" id="checkbox-pagina-all" name="checkbox-pagina-all">
+                          <label for="checkbox-pagina-all"><span class="check-sq"></span></label>
+                        </div>
+                        <p class="col-sm-10 hide-m checkbox-label">Seleccionar todo</p>
+                    </div>
+                    
+
+                    <div class="col-sm-7 col-md-9 col-xs-5 btn-container">
+                      <button type="submit" class="bton blue-dark" id="btn-desasociar-cuentas" disabled>Quitar</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="to-fixed-block clearfix">
+                <div class="listado-select-all-block col-sm-12">
+                  <p class="reading-notice">Se han seleccionado <strong id="total-checkbox">1</strong> <span class="elements-name">líneas</span> de <span id="total-pagina-checkbox">esta página.</span> <a href="#" id="check-all-elements" data-value="true">Seleccionar los <strong class="total-all-pagina-checkbox">10</strong> <span class="elements-name">líneas</span> del listado</a></p>
+                </div>
+
+                <div class="listado-delete-block col-sm-12">
+                  <p class="reading-notice"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid gestion-ejecutivos gestion-administradores" id="gestion-ejecutivos-view">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-10 col-md-9 padding-0 center-block clearfix">
+                  <div class="col-xs-12 col-sm-12 add-item-mv hide-no-cuentas">
+                    <button type="button" class="add-group-btn-block btn-add-cuentas" data-item = '{"id": "306" ,"texto": "Gestión de alias"}' title="Asociar otra(s) cuenta(s)">
+                      <span class="icon i-plus-1 flexbox v-align-center h-align-center"></span>
+                      <span>Asociar otra(s) cuenta(s)</span>
+                    </button>
+                  </div>
+
+                  <div class="col-sm-12 center-block flexbox h-align-center  v-align-center has-filters hidden-xs hide-no-cuentas" data-order="#listado-administradores">
+                    <div class="col-sm-12 h-align-center">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-2 flexbox h-align-center">
+                          <strong title="Región">Región</strong>
+                          <div class="order-by-block order-by-query-btn">
+                              <button type="button" data-opc='{"key": "region" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                              <button type="button" data-opc='{"key": "region" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-3 flexbox h-align-center">
+                          <strong title="Cuenta">Cuenta</strong>
+                          <div class="order-by-block order-by-query-btn">
+                              <button type="button" data-opc='{"key": "cuenta" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                              <button type="button" data-opc='{"key": "cuenta" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+
+                        <div class="col-sm-3 flexbox h-align-center">
+                          <strong title="RFC">RFC</strong>
+                          <div class="order-by-block order-by-query-btn">
+                            <button type="button" data-opc='{"key": "rfc" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "rfc" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                         <div class="col-sm-3 flexbox h-align-center">
+                          <strong title="Razón social">Razón social</strong>
+                          <div class="order-by-block order-by-query-btn">
+                            <button type="button" data-opc='{"key": "razonsocial" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "razonsocial" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                    </div>
+
+                  </div>
+                  <div class="general-table edit-table-ejecutivos col-sm-12 col-xs-12" id="edit-cuentas-table">
+                  
+                    <div class="table-main-block" id="listado-cuentas">
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{ "id":"1", "tipo": "1",  "cuenta": "123456", "region" : "9","rfc" : "LRI8956478392876", "razonsocial" : "Lucky Rabbit INC"}'></div>
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{ "id":"2", "tipo": "1",  "cuenta": "789045","region" : "3", "rfc" : "OSW5478812345678", "razonsocial" : "Oswald Watt"}'></div>
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{ "id":"3", "tipo": "2",  "cuenta": "873456", "region" : "12", "rfc" : "TRO9000478392876", "razonsocial" : "The Royals S.A de C.V"}'></div>
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{ "id":"4", "tipo": "1",  "cuenta": "780940", "region" : "9", "rfc" : "TRO9000478397876", "razonsocial" : "Lovecraft S.A de C.V"}'></div>
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{ "id":"5", "tipo": "2",  "cuenta": "098456", "region" : "1", "rfc" : "ITO9000478392876", "razonsocial" : "IT S.A de C.V"}'></div>
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{ "id":"6", "tipo": "2",  "cuenta": "762134", "region" : "4", "rfc" : "SKING90121213888", "razonsocial" : "Stephen King S.A de C.V"}'></div>
+
+                    </div>
+
+                    <div class="error-ge hidden" id="sin-cuentas-asociadas"> 
+                      <div class="notif-bloq"> 
+                        <div class="row"> 
+                          <div class="col-xs-12 col-sm-12 inner-nb"> 
+                            <span class="icon io-Alert2"></span> 
+                            <p class="msg">Actualmente, no tienes cuentas asociadas a este alias.</p>
+
+                            <div class="btn-container">
+                              <button type="button" class="blue-dark add-group-btn-block btn-add-cuentas" data-item='{"id": "306","texto": "Gestión de alias"}' title="Asociar cuenta(s)">Asociar cuenta(s)</button>
+                            </div>
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 ct-pagination center-pag hide-no-cuentas">
+                <ol>
+                  <li>
+                    <a href="#" class="active">1</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon io-AccordionRight"></span></a>
+                  </li>                              
+                </ol>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- MODAL DESASOCIAR CUENTAS -->
+        <section class="modal-mte" id="modal-desasociar-cuentas">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Quitar cuentas</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-Maletin"></span>
+                          <p class="alias-text">Nombre de Alias</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod" id="confirmar-desasociar-cuentas">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>¿Estás seguro que quieres quitar las [<span class="total-cuentas">24</span>] cuentas elegidas?</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          
+                          <button class="bton blue-dark" id="btn-desasociar" type="button">Aceptar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                        </div>
+
+                      </div>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="desasociar-cuentas-confirmacion">
+                        <p>La(s) cuenta(s) seleccionada(s) ha( n ) sido quitada(s) exitosamente.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL DESASOCIAR CUENTAS -->
+
+        <!-- MODAL ASOCIAR CUENTAS -->
+        <section class="modal-mte" id="modal-asociar-cuentas" data-api="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Asociar cuenta(s)</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-City"></span>
+                          <p class="alias-text">Empresas digitales</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+                        <div class="col-sm-12 padding-0" id="paso-1">
+                          <p class="txt-center"><strong>Busca y selecciona las cuentas que deseas asociar.</strong></p>
+                          <div class="col-sm-12 filt-ge-mod search-by-container">
+                            <div class="col-sm-2 filters-asoc">
+                              <label>Búsqueda por:</label>
+                            </div>
+                            <div class="col-sm-4 filters-asoc">
+                              <div class="data-write slt">
+                                <select name="searchby" class="searchby">
+                                  <option value="">Elige una opción</option>
+                                  <option data-value='{"key": "cuenta" ,"min": 1 }'>Cuenta</option>
+                                  <option data-value='{"key": "rfc" ,"min": 4}'>RFC</option>
+                                  <!-- <option value='grupo'>Por grupo</option> -->
+                                  <option data-value='{"key": "razonsocial" ,"min": 4}'>Razón social</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-4 filters-asoc">
+                              <div class="data-write search-input-block">
+                                <input type="text" name="cuenta" class="search-input-cuenta only-numbers" value="" placeholder="Mínimo 1 número" maxlength="10"/>
+                                
+                                <input type="text" name="rfc" class="search-input-rfc meet-regex" value="" placeholder="Mínimo 4 caracteres" maxlength="13" data-regex = "[^A-Za-z0-9]+$"/>
+
+                                <input type="text" class="search-input-razonsocial meet-regex" name="razonsocial" value="" placeholder="Mínimo 4 caracteres" data-regex = "[^A-Za-z0-9.\s]+$" maxlength="30"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 filters-asoc">
+                              <button class="bton blue-dark" type="submit" disabled="disabled" id="btn-search-cuentas-aso">Buscar</button>
+                            </div>
+                          </div>
+
+                          <div class="to-fixed-block clearfix">
+                            <div class="listado-select-all-block col-sm-12">
+                              <p class="reading-notice">Se han seleccionado <strong id="total-checkbox-cuentas-modal">1</strong> cuenta(s) de <span id="total-cuentas-checkbox-modal">esta página.</span> <a href="#" id="check-all-cuentas-modal" data-value="true">Seleccionar las <strong>5</strong> cuentas del listado</a></p>
+                            </div>
+
+                            <div class="listado-delete-block col-sm-12">
+                              <p class="reading-notice"></p>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-12 results-asoc" id="listado-result-asoc">
+
+                            <div class="col-sm-12 head-r-asoc">
+                              <div class="col-sm-1 title-hra checkbox-container flexbox h-align-center" id="checkall-modal-cuentas" 
+                               data-limit="50">
+                                <input type="checkbox" id="checkbox-all-modal" name="checkbox-all-modal">
+                                <label for="checkbox-all-modal"><span class="check-sq"></span></label>
+                              </div>
+                              <div class="col-sm-11 title-hra">
+                                <div class="col-sm-10">
+                                  <div class="col-sm-2 flexbox h-align-center">
+                                    <p>Región</p>
+                                    <div class="order-by-modal">
+                                      <button type="button" data-opc='{"key": "region" , "orderby": "desc", "type" : "int" }' title="Orden descendente">desc</button>
+                                      <button type="button" data-opc='{"key": "region" , "orderby": "asc", "type" : "int" }' title="Orden ascendente">asc</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-2 flexbox h-align-center">
+                                    <p>Cuenta</p>
+                                    <div class="order-by-modal">
+                                      <button type="button" data-opc='{"key": "cuenta" , "orderby": "desc", "type" : "string" }' title="Orden descendente">desc</button>
+                                      <button type="button" data-opc='{"key": "cuenta" , "orderby": "asc", "type" : "string" }' title="Orden ascendente">asc</button>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col-sm-4 flexbox h-align-center">
+                                    <p>RFC</p>
+                                    <div class="order-by-modal">
+                                      <button type="button" data-opc='{"key": "rfc" , "orderby": "desc", "type" : "string" }' title="Orden descendente">desc</button>
+                                      <button type="button" data-opc='{"key": "rfc" , "orderby": "asc", "type" : "string" }' title="Orden ascendente">asc</button>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4 flexbox h-align-center">
+                                    <p>Razón social</p>
+                                    <div class="order-by-modal">
+                                      <button type="button" data-opc='{"key": "razonsocial" , "orderby": "desc", "type" : "string" }' title="Orden descendente">desc</button>
+                                      <button type="button" data-opc='{"key": "razonsocial" , "orderby": "asc", "type" : "string" }' title="Orden ascendente">asc</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-2 flexbox h-align-center">
+                                  <p>Estatus</p>
+                                  <div class="order-by-modal">
+                                    <button type="button" data-opc='{"key": "asociada" , "orderby": "desc", "type" : "boolean" }' title="Orden descendente">desc</button>
+                                    <button type="button" data-opc='{"key": "asociada" , "orderby": "asc", "type" : "boolean" }' title="Orden ascendente">asc</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="row">
+
+                            <div class="error-ge hidden" id="sin-resultados"> 
+                              <div class="notif-bloq"> 
+                                <div class="row"> 
+                                  <div class="col-xs-12 col-sm-10 center-block inner-nb"> 
+                                    <span class="icon io-Alert2"></span> 
+                                    <p class="only-p">No existen resultados. Modifica tus criterios de búsqueda.</p>
+
+                                    <div class="btn-container">
+                                      <button class="btn-limpiar-filtro-asoc blue-dark" type="button">Nueva búsqueda</button>
+                                    </div>
+                                  </div> 
+                                </div> 
+                              </div> 
+                            </div>
+                          </div>
+
+                          <div class="clearfix"></div>
+                          
+                          <div class="pagination-block hidden">
+                          </div>
+
+                          <div class="col-sm-12 button-field-mod hidden">
+                            <button class="bton blue-dark send-cuentas" id="btn-show-confirmacion" type="button" disabled>Continuar</button>
+                          </div>
+
+                        </div>
+
+                        <div class="col-sm-12 mid-txt-ge-mod api-msg" id="paso-2">
+                          <p>Algunas de las cuentas que intentas asociar pertenecen a otro ejecutivo. Si continúas con la operación le serán removidas y se asociarán a tu alias.</p>
+
+                          <p>¿Estás seguro?</p>
+
+                          <!-- <span id="cuentas-ya-asociadas"></span>  -->
+                          <div class="col-sm-12 button-field-mod">
+                            <button class="bton blue-dark" id="btn-submit-cuentas" type="button">Aceptar</button>
+                            <button class="simple" id="btn-regresar" type="button">Cancelar</button>
+                    
+                          </div>
+
+                        </div>
+
+                        <div class="col-sm-12 mid-txt-ge-mod api-msg" id="paso-3">
+                          <p>Las cuentas han sido asociadas al alias.</p>
+                          <p class="hidden" id="notif-robo">Por favor notifica el traslado de la cuenta.</p>
+                        </div>
+
+                    </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL ASOCIAR CUENTAS -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

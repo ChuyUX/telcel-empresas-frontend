@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content facturacion-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="facturacion-1.html" title="Facturación">Facturación</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Facturas de servicio">Facturas de servicio</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h2">Facturas de servicio</h2>
+                <p class="col-sm-8 center-block"><span>En esta sección puedes obtener las facturas fiscales (CFDI) o los Estados de cuenta de las líneas que desees consultar. (Disponible de los últimos 12 meses).</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section> 
+            <form class="form-section-block form-facturas-servicio" id="form-facturas" method="POST" action="facturas-fiscales-1.html">
+              <section class="clearfix back-blue1 padding-20 facturacion-step">
+                <div class="container">
+                  <h3 class="h3">Selecciona el tipo de consulta y mes de facturación</h3>
+
+                  <div class="col-sm-7 center-block padding-10">
+                    <div class="col-xs-12 col-sm-10 center-block flexbox v-align-center input-block">
+                      <div class="col-xs-12 col-sm-4 general-input-container"> 
+                        <label>Tipo de consulta:</label>
+                      </div>
+                      <div class="col-xs-12 col-sm-8 general-input-container">
+                          <div class="data-write slt">
+                            <select name="factura" class="factura select-change" id="factura">
+                              <option value="">Elige una opción</option>
+                              <option value="1" data-meta='{"post" : "../facturacion/facturas-fiscales-1.html", "action" : "factura", "cta" : "Consultar"}'>Facturas fiscales (CFDI)</option>
+                              <option value="2" data-meta='{"post" : "../facturacion/estados-cuenta-1.html", "action" : "factura", "cta" : "Consultar"}'>Estados de cuenta</option>
+                              <option value="3" data-meta='{"post" : "../facturacion/facturas-pendientes-2.html", "action" : "factura", "periodo" : false, "cta" : "Consultar"}'>Facturas pendientes de pago</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-10 center-block flexbox v-align-center input-block periodo-input-block hidden">
+                      <div class="col-xs-12 col-sm-4 general-input-container"> 
+                        <label>Periodo de facturación:</label>
+                      </div>
+                      <div class="col-xs-12 col-sm-8 general-input-container">
+                          <div class="data-write slt">
+                            <select name="periodo" class="periodo select-change" id="periodo">
+                              <option value="">Elige una opción</option>
+                              <option value="1">Agosto 2016</option>
+                              <option value="2">Septiembre 2016</option>
+                              <option value="3">Octubre 2016</option>
+                              <option value="4">Noviembre 2016</option>
+                              <option value="5">Diciembre 2016</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-md-offset-2 padding-10">
+                    <div class="col-md-12 col-xs-8 center-block">
+                      <button class="bton orange" id="btn-facturas-servicio" type="submit" disabled>Consultar</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </form>
+        </section>
+
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content facturacion-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="facturacion-1.html" title="Facturación">Facturación</a>
+                  </li>
+                  <li>
+                    <a href="facturas-equipos-1.html" title="Facturación">Facturas de equipos</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h2">Facturas de equipos</h2>
+                <p class="col-sm-8 center-block"><span>En esta sección puedes obtener las facturas generadas por compras de equipos. (Disponible de los últimos 12 meses).</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section> 
+            <form class="form-section-block form-facturas-equipo" id="form-facturas" method="POST" action="facturas-equipos-2.html">
+              <section class="clearfix back-blue1 padding-20 facturacion-step">
+                <div class="container">
+                  <h3 class="h3">Selecciona el mes de facturación</h3>
+                  <div class="col-sm-8 center-block">
+                    <div class="col-xs-12 col-sm-6 center-block general-number-container">
+                        <div class="data-write slt">
+                          <select name="periodo" class="periodo select-change" id="periodo">
+                            <option value="">Elige una opción</option>
+                            <option value="1">Agosto 2016</option>
+                            <option value="2">Septiembre 2016</option>
+                            <option value="3">Octubre 2016</option>
+                            <option value="4">Noviembre 2016</option>
+                            <option value="5">Diciembre 2016</option>
+                          </select>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-md-offset-2 padding-10">
+                    <div class="col-md-12 col-xs-8 center-block">
+                      <button class="bton orange" id="btn-facturas-servicio" type="submit" disabled>Consultar</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </form>
+        </section>
+
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

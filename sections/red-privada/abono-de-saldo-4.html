@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content red-privada-block descarga-general-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Abono de saldo">Abono de saldo</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h2">Abono de saldo</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="header-block-menu simplify-header back-gray1 clearfix">
+          <div class="container">
+            <div class="options-header-block col-xs-12 col-sm-12 col-md-12">
+              <div class="col-sm-6 col-xs-6">
+                <a href="abono-de-saldo-1.html" title="Abonar">
+                  <span class="title">Abonar</span>
+                </a>
+              </div>
+
+              <div class="col-sm-6 col-xs-6">
+                <a href="abono-de-saldo-4.html" class="active" title="Historial">
+                  <span class="title">Historial</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom padding-20">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <p class="col-sm-8 center-block"><span>Puedes ver el historial de abonos por periodo o número de teléfono.</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="filtro-bg-blue no-margin-bottom">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container">Mostrar filtrado</p>
+              <div class="col-sm-12 col-xs-12 center-block padding-0">
+                <form action="abono-de-saldo-4-con-filtrado.html" id="abonoDeSaldo" class="wrapper-gfsc clearfix">
+                  <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container">
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Periodo:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <div class="data-write slt">
+                          <select name="periodo" class="periodo one-field" id="periodo" data-field='{ "name" : "periodo" }'>
+                            <option value="">Elige una opción</option>
+                            <option value="1">Pendiente</option>
+                            <option value="2">En proceso</option>
+                            <option value="3">Disponible</option>
+                            <option value="4">Expiró</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-20 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Monto:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <div class="data-write slt">
+                          <select name="monto" class="monto one-field" id="monto" data-field='{ "name" : "monto" }'>
+                            <option value="">Elige una opción</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="400">400</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Número:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <input type="text" name="numero" value="" placeholder="Mínimo 4 dígitos" class="one-field numero only-numbers" maxlength="15" data-field='{ "name" : "numero", "min" : "4" }'/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block">
+                      <button class="bton blue-dark main-btn full-width" type="button" disabled="disabled" id="btn-filter-abono">Filtrar</button>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" type="button" disabled="disabled" data-href="abono-de-saldo-4.html">Limpiar filtros</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-gray no-margin-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-xs-12 padding-0">
+                <div class="header-info-movimientos flexbox col-sm-12">
+                  <div class="col-sm-10 col-xs-12 flexbox v-align-center">
+                    <p id="msg-movimientos">Descarga el reporte del mes seleccionado.</p>
+                  </div>
+                  <div class="col-sm-2 col-xs-12 flexbox v-align-center h-align-center">
+                    <a href="../../doc/ejemplo-excel.xls" target="_blank" title="Descargar" class="btn-general-solicitud-descarga"><span class="icon io-download-mte"></span><span>Descargar</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid gestion-table" id="main-table-view">
+            <div class="container">
+              <div class="row">
+                <div class="ver-por-pagina-block col-sm-12 col-xs-12 center-block padding-0">
+                  <div class="col-sm-5 col-xs-12 flexbox v-align-center">
+                    <div class="col-sm-5 col-xs-5">
+                      <label>Ver por página:</label>
+                    </div>
+                    <div class="col-sm-7 col-xs-7">
+                      <div class="data-write slt">
+                        <select name="ver-por" class="ver-por" id="ver-por">
+                          <option value="50">50 movimientos</option>
+                          <option value="100">100 movimientos</option>
+                          <option value="200">200 movimientos</option>
+                          <option value="500">500 movimientos</option>
+                          <option value="1000">1000 movimientos</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="general-table movimientos-table overflow">
+                  
+                  <div class="header-block general-block has-filters hidden-xs clearfix" id="ordenamientoAbonoDeSaldo" data-action="">
+                    <div class="col-sm-pr-100 h-align-center">
+                      <div class="col-sm-pr-20 flexbox h-align-center">
+                        <strong>No. de operación</strong>
+                        <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "operacion" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "operacion" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-15 flexbox h-align-center">
+                        <strong>Línea(s) seleccionada(s)</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "lineas" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "lineas" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-20 flexbox h-align-center">
+                        <strong>Asignado a</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "asignado" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "asignado" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                       <div class="col-sm-pr-20 flexbox h-align-center">
+                        <strong>Fecha de abono</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "fecha" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "fecha" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-15 flexbox h-align-center">
+                        <strong>Monto</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "monto" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "monto" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="table-main-block listado-principal" id="listado-abono-saldo">
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"1", "operacion": "1304981238923", "lineas": ["5528882867", "5561348224", "5577889900", "5578654323", "5567432122"], "asignado" : "Yazmin Aguilar", "fecha": "30/10/2016 a las 16:00 hrs.", "monto" : "100.00"}'></div>
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"2", "operacion": "1304981238923", "lineas": ["5561348224"], "asignado" : "Yazmin Aguilar", "fecha": "30/10/2016 a las 16:00 hrs.", "monto" : "100.00"}'></div>
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"3", "operacion": "1304981238923", "lineas" : ["5528882867", "5561348224", "5577889900"], "asignado" : "Yazmin Aguilar", "fecha": "30/10/2016 a las 16:00 hrs.", "monto" : "100.00"}'></div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-8 col-md-offset-2">
+                    <div class="col-sm-12 ct-pagination center-pag">
+                      <ol>
+                        <li>
+                          <a href="#" class="active">1</a>
+                        </li>
+                        <li>
+                          <a href="#">2</a>
+                        </li>
+                        <li>
+                          <a href="#">3</a>
+                        </li>
+                        <li>
+                          <a href="#"><span class="icon io-AccordionRight"></span></a>
+                        </li>                              
+                      </ol>
+                    </div>
+                  </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- MODAL DESCARGAR HISTORIAL -->
+        <section class="modal-mte" id="modal-descargar">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2" data-before="Solicitud de descarga">Solicitud de descarga</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8 center-block in-cont-mod">
+                    <div class="row">
+                      <form class="col-sm-12 form-ge-mod" id="form-confirmar-descargar-facturas">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Haz clic en "Enviar" para que el Historial de registro(s) solicitado sea enviado al correo electrónico registrado. Si deseas que se envíe copia a otra dirección, ingrésala en este campo.</p>
+
+                          <div class="data-write col-sm-8 center-block">
+                            <input type="text" name="email" placeholder="Correo electrónico" class="required only-email" id="email" value=""/>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark full-width first-submit" id="btn-descargar-facturas" type="submit">Enviar</button>
+                        </div>
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="descargar-facturas-confirmacion">
+                        <p>Tu solicitud ha sido enviada con éxito. Recibirás en tu correo electrónico el enlace para descargar el Historial de registro(s). <br>Para dar seguimiento a tus solicitudes, ingresa a la sección Descargas.</p>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc"> 
+                          <a href="../solicitudes-descargas/descargas-1.html" class="bton blue-dark">Descargas</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL DESCARGAR REGISTROS -->
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

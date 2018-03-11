@@ -1,0 +1,14 @@
+.greeting__welcome{
+	font-size: 20px;
+	margin: 0 0 0 10px;
+	text-align: left;
+}
+.greeting__label{
+	background: #ddd;
+	font-size: 15px;
+	padding: 2px 8px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 200px;
+}

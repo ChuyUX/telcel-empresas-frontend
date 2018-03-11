@@ -1,0 +1,70 @@
+[ 
+	{ 
+		"label": "Suspensión de líneas", 
+		"category": "Servicios", 
+		"url" : "../autogestion-suspension/suspension-masivo-1.html" 
+	},
+	{ 
+		"label": "Reactivación de líneas", 
+		"category": "Servicios", 
+		"url" : "../autogestion-reactivacion/reactivacion-masivo-1.html" 
+	},
+	{ 
+		"label": "Cambio de chip y/o equipo", 
+		"category": "Servicios", 
+		"url" : "../autogestion-cambio-chip/cambio-masivo-1.html" 
+	},
+	{ 
+		"label": "Servicios adicionales", 
+		"category": "Servicios", 
+		"url" : "../autogestion-servicios/servicios-masivo-1.html" 
+	},
+
+
+	{ 
+		"label": "Facturas de servicio", 
+		"category": "Facturación", 
+		"url" : "../facturacion/facturas-servicios-1.html" 
+	},
+	{ 
+		"label": "Facturas de equipos", 
+		"category": "Facturación", 
+		"url" : "../facturacion/facturas-equipos-1.html" 
+	},
+	{ 
+		"label": "Referencia única", 
+		"category": "Facturación", 
+		"url" : "../facturacion/referencia-unica-1.html" 
+	},
+	{ 
+		"label": "Reportes", 
+		"category": "Facturación", 
+		"url" : "../facturacion/reportes-1.html" 
+	},
+	{ 
+		"label": "Facturación electrónica", 
+		"category": "Facturación", 
+		"url" : "../facturacion/facturacion-electronica-1.html" 
+	},
+	{ 
+		"label": "Descargas", 
+		"category": "Facturación", 
+		"url" : "../solicitudes-descargas/descargas-1.html" 
+	},
+
+	{ 
+		"label": "Notificaciones", 
+		"category": "Soporte", 
+		"url" : "../notificaciones/notificaciones-1.html" 
+	},
+	{ 
+		"label": "Historial de movimientos", 
+		"category": "Soporte", 
+		"url" : "../historial-movimientos/historial-1.html" 
+	},
+	{ 
+		"label": "Preguntas frecuentes", 
+		"category": "Soporte", 
+		"url" : "../faq/home.html" 
+	}
+]

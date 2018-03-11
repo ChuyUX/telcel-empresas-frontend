@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content gestion-cuentas-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Gestión de grupos">Gestión de grupos</a>
+                  </li>
+                </ol>   
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 theme-heading">
+                <h2 class="h2">Gestión de grupos</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid gestion-ejecutivos" id="gestion-cuentas-view">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container" data-name="buscador">Mostrar buscador</p>
+              <form action="resultados-busqueda-lista.html" id="gestionGrupos" class="wrapper-gfsc con-busqueda-filtrado clearfix">
+                <div class="some-header-filter col-xs-12 no-margin-bottom general-fs-container">
+                  <div class="container">
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-10 col-sm-offset-1 center-block flexbox v-align-center h-align-center flex-col-direction-mobile search-by-container gestion-cuentas-search">
+
+                          <div class="col-xs-12 col-sm-6 flexbox v-align-center flex-col-direction-mobile">
+                            <div class="col-xs-12 col-sm-5 data-write">
+                              <label for="searchby" class="txt-center">Búsqueda por:</label>
+                            </div>
+                          
+                            <div class="col-xs-12 col-sm-7 data-write slt">
+                              <select name="searchby" class="searchby" title="Búsqueda por">
+                                <option value=''>Elige una opción</option>
+                                <option data-value='{"key": "cuenta" ,"min": 1, "view" : "resultados-busqueda-lista.html"  }'>Cuenta</option>
+                                <option data-value='{"key": "grupo" ,"min": 4, "view" : "resultados-busqueda.html"}'>Nombre de grupo</option>
+                                <!-- <option value='grupo'>Por grupo</option> -->
+                                <option data-value='{"key": "numero" ,"min": 4, "view" : "resultados-busqueda-lista.html"}' selected>Número Telcel</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-6 flexbox v-align-center flex-col-direction-mobile search-input-block">
+                            <div class="col-xs-12 col-sm-7 data-write">
+                              <input type="number" name="cuenta" class="search-input-cuenta only-numbers" value="" placeholder="Mínimo 1 número" data-maxlength="10"/>
+                              <input type="text" name="grupo" class="search-input-grupo meet-regex" value="" placeholder="Mínimo 4 caracteres" maxlength="45" data-regex = "[^A-Za-z-ñÑ\s]+$"/>
+                              <input type="number" class="search-input-numero only-numbers" name="numero" value="55364454" placeholder="Mínimo 4 números" data-maxlength="10"/>
+                            </div>
+                            <div class="col-xs-12 col-sm-5">
+                              <div class="data-write">
+                                <button class="bton no-margin main-btn blue-dark full-width" type="submit">Buscar</button>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <section class="no-margin-bottom">
+                <div class="container-fluid gestion-ejecutivos">
+                  <div class="row">
+
+
+                    <section class="error-ge-fl col-xs-12 col-sm-8 col-sm-offset-2 no-margin-bottom">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 content-flr">
+                          <div class="notif-bloq">
+                            <div class="row">
+                              <div class="col-xs-12 inner-nb">
+                                <span class="icon io-Alert2"></span>
+                                <p class="only-p">No existen resultados. Revisa que exista la línea, cuenta o grupo que buscas. Si no por favor comunícate al <a href="#">Centro de Atención a Clientes.</a></p>
+
+                                <div class="btn-container">
+                                  <button class="send-to-url blue-dark" type="button" data-href="gestion-grupos-1.html">Regresar a Gestión de grupos</button>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                  </div>
+                </div>
+              </section>
+
+            </div>
+
+            <div class="pagination-block">
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

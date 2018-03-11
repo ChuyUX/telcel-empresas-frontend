@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado seleccion-empresa">
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content facturacion-block">
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Selección de empresa">Selección de empresa</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h2">Selección de empresa</h2>
+                <p class="col-sm-8 center-block"><span>Par iniciar, elige la empresa que deseas gestionar, es necesario que selecciones una</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <form class="form-section-block reportes-block" id="form-facturas" method="POST" action="reportes-2.html">
+            <section class="clearfix back-blue1 facturacion-step">
+              <div class="container padding-30">
+                <div class="col-sm-7 center-block">
+                  <div class="col-xs-12 col-sm-10 center-block flexbox v-align-center input-block">
+                    <div class="col-xs-12 col-sm-4 general-input-container">
+                      <label>Empresa:</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 general-input-container">
+                      <div class="tokenfield-block tokenfield--auto col-sm-12 col-xs-12 center-block">
+                        <input type="text" class="form-control token-field-input element-input" id="tokenfield-agregar-lineas" value="" placeholder="Número Telcel, nombre del titular o nombre del grupo" data-options='{ "limit": 0, "placeholder" : "Número Telcel, nombre del titular o nombre del grupo", "placeholderM" : "Número Telcel/nombre del titular", "groups" : true, "cuentas" : true, "show" : "#autogestion-paso-2", "inSteps" : ".suspension-step" }'/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-xs-12 second-step-container">
+                <div class="col-md-8 col-md-offset-2 bton-container">
+                  <div class="col-md-12 col-xs-8 center-block">
+                    <button class="bton orange" id="btn-facturas-servicio" type="submit" disabled>Entrar</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </form>
+        </section>
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+  </body>
+</html>

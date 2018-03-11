@@ -1,0 +1,179 @@
+/* Modules & Vars */
+// Mixins
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin linearGradient($top, $bottom, $inicioColor1){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top$inicioColor1, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top$inicioColor1,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top$inicioColor1,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top$inicioColor1,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top$inicioColor1,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+/*Transición*/
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/*Opacidad*/
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+// Fontfamily 
+
+$robusta: 'telcel';
+
+// Colores
+
+$black: #000000;
+$black-50: rgba(0, 0, 0, 0.5);
+$black-60: rgba(0, 0, 0, 0.6);
+$black-80: rgba(0, 0, 0, 0.8);
+
+$white: #ffffff;
+$white-40: rgba(255, 255, 255, 0.4);
+$white-60: rgba(255, 255, 255, 0.6);
+$white-80: rgba(255, 255, 255, 0.8);
+
+$img: '../img/';
+
+/*El orden va desde el mas claro al mas oscuro*/
+$blue-gradient: #E4EEF2;
+$blue1: #F0F7FB;
+$blue8: #e2eff3;
+$blue5: #5bc0de;
+$blue2: #39b3d7;
+$blue10: #3992b5;
+$blue3: #02b0ef;
+$blue6: #0099da;
+$blue7: #536E73;
+$blue4: #0a3b79;
+$blue9: #063066;
+
+/*El orden va desde el mas claro al mas oscuro*/
+// corporativos
+$gray0: rgb( 242, 247, 249);
+$gray1: rgb( 95, 113, 117); //#5F7175
+$gray2: #465359;
+
+// auxiliares
+$gray1a: #EEEEEE;
+$gray2a: #DDDDDD;
+$gray3a: #CCCCCC;
+$gray4a: #B8B8B8;
+$gray5a: #999999;
+$gray6a: #888888;
+$gray7a: #777777;
+$gray8a: #666666;
+$gray9a: #545454;
+$gray10a: #444444;
+// $gray11a: #333333;
+// $gray12a: #222222;
+
+// Others
+$yellow: rgb( 255, 204, 0);
+$green: #00cbb6;
+$green2 : #41A091;
+$pink: rgb( 226, 34, 133);
+$violet: rgb( 126, 126, 236);
+$orange: rgb( 255, 102, 0);
+$purple: rgb( 165, 0, 176);
+$chat: rgb( 29, 111, 184);
+
+// Others con su hover
+
+$orange2: #d65600;
+$orange3: #e65c00;
+
+// Para Validacion de input
+
+$pink2: #FAD8F4;
+$purple2: #A1418F;
+$brown: #843534;
+
+
+//Colores Telcel
+$blueTelcel1 : #f2f7f9;
+$blueTelcel2 : #02b0ef;
+$blueTelcel3 : #1d6fb8;
+$greenTelcel1 : #52cab5;
+$pinkTelcel1: #e22285;
+$grayTelcel1 : #5F7175;
+
+$grayTooltip1 : #eeeeee;
+$grayTooltip2 : #dddddd;
+
+$blueCTA : #0a3d7e;
+$orangeCTA : #ff6600;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

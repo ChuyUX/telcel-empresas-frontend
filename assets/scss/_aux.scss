@@ -1,0 +1,5301 @@
+#archivo-invalido{
+	color: $pinkTelcel1;
+    padding: 2px;
+    text-align: left;
+}
+.txtarea-aux-tokenfield{
+	
+	position: absolute;
+	bottom: 0;
+	height: 0px;
+}
+
+.ui-combobox {
+    position: relative;
+    display: inline-block;
+}
+.ui-combobox-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+    /* adjust styles for IE 6/7 */
+    *height: 1.7em;
+    *top: 0.1em;
+}
+
+.ui-autocomplete-input {
+    margin: 0;
+    padding: 0.3em;
+}
+
+#modal-cambiar-rol{
+	label{
+		&.error-dd{
+			font-weight: 300;
+			margin: 10px auto 0px;
+		    color: $pink;
+		    font-weight: 300;
+		    font-size: 14px;
+		    line-height: 18px;
+		}
+	}
+}
+.full-content{
+
+	.sin-usuarios-table{
+		.error-ge{
+			margin-top: 20px;
+		}
+	}
+	#roaming-result-block{
+		&.has-loading{
+			min-height: 200px;
+			.loading-block{
+		       &:after{
+		        content:"Cargando contenido...";
+		        display: block;
+		        position: absolute;
+		        margin: 50px auto 0;
+		        left: -50%;
+		        right: -50%;
+		      }
+			}
+		}
+	}
+	.destino-search-title{
+		margin-top: 20px;
+		&:first-child{
+			margin-top : 0;
+		}
+	}
+	#listado-autogestion-container{
+		.regresar-masivo{
+			padding-bottom : 20px;
+		}
+	}
+	.btn-container-nmb{
+		padding: 20px 20px 0;
+		button{
+			margin-bottom: 0;
+		}
+	}
+	.regresar-masivo{
+		a{
+			text-decoration : none;
+			@include align-items(center);
+			.icon{
+				font-size: 25px;
+				@include flexbox;
+				@include align-items(center);
+			}
+		}
+	}
+	.all-blue-bg{
+		padding: 10px 0 10px 0;
+		#componente-ingresar-lineas{
+
+			.componente-btn-block{
+				.btn-al{
+					background-color : $blueTelcel1;
+
+					.icon{
+						background-color: $white;
+					}
+				}
+			}
+			.componente-lineas-block{
+				margin-bottom: 20px;
+			}
+			.componente-lb{
+				.triangle-tooltip{
+					background-color : $grayTooltip1;
+					margin-bottom: 15px;
+					&:after{
+						border-color : $grayTooltip1 transparent;
+					}
+				}
+			}
+		}
+	}
+	.sub-subtext{
+		color: $grayTelcel1;
+	}
+
+	.msg-info-block{
+		p{
+			font-size: 14px;
+		}
+	}
+
+	#grupo-selector-block{
+		.search-box-container{
+			margin-bottom: 0;
+			button{
+				margin-bottom: 10px;
+			}
+		}
+		.btn-remover-busqueda{
+			font-size: 14px;
+		}
+	}	
+
+	.more-options-block{
+		position: relative;
+		>a{
+			&.hover{
+				+.triangle-tooltip{
+					display: block;
+				}
+			}
+		}
+		
+
+		.triangle-tooltip{
+			z-index: 9;
+			max-width: 355px;
+			display: none;
+			right: -50%;
+		    left: -50%;
+		    margin: 0 auto;
+			.more-options{
+				padding: 0;
+				margin: 0;
+    			border-top: 2px solid $white;
+    			list-style: none;
+				li{
+					list-style: none;
+					padding: 10px 5px;
+					background-color: $blueTelcel1;
+					border-bottom: 1px solid $white;
+					a{
+						text-align: center;
+						width : 100%;
+						display : block;
+						margin: 0;
+
+					}
+					&:last-child{
+						border-bottom : 0px;
+					}
+				}
+    			a{
+    				display: block;
+    			}
+			}
+		}
+	}
+
+	.listado-header-block-single{
+		>div{
+			strong{
+				font-weight: 500;
+			    display: block;
+			    font-size: 16px;
+			}
+		}
+
+		&.no-padding{
+			padding-bottom: 0 !important;
+
+			.no-wrap{
+				white-space: initial;
+			}
+
+			.first-padding{
+				padding: 0 10px !important;
+			}
+		}
+
+		
+	}
+
+	#btn-confirmar-linea-rp{
+		margin: 20px auto 0;
+		display: block;
+	}
+
+	&.configuracion-block, &.red-privada-block{
+
+		#main-view-block{
+			.theme-heading{
+					margin-bottom: 20px;
+				}
+		}
+		.motivos-autogestion-container{
+			&.smaller-container{
+				.to-hi-check{
+					min-width: 130px !important;
+				}
+			}
+		}
+		.general-table{
+			&.single{
+				padding-bottom: 0 !important;
+			}
+		}
+
+		.add-item-usuario{
+			width: 100%;
+			padding: 0;
+			background: $blueTelcel1;
+			margin: 15px auto;
+			button{
+				background: transparent;
+				color: $blueTelcel2;
+				width: 100%;
+
+				.icon{
+					font-size: 20px;
+					height: 20px;
+					width: 20px;
+					line-height: 1;
+				}
+
+				span{
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+	#modal-subir-archivo{
+		.componente-lb{
+			&.lineas-archivo{
+				display: block;
+			}
+
+			.data-write{
+				margin-bottom: 0;
+				.data-write{
+					margin-bottom: 2px;
+				}
+			}
+			.add-lines-ge-mod{
+				padding-bottom: 20px;
+			}
+		} 
+	}
+	&.configuracion-block{
+
+		.switches-ul{
+			.switch-input{
+			
+				&:checked{
+					+ label{
+						background : $greenTelcel1;
+						&:before{
+							background : $greenTelcel1;
+						}
+						
+					}
+				}
+			}
+		}
+		.ingreso-grupos-mobile{
+			display: none;
+		}
+
+		&.roles-block{
+			.some-header-info{
+				>.container{
+					overflow: hidden;
+				}
+			}
+		}
+		.header-permisos-config{
+			
+			>div{
+				
+				.select-all-permisos{
+					padding: 10px 0px !important;
+					margin: 0;
+				}
+				
+			}
+			button{
+				margin: 0 auto;
+				display: block;
+			}
+		}
+
+		.fixed-header-container{
+			max-width: 1170px;
+    		margin: 0 auto;
+		}
+		#modal-cancelar-rol{
+			.content-mod {
+	          .submit-r-asoc{
+	            >button{
+	              margin: 0 5px;
+	            }
+	          }
+	          .mid-txt-ge-mod {
+
+	            p{
+	              small{
+	                font-size: 16px;
+	              }
+	            }
+	          }
+	        }
+		}
+		&.enable-editing-mode{
+			.select-all-permisos{
+				visibility: visible;
+			}
+
+			.form-editar-permisos{
+				.edit-btns-container{
+					@include flexbox;
+				}
+				.enable-edit-btns-container{
+					display: none;
+				}
+			}
+
+			.checkbox-container-all{
+				display: -webkit-box !important;
+			    display: -webkit-flex !important;
+			    display: -moz-flex !important;
+			    display: -ms-flexbox !important;
+			    display: flex !important;
+			}
+		}
+		.select-all-permisos{
+			visibility: hidden;
+		}
+
+		.header-actions{
+			.checkbox-label{
+				margin: 0;
+			}
+
+			.btn-quitar-usuario{
+				padding: 10px 0;
+				.icon{
+					font-size: 20px;
+				}
+			}
+		}
+
+		.checkbox-container{
+			&.no-checkbox{
+				padding-left: 24px;
+
+				.texto{
+					color: $grayTextos;
+				}
+			}
+		}
+
+		.componente-submit-block{
+			
+			padding-top: 30px;
+			>div{
+				@include flexbox;
+				@include align-items(center);
+
+				&.edit-btns-container{
+					display: none;
+				}
+
+				>div{
+					@include flexbox;
+					@include justify-content(center);
+				}
+				button{
+					margin: 0;
+				}
+
+				.btn-like-a{
+					font-size: 15px;
+				}
+			}
+		}
+
+		.simulate-disabled{
+			opacity: 0.9;
+			>span{
+				color: $grayTooltip2 !important;
+			}
+			.icon{
+				background-color : $grayTooltip2 !important;
+				&:before{
+					color: $white;
+				}
+			}
+		}
+
+		.modal-mte{
+
+			&#modal-agregar-rol-admin{
+				&.all-created{
+					.api-msg-info{
+						display: block;
+					}
+				}
+			}
+			#perfil-selector-block{
+				.roles-container{
+					margin: 20px auto 30px auto;
+				}
+			}	
+
+
+			.roles-container{
+				border: 2px solid $grayTooltip1;
+				margin-bottom: 30px;
+				padding: 10px;
+				.rol-line{
+
+					&.admin-rol{
+						.icon-container{
+							.icon{
+								font-size: 25px;
+								color: $green2;
+							}
+						}
+					}
+
+					@include flexbox;
+					margin: 5px 0;
+					width : 100%;
+					>div{
+						width: auto;
+						@include flexbox;
+						@include align-content(center);
+						@include align-items(center);
+					}
+					.checkbox-container{
+						margin: 0;
+						label{
+							margin: 0 auto !important;
+						}
+					}
+
+					.icon-container{
+						padding: 0 5px;
+						.icon{
+							font-size: 32px;
+							color: $blueTelcel2;
+						}
+					}
+
+					.texto{
+						font-size: 16px;
+					}
+
+					&.general-rol{
+						.icon-container{
+							.icon{
+								font-size: 30px;
+								color: $greenTelcel1;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.ver-todos-roles-block{
+			@include justify-content(flex-end);	
+			margin: 20px 0 0px;
+			a{
+				@include flexbox;
+				@include align-items(center);
+				@include justify-content(center);
+				text-decoration: none;
+				span{
+					margin-bottom: 0;
+					min-height: 100%;
+					@include flexbox;
+					@include align-self(center);
+				}
+				.txt{
+					padding-left: 5px;
+				}
+				.icon{
+					font-size: 26px;
+				}
+
+
+				&.w-border{
+					border-left: 1px solid $grayTooltip2;
+					margin-left: 8px;
+					padding-left: 8px;
+				}
+
+			}
+			
+		}
+		.info-text{
+			margin-bottom: 0;
+			padding: 20px 0;
+		}
+
+		.ct-pagination{
+			ol{
+				margin-bottom: 0 !important;
+			}
+		}
+		.listado-header-autogestion{
+		    .header-actions{
+		      overflow: visible;
+		    }
+		  }
+		.success-error-msg-container{
+			padding: 20px 0;
+		}
+
+		.btn-container{
+			button{
+				margin: 40px auto 0;
+				display: block;
+			}
+		}
+
+		.ver-por-pagina-block{
+			.total-usuarios{
+
+				border-left: 1px solid $grayTooltip1;
+				margin: 0;
+				strong{
+					color: $blueCTA;
+				}
+			}
+		}
+
+		.header-actions{
+			.total-usuarios{
+
+				border-left: 1px solid $grayTooltip1;
+
+				strong{
+					color: $blueCTA;
+				}
+			}
+
+			p{
+				&.hide-m{
+					padding: 0 10px;
+				}
+			}
+		}
+
+		.configuracion-general{
+		    @include flexbox;
+		    @include justify-content(flex-end);
+		    .ver-por-pagina-block{
+		    	margin: 0 20px;
+		    }
+
+		    label{
+		    	margin-bottom: 0;
+		    }
+
+		    #btn-configuracion{
+		      color: $greenTelcel1;
+		      font-size: 26px;
+		      @include flexbox;
+		      @include justify-content(center);
+		      @include align-content(center);
+		      &:disabled{
+		        color: $grayHover;
+		      }
+		    }
+		    .checkbox-container{
+		      height: auto;
+		      padding: 5px 0;
+		      label{
+		        margin-bottom: 0;
+		      }
+		    }
+
+		    .settings-ri{
+		      display: none;
+
+		      &.active{
+		        display: block;
+		      }
+
+		      .bton{
+		        text-align: center;
+		        margin: 10px auto;
+		      }
+		    }
+
+		    .general-group-options-container{
+		    	&.active{
+		    		.settings-ri{
+		    			display: block;
+		    		}
+		    	}
+		    }
+
+		    .btn-open-general-config{
+		      .icon{
+		      	color: $blueTelcel2;
+		      	font-size: 30px;
+		      }
+		    }
+		}
+
+		.header-actions{
+			.btn-container-block{
+    			@include flexbox;
+    			@include justify-content(flex-end);
+    			button{
+    				margin:0;
+    			}
+    		}
+		}
+
+	    .usuarios-table{
+	    	.header-block{
+	    		margin-top: 10px;
+
+	    	}
+	    	.linea-batch{
+	    		.show-more-details{
+					p{
+						font-size: 15px;
+						padding: 3px 0px;
+					}
+				}
+	    		&:first-child{
+	    			border-top: 2px solid $blueTelcel1;
+	    		}
+
+	    		&.active-settings{
+	    			background-color: $blueTelcel1;
+	    			.usuario-info-block{
+	    				>div{
+	    					border-color: $white;
+	    				}
+	    			}
+	    			.settings-ri{
+		    			display: block;
+		    		}
+	    		}
+
+	    		p{
+	    			text-align: center;
+	    			width: 100%;
+	    		}
+
+	    		.icon-container{
+	    			margin: 0 auto;
+	    		}
+	    		.btn-user-config, .btn-editar-usuario{
+	    			padding: 0;
+	    			cursor: pointer;
+	    			.icon{
+	    				font-size: 22px;
+	    				color: $blueTelcel2;
+	    			}
+	    		}
+
+	    		.settings-ri{
+	    			display: none;
+	    			button{
+	    				span{
+	    					vertical-align: middle;
+	    				}
+	    			}
+	    		}
+
+	    		.usuario-info-block, .checkbox-container{
+	    			@include flexbox;
+	    			@include justify-content(center);
+	    		}
+
+	    		.checkbox-container{
+	    			height: 100%;
+	    			@include align-items(center);
+	    		}
+
+	    		.usuario-info-block{
+	    			padding: 0;
+	    			
+	    			>div{
+	    				@include flexbox;
+	    				@include align-items(center);
+	    				border-left: 2px solid $blueTelcel1;
+	    			}
+	    		}
+	    	}
+	    }
+
+		.table-permisos-block{
+			@include flexbox;
+			@include flex-wrap(wrap);
+			.user-permiso-box{
+				// margin-bottom: 20px;
+
+				.aditional-title{
+					strong{
+						color: $grayTextos;
+					}
+				}
+				.user-actions-box{
+					background-color: $greenTelcel1;
+					color: $white;
+					padding: 10px 0px;
+					@include flexbox;
+					@include flex-direction(column);
+					@include justify-content(center);
+					@include align-items(center);
+					position: relative;
+
+					.config-actions-block{
+						@include flexbox;
+						@include justify-content(flex-end);
+						position: absolute;
+						top: 0;
+						width: 100%;
+						padding: 10px;	
+					}
+
+					.btn-action{
+						background-color: $green2;
+						color: $white;
+						border-radius: 100%;
+						width: 30px;
+						height: 30px;
+						font-size: 18px;
+						min-width: 0;
+						min-height: 0;
+						padding: 0;
+						display: block;
+						text-align: center;
+						.icon{
+							margin: 4px auto;
+	    					display: block;
+	    					padding: 0 0 3px 3px;
+						}
+					}
+
+					.usuario-box{
+						text-align: center;
+						@include flexbox;
+						@include align-items(center);
+						padding: 0;
+						position: relative;
+
+						.icon{
+							color: $green2;
+							font-size: 30px;
+							margin-bottom: 0px;
+							display: block;
+							border-right: 1px solid $white;
+							padding: 0;
+							min-width : 54px;
+						}
+						.usuario-title{
+							padding: 0px;
+							font-size: 20px;
+							font-weight: 300;
+							margin: 0px;
+							text-align: center;
+							position: absolute;
+							width: 100%;
+							top:0;
+							left: 0;
+							.first-word{
+								font-weight: 300;
+								// display: block;
+							}
+
+						}
+					}
+				}
+			}
+			.permisos-box{
+				background-color: $blueTelcel1;
+				padding: 0 5%;
+
+				.checkbox-container-all{
+					display: none;
+					padding: 15px 0 10px;
+					border-bottom: 1px solid $grayHover;
+					>div, p{
+						padding: 0;
+					}
+					.checkbox-label{
+						font-weight: 400;
+						margin-bottom: 0;
+					}
+				}
+
+				>ul{
+					margin: 0;
+					padding: 10px 0;
+					list-style-type: none;
+					
+					li{
+						padding: 5px 0;
+						overflow: hidden;
+
+						>div{
+							padding: 0;
+							.checkbox-container{
+								@include flexbox;
+								@include align-items(center);
+								height: 100%;
+								margin: 0;
+								input[type="checkbox"]{
+									+ label{}
+
+									&:disabled{
+
+										+ label{
+
+											.check-sq{
+												background-color: $grayTooltip1;
+												border-color: $grayTooltip1;
+												box-shadow: none;
+												-webkit-box-shadow: none;
+												cursor: not-allowed;
+											}
+											.texto{
+												//color: $grayTooltip2;
+											}
+										}
+
+										
+									}
+								}	
+								margin-bottom: 0;
+							}
+						}
+						
+
+						.texto{
+							font-size: 15px;
+							//color: $grayTextos;
+							font-weight: 300;
+							line-height: 20px;
+							padding: 5px 10px;
+						}
+					}
+				}
+			}
+		}
+
+		.table-notificaciones-config-block{
+			.config-box-header{
+				@include flexbox;
+				@include justify-content(center);
+				p{
+					width: 100%;
+				}
+				.config-name-block{
+					padding: 20px 10px;
+					border-bottom: 1px solid $blueTelcel1;
+					@include flex-direction(column);
+					@include justify-content(flex-start);
+					.data-write{
+						margin-bottom: 0;
+					}
+				}
+
+				.config-switches-box{
+					padding: 20px 10px;
+					@include flexbox;
+					@include justify-content(center);
+					@include align-items(center);
+					.switches-ul{
+						padding: 0;
+						margin: 0;
+						list-style-type: none;
+						width: 100%;
+						@include flexbox;
+						@include justify-content(center);
+						@include align-items(center);
+
+						li{
+							text-align: center;
+							p{
+								margin: 0;
+								font-size: 16px;
+								width: 100%;
+							}
+
+							&.elegir-todos-block{
+								@include flexbox;
+								@include justify-content(center);
+								@include align-self(flex-end);
+							}
+						}
+						.icon{
+							color: $blueTelcel2;
+							font-size: 36px;
+						}
+					}
+				}
+			}
+			.config-box{
+				@include flexbox;
+				
+				.btn-mobile-container{
+					width: 100%;
+					text-align: center;
+					margin: 0 auto;
+					display: none;
+					position: relative;
+					.icon{
+						font-size: 32px;
+						color: $blueTelcel2;
+						cursor: pointer;
+						font-weight: 100;
+					}
+					.btn-toggle-config{
+						width: 40px;
+						height: 40px;
+						background-color: $grayTooltip1;
+						border-radius: 100%;
+						margin: 0 auto;
+						position: absolute;
+					}
+
+					.btn-open{
+						display: none;
+						padding-top: 2px;
+					}
+					.btn-close{
+						display: inline-block;
+						padding-top: 5px;
+					}
+				}
+
+				.config-name-block{
+					border-top: 1px solid $blueTelcel1;
+					border-bottom: 1px solid $blueTelcel1;
+					@include flexbox;
+					@include justify-content(center);
+					@include align-items(center);
+					padding: 20px 10px;
+					.config-title{
+						margin: 0;
+						font-weight: 500;
+					}
+				}
+
+				.config-switches-box{
+					border-top: 1px solid $white;
+					border-bottom: 1px solid $white;
+					background-color : $blueTelcel1;
+					padding: 20px 10px;
+					.switches-ul{
+						padding: 0;
+						margin: 0;
+						list-style-type: none;
+						width: 100%;
+						@include flexbox;
+						@include justify-content(center);
+						@include align-items(center);
+						li{
+							&.elegir-todos-block{
+								
+							}
+
+							>div{
+								@include flexbox;
+								@include justify-content(center);
+								@include align-items(center);
+								.switch-container{
+									p{
+										margin: 5px 0 0; font-size: 15px; font-weight: 100; text-align: center;
+									}
+
+									.config-m{
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.roles-block{
+			.order-by-cont-shi{
+				@include flexbox;
+				@include align-content(center);
+				@include justify-content(flex-end);
+				margin: 20px 0px;
+				>div{
+					padding: 0 10px;
+				}
+				.change-view-shi{
+					//border-right: 1px solid $grayTooltip1;
+
+					label{
+						margin-bottom: 0;
+					}
+					.icon{
+						font-size: 30px;
+					}
+					.change-view-container{
+						padding: 0;
+						button{padding: 0 10px; text-align: center;}
+
+						.txt{
+							display: none;
+						}
+					}
+				}
+
+				.txt{
+					font-size: 16px;
+				}
+				
+			}
+
+			.group-list-block, .group-row-block{
+				.rol-element{
+					.header-group{
+						.settings-ri{
+							display: none;
+						}
+					}
+					&.active{
+						.header-group{
+							.settings-ri{
+								display: block;
+							}
+						}
+					}
+				}
+
+				.btn-agregar-usuarios{
+					font-size: 16px;
+				}
+			}
+			
+
+			.group-row-block {
+				padding: 55px 0 40px 0; background: $blueTelcel1;
+
+				.container{
+					max-width: 900px;
+				}
+				.line-separator{
+					display: none;
+				}
+				.row {
+					margin: 0 auto;
+				}
+				.container {
+					padding: 0;
+				}
+				.mosaico-view {
+
+					.add-item-mv {
+						width: 100%; padding: 0; background: $white; margin: 0 auto 15px auto;
+						button {
+							background: transparent; color: $blueTelcel2; width: 100%;
+							.icon {
+								font-size: 20px; height: 20px; width: 20px; line-height: 1;
+							}
+							span {
+								display: inline-block; vertical-align: middle;
+							}
+						}
+					}
+					.item-mv {
+						width: 100%; padding:0; border-bottom: 1px solid $white;
+
+						.triangle-tooltip{
+							&.triangle-bottom{
+								&.nombre-error{
+									left: 3%;
+									margin: 0;
+								}
+							}
+
+						}
+						&:nth-last-child(1){
+							border-bottom: 0;
+						}
+						.rol-element {
+							position: relative; width: 100%; padding: 10px 0;
+							.usuarios-total {
+								line-height: 1;
+								font-size: 16px;
+								text-align: center;
+								margin-bottom: 0;
+								strong{
+									color: $blueCTA;
+									display: block;
+									margin-bottom: 5px;
+								}
+							}
+							&.active{
+								background: $grayHover;
+								color: $white;
+								.ribbon-content{
+									color: $white;
+								}
+								.edit-name-ri{
+									span{
+										color: $white;
+									}
+								}
+								.body-group {
+
+									.group-total {
+										.desc-imv {
+											.details-desc-imv {
+												span, p {
+													color: $white;
+												}
+											}
+										}
+									}
+								}
+							}
+
+							@extend %flexbox; @include align-items(center);
+							@extend .clearfix;
+
+							.icon-container{
+								.icon{
+									 color: $grayTelcel1;
+								}
+							}
+							.header-group {
+								position: initial;
+								position: none;
+								width: 30%;
+								.btn-close-config{
+									min-width: auto;
+								    width: 38px;
+								    position: absolute;
+								    top: 5px;
+								    right: 5px;
+
+								    .icon{
+										color: $pink;
+	    								font-size: 25px;
+								    }
+								}
+
+								.title-ri{
+									text-align: center;
+								}
+								.ribbon {
+									@include flexbox; float: left; width: 100%; margin: 0 auto; padding: 12px 10px; border-right: 1px solid $white; text-align: left;
+									@include flex-direction(initial);
+									> span {
+										&.left-icon-ri {
+											font-size: 25px; padding: 0; vertical-align: middle; width: 35px; height: 25px;
+										}
+									}
+									.ribbon-content {
+										display: inline-block; vertical-align: middle; padding: 0;
+										font-size: 16px;
+										font-weight: 300;
+										/* For Firefox */
+										word-break: keep-all;
+
+										/* For Chrome and IE */
+										word-wrap: break-word;
+										-ms-word-break: keep-all;
+
+										white-space: nowrap;
+									    overflow: hidden;
+									    text-overflow: ellipsis;
+									}
+									
+								}
+								.icon-container {
+									position: absolute; right: 10px; top: 0; bottom: 0; margin: auto;
+									button {
+										min-width: auto;
+										min-width: initial;
+										.icon {
+											font-size: 30px;
+										}
+									}
+
+								}
+							}
+							.body-group {
+								width: 64%;
+								border-right: 1px solid $white;
+								@extend %flexbox; @include align-items(center);
+
+								.group-total {
+									width: 60%; display: inline-block; float: left; border-right: 1px solid $white;
+									.desc-imv {
+										.details-desc-imv {
+											p {
+												font-size: 18px; font-family: $robusta; color: $blueCTA; margin: 0;//font-weight: 400;
+											}
+											span {
+												color: $gray7a;
+											}
+										}
+									}
+								}
+								.extend-imv {
+									width: 100%; display: block; text-align: center;
+
+									&.admin-info-block{
+										p{
+											margin-bottom: 0;
+											font-size: 14px;
+											.admin-correo, .no-admin{
+												font-weight: 400;
+											}
+											
+											
+										}
+									}
+									a {
+										font-size: 15px; font-weight: 400; display: block;
+									}
+
+									p{
+										color: $blueTelcel2;
+
+										&.msg-no-admin{
+											color: $blueCTA;
+										}
+
+										&.msg-admin{
+											color: $pink;
+										}
+									}
+
+								}
+
+							}
+						}
+					}
+				}
+			}
+
+			.group-list-block {
+				padding: 55px 0 40px 0; background: $blueTelcel1;
+
+				.rol-element {
+					max-width: 344px;
+					margin: 0 auto 0 21px;
+					height: 100%;
+					position:relative;
+					@extend .clearfix;
+
+					&.general-rol-element{
+						.header-group{
+							.ribbon{
+								background: $greenTelcel1;
+								.ribbon-content{
+									max-width: 86%;
+
+									&.no-edit{
+										max-width: 100%;
+									}
+								}
+							}
+						}
+					}
+					.header-group {
+						position: relative;
+			    		width: 100%;
+			    		background-color: $grayTooltip1;
+			    		 -webkit-border-radius: 0 20px 0 0;
+						-moz-border-radius: 0 20px 0 0;
+						border-radius: 0 20px 0 0;
+						height: 50px;
+						&:before {
+							display: inline-block;
+							content: "";
+							position: absolute;
+							right: 100%;
+							top: 100%;
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 0 16px 16px 0;
+							border-color: transparent #41A091 transparent transparent;
+						}
+
+						.icon-container {
+							width: 13%; margin-left: -5px;
+							@include justify-content(center);  
+							> div {
+								text-align: center;
+							}
+							button {
+								color: $grayTelcel1;
+								min-width: initial;
+								min-width: auto;
+								padding: 0;
+								&:hover {
+									color: $blueTelcel2;
+								}
+							}
+							.icon {
+								font-size: 34px; padding: 5px 0px; display: inline-block;
+							}
+						}
+
+						.name-container
+						{
+							.editar-alias, .btn-guardar-nombre
+							{
+								display: none;
+
+							}
+
+							&.active-edit{
+								.editar-alias, .btn-guardar-nombre
+								{
+									display: block;
+								}
+
+								.ribbon-content, .btn-editar-nombre
+								{
+									display: none;
+								}
+							}
+
+							input[type="text"]{
+								height: 36px;
+   								max-width: 83%;
+   								background-color : $white;
+							}
+						}
+						.settings-ri {
+							position: absolute; top: 0; right: 0; left: 0; z-index: 8; padding: 0; text-align: right; background-color: transparent; width: 100%;
+							-webkit-border-radius: 0 25px 0 0;
+							-moz-border-radius: 0 25px 0 0;
+							border-radius: 0 25px 0 0;
+							@include box-shadow(2px, 3px, 5px, rgba(0, 0, 0, 0.2));
+							display: none;
+
+							.simple{
+								min-height: initial;
+								min-height: auto;
+							}
+							.title-ri {
+								background: $grayTooltip1; padding: 9px 45px 13px 25px; width: 88%; float: none; display: inline-block; margin: 0; text-align: left; position: relative;
+								-webkit-border-radius: 25px 25px 0 0;
+								-moz-border-radius: 25px 25px 0 0;
+								border-radius: 25px 25px 0 0;
+
+								span {
+									vertical-align: middle; font-weight: 400;
+								}
+								.in-text-ri {
+									font-size: 20px; color: $grayTelcel1;
+								}
+								.btn-close-config {
+									position: absolute; top: 0; right: 6px; bottom: 0; padding: 0;
+									min-width: initial;
+									min-width: auto;
+									min-width: 50px;
+									.icon {
+										font-size: 22px; padding-left: 10px; cursor: pointer; color: $grayTelcel1; line-height: 1;
+										
+										width: 45px; height: 45px; padding: 10px;
+										&:hover {
+											color: $blueTelcel2;
+										}
+										&.io-AccordionUpNeg,&.io-Close {
+											color: $pink;
+										}
+									}
+								}
+							}
+							.cont-set-ri {
+								padding: 0; margin: 0 auto;
+							}
+							.title-mod {
+								display: none;
+							}
+							.submenu-ri {
+								text-align: left; background: $white; padding: 10px;
+								.first-bloq-ri, .second-bloq-ri {
+									button, .simple {
+										margin-left: 0; width: 100%;
+										span {
+											vertical-align: middle; font-weight: 400;
+										}
+										&:hover {
+											span {
+												color: $grayTelcel1;
+											}
+											.in-text-fbr {
+												text-decoration: underline;
+											}
+										}
+									}
+									.icon {
+										font-size: 20px; color: $gray5a;
+									}
+									.in-text-fbr {
+										margin-left: 10px;
+									}
+								}
+								.first-bloq-ri {
+									.msg-no-admin{
+										display: none;
+										color: $blueCTA;
+										font-weight: 300;
+										@include align-items(center);
+										width: 100%;	
+
+										span{
+											width:100%;
+											/* For Firefox */
+											word-break: keep-all;
+
+											/* For Chrome and IE */
+											word-wrap: break-word;
+											-ms-word-break: keep-all;
+											display: inline-block;
+										}
+
+									}
+
+
+									.msg-admin{
+										display: none;
+										color: $pink;
+										font-weight: 300;
+										@include align-items(center);
+										width: 100%;
+										
+										.icon{
+											font-size: 30px;
+											margin-right: 6px;
+											color: $pink;
+											max-width: 15%;
+										}
+										span{
+											&:last-child{
+												max-width: 85%;
+												/* For Firefox */
+												word-break: keep-all;
+
+												/* For Chrome and IE */
+												word-wrap: break-word;
+												-ms-word-break: keep-all;
+												display: inline-block;
+											}
+										}
+									}
+
+								}
+								.second-bloq-ri {
+
+								}
+
+								.bton{
+									margin-bottom: 0;
+								}
+							}
+						}
+						.ribbon {
+							width: 85%;
+							top: 0px;
+							left: -16px;
+							font-size: 16px;
+							position: relative;
+							background: $green2;
+							color: #fff;
+							text-align: center;
+							padding: 8px 0;
+							margin: 0;
+							max-height: 50px;
+							-webkit-border-radius: 0 25px 0 0;
+							-moz-border-radius: 0 25px 0 0;
+							border-radius: 0 25px 0 0;
+							@include box-shadow( 1px, 2px, 5px, rgba(50, 50, 50, 0.75) );
+
+							.icon-container{
+								span{
+									color: $grayTelcel1;
+								}
+							}
+
+							.icon{
+								font-size:30px;
+							}
+
+							.left-icon-ri {
+								padding: 0; font-size: 28px; border-right: 1px solid $white;
+								@include opacity(0.9);
+								@include flexbox;
+								@include align-content(center);
+								@include align-items(center);
+								@include justify-content(center);
+							}
+
+							.ribbon-content {
+								text-align: left;
+								padding: 0 10px;
+								font-size: 20px;
+								line-height: 1.2;
+								text-align: center;
+								width: 100%;
+								white-space: nowrap;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								max-width: 86%;
+
+								&.no-edit{
+									max-width: 100%;
+								}
+							}
+							.edit-name-ri {
+								font-size: 24px; padding: 2px 4px; cursor: pointer; color: $grayTooltip1;
+								.icon {
+									font-size: 20px;
+
+									&.io-save-doc{
+										font-size:22px;
+										margin: 0 6px;
+										display: block;
+									}
+								}
+								&:hover {
+									color: $white;
+								}
+							}
+
+						}
+
+					}
+
+					.body-group{
+						padding: 15px 10px 0;
+						background-color: $white;
+						position: relative;
+						height: auto;
+						min-height: 84px;
+						>p{
+							font-weight: 400; line-height: 1.2;
+						}
+					}
+
+					&.changed-block{
+						-ms-transition: all 1s ease-in-out;
+				        -o-transition: all 1s ease-in-out;
+				        -moz-transition: all 1s ease-in-out;
+				        -webkit-transition: all 1s ease-in-out;
+				        transition: all 1s ease-in-out;
+
+				        .ribbon{
+				        	-ms-transition: all 1s ease-in-out;
+					        -o-transition: all 1s ease-in-out;
+					        -moz-transition: all 1s ease-in-out;
+					        -webkit-transition: all 1s ease-in-out;
+					        transition: all 1s ease-in-out;
+				        }
+		
+					}
+				}
+				.mosaico-view {
+					padding: 0;
+					@include flexbox;
+					@include flex-wrap(wrap);
+					> div {
+						padding: 0 5px;
+					}
+					.item-mv {
+						margin-bottom: 30px;
+						.body-group {
+							.usuarios-total {
+								line-height: 1;
+								font-size: 16px;
+								text-align: center;
+								strong{
+									color: $blueCTA;
+								}
+							}
+							.desc-imv {
+								@extend .clearfix;
+								text-align: center;
+								@include flexbox;
+								@include justify-content(center);
+								.details-desc-imv {
+									padding: 0 5px; display: inline-block; line-height: 1.2; width: initial; float: initial;
+									p {
+										display: inline-block; font-weight: 400; color: $blueCTA; margin: 0 auto;
+									}
+									span {
+										padding: 0 2px;
+									}
+								}
+							}
+							.extend-imv {
+								display: block;
+								font-weight: 400;
+								font-size: 16px;
+								margin: auto;
+								padding: 5px 5px 15px;
+								text-align: center;
+
+								p{
+									color: $blueCTA; font-size: 16px; margin:0;
+								}
+							}
+						}
+					}
+					.add-item-mv {
+						@extend %flexbox;
+						@include align-items(center);
+						@include justify-content(center);
+						button {
+							padding: 0;
+						}
+						.add-group-btn-block {
+							background-color: transparent;
+							span{
+								&:last-child{
+									display: block;
+									margin: 10px auto;
+								}
+								color: $blueTelcel2;
+								margin: 0 auto;
+							}
+							.icon{
+								background: $blueTelcel2;
+								color: $white;
+								font-size: 30px;
+								border-radius: 100%;
+								width: 100px;
+								height: 100px;
+								line-height: 100px;
+								&:before {
+									display: inline-block;
+								}
+							}
+							&:hover {
+								span{
+									&.icon {
+										background: $blueTelcel2;
+										&:before {
+										}
+									}
+									&:last-child{
+										color: $blueTelcel2;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.red-privada-block{
+		.add-item-usuario{
+			max-width: 320px;
+			float: none;
+		}
+		#info-content{
+			.modal-mte{
+				.notif-bloq .inner-nb{
+				background-color : $white;
+				&#error-autogestion-block{
+						padding: 0;
+					}
+				}
+			}
+			
+			.form-general-v2{
+				// .red-step{
+				// 	&:first-child{
+				// 		.padding-20{
+				// 			padding-bottom: 20px;
+				// 		}
+				// 	}
+				// }
+
+				#autogestion-btn{
+					margin-bottom: 0;
+				}
+
+	        	.carga-masiva-last-step{
+
+		            display: none;
+		            padding: 20px;
+		           	&.only-upload-file{
+		           		background-color : $blueTelcel1;
+		           		#componente-ingresar-lineas{
+		           			.componente-btn-block{
+		           				display: none;
+		           			}
+		           		}
+		            }
+
+		            &.active{
+		              display: block;
+
+		            }
+
+		            .lineas-archivo{
+		            	display : block;
+		            }
+	          	}
+	          
+		    	.componente-lineas-block{
+		            .triangle-tooltip{
+		              padding: 10px 20px;
+		            }
+		        }
+
+		        .motivos-autogestion-container{
+		        	//margin-bottom: 0px;
+		        }
+
+
+	        }
+		}
+		
+
+		#autogestion-form{
+			&.control-de-costos{
+				.btn-container{
+					padding-top: 0;
+				}
+			}
+		}
+		#listado-desvio-llamadas{
+			.linea-batch{
+				.content-item-block {
+					> div{
+						&:first-child {
+							p{
+								padding: 0 10px !important;
+							}
+						}
+					}
+				}
+			}
+		}	
+
+		.modal-mte {
+			.content-mod {
+				.in-cont-mod {
+					.line-field-mod {
+						.input-double-dots {
+							.data-write{
+								display: inline;
+							}
+						}
+					}
+				}
+			}
+
+			&#modal-marcacion-corta{
+				.content-mod {
+					.in-cont-mod {
+						.line-field-mod {
+							&.marcacion-corta-input-container{
+								.error-dd{
+									text-align: left;
+								}
+							}
+							.input-double-dots {
+								.data-write{
+									margin: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#listado-abono-saldo{
+			.more-info{
+				.p-value{
+					font-weight: 300 !important;
+				}
+			}
+
+			.btn-ver-detalle{
+				.icon{
+					&:before{
+						font-size: 30px !important;
+						@include flexbox;
+						@include align-self(center);
+					}
+
+					&.i-angle-down{
+
+					}
+
+					&.i-angle-up{
+						display: none;
+					}
+				}
+			}
+
+			.linea-batch{
+				&.open-element{
+
+					.more-info{
+						display: block !important;
+					}
+					.btn-ver-detalle{
+						.icon{
+
+							&.i-angle-down{
+								display: none;
+							}
+
+							&.i-angle-up{
+								@include flexbox;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+		
+
+		.ct-pagination{
+			ol{
+				margin-bottom: 0;
+			}
+		}
+
+		#btn-agregar-contacto{
+
+			&:disabled{
+				cursor: not-allowed;
+			}
+		}
+		.red-contactos-table-block{
+			.general-table{
+				>div{
+					max-width: 320px;
+					width: 100%;
+					margin : 0 auto;
+				}
+				
+			}
+
+			#current-lista-block{
+				margin-top: 20px;
+				margin-bottom: 5px;
+				text-align: center;
+
+				.general-number-container{
+					margin-bottom: 0;
+				}
+				p{
+					margin: 0;
+					strong{
+						font-size: 18px;
+					}
+				}
+			}
+
+			.general-table{
+				overflow: visible;
+				padding: 20px 0 0 0;
+			}
+
+			.header-block {
+				strong{
+					font-size: 16px;
+				}
+
+			}
+
+			.linea-batch{
+				position: relative;
+				border-bottom: 0;
+
+				&:last-child{
+					padding-bottom: 0;
+				}
+				.data-write{
+					width: 100%;
+					margin: 0;
+				}
+
+				.btn-container{
+					position: absolute;
+					right: -22px;
+				    top: 16px;
+				    >div{
+				    	padding: 0 5px;
+				    	@include flexbox;
+						@include align-self(center);
+						cursor: pointer;
+
+						&.delete-container{
+							padding : 2px 5px;
+						}
+				    }
+				}
+				.edit-container{
+
+					.icon{
+				    	font-size: 24px;
+					    color: $blueTelcel2;
+					    cursor: pointer;
+				    }
+				}
+
+				.delete-container{
+					
+					padding-top: 2px;
+				    .icon{
+				    	font-size: 20px;
+					    color: $pinkTelcel1;
+					    cursor: pointer;
+				    }
+				}
+			}
+		}
+		.table-servicios{
+			background-color: $blueTelcel1;
+			float: none;
+			.servicios-box{
+				border-bottom: 2px solid $white;
+				padding: 15px 0px;
+
+				.servicios-name-block{
+					@include flexbox;
+					@include align-items(center);
+					p{
+						margin-bottom: 0;
+						text-align: left;
+					}
+
+					.icon-container{
+						padding: 0;
+						@include flexbox;
+						@include align-items(center);
+						.icon{
+							font-size: 28px;
+							color: $grayAux;
+						}
+					}
+				}
+
+				.servicios-switches-box{
+					border-left: 2px solid $white;	
+					.switch-container{
+						@include flexbox;
+						@include justify-content(space-around);
+						@include align-items(center);
+						label{
+							margin: 0 auto;
+						}
+
+						.icon{
+							font-size: 25px;
+
+							&.locked{
+								color: $grayDark;
+							}
+
+							&.unlocked{
+								color: $blueTelcel2;
+							}
+
+							&.disabled{
+								color: $grayHover;
+							}
+						}
+					}
+				}
+
+			}
+
+			+.componente-submit-block{
+				margin: 30px auto 0;
+				@include flexbox;
+				@include justify-content(center);
+				@include align-items(center);
+				a{
+					text-align: center;
+				}
+				button{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.detalle-confirmacion{
+			&.double-element{
+				>div{
+					>div{
+						&:first-child{
+							border-right: 1px solid $white !important;
+						}
+
+						p{
+							&:last-child{
+								color: $grayTextos;
+							}
+						}
+					}
+				}
+			}
+
+			&.triple-element{
+				>div{
+					>div{
+						&.middle-element{
+							border-right: 1px solid $white !important;
+							border-left: 1px solid $white !important;
+						}
+
+						p{
+							&:last-child{
+								color: $grayTextos;
+							}
+						}
+					}
+				}
+			}
+		}
+		.no-margin-bottom{
+			margin-bottom: 0;
+		}
+
+		.red-step{
+			.btn-container{
+				padding: 20px 20px 0 20px;
+				>button{
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.monto-input-block{
+			padding: 20px 10px;
+			.general-input-container{
+				&:first-child{
+					text-align: right;
+				}
+			}
+			.data-write{
+				margin-bottom: 0;
+			}
+		}
+
+		#listado-sin-autogestion-container{
+			padding-bottom: 0;
+			.listado-mostrar-ocultar{
+				padding-top: 20px;
+				>p{
+					a{
+						margin: 0;
+					}
+				}
+
+				.listado-container{
+					padding-top: 10px;
+					margin-bottom: 0;
+				}
+			}
+			
+		}	
+
+		.readonly{
+			font-size: 15px;
+		    display: block;
+		    line-height: 1.2;
+		    padding: 0 10px;
+
+		}
+		.general-input-container{
+			margin-bottom: 0;
+			label{
+				margin-bottom: 0;
+			}
+		}
+		.red-step{
+			>.container{
+				&.padding-20{
+					padding-bottom: 0;
+				}
+			}
+		    .input-block{
+		    
+		    	.general-input-container{
+		    		margin-bottom: 10px;
+		    		.data-write{
+		    			margin-bottom: 0;
+		    		}
+		    	}
+		    }
+		}
+		.header-info-movimientos{
+
+			&.has-double-buttons{
+				> div {
+					>a{
+						width: 50%;
+					}
+					&:first-child{
+						border-right: 0px !important;
+					}
+
+					&.align-space-around{
+						position: relative;
+						&:after{
+							content: "";
+							display: block;
+							height: 100%;
+							width: 1px;
+							background-color: $white;
+							position: absolute;
+							right: -50%;
+						    position: absolute;
+						    left: -50%;
+						    margin: 0 auto;
+
+						}
+					}
+
+					.btn-general-carga-masiva{
+						color: $blueTelcel2;
+					}
+
+					button{
+						&.btn-general-carga-masiva{
+							padding:0;
+							width: 50% !important;
+							background-color: transparent;
+							min-width: 1px;
+
+							span{
+								display: block;
+								font-weight: 300;
+								&:last-child{
+									font-size: 14px;
+								}
+							}
+						}
+					}
+				}
+			}
+			
+		}
+		.align-space-around{
+			@include justify-content(space-around);
+		}
+
+		.btn-modificar-contacto, .btn-marcacion-corta, .btn-modificar-desvio{
+			color: $blueTelcel2;
+			background-color: transparent;		
+		}
+
+	}
+
+	.roaming-fecha-step{
+		.container, .fecha-container{
+		    border-bottom: 2px solid $blueTelcel1;
+		    .confirmar-fechas-roaming{
+				@include flexbox;
+				@include align-items(flex-end);
+				padding-bottom: 30px;
+				.bton{
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.btn-actualizar-fecha{
+			display: none;
+		}
+
+		&.enable-editing-mode{
+			.btn-actualizar-fecha{
+				display: block;
+			}
+
+			.btn-enable-edit{
+				display: none;
+			}
+		}
+
+		.fecha-container{
+			.input{
+                &.error{
+                  border: 1px solid $purple2;
+                  background: $pink2;
+                }
+                  
+              }
+              .error-fecha{
+                display: block;
+                max-width: 100%;
+                width: auto;
+                text-align: left;
+                color: $pinkTelcel1;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 18px;
+                margin: 5px 0 0;
+                position: absolute;
+                padding: 0;
+                bottom: -22px;
+                left: initial;
+                left: auto;
+              }
+		}
+	}
+	
+
+	.terminos-container-modal{
+		.has-error{
+			.data-write{
+				margin-bottom: 0;
+			}
+			.error-terminos, .error-lineas{
+                display: block;
+                max-width: 100%;
+                width: auto;
+                text-align: left;
+                color: $pinkTelcel1;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 18px;
+                margin: 5px 0;
+                padding: 0;
+                
+          }
+		}
+	}
+
+	.subtext{
+		.btn-autogestion-simular{
+			color: $blueTelcel2;
+			cursor : pointer;
+			background-color: transparent;
+			max-height: 0;
+			font-size: 24px;
+			font-weight: 300;
+			padding: 0;
+		}
+	}
+
+	&.roaming-block{
+
+		.a-show-container{
+			text-align: center;
+			padding: 20px;
+			span{
+				color: $blueTelcel2;
+				cursor : pointer;
+				text-decoration: underline;
+			}
+		}
+
+		#destinos-search-block{
+			.btn-limpiar-busqueda{
+				margin-top : 15px;
+			}
+		}
+		#roaming-servicios-error{
+			.error{
+				width: 100%; 
+				display: block; 
+				color: $pinkTelcel1; 
+				text-align: left; 
+				padding: 0 20px; 
+			}
+		}
+		#servicios-activados{
+			.fecha-data{
+				font-size: 14px;
+				color : $grayTextos;
+			}
+		}
+		.destino-input-container{
+			position : relative;
+			.ui-autocomplete{
+				max-height: 180px;
+				position: absolute !important;
+				top: 40px !important;
+			}
+		}
+		#cobertura-form{
+			.destinos-multiple {
+				.element-input-block {
+					.icons-container{
+						right: -30%;
+					}
+				}
+			}
+
+			.btn-container{
+				border-bottom : 0;
+				margin: 10px auto;
+				a{
+					display: block;
+				}
+			}
+
+			#cobertura-result-container{
+				padding-bottom: 0;
+			}
+			.general-table{
+				padding-bottom : 0;
+			}
+
+			.btn-agregar-destino-general{
+				margin-bottom: 10px;
+			}
+
+			.has-error{
+				.data-write{
+					margin-bottom: 8px;
+				}
+				
+				div{
+					&.error-dd{
+						font-weight: 300;
+						margin: 10px auto 0px;
+					    color: $pink;
+					    font-weight: 300;
+					    font-size: 14px;
+					    line-height: 18px;
+					    text-align: left;
+					}
+				}
+				
+			}
+
+			.roaming-step{
+				&:first-child{
+					padding-bottom: 0;
+
+					.padding-10{
+						padding-bottom: 0;
+						button{
+							margin-bottom: 0;
+						}
+					}
+				}
+
+			}
+
+			#cobertura-result-container{
+				display: none;
+				margin-top: 30px;
+			}
+
+			.btn-limpiar-busqueda{
+				display: none;
+			}
+
+			.destinos-multiple{
+				.icons-container{
+					.icon{
+						&.btn-delete{
+							left: 0;
+	    					right: initial;
+	    					right : auto;
+	    					background: transparent;
+						    min-height: 0;
+						    min-width: 0;
+						    padding: 0;
+						}
+					}
+				}
+			}
+			
+			&.searching{
+				#cobertura-result-container{
+					display: block;
+					visibility: hidden;
+				}
+			}
+
+			&.result{
+				#cobertura-result-container{
+					display: block;
+					visibility: visible;
+				}
+
+				button[type="submit"]{
+					display: none;
+				}
+
+				.btn-limpiar-busqueda{
+					display: block;
+				}
+			}
+		}
+		
+
+		.name-line-container{
+			border-top: 2px solid $white;
+			margin: 10px 0 0;
+			padding: 15px 0 5px;
+			p{
+				@include flexbox;
+				@include align-items(center);
+				@include justify-content(center);
+				margin:0;
+				text-align: center;
+				width: 100%;
+			}
+			
+			.icon{
+				font-size: 25px;
+			}
+			.txt{
+				font-size: 16px;
+			}
+		}
+
+		.swiper-container{
+            
+	        @include flexbox;
+	        .tab-content{
+	          
+	          @include flexbox;
+	          .tab-pane{
+	            
+	            //min-height: 100%;
+	            @include align-items(initial);
+	            >.container{
+	              >div{
+	                max-width: 100%;
+	              }
+	            }
+	          }
+	        }
+	    }
+	    .info-secondary-tabs{
+          padding: 0;
+          position: relative;
+          >.container{
+            padding: 0;
+            >.row{
+              width: 100%;
+              margin : 0;
+            }
+            .general-table{
+              padding: 20px 0;
+            }
+            .inn-sec-tabs{
+              padding: 0;
+              .tab-content{
+                padding-right: 0;
+                padding-left: 0;
+              }
+            }
+          }
+        }
+        .tabs-block{
+          @include linearGradient(#ffffff, $blueTelcel1, 50%);
+        }
+        .tab-pane{
+          margin: 0 auto;
+          width: 100%;
+           &.swiper-slide{
+              .error-aux{
+                padding: 0;
+              }
+            }
+          .container{
+            margin: 0 auto;
+            padding: 0 10px;
+
+            .element-input-block{
+            	.data-write{
+            		margin-bottom: 0;
+            	}
+            }
+
+            .extra-info{
+            	padding: 0 20px 20px;
+            	.blue-txt{
+            		color: $blueCTA;
+            		font-weight: 400;
+            		font-size: 20px;
+            		margin-bottom: 20px;
+            	}
+            }
+            
+          }
+          .title-mobile{
+            width:100%;
+            top: 0px;
+            position: absolute;
+            left:0;
+            h3{
+              color: $blueCTA;
+              font-size: 20px;
+              padding: 10px 20px;
+              font-weight: 300;
+              text-align: center;
+              border-bottom: 3px solid $blueTelcel2;
+              margin: 0 auto;
+              max-width:90%;
+
+            }
+        
+          }
+          .row-subtotal-details {
+            .h5{
+              font-weight: 300;
+              font-size: 20px;
+            }
+            .description-operacion{
+              color: $grayTextos;
+            }
+
+          }
+          .notificacion-info{
+            h4{
+              font-size: 24px;
+              // margin: 20px auto;
+            }
+
+            
+            >div{
+              >div{
+                .value{
+                  font-size: 22px;
+                }
+
+                .name{
+                  color: $grayTextos;
+                }
+              }
+            }
+
+
+          }
+          &.swiper-slide {
+            display: block;
+            width: 100%;
+            background-color: $blueTelcel1;
+            padding: 0 20px;
+
+            .input-wrapper{
+              padding:0;
+              .element-input-block, .line-field-mod{
+                padding: 0;
+              }
+              .input-double-dots{
+                padding: 0;
+
+                .data-write{
+                  padding: 0;
+                }
+              }
+            }
+            form{
+              width: 100%;
+              padding: 0;
+            }
+          }
+        }
+        .link-sec-tabs{
+          @include flexbox;
+          @include justify-content(center);
+          padding:0;
+          ul{
+            padding: 0;
+             @include flexbox;
+              @include align-content(center);
+              li{
+                cursor: pointer;
+                list-style: none;
+                a{
+                  @include flexbox;
+                  @include justify-content(center);
+                  @include align-items(center);
+                  text-align: center;
+                  width: 100%;
+                  height: 100%;
+                  border-bottom: 3px solid rgba(0,0,0,0);
+                }
+                &:hover, &.active{
+                  a{
+                    border-bottom: 3px solid $blueTelcel2;
+                  }
+                }
+              }
+
+            
+          }
+        }
+
+        .heading-opc-tab{
+          padding: 20px 0;
+          p{
+            margin: 0;
+            font-size: 18px;
+            color: $grayTextos;
+          }
+        }
+
+        .form-tab{
+          .extra-info{
+              p{
+                font-size: 14px;
+                color: $grayTextos;
+              }
+            }
+
+            .error-aux {
+              label{
+                &.error{
+                  text-align: left;
+                  width: 100%;
+                  color: $pinkTelcel1;
+                  font-weight: 300;
+                  font-size: 14px;
+                  line-height: 18px;
+                }
+              }
+            }
+          .line-field-mod{
+            @include flexbox;
+            @include justify-content(center);
+            @include align-items(center);
+            margin: 10px auto;
+
+            
+            &.one-line{
+              @include flex-direction(column);
+              .label-double-dots{
+                label{
+                  text-align: center;
+                  margin-bottom: 20px;
+                }
+              }
+
+              .input-double-dots{
+                .data-write{
+                  margin-bottom: 20px;
+                }
+              }
+            }
+
+            .label-double-dots{
+              label{
+                display: block;
+                text-align: right;
+                margin: 0;
+
+              }
+            }
+
+            .input-double-dots{
+              .data-write{
+                margin-bottom: 0;
+                label{
+                  &.error{
+                    text-align: left;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .destinos-confirm-block, .destinos-multiple{
+        	padding: 0 0 30px 0;
+        	.icon-container{
+        		.icon{
+        			font-size: 100px;
+        			color: $blueTelcel2;
+        			margin: 0 auto;
+        			display: block;
+        			line-height: 68px;
+        		}
+
+        		.h3{
+        			margin-top: 5px;
+        		}
+        	}
+
+        	p{
+        		margin-bottom: 25px;
+        	}
+        	.btn-container{
+        		button{
+        			display: block;
+        			margin: 0 auto;
+
+        			&.btn-agregar-destino{
+        				margin-bottom: 15px;
+
+        				&:disabled{
+        					cursor: not-allowed;
+        				}
+        			}
+
+        		}
+        		
+        	}
+        	.element-input-block{
+        		position: relative;
+        		padding: 0;
+        		.general-number-container{
+        			margin-bottom: 10px;
+        			padding: 0;
+
+        			.error-destino{
+        				font-weight: 300;
+						margin: 10px 0 0;
+					    color: $pink;
+					    font-weight: 300;
+					    font-size: 14px;
+					    line-height: 18px;
+					    display : block;
+					    text-align: left;
+        			}
+        			.ui-combobox{
+        				@include flexbox;
+        				width: 100%;
+
+        				input{
+	        				height: 40px;
+						    padding: 6px 12px;
+						    font-size: 15px;
+						    color: $grayTelcel1;
+						    border-radius: 0;
+						    width: 85%;
+						    border: 1px solid $blueTelcel1;
+						    font-weight: 300;
+						}
+						button{
+							width: 15%;
+							min-width: 0;
+							position : static;
+							background-color : $grayTooltip1;
+
+							&:after{
+								content: "\69";
+							    font-family: "icons" !important;
+							    font-style: normal !important;
+							    font-weight: normal !important;
+							    font-variant: normal !important;
+							    text-transform: none !important;
+							    speak: none;
+							    line-height: 1;
+							    -webkit-font-smoothing: antialiased;
+							    -moz-osx-font-smoothing: grayscale;
+							    height: 17px;
+							    width: 17px;
+							    line-height: 1;
+							    display: block;
+							    pointer-events: none;
+							    position: absolute;
+							    margin: auto;
+							    left: auto;
+							    top: 0;
+							    bottom: 0;
+							    right: 5.5%;
+							    font-size: 15px;
+							    text-align: center;
+							    color: #5F7175;
+							    text-align: center;
+							}
+						}
+        			}
+        		}
+
+        		.icons-container{
+        			padding: 0;
+        			position: absolute;
+        			right: -25%;
+        			.icon{
+        				font-size: 38px;
+
+        				&.btn-change{
+        					color: $blueTelcel2;
+        					cursor: pointer;
+        					background-color: transparent;
+        					padding:0;
+        					min-width: 0;
+        					min-height: 0;
+
+        					&:disabled{
+        						cursor: not-allowed;
+        					}
+        				}
+
+        				&.btn-delete{
+        					font-size: 22px;
+						    color: $pinkTelcel1;
+						    position: absolute;
+						    top: 8px;
+						    right: -28px;
+						    cursor: pointer;
+						    background: transparent;
+						    min-height: 0;
+						    min-width: 0;
+						    padding: 0;
+        				}
+        				display: inline-block;
+        				color: $grayTextos;
+
+        				&.show-more-details{
+        					margin: 0;
+        					.description{
+        						padding: 0;
+        						p{
+	        						margin-bottom: 0;
+	        						font-size: 14px;
+	        					}
+        					}
+
+        					.triangle-tooltip{
+        						min-width: 200px;
+        						top: 48px;
+    							right: -80px;
+        					}
+        					
+        				}
+        			}
+        		}
+        	}
+        	.btn-container{
+        		p{
+	        		margin-bottom: 15px;
+	        	}
+        		a{
+        			font-weight: 400;
+        		}
+
+        		.bton{
+
+        		}
+        	}
+        }
+
+        .img-txt-block{
+        	>div{
+        		@include flexbox;
+        		@include align-items(center);
+        	}
+        	.img-container{
+        		img{
+        			display: block;
+        			margin: 0 auto;
+        			max-width: 100%;
+        			height: auto;
+        		}
+        	}
+
+        }
+
+        #roaming-tabs{
+
+        	#op3{
+        		.heading-opc-tab{
+        			padding-bottom: 0;
+        		}
+        	}	
+        	.faq-contacto-block{
+        		padding: 0;
+        		.faq-container{
+        			padding: 0 0 20px 0;
+        		}
+        	}
+        	.list-container{
+        		padding-bottom : 20px;
+        		>div{
+        			@include flexbox;
+        			@include align-items(center);
+        			padding: 0px 10px;
+        			margin-bottom: 20px;
+        			strong{
+        				margin-bottom : 0;
+        			}
+        			.number-container{
+	        			span{
+	        				b{
+	        					color : $blueCTA;
+	        				}
+
+	        				border-color : $blueCTA;
+	        			}
+	        		}
+        		}
+        	}
+        }
+        .list-container{
+			.btn-container{
+				a{
+					display: block;
+					margin: 0 auto;
+					max-width: 180px;
+					width: auto;
+				}
+			}
+			>div{
+				padding: 20px 10px;
+				.number-container{
+					span{
+						@include flexbox;
+						@include justify-content(center);
+						@include align-items(center);
+						margin: 0 auto;
+						width: 60px;
+						height: 60px;
+						border-radius: 100%;
+						border: 4px solid $blueTelcel1;
+						text-align: center;
+						font-size: 30px;
+						color: $black;
+						b{
+							margin-top: -4px;
+							font-weight: 300;
+						}
+
+					}
+				}
+
+				.txt-container{
+					strong{
+						font-size: 20px;
+						margin-bottom: 10px;
+						display: block;
+						font-weight: 300;
+					}
+					p{
+						font-size: 18px;
+						margin-bottom:0;
+					}
+				}
+			}
+		}
+
+		.contactanos-block{
+			>div{
+				padding: 5px 0;
+			}
+			.label-container{
+				text-align: right;
+			}
+
+			strong{
+				color : $blueCTA;
+			}
+			p, strong{
+				margin-bottom: 0;
+				font-size: 16px;
+				font-weight: 300;
+			}
+		}
+
+		.faq-contacto-block{
+			padding: 20px 0;
+
+			.faq-container{padding: 10px 0 20px;}
+			.faq-element{
+				border-bottom: 2px solid $white;
+
+				&.open{
+					.question-container{
+						background-color: $white;
+
+						p{
+							color: $black;
+						}
+
+						.icon-container{
+							.icon{
+								opacity: 1;
+								
+								&.close-icon{
+									display: none;
+								}
+
+								&.open-icon{
+									display: block;
+								}
+							}
+
+						}
+					}
+
+					.answer-container{
+						display: block;
+
+					}
+				}
+				>div{
+					padding: 10px 5px;
+
+					.icon{
+						font-size: 30px;
+						color: $blueTelcel2;
+					}
+				}
+				.question-container{
+					cursor: pointer;
+					@include flexbox;
+					@include align-items(center);
+					p{
+						font-size: 18px;
+						margin-bottom: 0;
+					}
+
+					.icon-container{
+						@include flexbox;
+						@include align-items(center)	
+						.icon{
+							opacity: 0.8;
+							display: block;
+							margin: 0 auto;
+							&.open-icon{
+								display: none;
+							}
+						}
+					}
+					
+					
+				}
+
+				.answer-container{
+					display: none;
+					font-size: 18px;
+					padding: 10px 20px;
+					 p{
+					 	font-size: inherit;
+					 }
+					ul{
+						padding: 0;
+						list-style: none;
+						li{
+							&:before {
+							  content: "• ";
+							  color: $blueTelcel2;
+							  font-size: 24px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.marca-a-mexico-block{
+			padding-top: 10px;
+			.extra-info{
+				margin-top: 20px;
+				p{
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.elements-3-block{
+			@include flexbox;
+			@include align-items(center);
+			padding: 10px 0;
+
+			&.horizontal-block{
+				padding: 20px 10px 40px;
+				>div{
+					@include flex-direction(column);
+					.icon-container{
+						.icon{
+							font-size: 50px;
+						}
+					}
+					>div{
+						text-align: center;
+						strong{
+							font-weight: 300;
+							font-size: 20px;
+							display: block;
+							margin: 10px auto 2px;
+						}
+					}
+				}
+			}
+
+			>div{
+				padding: 0;
+			}
+			.icon-container{
+				padding: 0;
+				text-align: center;
+				.icon{
+					font-size: 40px;
+					color: $blueTelcel2;
+					
+				}
+			}
+
+			strong, p{
+				font-size: 18px;
+			}
+
+			p{
+				margin-bottom: 0;
+			}
+		}
+
+		.roaming-step{
+			.general-table{
+	        	&.add-borders-simple{
+	          		&.white-borders{
+	          			.header-block{
+	          				strong{
+	          					font-size: 16px;
+	          				}
+	          			}
+	            		.table-main-block{
+	              			>div{
+			                	border-color: $white;
+			                	>div{
+			                		border-color: $white;
+			                		@include align-items(center);
+			                		.icon{
+			                			font-size: 25px;
+			                			color: $greenTelcel1;
+			                		}
+
+			                		.bton{
+			                			margin-bottom: 0;
+			                		}
+
+			                		.label{
+			                			display: none;
+			                		}
+			                	}
+			              	}
+			            }
+			        }
+			    }
+			}
+		}
+		.roaming-ofertas{
+
+			.roaming-otras-ofertas{
+				padding: 0;
+
+				.destino-sin-paquetes{
+					width: 100%;
+				}
+			}
+			.roaming-oferta-block{
+				margin: 10px auto;
+
+				&.legales-visible{
+					.legales-block{
+						display: block;
+					}
+
+					.mostrar-legales{
+						display: none;
+					}
+				}
+
+				.legales-block{
+					display: none;
+
+					.btn-legales{
+						margin: 0 auto 10px;
+						padding:0;
+					}
+					.registro-txt{
+						padding: 0;
+						p{
+							font-size: 14px;
+							span{
+								color: $blueTelcel2;
+							}
+
+							strong{
+								color: $grayAux;
+							}
+						}
+						
+					}
+				}
+
+				&:first-child{
+					margin-top: 0;
+				}
+
+				.btn-container{
+					.btn-agregar-paquete{
+						display: block;
+					}
+
+					.btn-quitar-paquete{
+						display: none;
+					}
+				}
+
+				.roaming-fecha-step{
+					display: none;
+				}
+
+				&.paquete-seleccionado{
+
+					.btn-container{
+						.btn-agregar-paquete{
+							display: none;
+						}
+
+						.btn-quitar-paquete{
+							display: block;
+						}
+					}
+
+					.roaming-fecha-step{
+						display:block;
+					}
+				}
+			}
+
+			
+		}
+		.roaming-oferta-block{
+			display: block;
+
+			.btn-legales{
+				padding: 10px 0 0;
+				display: inline-block;
+				font-size: 15px;
+				font-weight: 400;
+				color : $blueTelcel2;
+				cursor: pointer;
+			}
+
+			.roaming-head{
+				@include flexbox;
+				@include align-items(center);
+				@include justify-content(space-between);
+				margin-bottom: 5px;
+				.title{
+					font-size: 20px;
+					font-weight: 300;
+				}
+
+				a{
+					font-weight: 400;
+					text-align: center;
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+
+			.roaming-oferta{
+				@include flexbox;
+				border-top: 2px solid $blueTelcel1;
+				border-bottom: 2px solid $blueTelcel1;
+				padding: 20px 0;
+				padding: 0;
+
+				>div{
+					@include flexbox;
+				}
+				.recomendado-block{
+					position: relative;
+					.recomendado{
+						background-color: $purple;
+						text-align: center;
+						padding: 5px 10px 0;
+						margin: 0 auto;
+
+						&:after{
+							content: "";
+							display: block;
+							position: absolute;
+							left: 0;
+							bottom: -12px;
+							width: 0; 
+							height: 0; 
+							border-left: 50px solid transparent;
+							border-right: 50px solid transparent;
+							border-top: 12px solid $purple;
+						}
+						strong{
+							color: $pink2;
+							display: block;
+							font-size: 16px;
+							line-height: 1.1;
+						}
+						span{
+							color: $white;
+							display: block;
+							font-size: 14px;
+							font-weight: 400;
+
+							&.ahorro{
+								font-weight: 400;
+								font-size:20px;
+								line-height: 1.1;
+							}
+						}
+						.to-uppercase{
+							text-transform: uppercase;
+						}
+					}
+				}
+				
+				.bg-blue{
+					background-color: $blueTelcel2;
+					border-right: 0;
+					.oferta-box{
+						.element-name{
+							color: $white;
+						}
+
+						&:last-child{
+							border-right: 0px;
+						}
+					}
+				}
+
+				.oferta-box{
+					@include flexbox;
+					@include align-items(center);
+					@include flex-direction(column);
+					border-right: 2px solid $blueTelcel1;
+					
+					.io-ClaroVideos{
+						font-size: 60px;
+						line-height: 32px;
+					}
+
+					.redes-sociales{
+						.icon{
+							font-size: 30px;
+							color: $blueCTA;
+						}
+					}
+				}
+
+				.btn-container{
+					@include flexbox;
+					@include align-items(center);
+					@include flex-direction(row);
+					border-right: 0px;
+				}
+
+				.bton{
+					margin-bottom: 0;
+				}
+
+				.big-txt{
+					display: block;
+					color: $blueCTA;
+					font-size: 24px;
+				}
+
+				.element-name{
+					display: block;
+					color: $grayTextos;
+					font-size: 16px;
+					font-weight: 300;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+/**De sm para lg**/
+@media (min-width: 768px) {
+	.full-content{
+		
+		&.roaming-block{
+
+			#modal-agregar-paquete{
+				&.active{
+					display: none;
+				}
+			}
+			.roaming-oferta-block{
+				.roaming-oferta{
+					.recomendado-block{
+						.recomendado{
+							position: absolute;
+							top: -100%;
+							left:-50%;
+							right:-50%;
+							width: 100px;
+						}
+					}
+
+					>div{
+						@include flex-direction(row);
+						padding: 20px 0;
+						.oferta-box{
+							@include flex-direction(column);
+							border-right: 2px solid $blueTelcel1;
+						}
+					}
+
+					.bg-blue{
+						background-color: $white;
+						position: relative;
+						overflow: hidden;
+
+						.oferta-box{
+							border-right: 2px solid $blueTelcel1;
+						}
+
+						&:before{
+							content: "";
+							display: block;
+							-webkit-transform: skew(-10deg);
+							-moz-transform: skew(-10deg);
+							-ms-transform: skew(-10deg);
+							-o-transform: skew(-10deg);
+							transform: skew(-10deg);
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							right: 10px;
+							top: 0;
+							background-color: $blueTelcel2;
+						}
+					}
+				}
+			}
+		}
+
+		&.configuracion-block{
+			.header-permisos-config{
+				.select-all-permisos{
+					background-color: $white !important;
+					box-shadow: none;
+					width : 33.33333333%;
+					&.fixed{
+						position: static;
+					}
+
+					.header-fixed-auxiliar{
+						display: none;
+					}
+				}
+			}
+			.modal-mte{
+				.form-ge-mod{
+					.element-input-block{
+						@include flexbox;
+						@include align-content(center);
+						@include align-items(center);
+						.label-double-dots{
+							label{
+								margin-bottom: 0 !important;
+								margin-top: 0 !important;
+							}
+						}
+
+						.input-double-dots{
+
+						}
+					}
+				}
+			}
+
+			.label-title{
+				font-size: 16px;
+			}
+			.permisos-box{
+				height:360px;
+				.permisos-ul{
+					height: 100%;
+					overflow-y: auto;
+				}
+			}
+
+			&.roles-block {
+				.group-row-block {
+					.mosaico-view {
+						.item-mv {
+							.rol-element {
+								.body-group {
+									@include flexbox;
+									@include justify-content(center);
+									.extend-imv, .group-total{
+										width: 50%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.red-privada-block{
+			.line-field-mod{
+	            @include flexbox;
+	            @include justify-content(center);
+	            @include align-items(center);
+	            margin: 10px auto;
+
+	            &.marcacion-corta-input-container{
+	            	.data-write{
+	            		input{
+	            			max-width: 100px;
+	            			margin: 0 !important;
+	            		}
+	            		
+	            	}
+	            }
+
+	            &.one-line{
+	              @include flex-direction(column);
+	              .label-double-dots{
+	                label{
+	                  text-align: center;
+	                  margin-bottom: 20px;
+	                }
+	              }
+
+	              .input-double-dots{
+	                .data-write{
+	                  margin-bottom: 20px;
+	                }
+	              }
+	            }
+
+	            .label-double-dots{
+	              label{
+	                display: block;
+	                text-align: right;
+	                margin: 0 !important;
+
+	              }
+	            }
+
+	            .input-double-dots{
+	              .data-write{
+	                margin-bottom: 0;
+	                label{
+	                  &.error{
+	                    text-align: left;
+	                    width: 100%;
+	                  }
+	                }
+	              }
+	            }
+        	}
+		}
+	}
+}
+
+/**De xs para abajo**/
+@media (max-width: 767px){
+
+	.full-content{
+
+		.swiper-button-disabled{
+			display: none;
+		}
+		.grupo-selector-block{
+			display:none;
+		}
+		
+		#modal-subir-archivo{
+			display : none !important;
+		}
+
+		&.red-privada-block{
+			
+			#info-content{
+				.form-general-v2{
+					.red-step{
+						&:first-child{
+							display : none;
+						}
+
+						.btn-container{
+							padding-top: 0;
+							padding-bottom: 10px;
+						}
+					}
+
+					.carga-masiva-last-step{
+						padding : 0;
+					}
+				}
+			}
+				
+			#listado-abono-saldo{
+				.linea-batch{
+					border-bottom: 1px solid $black;
+
+					&.open-element{
+						.more-info{
+							display: none !important;
+						}
+					}
+					
+				}
+			}
+
+			.monto-input-block{
+				@include flex-direction(column);
+
+				.general-input-container{
+					&:first-child{
+						text-align: center;
+					}
+					margin-bottom: 5px;
+				}
+			}
+		}
+		
+		.all-blue-bg {
+			#componente-ingresar-lineas{
+				.componente-lineas-block{
+					margin-bottom: 0;
+					.tokenfield{
+						margin-bottom: 0;
+					}
+				}
+				.componente-lb{
+					.triangle-tooltip{
+						background-color: $blueTelcel1 !important;
+					}
+				}
+			}
+		}
+		.listado-header-block-single{
+			.header-block{
+				display: none;
+			}
+
+			.general-table{
+				padding: 10px 0;
+			}
+
+			.table-main-block{
+				background-color: $grayTooltip1;
+				>div{
+					@include flex-direction(column);
+					>div{
+						border-right: 0 !important;
+						padding: 5px 0;
+						@include align-content(center);
+					}
+					p{
+						text-align: left;
+						margin: 0;
+						line-height: normal;
+						&.label{
+							text-align: right;
+							line-height: normal;
+							padding: 0 5px 0 0;
+							vertical-align: middle;
+						}
+						width: 50%;
+						color: $black;
+					}
+				}
+			}
+		}
+
+		#listado-marcacion-corta{
+			.linea-batch{
+				background-color: $grayTooltip1;
+				padding-bottom: 0;
+				>div{
+					padding-bottom: 0 !important;
+					>div{
+						&:last-child{
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.number-lada-container{
+			.readonly{
+				margin-top: 0;
+				text-align: left;
+			}
+		}
+
+		.numero-label-container{
+			text-align: right !important;
+			label{
+				margin-bottom: 0 !important;
+			}
+		}
+
+		.marcacion-corta-input-container{
+			@include align-items(center);
+			label{
+				margin-bottom: 0 !important;
+			}
+		}
+
+		.one-line-mobile{
+			@include flexbox;
+			.label-double-dots{
+				text-align: right !important;
+			}
+			.readonly{
+				margin-top: 0;
+				text-align: left;
+			}
+		}
+
+		&.roaming-block {
+
+
+			#cobertura-form{
+				.destinos-multiple {
+					.icons-container {
+						position : static;
+						padding: 0 0px 0 8px;
+						.icon{
+							&.btn-delete{
+								position: static;
+								padding-top: 9px;
+							}
+						}
+					}
+				}
+
+				.data-detalle{
+					border-bottom : 2px solid $white !important;
+				}
+			}
+
+			#destinos-search-block{
+				.icons-container{
+					position: static;
+					@include flexbox;
+					@include align-items(center);
+					padding: 0 5px;
+
+					.icon{
+						font-size: 30px;
+
+						&.btn-delete{
+							font-size: 22px;
+							position: static;
+							padding: 0 5px;
+
+						}
+					}
+				}
+			}
+			.img-txt-block{
+	        	>div{
+	        		padding: 0;
+	        	}
+        	
+	        	.list-container{
+	        		padding: 15px 0;
+	        		>div{
+	        			.txt-container{
+	        				strong{
+		        				font-size: 18px;
+		        			}
+		        		}
+	        		}
+	        		
+	        	}
+	        }
+			.elements-3-block{
+				@include flex-direction(column);
+				&.horizontal-block{
+					>div{
+						padding-bottom: 30px;
+					}
+				}
+				>div{
+					padding: 10px 0;
+					&:last-child{
+						padding-bottom: 0px;
+					}
+				}
+
+				.icon-container{
+					.icon{
+						text-align: center;
+						display: block;
+						font-size: 50px;
+					}
+					
+				}
+			}
+
+
+			.contactanos-block{
+
+				>div{
+					@include flex-direction(column);
+					text-align: center;
+					padding: 10px 0;
+					&:first-child{
+						padding-top: 0;
+					}
+				}
+				.label-container{
+					text-align: center;
+				}
+				
+			}
+			.roaming-step{
+				.general-table{
+					padding: 0 0 20px ;
+		        	&.add-borders-simple{
+		          		&.white-borders{
+		          			.header-block{
+		          				display: none;
+		          			}
+		            		.table-main-block{
+		              			>div{
+				                	border: 0px;
+				                	@include flex-direction(column);
+				                	>div{
+				                		width: 100%;
+				                		border: 0px;
+				                		padding: 5px 0;
+				                		p{width: 50%; text-align: left;}
+				                		.label{
+				                			color: $black;
+				                			padding: 0 5px 0 0;
+				                			text-align: right;
+				                			display: block;
+				                		}
+				                		.icon{
+				                			font-size: 25px;
+				                			color: $greenTelcel1;
+				                		}
+
+				                		.bton{
+				                			margin-bottom: 0;
+				                		}
+				                	}
+				              	}
+				            }
+				        }
+				    }
+				}
+			}
+		
+			.roaming-otras-ofertas{
+				@include flexbox;
+				@include flex-wrap(wrap);
+				.roaming-oferta-block{
+					margin: 10px 0;
+
+					.btn-container{
+
+						.btn-agregar-paquete, .btn-quitar-paquete{
+							width: 100%;
+							max-width: 100%;
+						}
+
+						
+					}
+
+					&:first-child{
+						margin: 10px 0;
+					}
+					.roaming-head{
+						display: none;
+					}
+				}
+			}
+			.roaming-oferta-block {
+				
+				.roaming-head{
+					.title{
+						font-size: 18px;
+					}
+				}
+				.roaming-oferta{
+					@include flex-direction(column);
+					padding: 0;
+					border-left: 2px solid $blueTelcel1;
+					border-right: 2px solid $blueTelcel1;
+
+					&.column-mobile{
+						.oferta-box{
+							padding: 20px 10px;
+							@include flex-direction(column-reverse);
+							
+							&.column-mobile{
+								@include flex-direction(column);
+							}
+						}
+					}
+
+					>div{
+						@include flex-direction(column);
+						padding: 0;
+						max-width: 100%;
+
+						&:last-child{
+							.oferta-box{
+								&:last-child{
+									border-bottom: 0;
+								}
+							}
+						}
+					}
+
+					.oferta-box{
+						@include justify-content(center);
+						@include flex-direction(row-reverse);
+						border-bottom: 2px solid $blueTelcel1;
+						border-right: 0;
+						padding: 6px 0;
+						margin: 0 auto;
+						max-width: 90%;
+						.redes-sociales{
+							.icon{
+								font-size: 24px;
+							}
+						}
+						&.column-mobile{
+							border-bottom: 0;
+						}
+
+						&.btn-container{
+							max-width: 100%;
+						}
+
+						.element-name{
+							padding: 0 3px;
+							&:after{
+								content: ":";
+							}
+						}
+
+						.big-txt{
+							font-size: 18px;
+						}
+					}
+
+					.recomendado-block{
+						padding-top: 0 !important;
+
+						.big-txt{
+							padding-top: 20px;
+						}
+						.recomendado{
+							position: relative;
+							width: 160px;
+							&:after{
+								border-left-width: 80px;
+								border-right-width: 80px;
+							}
+						}
+					}
+
+					.btn-container{
+						padding: 0 !important;
+						a{
+							width: 100%;
+						}
+					}
+
+					.big-txt{
+						font-size: 20px;
+					}
+
+					&.no-padding{
+						border-left: 0;
+    					border-right: 0;
+						>div{
+							.oferta-box{
+								@include justify-content(center);
+								border-bottom: 1px solid $white;
+								padding: 6px 0;
+								&:last-child{
+									border-bottom: 0px;
+								}
+
+							}
+							&:last-child{
+								border-right: 2px solid $blueTelcel1;
+								border-left: 2px solid $blueTelcel1;
+							}
+						}
+					}
+
+					.column-mobile{
+						@include flex-direction(column);
+						
+						.extra-txt{
+							font-size: 16px;
+							color: $blueCTA;
+							font-weight: 400;
+						}
+					}
+
+					.column-mobile-reverse{
+						@include flex-direction(column-reverse);
+					}
+
+					.bg-blue{
+						padding: 0px 20px !important;
+						.big-txt{
+							color: $white;
+						}
+						.element-name{
+							padding: 0 5px;
+							&:after{
+								content: ":";
+							}
+						}
+						.column-mobile{
+							.big-txt{
+								color: $black;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.red-privada-block{
+
+			.red-contactos-table-block{
+
+
+
+				padding: 0;
+
+				.general-table{
+					border-top: 2px solid $blueTelcel1;
+				}
+
+				.linea-batch{
+					@include flex-direction(column);
+
+					.content-item-block{
+						>div{
+							padding: 10px 0;
+						}
+					}
+					.input-label{
+						width: 30%;
+					    text-align: right;
+					    padding: 0 10px;
+					}
+
+					.data-write{
+						margin-bottom: 0px;
+						width: 70%;
+					}
+
+					.btn-mobile{
+						width: 100%;
+						color: $white;
+						margin-top: 10px;
+						padding: 10px;
+						text-align: center;
+					}
+
+					.btn-container{
+						position: static;
+						padding: 0;
+						>div{
+							padding: 0;
+						}
+					}
+					.edit-container{
+						position: static;
+						padding: 0;
+						.btn-mobile{
+							background-color: $orangeCTA;
+						}
+					}
+
+					.delete-container{
+						position: static;
+						padding: 0 !important;
+
+					    .btn-mobile{
+							background-color: $grayAux;
+						}
+					}
+				}
+			}
+
+			.extension-container{
+				label{
+					margin-bottom: 0 !important;
+				}
+			}
+			#listado-directorio, #listado-desvio-llamadas{
+				.linea-batch{
+					.content-item-block{
+						padding-bottom: 0 !important;
+						>div{
+							&:last-child{
+								padding-bottom: 0;
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+			.align-space-around{
+				&:after{
+					display: none !important;
+				}
+			}
+			.btn-modificar-contacto, .btn-modificar-desvio, .btn-marcacion-corta{
+				width: 100%;
+				background-color: $orangeCTA;
+				span{
+					color: $white;
+				}
+			}
+			.susp-list-pick {
+				.content-slp{
+					.detalle-confirmacion{
+						&.double-element{
+							>div{
+								@include flexbox;
+								@include flex-direction(row);
+								>div{
+									margin-top: 0;
+									&.total-mensual{
+										border-top: 0px;
+									}
+								}
+							}
+						
+						}
+					}
+				}
+			}
+			
+			#main-table-view{
+
+				>.container{
+					>.row{
+						width: 100%;
+    					margin: 0;
+					}
+				}
+			}
+			.listado-principal{
+				.linea-batch{
+					background-color: $blueTelcel1;
+					// border-bottom: 1px solid $black;
+					.content-item-block{
+						>div{
+							margin: 5px 0; 
+						}
+					}
+					>div{
+						&:first-child{
+							.label{
+								padding: 0 10px !important;
+							}
+						}
+					}
+					.label{
+						display: block !important;
+					}
+				}
+			}
+			.red-step{
+			    .input-block{
+			    	@include flex-direction(column);
+			    	padding: 0;
+			    	.general-input-container{
+			    		text-align: center;
+			    		padding: 0;
+			    	}
+			    }
+			}
+
+			.table-servicios{
+				.servicios-box{
+					.servicios-switches-box{
+						.icon{
+							display:none;
+						}
+					}
+				}
+
+				+.componente-submit-block{
+					margin-top: 20px;
+					@include flex-direction(column-reverse);
+
+					a{
+						display: block;
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+		&.configuracion-block{
+
+			.ingreso-grupos-mobile{
+				display: block;
+				p{
+					
+					text-align: center;
+					font-weight: 500;
+					margin-bottom: 20px;
+				}
+				
+			}
+
+			.hidden{
+				+.ingreso-grupos-mobile{
+					display: none;
+				}
+			}
+
+			#checkall{
+				label{
+					margin: 0 auto !important;
+				}
+				
+			}
+			&.enable-editing-mode{
+				.header-permisos-config{
+					.select-all-permisos{
+						@include flexbox;
+					}
+				}
+				
+			}
+			.componente-submit-block{
+				padding-top: 15px;
+				.btn-cancel-changes{
+					width: auto;
+					padding: 0;
+				}
+			}
+
+			.header-permisos-config{
+				>div{
+					@include flex-direction(column-reverse);
+				}
+				.select-all-permisos{
+					display:none;
+					+.header-fixed-auxiliar{
+						display: none;
+					}
+
+					&.fixed{
+						background-color: $grayTelcel1 !important;
+						p{
+							color: $white;
+						}
+						left: 0;
+						+.header-fixed-auxiliar{
+							//display: block !important;
+						}
+						&.elements-selected{
+							@include flexbox;
+						}
+					}
+				}
+
+			}
+
+			.ver-todos-roles-block{
+				margin-top: 0;
+				margin-bottom: 10px;
+				a{
+					width: 50%;
+					margin: 8px auto;
+					padding-left: 0 !important;
+					@include flex-direction(column);
+
+					.txt{
+						display: block;
+						padding: 0;
+						margin-top: 5px;
+					}
+				}
+			}
+
+
+			.total-usuarios{
+				display: block;
+				width: 100%;
+				text-align: center;
+				margin-bottom: 0;
+				strong{
+					color: $blueCTA;
+				}
+			}
+
+			.header-actions{
+				padding: 0;
+				>div{
+					padding: 0;
+				}
+			}
+
+			.configuracion-general{
+				@include justify-content(center);
+
+				.btn-open-general-config{
+					margin: 0 auto;
+				}
+				.btn-title{
+					display: block;
+					text-align: center;
+				}
+			}
+
+			.table-permisos-block{
+				.user-permiso-box{
+					@include flexbox;
+					@include flex-direction(column);
+					margin-bottom: 20px;
+
+					&:last-child{
+						margin-bottom: 0;
+					}
+
+					.user-actions-box{
+						padding: 12px 0px;
+						.usuario-box{
+							@include flexbox;
+							@include align-items(center);
+							width: 100%;
+							.icon{
+								display: inline-block;
+								margin-bottom: 0;
+								font-size: 26px;
+							}
+
+							.usuario-title{
+								font-size:18px;
+								font-weight: 300;
+								position: static;
+								width: auto;
+								padding: 0 15px;
+								.first-word{
+									display: inline-block;
+									margin-left: 4px;
+								}
+
+								&:after{
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.table-notificaciones-config-block{
+				.config-box{
+					padding : 0;
+
+					.btn-mobile-container{
+						.btn-toggle-config{
+							top: -20px;
+							left:-50%;
+							right: -50%;
+							margin: 0 auto;
+							z-index: 9;
+						}
+					}
+					&.open-mobile{
+						.config-switches-box{
+							display: block;
+						}
+
+						.btn-toggle-config{
+							background-color: $blueTelcel2;
+						}
+
+						.btn-mobile-container{
+							
+							.btn-open{
+								display: inline-block;
+								color: $white;
+							}
+
+							.btn-close{
+								display: none;
+							}
+						}
+					}
+				}
+
+				.config-box-header{
+					padding: 0 10px;
+				}
+				.config-box-header, .config-box{
+					@include flex-direction(column);
+					
+					.config-name-block{
+						padding: 35px 0 30px;
+						border-top: 1px solid $grayTooltip1;
+						border-bottom: 1px solid $grayTooltip1;
+						.config-title{
+							width: 100%;
+							text-align: center;
+							font-size: 16px;
+							// &:after{
+							// 	content:"";
+							// 	display: block;
+							// 	width: 20%;
+							// 	height: 2px;
+							// 	margin: 10px auto 0;
+							// 	background-color: $blueTelcel2;
+							// }
+						}
+					}
+
+					.btn-mobile-container{
+						display: block;
+					}
+					.config-switches-box{
+						padding: 40px 10px 30px 10px;
+						display: none;
+						.switches-ul{
+							li{
+								.switch-container{
+									.status{
+										display: none;
+									}
+									.config-m{
+										display: block !important;
+									}
+								}
+							}
+							
+						}
+					}
+				}
+			}
+
+			.usuarios-table{
+				padding: 10px 0 !important;
+	    		.linea-batch{
+	    			@include flex-direction(column);
+	    			//background-color: $blueTelcel1;
+	    			padding: 0 !important;
+
+	    			.btn-mobile-container{
+	    				width:100%;
+	    				padding: 0;
+	    				>div{
+	    					padding: 0;
+
+	    					.btn-editar-usuario{
+	    						background-color: $grayTooltip2;
+	    						color: $blueTelcel2;
+	    					}
+	    				}
+	    			}
+
+	    			.content-item-block{
+	    				@include flexbox;
+	    				@include flex-direction(column);
+	    				.imei-extra-detail{
+
+							.show-more-details-container{
+								@include justify-content(flex-start); 
+								p{
+									&.p-value{
+										width: auto;
+									}
+								}	
+								.show-more-details{
+									// position: relative;
+									
+									&:before{
+										font-size: 20px;
+										margin: 0 auto;
+									}
+
+							    	.triangle-tooltip{
+							    		right: 22%;
+							    		width: 80%;
+							    		top: 30px;
+
+							    		.extra-mob-dt-ls{
+							    			p{width: 100%;}
+							    			
+							    		}
+								    	&:before{
+								    		border-width: 9px 10px 5px 0;
+								    		border-color: transparent $grayTooltip2 transparent transparent;
+								    		top: -9px;
+											right: -1px;
+											left:auto;
+											left: initial;
+								    	}
+
+							    		&:after{
+							    		    border-color: transparent #EEE transparent transparent;
+							    		    top: -6px;
+											border-width: 15px 18px 10px 0;
+											right: 0;
+											left:auto;
+											left: initial;
+								    	}
+								    }
+							    }
+
+							}
+								
+							p{
+								width: 50%;
+							}
+
+						}
+	    				.checkbox-container{
+	    					height: auto;
+	    				}
+
+	    				.usuario-info-block{
+	    					@include flex-direction(column);
+	    					border-left: 2px solid $white;
+	    					padding: 20px 0;
+	    					>div{
+	    						border-left: 0;
+	    						padding: 5px 0;
+
+	    						label, p{
+	    							margin: 0;
+	    						}
+
+	    						label{
+	    							width: 40%;
+	    							text-align: right;
+	    							padding: 0 8px;
+	    						}
+	    						p{
+	    							width: 60%;
+	    							text-align: left;
+	    						}
+	    					}
+	    				}
+	    			}
+	    		}
+	    	}
+
+			&.roles-block{
+				.order-by-cont-shi{
+					>div{
+						width: 100%;
+						text-align: center;
+
+						.icon-container{
+							margin: 0 auto;
+						}
+					}
+					.label-shi{
+						display: none;
+					}
+
+					.change-view-shi{
+						border-right: 0px;
+						.change-view-container{
+							.txt{
+								display: block;
+								margin: 0 auto;
+							    font-size: 14px;
+							    color: $grayTextos;
+							    font-weight: 400;
+							}
+						}
+					}
+
+					.ver-todos-usuarios-block{
+						>a{
+							@include flex-direction(column);
+							span{
+								display: block;
+								.icon{
+									font-size: 25px;
+								}
+								&.txt{
+									font-weight: 400;
+									font-size: 15px;
+									padding: 0;
+									max-width: 90%;
+								}
+							}
+						}
+						
+					}
+				}
+
+				.mosaico-view{
+					max-width: 520px;
+				    margin: 0 auto 50px auto;
+				    float: none;
+				    padding: 0;
+				    position: initial;
+				}
+				.group-row-block {
+					padding: 0 10px;
+					
+					  .ribbon{
+					      @include align-items(flex-start);
+					  }
+
+					  .name-container{
+					  	input[type="text"]{ display: none !important; }
+					  	.ribbon-content{
+					  		display: block !important;
+					  	}
+					  }
+					.line-separator{
+						display: inline-block;
+					}
+					> .container {
+						padding: 0; position: relative;
+					}
+					.mosaico-view {
+						margin-bottom: 0px;
+						padding: 0;
+
+						/* inicio clase clearfix */
+						&:before, &:after  {
+							-webkit-box-sizing: border-box;
+							-moz-box-sizing: border-box;
+							box-sizing: border-box;
+							display: table;
+							content: " ";
+						}
+						&:after {
+							clear: both;
+						}
+						/*fin*/
+						.add-item-mv {
+							display: inline-block; right: 20px; bottom: -30px; padding: 0; margin: auto; position: absolute; float: none; width: 50px; z-index: 1; top: auto; left: auto; height: 50px;
+								background: transparent;
+							.add-group-btn-block {
+								min-height: 50px; min-width: 50px;
+								min-height: auto ; min-width: auto;
+
+								display: inline-block; padding: 5px;
+								height: 50px; width: 50px;
+								span {
+									&.icon {
+										@include flexbox;
+										@include box-shadow(2px, 2px, 5px, rgba(0, 0, 0, 0.5));
+										height: 40px; width: 40px; margin: 0; padding: 0; background: $blueTelcel2; color: $white; font-size: 25px; border-radius: 100%;
+
+									}
+									&:nth-child(2){
+										display: none;
+									}
+								}
+								&:hover {
+									span {
+										color: $white; background: $blueTelcel2;
+										&:before {
+											color: $white;
+										}
+									}
+								}
+							}
+						}
+						.item-mv {
+							padding: 0;
+							width: 100%;
+							border-bottom: 1px solid $grayTooltip2;
+							.rol-element {
+								max-width: initial;
+								margin: 0 auto;
+								position: relative;
+								padding: 10px 30px 10px 30px;
+								height: initial;
+								display: block;
+								&:before {
+									height: 100%;
+									width: 30px;
+									display: inline-block;
+									margin: auto;
+									background: transparent;
+									position: absolute; 
+									left: 0;
+									top: 0;
+									bottom: 0;
+									content: "";
+								}
+								.body-group {
+									width: 100%;
+									display: block;
+									padding: 0;
+									border: 0;
+									&:before, &:after  {
+										-webkit-box-sizing: border-box;
+										-moz-box-sizing: border-box;
+										box-sizing: border-box;
+										display: table;
+										content: " ";
+									}
+									&:after {
+										clear: both;
+									}
+									.group-total {
+										border: 0; width: 100%;
+										.desc-imv {
+											padding: 0 10px;
+											.details-desc-imv {
+												padding: 0 5px 0 0; display: inline-block;
+												p, span {
+													display: inline-block; margin: 0 auto; font-family: "source-sans"; font-size: 14px; color: $black;
+												}
+												p{
+													font-weight: 400;
+												}
+											}
+										}
+
+										.usuarios-total{
+											text-align: left;
+											padding: 0 10px;
+											margin-bottom: 0;
+											strong{
+												display: inline-block;
+											}
+										}
+									}
+									.see-more-gt {
+										position: initial;
+										left: initial;
+										right: initial;
+										bottom: initial;
+										padding: 0;
+										display: inline-block;
+									}
+									.extend-imv {
+										display: none;
+									}
+								}
+								.header-group {
+									background: transparent;
+									position: static;
+									border-radius: 0;
+									-webkit-border-radius: 0;
+									-moz-border-radius: 0;
+									width: 100%;
+									padding: 0 10px;
+									.settings-ri {
+										position: fixed;
+										margin: auto !important;
+										top: 0;
+										right: 0;
+										bottom: 0;
+										left: 0;
+										outline: 0;
+										z-index: 200;
+										background: $black-50;
+										width: 100%;
+										height: 100%;
+										padding: 0;
+
+										-webkit-overflow-scrolling: touch;
+										overflow-x: hidden;
+										overflow-y: auto;
+										border-radius: 0;
+
+										-moz-box-shadow: none;
+										-webkit-box-shadow: none;
+										box-shadow: none;
+										.submenu-ri {
+											padding: 10px 30px;
+											.first-bloq-ri, .second-bloq-ri {
+												button {
+													margin-left: 0;
+													.icon {
+														padding-right: 10px; color: $grayTelcel1;
+													}
+													.in-text-fbr {
+														color: $black;
+													}
+												}
+											}
+											.first-bloq-ri {
+												border: 0;
+												position: relative;
+
+												&:after {
+													display: none;
+												}
+											}
+										}
+										.cont-set-ri {
+											display: block;
+											width: 100%;
+											min-height: 130px;
+											background: $white;
+											position: absolute;
+											bottom: 0;
+											padding: 0;
+											.title-ri {
+												display: none;
+												.in-text-ri {
+
+												}
+												.icon-text-ri {
+													display: none;
+												}
+											}
+											.title-mod {
+												display: block;
+												
+												padding: 0;
+												border-bottom: 1px solid $grayTooltip1;
+												position: relative;
+												background: $greenTelcel1;
+												.icon {
+													font-size: 24px; height: 46px; width: 50px; padding: 11px; display: inline-block; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; color: $white;
+												}
+												.title-ribon-sri {
+													background: $blueTelcel1; margin: 0 auto 0 50px; line-height: 1; padding: 14px 10px; display: block; font-size: 18px; text-align: left;
+														color: $black;
+												}
+											}
+										}
+									}
+
+									.ribbon {
+										background: transparent;
+										color: $black;
+										border-radius: 0;
+										-webkit-border-radius: 0;
+										-moz-border-radius: 0;
+										box-shadow: none;
+										-webkit-box-shadow: none;
+										-moz-box-shadow: none;
+										left: auto;
+										top: auto;
+										position: static;
+										width: 100%;
+										margin: 0 auto;
+										text-align: left;
+										padding: 5px 0;
+										line-height: 1;
+										overflow: hidden;
+										border: 0;
+										
+										.ribbon-content{
+											font-weight: 400;
+										}
+										@include flex-direction(column);
+
+										&:before {
+											display: none;
+										}
+										> span {
+											&.left-icon-ri {
+												display: block; border: 0;
+												@include flex-direction(column);
+												position: absolute;
+												margin: auto; left: 0; top: 0; bottom: 0; padding: 5px; height: 30px; width: 30px; color: $gray5a; font-size: 20px;
+											}
+										}
+										.edit-name-ri {
+											display: none;
+										}
+										strong {
+											&.ribbon-content {
+												font-size: 16px;
+												width: 100%;
+												max-width: 100%;
+												padding: 0;
+												&:before {
+													display: none;
+												}
+											}
+
+										}
+									}
+
+									.icon-container {
+										display: inline-block;
+										position: absolute;
+										right: 0;
+										top: 0;
+										bottom: 0;
+										// right: auto;
+										margin: auto;
+										height: 46px;
+										width: 30px;
+										background: transparent;
+										text-align: center;
+										button {
+											position: absolute;
+											padding: 0;
+											top: 0;
+											bottom: 0;
+											left: 0;
+											right: 0;
+											margin: auto;
+											height: 30px;
+											width: 30px;
+										}
+										.icon {
+											padding: 0;
+											font-size: 30px;
+											color: $grayTooltip2;
+											&:before {
+												content: "\e900";
+											}
+											&:hover {
+												color: $black;
+											}
+										}
+									}
+									&:before {
+										display: none;
+									}
+								}
+								
+							}
+							.body-group {
+								padding: 0 10px 10px 10px;
+								text-align: left;
+								.group-total {
+									p {
+										margin: 0 auto 10px auto; line-height: 1.2;
+									}
+								}
+								a {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+				.group-list-block {
+					padding: 10px;
+					.name-container{
+						input[type="text"]{ display: none !important; }
+						.ribbon-content{
+							display: block !important;
+						}
+					}
+					padding: 10px 10px;
+					> .container {
+						padding: 0; position: relative;
+						.row{
+							margin: 0 auto;
+						}
+					}
+					.mosaico-view {
+						.add-item-mv {
+							display: inline-block; right: 20px; bottom: 8px; padding: 0; margin: auto; position: absolute; float: none; width: 50px; z-index: 1; top: auto; left: auto; height: 50px;
+							.add-group-btn-block {
+								min-height: 50px; min-width: 50px;
+								min-height: auto ; min-width: auto;
+
+								display: inline-block; padding: 5px;
+								height: 50px; width: 50px;
+								span {
+									@include box-shadow(2px, 2px, 5px, rgba(0, 0, 0, 0.5));
+									&.icon {
+										height: 40px; width: 40px; margin: 0; padding: 0; background: $blueTelcel2; color: $white; font-size: 25px;
+										&.i-plus-1{
+											font-family: 'TelcelFont' !important;
+										    speak: none;
+										    font-style: normal;
+										    font-weight: normal;
+										    font-variant: normal;
+										    text-transform: none;
+										    line-height: 1;
+										    -webkit-font-smoothing: antialiased;
+										    -moz-osx-font-smoothing: grayscale;
+											&:before{
+												content: "\e929";
+												font-family: 'TelcelFont' !important;
+											    speak: none;
+											    font-style: normal;
+											    font-weight: normal;
+											    font-variant: normal;
+											    text-transform: none;
+											    line-height: 1;
+											    -webkit-font-smoothing: antialiased;
+											    -moz-osx-font-smoothing: grayscale;
+											}
+										}
+									}
+									&:nth-child(2){
+										display: none;
+									}
+								}
+								&:hover {
+									span {
+										color: $white; background: $blueTelcel2;
+										&:before {
+											color: $white;
+										}
+									}
+								}
+							}
+						}
+						.item-mv {
+							padding: 0 5px;
+							margin-bottom: 15px;
+
+							.rol-element {
+								max-width: initial;
+								margin: 0 auto ;
+								position: relative;
+								padding: 15px 30px 15px 30px;
+								height: initial;
+								background: $white;
+								&:before {
+									height: 100%;
+									width: 30px;
+									display: inline-block;
+									margin: auto;
+									background: $blueTelcel2;
+									position: absolute; 
+									left: 0;
+									top: 0;
+									bottom: 0;
+									content: "";
+								}
+								.body-group {
+									display: none;
+									.see-more-gt {
+										position: initial;
+										left: initial;
+										right: initial;
+										bottom: initial;
+										padding: 0;
+										display: inline-block;
+									}
+									.extend-imv {
+									}
+								}
+								.header-group {
+									background: $white;
+									position: static;
+									border-radius: 0;
+									-webkit-border-radius: 0;
+									-moz-border-radius: 0;
+									height: auto;
+									.settings-ri {
+										position: fixed;
+										margin: auto !important;
+										top: 0;
+										right: 0;
+										bottom: 0;
+										left: 0;
+										outline: 0;
+										z-index: 200;
+										background: $black-50;
+										width: 100%;
+										height: 100%;
+
+										-webkit-overflow-scrolling: touch;
+										overflow-x: hidden;
+										overflow-y: auto;
+										border-radius: 0;
+
+										-moz-box-shadow: none;
+										-webkit-box-shadow: none;
+										box-shadow: none;
+										.submenu-ri {
+											padding: 10px 30px;
+											.first-bloq-ri, .second-bloq-ri {
+												button {
+													margin-left: 0;
+													.icon {
+														padding-right: 10px; color: $grayTelcel1;
+													}
+													.in-text-fbr {
+														color: $black;
+													}
+												}
+											}
+											.first-bloq-ri {
+												border: 0;
+												position: relative;
+												.msg-admin, .msg-no-admin{
+													@include flexbox;
+													span{
+														font-size: 14px;
+														color: $blueCTA;
+														&.icon{
+															font-size: 20px;
+														}
+													}
+												}
+												&:after {
+													display: none;
+												}
+											}
+										}
+										.cont-set-ri {
+											display: block;
+											width: 100%;
+											min-height: 130px;
+											background: $white;
+											position: absolute;
+											bottom: 0;
+											padding: 0;
+											.title-ri {
+												display: none;
+												.btn-close-config {
+													display: none;
+												}
+											}
+											.title-mod {
+												display: block;
+												padding: 0;
+												border-bottom: 1px solid $grayTooltip1;
+												position: relative;
+												.icon {
+													font-size: 24px; height: 46px; width: 50px; padding: 11px; display: inline-block; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; color: $white;
+												}
+												.title-ribon-sri {
+													background: $blueTelcel1; margin: 0 auto 0 50px; line-height: 1; padding: 14px 10px; display: block; font-size: 18px; text-align: left;
+												}
+											}
+										}
+									}
+									.ribbon {
+										background: transparent; color: $black;
+										border-radius: 0;
+										-webkit-border-radius: 0;
+										-moz-border-radius: 0;
+										box-shadow: none;
+										-webkit-box-shadow: none;
+										-moz-box-shadow: none;
+										left: 0;
+										top: 0;
+										position: static;
+										width: 100%;
+										margin: 0 auto;
+										text-align: left;
+										padding: 0;
+										line-height: 1;
+										overflow: hidden;
+										
+										@include flex-direction(column);
+
+										&:before {
+											display: none;
+										}
+										.left-icon-ri {
+											display: block; border: 0;
+											@include flex-direction(column);
+											position: absolute;
+											margin: auto; left: 0; top: 0; bottom: 0; padding: 5px; height: 30px; width: 30px; color: $white; font-size: 20px;
+										}
+										.edit-name-ri {
+											display: none;
+										}
+										strong {
+											&.ribbon-content {
+												text-align: left;
+												font-size: 14px;
+												width: 100%;
+												max-width: 100%;
+												padding: 0 5px 0 10px;
+												&:before {
+													display: none;
+												}
+											}
+
+										}
+									}
+									.icon-container {
+										width: initial;
+										display: inline-block;
+										position: absolute;
+										right: 0;
+										top: 0;
+										bottom: 0;
+										margin: auto;
+										width: 30px;
+										background: $white;
+										text-align: center;
+										button {
+											position: absolute;
+											padding: 0;
+											top: 0;
+											bottom: 0;
+											left: 0;
+											right: 0;
+											margin: auto;
+											min-width: auto;
+											min-width: 30px;
+											height: 30px;
+											width: 30px;
+										}
+										.icon {
+											padding: 0;
+											font-size: 30px;
+											color: $grayTooltip2;
+											&:before {
+												content: "\e900";
+											}
+											&:hover {
+												color: $black;
+											}
+										}
+									}
+									&:before {
+										display: none;
+									}
+								}
+							}
+							.body-group {
+								padding: 0 10px 10px 10px;
+								text-align: left;
+								.group-total {
+									p {
+										margin: 0 auto 10px auto; line-height: 1.2;
+									}
+								}
+								a {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+@media (min-width : 669px){
+	.full-content{
+		.modal-mte{
+			&#modal-modificar-desvio{
+				.content-mod {
+					.heading-mod {
+						.title-mod {
+							.h2{
+								br{
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

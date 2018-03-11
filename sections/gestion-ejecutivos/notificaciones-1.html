@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE no_footer_cta header-con-degradado header-ejecutivos">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content notificaciones-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="#" title="Notificaciones">Notificaciones</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Alias 1">Alias 1</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section> 
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="txt-center h2">Notificaciones de [alias]</h2>
+                <p class="col-sm-8 center-block txt-center">En esta sección puedes consultar las notificaciones de los últimos 12 meses en periodos de 31 días máximo.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="filtro-bg-blue">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container" data-name="filtrado">Mostrar filtrado</p>
+              <div class="col-sm-10 col-xs-12 center-block padding-0">
+                <form action="notificaciones-1-con-busqueda.html" id="notificacionesMTE" class="wrapper-gfsc clearfix">
+                  <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container">
+
+                    <div class="col-sm-pr-70 col-xs-12 v-align-center date-pickers-container limit-month">
+                        <div class="col-sm-6 col-xs-6 flexbox v-align-center column-mobile padding-0">
+                          <div class="col-sm-3 col-xs-12"><label>Desde:</label></div>
+                          <div class="col-sm-9 col-xs-12">
+                            <div class="date-picker inicio v-align-center">
+                              <div class="layer-mobile-aux"></div>
+                              <div class="input">
+                                <div class="result flexbox v-align-center">
+                                  <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                  <span class="fecha fecha-inicio one-field" data-field='{"name" : "fecha-inicio" }'></span>
+                                </div>
+                              </div>
+                              <div class="calendar init" data-min="27/02/2016" data-max="27/02/2017"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 flexbox v-align-center column-mobile padding-0">
+                          <div class="col-sm-3 col-xs-12"><label>Hasta:</label></div>
+                          <div class="col-sm-9 col-xs-12">
+                            <div class="date-picker fin v-align-center">
+                              <div class="layer-mobile-aux"></div>
+                              <div class="input">
+                                <div class="result flexbox v-align-center">
+                                  <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                  <span class="fecha fecha-fin one-field" data-field='{"name" : "fecha-fin" }'></span>
+                                </div>
+                              </div>
+                              <div class="calendar fin"></div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block">
+                      <button class="bton blue-dark main-btn full-width" type="button" disabled="disabled" id="btn-filter-facturas">Filtrar</button>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" disabled type="button" data-href="notificaciones-1.html">Limpiar filtros</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!-- Contenido de tabs -->
+          <div class="container-fluid notification-center-block">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 padding-0">
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab1">
+                      <div class="row">
+                        
+                        <div class="col-md-12 col-sm-12 ct-head col-md-12 col-sm-12 ct-head flexbox v-align-center">
+                          <div class="col-xs-12 col-sm-7">
+                            <p>
+                              <span class="h4 txt-100">Enero 2017 | </span>
+                              <span class="h5 txt-100"> 16 operaciones</span>
+                            </p>
+                          </div>
+
+                          <div class="ver-por-pagina-block col-sm-5 col-xs-12 center-block padding-0">
+                            <div class="col-sm-12 col-xs-12 flexbox v-align-center">
+                              <div class="col-sm-5 col-xs-5">
+                                <label>Ver por página:</label>
+                              </div>
+                              <div class="col-sm-7 col-xs-7">
+                                <div class="data-write slt">
+                                  <select name="ver-por" class="ver-por" id="ver-por">
+                                    <option value="20">20 notificaciones</option>
+                                    <option value="50">50 notificaciones</option>
+                                    <option value="100">100 notificaciones</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 ct-content notificaciones-table">
+                          <ul>
+                          <li class="notificacion" id="notificacion-18">
+                              <div class="col-md-12 li-cont propio">
+                                <div class="col-sm-10 ct-in-left flexbox order-flexbox order-flexbox-1">
+                                  <div class="col-sm-1 icon-container flexbox v-align-center">
+                                    <span class="icon io-broken-chain"></span>
+                                  </div>
+                                  <div class="col-sm-11">
+                                    <p class="type"><strong>Mario Mercado</strong> quitó la cuenta <strong>836210238</strong> de tu alias <strong>PEPSI</strong>.</p>
+                                    <p class="ti-date"><i>20/01/2017 15:35 hrs.</i></p>
+                                  </div>
+                                </div>
+                                <div class="col-sm-2 ct-in-right order-flexbox order-flexbox-2">
+                                  <p>Estatus: Completado</p>
+                                  
+                                  <p>Operación: No existe</p>
+                                </div>
+                              </div>
+                            </li>
+
+                            <li class="notificacion" id="notificacion-17">
+                              <div class="col-md-12 li-cont propio">
+                                <div class="col-sm-10 ct-in-left flexbox order-flexbox order-flexbox-1 order-flexbox order-flexbox-1">
+                                  <div class="col-sm-1 icon-container flexbox v-align-center">
+                                    <span class="icon io-broken-chain"></span>
+                                  </div>
+                                  <div class="col-sm-11">
+                                    <p class="type"><strong>Carlos Esparza</strong> quitó <strong>[12] cuentas</strong> de tu alias <strong>TELCEL</strong>.</p>
+                                    <p class="ti-date"><i>20/01/2017 15:35 hrs.</i></p>
+                                  </div>
+                                </div>
+                                <div class="col-sm-2 ct-in-right order-flexbox order-flexbox-2">
+                                  <p>Estatus: Completado</p>
+                                  
+                                  <p>Operación: No existe</p>
+                                </div>
+                              </div>
+                            </li>
+
+                          </ul>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="col-sm-12 ct-pagination center-pag">
+                <ol>
+                  <li>
+                    <a href="#" class="active">1</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon io-AccordionRight"></span></a>
+                  </li>                              
+                </ol>
+              </div>
+
+            </div>
+          </div>
+       </section>
+
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

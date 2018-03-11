@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content citas-block autogestion-general-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="citas-1.html" title="Citas">Citas</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section class="header-block-menu back-gray1 clearfix">
+          <div class="container">
+            <div class="options-header-block col-xs-12 col-sm-12 col-md-12">
+              <div class="col-sm-6 col-xs-6">
+                <a href="citas-1.html" class="active" title="Agendar cita">
+                  <span class="icon-container">
+                    <i class="icon io-Month"></i>
+                  </span>
+                  <span class="title">Agendar cita</span>
+                </a>
+              </div>
+
+              <div class="col-sm-6 col-xs-6">
+                <a href="mis-citas-1.html" title="Mis citas">
+                  <span class="icon-container">
+                    <i class="icon io-citas"></i>
+                  </span>
+                  <span class="title">Mis citas</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+            <form class="form-section-block autogestion-form only-visit-cac" id="autogestion-form-citas" method="POST" action="citas-3-a.html" autocomplete="off">
+              <section class="clearfix no-margin-bottom">
+                <div class="row">
+                  <div class="col-md-12 padding-20">
+                    <h3 class="h3">Línea seleccionada:</h3>
+                    <div class="col-sm-8 center-block">
+                      <div class="col-xs-12 center-block general-number-container">
+                          <div class="flexbox v-align-center h-align-center">
+                            <span class="icon io-Phone"></span>
+                            <p>5522323099</p> 
+                          </div>
+                        </div>
+                       <input type="hidden" id="lineas-hidden-input" name="lineas" value="5522323099"/>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="clearfix back-blue1 padding-20 citas-step" id="citas-step-1">
+                <div class="container">
+                  <h3 class="h3">3. <span>¿Qué trámite(s) deseas realizar?</span></h3>
+                  <p>Puedes elegir 3 trámites repartidos en la(s) línea(s) ingresada(s).</p>
+
+                  <div class="col-sm-12 col-xs-12 center-block clearfix padding-0">
+                    <div class="col-sm-12 txt-center info-blocks" id="citas-tramites">
+                      <div class="col-sm-3 col-xs-6 radio-ch-block">
+                        <input type="checkbox" id="opc-1" name="selector" class="tramite-radio" value="revision-reparacion-garantia-equipo">
+                        <label for="opc-1" class="blue-content border-out back-white">
+                          <span class="icon io-Soport"></span>
+                          <h4 class="h5 txt-300"><span>Servicio técnico</span></h4>
+                        </label>
+                      </div>
+                      <div class="col-sm-3 col-xs-6 radio-ch-block">
+                        <input type="checkbox" id="opc-2" name="selector" class="tramite-radio" value="venta-chip">
+                        <label for="opc-2" class="blue-content border-out back-white">
+                          <span class="icon io-Sim"></span>
+                          <h4 class="h5 txt-300"><span>Venta de chip(s)</span></h4>
+                        </label>
+                      </div>
+                      <div class="col-sm-3 col-xs-6 radio-ch-block">
+                        <input type="checkbox" id="opc-3" name="selector" class="tramite-radio" value="venta-equipo">
+                        <label for="opc-3" class="blue-content border-out back-white">
+                          <span class="icon io-celular"></span>
+                          <h4 class="h5 txt-300"><span>Venta de equipo(s)</span></h4>
+                        </label>
+                      </div>
+                      <div class="col-sm-3 col-xs-6 radio-ch-block">
+                        <input type="checkbox" id="opc-4" name="selector" class="tramite-radio" value="consultas-informacion">
+                        <label for="opc-4" class="blue-content border-out back-white">
+                          <span class="icon io-Rescatel"></span>
+                          <h4 class="h5 txt-300"><span>Asesoría</span></h4>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="clearfix citas-step no-margin-bottom middle-step last-step" id="citas-step-2">
+                <div class="container">
+                  <h3 class="h3">4. <span>Ingresa los datos de la persona que asistirá al Centro de Atención a Clientes.</span></h3>
+                  <p>La confirmación de la visita será enviada por correo electrónico y SMS a la persona autorizada para realizar el trámite. Recibirás copia de la confirmación en tu correo electrónico.</p>
+                  <div class="inputs-block col-sm-pr-60 center-block no-padding-bottom">
+                     <div class="input-wrapper col-sm-12 clearfix center-block">
+                      <div class="col-sm-12 col-xs-12 line-field-mod element-input-block">
+                        <div class="col-sm-5 col-xs-3 label-double-dots">
+                          <label>Se autoriza a:</label>
+                        </div>
+                        <div class="col-sm-7 col-xs-9 input-double-dots">
+                          <div class="data-write">
+                            <input type="text" name="nombre" id="nombre_cac" placeholder="Ingresa el nombre completo" class="meet-regex required" maxlength="40" data-regex="[^A-Za-zñÑáéíóúÁÉÍÓÚäëïöüÄËÏÖÜ\s]+$" autocomplete="off">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="input-wrapper col-sm-12 clearfix center-block">
+                      <div class="col-sm-12 col-xs-12 line-field-mod element-input-block">
+                        <div class="col-sm-5 col-xs-3 label-double-dots">
+                          <label>Correo electrónico:</label>
+                        </div>
+                        <div class="col-sm-7 col-xs-9 input-double-dots">
+                          <div class="data-write">
+                            <input type="text" name="email" id="email_cac" placeholder="juan@correo.com" class="required only-email" maxlength="50" autocomplete="off">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="input-wrapper col-sm-12 clearfix center-block">
+                      <div class="col-sm-12 col-xs-12 line-field-mod element-input-block">
+                        <div class="col-sm-5 col-xs-3 label-double-dots">
+                          <label>Número Telcel:</label>
+                        </div>
+                        <div class="col-sm-7 col-xs-9 input-double-dots">
+                          <div class="data-write">
+                            <input type="text" name="numero" id="numero_cac" placeholder="10 dígitos" class="required only-numbers" maxlength="10" data-required='{ "minLength" : "10" }' autocomplete="off">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-md-10 center-block">
+                      <div class="data-write margin-0">
+                        <input type="checkbox" id="checkbox-terminos" name="checkboxAutogestion"/>
+                        <label for="checkbox-terminos"><span class="check-sq"></span>He leído y estoy de acuerdo con los <a href="" class="btn-terminos">Términos y condiciones</a> de uso del servicio.</label>
+                      </div>
+
+                      <div class="triangle-tooltip terminos-container">
+                        
+                        <div class="head-content col-sm-12">
+                          <div class="close-container col-sm-12 col-xs-12"><span class="icon io-CloseSession" data-hide=".terminos-container"></span></div>
+                        </div>
+
+                        <div class="terminos-y-condiciones-block">
+                          <div class="head-content col-sm-12">
+                            <p class="col-sm-10 col-xs-10"><strong>Términos y condiciones</strong></p>
+                          </div>
+
+                          <p>
+
+                            'I HAVE tasted eggs, certainly,' said Alice, who was a very truthful child; 'but little girls eat eggs quite as much as serpents do, you know.'
+                            'I don't believe it,' said the Pigeon; 'but if they do, why then they're a kind of serpent, that's all I can say.'
+                            This was such a new idea to Alice, that she was quite silent for a minute or two, which gave the Pigeon the opportunity of adding, 'You're looking for eggs, I know THAT well enough; and what does it matter to me whether you're a little girl or a serpent?'
+                            'It matters a good deal to ME,' said Alice hastily; 'but I'm not looking for eggs, as it happens; and if I was, I shouldn't want YOURS: I don't like them raw.'
+                            'Well, be off, then!' said the Pigeon in a sulky tone, as it settled down again into its nest. Alice crouched down among the trees as well as she could, for her neck kept getting entangled among the branches, and every now and then she had to stop and untwist it. After a while she remembered that she still held the pieces of mushroom in her hands, and she set to work very carefully, nibbling first at one and then at the other, and growing sometimes taller and sometimes shorter, until she had succeeded in bringing herself down to her usual height.
+                            </p>
+
+                          
+
+                        </div>
+                       
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-xs-12 center-block buttons-container-block">
+                      <button class="bton orange" type="submit" disabled>Notificar visita</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </form>
+
+        </section>
+
+
+    <!-- CONFIRMAR ELIMINAR -->
+        <section class="modal-mte" id="modal-confirmar-eliminar">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Quitar línea</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>¿Estás seguro de quitar la línea [<span class="txt-linea"></span>]?</p>
+
+                        </div>
+
+                        <div class="col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" type="submit" id="btn-confirmar-eliminar">Quitar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CONFIRMAR ELIMINAR -->
+
+        <!-- ERROR SOLICITUD -->
+        <section class="modal-mte" id="modal-error-solicitud">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Notificar visita</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <p id="redirect-txt" class="txt-center">Generando visita</p>
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+
+                          <p>Hubo un error al generar la visita.</p>
+
+                          <div class="col-sm-12 submit-r-asoc">
+                            <button class="bton blue-dark" type="submit" id="btn-reintentar-submit">Reintentar</button>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ERROR SOLICITUD -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/citas.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+  </body>
+</html>

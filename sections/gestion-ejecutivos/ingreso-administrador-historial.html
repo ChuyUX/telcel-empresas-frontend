@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado admin-mode first-time">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content historial-movimientos-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Historial de movimientos">Historial de movimientos</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 theme-heading">
+                <h2 class="h2">Historial de movimientos</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="filtro-bg-blue no-margin-bottom">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container" data-name="buscador">Mostrar buscador</p>
+              <div class="col-sm-12 col-xs-12 center-block padding-0">
+                <form action="historial-1-con-busqueda.html" id="historialMovimientos" class="wrapper-gfsc clearfix">
+                  <div class="col-md-12 col-sm-12 col-xs-12 general-fs-container" id="search-movimientos-container">
+                    <div class="col-md-12 col-sm-12 col-xs-12 search-container flexbox v-align-center center-block" id="search-basico">
+                      <div class="col-sm-pr-85 col-xs-12 flexbox v-align-center">
+                        <div class="col-sm-pr-50 col-xs-12 v-align-center date-pickers-container limit-month">
+                          <div class="col-sm-pr-50 col-xs-6 flexbox v-align-center">
+                            <div class="col-sm-3 col-xs-12"><label>Desde:</label></div>
+                            <div class="col-sm-9 col-xs-12">
+                              <div class="date-picker inicio v-align-center">
+                                <div class="layer-mobile-aux"></div>
+                                <div class="input">
+                                  <div class="result flexbox v-align-center">
+                                    <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                    <span class="fecha fecha-inicio-basica one-field" data-field='{"name" : "fecha-inicio-basica" }'></span>
+                                  </div>
+                                </div>
+                                <div class="calendar init" data-min="27/02/2016" data-max="27/02/2017"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-pr-50 col-xs-6 flexbox v-align-center">
+                            <div class="col-sm-3 col-xs-12"><label>Hasta:</label></div>
+                            <div class="col-sm-9 col-xs-12">
+                              <div class="date-picker fin v-align-center">
+                                <div class="layer-mobile-aux"></div>
+                                <div class="input">
+                                  <div class="result flexbox v-align-center">
+                                    <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                    <span class="fecha fecha-fin-basica one-field" data-field='{"name" : "fecha-fin-basica" }'></span>
+                                  </div>
+                                </div>
+                                <div class="calendar fin"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-pr-50 col-sm-12 col-xs-12 flexbox v-align-center estatus-container">
+                          <div class="col-sm-pr-65 col-xs-12 flexbox v-align-center padding-0">
+                            <label class="col-sm-3 col-xs-12">Estatus:</label>
+                            <div class="col-sm-9 col-xs-12 padding-0">
+                              <div class="data-write slt col-xs-12 center-block">
+                                <select name="estatus-basico" class="estatus-basico one-field" data-field='{ "name" : "estatus-basico" }'>
+                                  <option value="">Elige una opción</option>
+                                  <option value="completado">Completado</option>
+                                  <option value="rechazado">Rechazado</option>
+                                  <option value="en-proceso">En proceso</option>
+                                  <option value="todos">Todos</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-pr-35 flexbox v-align-center">
+                            <button class="bton blue-dark main-btn" id="btn-search-movimientos" type="submit" disabled>Buscar</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-pr-15 col-sm-2 flexbox v-align-center busqueda-avanzada-btn h-align-center">
+                        <button type="button" class="btn-like-a btn-limpiar-busqueda" data-href="historial-1.html" disabled>Nueva búsqueda</button>
+                      </div>
+
+                    </div>
+                    <div class="col-sm-12 col-xs-12 search-container" id="search-avanzado">
+                      <span class="vista-busqueda">
+                        <span class="icon io-Close"></span>
+                      </span>
+                      <div class="col-sm-12 col-xs-12 first-container">
+                        <p><strong>Búsqueda avanzada</strong></p>
+                        <div class="col-sm-12 col-xs-12 flexbox v-align-center">
+                          <div class="col-sm-pr-75 col-xs-12 flexbox v-align-center date-pickers-container limit-month">
+                            <div class="col-sm-6 col-xs-6 search-element-block">
+                              <div class="col-sm-12 col-xs-12"><label>Desde:</label></div>
+                              <div class="col-sm-12 col-xs-12">
+                                <div class="date-picker inicio v-align-center">
+                                  <div class="layer-mobile-aux"></div>
+                                  <div class="input">
+                                    <div class="result flexbox v-align-center">
+                                      <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                      <span class="fecha fecha-inicio one-field" data-field='{"name" : "fecha-inicio" }'></span>
+                                    </div>
+                                  </div>
+                                  <div class="calendar init" data-min="2017/01/30" data-max="2017/03/31" id="initAvanzada"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 search-element-block">
+                              <div class="col-sm-12 col-xs-12"><label>Hasta:</label></div>
+                              <div class="col-sm-12 col-xs-12">
+                                <div class="date-picker fin v-align-center">
+                                  <div class="layer-mobile-aux"></div>
+                                  <div class="input">
+                                    <div class="result flexbox v-align-center">
+                                      <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                      <span class="fecha fecha-fin one-field" data-field='{"name" : "fecha-fin" }'></span>
+                                    </div>
+                                  </div>
+                                  <div class="calendar fin" id="finAvanzada"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="col-sm-pr-25 col-xs-12 search-element-block operacion-container">
+                            <div class="col-sm-12 col-xs-12"><label>No. de operación:</label></div>
+                            <div class="col-sm-12 col-xs-12">
+                              <div class="data-write">
+                                <input type="text" name="operacion" class="operacion only-numbers one-field" placeholder="Mínimo 1 número" maxlength="12" data-field='{ "name" : "operacion" }'>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12 col-xs-12 checkbox-elements-container">
+                        <p class="select-all-busqueda-block"><strong>Tipo de movimiento</strong><span id="todos-movimiento" data-value="true">(Seleccionar todos)</span></p>
+                        <div class="col-sm-12 col-xs-12 flexbox v-align-center">
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="consultar-grupo" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="consultar-grupo"/>
+                                <label for="consultar-grupo"><span class="check-sq"></span><span class="texto">Consultar Grupo</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="consultar-servicios-activos" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="consultar-servicios-activos"/>
+                                <label for="consultar-servicios-activos"><span class="check-sq"></span><span class="texto">Consultar Servicios Activos</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="consultar-servicios-disponibles" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="consultar-servicios-disponibles"/>
+                                <label for="consultar-servicios-disponibles"><span class="check-sq"></span><span class="texto">Consultar Servicios Disponibles</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="suspender-lineas" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="suspender-lineas"/>
+                                <label for="suspender-lineas"><span class="check-sq"></span><span class="texto">Suspender líneas</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="genera-comentario-m2k" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="genera-comentario-m2k"/>
+                                <label for="genera-comentario-m2k"><span class="check-sq"></span><span class="texto">Genera comentario en M2K</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="reactivacion-peticion" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="reactivacion-peticion"/>
+                                <label for="reactivacion-peticion"><span class="check-sq"></span><span class="texto">Reactivación a Petición</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="reactivacion-mismo-sim-imei" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="reactivacion-mismo-sim-imei"/>
+                                <label for="reactivacion-mismo-sim-imei"><span class="check-sq"></span><span class="texto">Reactivación con mismo SIM y mismo IMEI</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="reactivacion-nuevo-sim-imei" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="reactivacion-nuevo-sim-imei"/>
+                                <label for="reactivacion-nuevo-sim-imei"><span class="check-sq"></span><span class="texto">Reactivación con nuevo equipo y nueva SIM</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="cambio-sim" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="cambio-sim"/>
+                                <label for="cambio-sim"><span class="check-sq"></span><span class="texto">Cambio de SIM</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="cambio-imei" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="cambio-imei"/>
+                                <label for="cambio-imei"><span class="check-sq"></span><span class="texto">Cambio de IMEI</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="activar-servicios-anadidos" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="activar-servicios-anadidos"/>
+                                <label for="activar-servicios-anadidos"><span class="check-sq"></span><span class="texto">Activar Servicios Añadidos</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="desactivar-servicios-anadidos" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="desactivar-servicios-anadidos"/>
+                                <label for="desactivar-servicios-anadidos"><span class="check-sq"></span><span class="texto">Desactivar Servicios Añadidos</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12 col-xs-12 checkbox-elements-container">
+                        <p class="select-all-busqueda-block"><strong>Estatus</strong> <span id="todos-estatus" data-value="true">(Seleccionar todos)</span></p>
+                        <div class="col-sm-12 col-xs-12 flexbox v-align-center">
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="completado" class="estatus one-field" name="estatus[]" data-field='{ "name" : "estatus" }' value="completado"/>
+                                <label for="completado"><span class="check-sq"></span><span class="texto">Completado</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="rechazado" class="estatus one-field" name="estatus[]" data-field='{ "name" : "estatus" }' value="rechazado"/>
+                                <label for="rechazado"><span class="check-sq"></span><span class="texto">Rechazado</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="en-proceso" class="estatus one-field" name="estatus[]" data-field='{ "name" : "estatus" }' value="en-proceso"/>
+                                <label for="en-proceso"><span class="check-sq"></span><span class="texto">En proceso</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12 col-xs-6 center-block">
+                        <div class="col-sm-12 button-field-mod">
+                            <button class="bton blue-dark main-btn" id="btn-search-movimientos-avanzado" type="submit" disabled>Buscar</button>
+
+                            <button class="btn-like-a btn-limpiar-busqueda" id="btn-limpiar-busqueda-avanzada" data-href="historial-1.html" type="button" disabled>Nueva búsqueda</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 flexbox v-align-center busqueda-avanzada-btn h-align-center hidden-xs">
+                      <button type="button" class="btn-like-a vista-busqueda" id="busqueda-avanzada-btn">Búsqueda avanzada</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-gray no-margin-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-xs-12 padding-0">
+                <div class="header-info-movimientos flexbox col-sm-12">
+                  <div class="col-sm-10 col-xs-12 flexbox v-align-center">
+                    <p id="msg-movimientos">Consulta y descarga los movimientos de los últimos 12 meses por periodos de 31 días.</p>
+                  </div>
+                  <div class="col-sm-2 col-xs-12 flexbox v-align-center h-align-center">
+                    <button title="Descargar" class="btn-general-solicitud-descarga disabled-admin-mode" type="button"><span class="icon io-download-mte"></span><span>Descargar</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid gestion-ejecutivos gestion-administradores" id="gestion-ejecutivos-view">
+            <div class="container">
+              <div class="row">
+                <div class="ver-por-pagina-block col-sm-12 col-xs-12 center-block padding-0">
+                  <div class="col-sm-5 col-xs-12 flexbox v-align-center">
+                    <div class="col-sm-5 col-xs-5">
+                      <label>Ver por página:</label>
+                    </div>
+                    <div class="col-sm-7 col-xs-7">
+                      <div class="data-write slt">
+                        <select name="ver-por" class="ver-por" id="ver-por">
+                          <option value="50">50 movimientos</option>
+                          <option value="100">100 movimientos</option>
+                          <option value="200">200 movimientos</option>
+                          <option value="500">500 movimientos</option>
+                          <option value="1000">1000 movimientos</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="general-table edit-table-ejecutivos" id="movimientos-table">
+                  
+                  <div class="header-block general-block has-filters hidden-xs clearfix" id="ordenamientoHistorialMovimientos" data-action="">
+                  <div class="col-sm-pr-100 h-align-center">
+
+                      <div class="col-sm-pr-20 flexbox h-align-center">
+                        <strong>No. de operación</strong>
+                        <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "operacion" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "operacion" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-20 flexbox h-align-center">
+                        <strong>Tipo de movimiento</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "movimiento" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "movimiento" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-20 flexbox h-align-center">
+                        <strong>Línea(s) seleccionada(s)</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "lineas" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "lineas" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                       <div class="col-sm-pr-15 flexbox h-align-center">
+                        <strong>Estatus</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "estatus" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "estatus" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-15 flexbox h-align-center">
+                        <strong>Solicitud</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "solicitud" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "solicitud" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                  </div>
+
+                </div>
+
+                  <div class="table-main-block sin-responsable" id="listado-movimientos">
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"1", "operacion": "3823981238923","movimiento" : "Suspensión de líneas", "lineas": "1 línea(s)",  "estatus" : "Rechazado", "responsable" : "Roberto Renedo", "solicitud": "01/09/2016",
+                    "razonsocial" : "Lucky Rabbit INC", "contacto" : "5523121243", "url" : "historial-2-simple.html"}'></div>
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"2", "operacion": "7063981238923","movimiento" : "Reactivación", "lineas": "1 línea(s)", "estatus" : "Rechazado", "responsable" : "Abraham Luna", "solicitud": "17/05/2016", "razonsocial" : "Lucky Rabbit INC", "contacto" : "5523121243", "url" : "historial-2-simple.html"}'></div>
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"3", "operacion": "3823981238923","movimiento" : "Cambio de IMEI", "lineas": "1 línea(s)", "estatus" : "Rechazado", "responsable" : "Roberto Renedo", "solicitud": "01/09/2016", "razonsocial" : "Lucky Rabbit INC", "contacto" : "5523121243", "url" : "historial-2-simple.html"}'></div>
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"4", "operacion": "5823981238923","movimiento" : "Suspensión de líneas", "lineas": "6 línea(s)", "estatus" : "Rechazado", "responsable" : "Julia Gaytan", "solicitud": "05/12/2016", "razonsocial" : "Lucky Rabbit INC", "contacto" : "5523121243", "url" : "historial-2-multiple.html"}'></div>
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"5", "operacion": "1304981238923","movimiento" : "Suspensión de líneas", "lineas": "1 línea(s)", "estatus" : "Rechazado", "responsable" : "Yazmin Aguilar", "solicitud": "30/10/2016", "razonsocial" : "Lucky Rabbit INC", "contacto" : "5523121243", "url" : "historial-2-simple.html"}'></div>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-8 col-md-offset-2">
+                    <div class="col-sm-12 ct-pagination center-pag">
+                      <ol>
+                        <li>
+                          <a href="#" class="active">1</a>
+                        </li>
+                        <li>
+                          <a href="#">2</a>
+                        </li>
+                        <li>
+                          <a href="#">3</a>
+                        </li>
+                        <li>
+                          <a href="#"><span class="icon io-AccordionRight"></span></a>
+                        </li>                              
+                      </ol>
+                    </div>
+                  </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- MODAL DESCARGAR HISTORIAL -->
+        <section class="modal-mte" id="modal-descargar">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2" data-before="Solicitud de descarga" data-after="Solicitud de descarga">Solicitud de descarga</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8 center-block in-cont-mod">
+                    <div class="row">
+                      <form class="col-sm-12 form-ge-mod" id="form-confirmar-descargar-facturas">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Haz clic en "Enviar" para que el Historial de movimientos solicitado sea enviado al correo electrónico registrado. Si deseas que se envíe copia a otra dirección, ingrésala en este campo.</p>
+
+                          <div class="data-write col-sm-8 center-block">
+                            <input type="text" name="email" placeholder="Correo electrónico" class="required only-email" id="email" value=""/>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark full-width first-submit" id="btn-descargar-facturas" type="submit">Enviar</button>
+                        </div>
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="descargar-facturas-confirmacion">
+                        <p>Tu solicitud ha sido enviada con éxito. Recibirás en tu correo electrónico el enlace para descargar el Historial de movimientos. <br>Para dar seguimiento a tus solicitudes, ingresa a la sección Descargas.</p>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc"> 
+                          <a href="../solicitudes-descargas/descargas-1.html" class="bton blue-dark">Descargas</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL DESCARGAR REGISTROS -->
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.btn-secondary{
+	background: #ddd;
+	box-shadow: none;
+	border-radius: 0;
+	color: #666;
+	font-weight: 400;
+	margin-bottom: 5px !important;
+	width: 100%;
+}
+.btn-secondary:focus, .btn-secondary:active{
+	border-radius: 0;
+}

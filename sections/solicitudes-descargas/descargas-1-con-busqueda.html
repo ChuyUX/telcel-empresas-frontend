@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content facturacion-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Descargas">Descargas</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h2">Descargas</h2>
+                <p class="col-sm-8 center-block"><span>Consulta y dale seguimiento a las descargas que has generado.</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="filtro-bg-blue no-margin-bottom">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container">Mostrar filtrado</p>
+              <div class="col-sm-12 col-xs-12 center-block padding-0">
+                <form action="descargas-1-con-busqueda.html" id="solicitudDescargas" class="wrapper-gfsc con-busqueda-filtrado clearfix">
+                  <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container">
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Tipo:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <div class="data-write slt">
+                          <select name="tipo" class="tipo one-field" id="tipo" data-field='{ "name" : "tipo" }'>
+                            <option value="">Elige una opción</option>
+                            <option value="1">Facturación de equipo</option>
+                            <option value="1">Facturación de consumo </option>
+                            
+                            <option value="1">Historial de movimientos</option>
+
+                            <option value="1">Reporte de Archivos F</option>
+                            <option value="1" selected>Reporte de Detalle de facturación y consumo</option>
+                            <option value="1">Detalle de consumo de datos</option>
+                            <option value="1">Detalle de Análisis de llamadas externas</option>
+                            <option value="1">Detalle de consumos no facturado</option>
+                            <option value="1">Detalle de Roaming internacional</option>
+                            <option value="1">Detalle de Servicios adicionales</option>
+                            <option value="1">Detalle de llamadas</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-20 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-4 col-xs-3">
+                        <label>Solicitud:</label>
+                      </div>
+                      <div class="col-sm-8 col-xs-9">
+                        <div class="date-picker v-align-center">
+                          <div class="layer-mobile-aux"></div>
+                          <div class="input">
+                            <div class="result flexbox v-align-center">
+                              <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                              <span class="fecha fecha-inicio fecha-corte one-field" data-field='{"name" : "fecha-corte" }'>08/03/2017</span></div>
+                          </div>
+                          <div class="calendar" data-min="01/03/2017" data-max="08/03/2017"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Estatus:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <div class="data-write slt">
+                          <select name="estatus" class="estatus one-field" id="estatus" data-field='{ "name" : "estatus" }'>
+                            <option value="">Elige una opción</option>
+                            <option value="1">Pendiente</option>
+                            <option value="2">En proceso</option>
+                            <option value="3" selected>Disponible</option>
+                            <option value="4">Expiró</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block">
+                      <button class="bton blue-dark main-btn full-width" type="button" id="btn-filter-facturas">Filtrar</button>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" type="button" data-href="descargas-1.html">Limpiar filtros</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid gestion-ejecutivos gestion-administradores" id="gestion-ejecutivos-view">
+            <div class="container">
+              <div class="row">
+                <div class="ver-por-pagina-block col-sm-12 col-xs-12 center-block padding-0">
+                  <div class="col-sm-5 col-xs-12 flexbox v-align-center">
+                    <div class="col-sm-5 col-xs-5">
+                      <label>Ver por página:</label>
+                    </div>
+                    <div class="col-sm-7 col-xs-7">
+                      <div class="data-write slt">
+                        <select name="ver-por" class="ver-por" id="ver-por">
+                          <option value="50">50 resultados</option>
+                          <option value="100">100 resultados</option>
+                          <option value="200">200 resultados</option>
+                          <option value="500">500 resultados</option>
+                          <option value="1000">1000 resultados</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 center-block padding-0">
+
+                  <div class="general-table padding-sides-0">
+                    
+                    <div class="header-block general-block has-filters hidden-xs clearfix">
+                      <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center">
+
+                        <div class="col-sm-pr-35 flexbox h-align-center">
+                          <strong title="Tipo">Tipo</strong>
+                          <div class="order-by-block order-by-query">
+                              <button type="button" data-opc='{"key": "tipo" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                              <button type="button" data-opc='{"key": "tipo" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-pr-20 flexbox h-align-center">
+                          <strong title="Solicitud">Solicitud</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "solicitud" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "solicitud" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-pr-20 flexbox h-align-center">
+                          <strong title="Expiración">Expiración</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "expiracion" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "expiracion" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+
+                        <div class="col-sm-pr-15 flexbox h-align-center">
+                          <strong title="Estatus">Estatus</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "estatus" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "estatus" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-pr-10 flexbox h-align-center">
+                          <strong title="Descarga">Descarga</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "descarga" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "descarga" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+
+                      </div>
+  
+                    </div>
+
+                    <div class="table-main-block solicitud-descargas col-sm-12 col-xs-12 center-block padding-0" id="listado-facturas">
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"1", "tipo": "Reporte de estructura de grupo", "solicitud" : "01/09/2016 12:54 hrs.", "estatus" : "Disponible", "expiracion": "01/09/2016 12:54 hrs.",  "formato" : "XLS", "descarga_l" : "#descarga1", "descarga" : true}'></div>
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"1", "tipo": "Reporte de estructura de grupo", "solicitud" : "01/09/2016 12:54 hrs.", "estatus" : "Disponible", "expiracion": "01/09/2016 12:54 hrs.",  "formato" : "XLS", "descarga_l" : "#descarga2", "descarga" : true}'></div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 ct-pagination center-pag">
+                <ol>
+                  <li>
+                    <a href="#" class="active">1</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon io-AccordionRight"></span></a>
+                  </li>                              
+                </ol>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

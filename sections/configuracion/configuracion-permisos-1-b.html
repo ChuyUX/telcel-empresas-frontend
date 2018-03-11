@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content configuracion-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Configuración">Configuración</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section> 
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-10 theme-heading center-block">
+                <h2 class="txt-center h2">Configuración de aprobaciones para [Perfil]</h2>
+                <p class="txt-center txt-300">En esta sección puedes solicitar aprobación de acciones para el perfil [Perfil]. Es necesario que por lo menos solicites una aprobación para poder continuar.</p>
+              </div>
+
+              <div class="col-sm-12 col-xs-12 center-block success-error-msg-container hidden">
+                <div class="success-tooltip hidden back-green vertical-align">
+                  <div class="center-element">
+                    <span class="icon io-TickNeg"></span>
+                    <p>​Tus solicitud ha sido enviada. Te notificaremos cuando sea aprobada.</p>
+                  </div>
+                </div>
+
+                <div class="error-tooltip back-pink hidden vertical-align">
+                  <div class="center-element">
+                    <span class="icon io-Alert2"></span>
+                    <p>Lo sentimos, este servicio por el momento no está disponible.  Estamos trabajando para servirte mejor. Por favor, intenta más tarde.</p>
+                  </div>
+                </div>
+
+              </div>
+
+               <div class="col-sm-12 col-xs-12 header-actions header-permisos-config" data-item = '{"id": "306" ,"nombre": "Usuario administrador"}'>
+                <div class="col-xs-12 col-sm-12 col-md-12 center-block flexbox">
+                  <div class="col-xs-12 col-sm-4 flexbox v-align-center flex-col-direction-mobile padding-0 select-all-permisos  to-fixed-block after-general" data-after=".table-permisos-block" >
+                      <div class="col-xs-7 col-sm-12 padding-0">
+                        <div class="col-sm-2 col-xs-3 checkbox-container" id="checkall">
+                          <input type="checkbox" id="checkbox-pagina-all" name="checkbox-pagina-all">
+                          <label for="checkbox-pagina-all"><span class="check-sq"></span></label>
+                        </div>
+                        <p class="col-sm-10 col-xs-9 hide-m checkbox-label">Seleccionar todo</p>
+                      </div>
+
+                      <div class="col-xs-5 hidden-sm hidden-md hidden-lg">
+                        <button class="bton blue-dark active-selected btn-save-changes" type="submit" id="btn-save-changes" disabled>Guardar</button>
+                      </div>
+                  </div>
+
+                  <div class="v-align-center flexbox ver-todos-roles-block col-sm-8 col-xs-12">
+                    <a href="configuracion-3.html"><span class="icon io-Maletin"></span><span class="txt">Ver todos los perfiles</span></a>
+                    <a href="configuracion-4-c.html" class="w-border"><span class="icon io-multiple-user"></span><span class="txt">Ver usuarios</span></a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <form id="form-edit-permisos" class="form-editar-permisos" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php" data-href="configuracion-3.html">
+                <div class="table-permisos-block col-sm-12 col-xs-12">
+                  <div class="user-permiso-box col-sm-4 col-xs-12">
+                    <div class="user-actions-box col-sm-12 col-xs-12">
+                      
+                      <div class="usuario-box col-xs-12 col-sm-12">
+                        <span class="icon io-celular"></span>
+                        <p class="usuario-title">Trámites</p>
+                      </div>
+                    </div>
+                    <div class="permisos-box col-sm-12 col-xs-12">
+                      
+                      <div class="col-xs-12 col-sm-12 padding-0 checkbox-container-all">
+                        <div>
+                          <input type="checkbox" id="checkbox-permisos-1" name="checkbox-permisos-1">
+                          <label for="checkbox-permisos-1"><span class="check-sq"></span></label>
+                        </div>
+                        <p class="hide-m checkbox-label">Seleccionar todo</p>
+                      </div>
+
+                      <ul class="permisos-ul col-xs-12 col-sm-12">
+                        <li>
+                          <div class="col-xs-12">
+                            <div class="data-write checkbox-container">
+                              <input type="checkbox" id="suspension-lineas" class="permiso one-field" name="permiso[]" data-field='{ "name" : "permiso" }' value="suspension-lineas" checked disabled/>
+                              <label for="suspension-lineas"><span class="check-sq"></span></label>
+                              <span class="texto">Suspensión línea(s)</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="col-xs-12">
+                            <div class="data-write checkbox-container">
+                              <input type="checkbox" id="reactivacion-lineas" class="permiso one-field" name="permiso[]" data-field='{ "name" : "permiso" }' value="reactivacion-lineas" checked disabled/>
+                              <label for="reactivacion-lineas"><span class="check-sq"></span></label>
+                              <span class="texto">Reactivación de línea(s)</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="col-xs-12">
+                            <div class="data-write checkbox-container">
+                              <input type="checkbox" id="gestionar-grupos-lineas" class="permiso one-field" name="permiso[]" data-field='{ "name" : "permiso" }' value="gestionar-grupos-lineas" checked disabled/>
+                              <label for="gestionar-grupos-lineas"><span class="check-sq"></span></label>
+                              <span class="texto">Gestionar grupos y líneas</span>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="user-permiso-box col-sm-4 col-xs-12">
+                    <div class="user-actions-box col-sm-12 col-xs-12">
+                      
+                      <div class="usuario-box col-xs-12 col-sm-12">
+                        <span class="icon io-ojo"></span>
+                        <p class="usuario-title">Consultas</p>
+                      </div>
+                    </div>
+                    <div class="permisos-box col-sm-12 col-xs-12">
+
+                      <div class="col-xs-12 col-sm-12 padding-0 checkbox-container-all">
+                        <div>
+                          <input type="checkbox" id="checkbox-permisos-2" name="checkbox-permisos-2">
+                          <label for="checkbox-permisos-2"><span class="check-sq"></span></label>
+                        </div>
+                        <p class="hide-m checkbox-label">Seleccionar todo</p>
+                      </div>
+
+                      <ul class="permisos-ul col-xs-12 col-sm-12">
+                        <li>
+                          <div class="col-xs-12">
+                            <div class="data-write checkbox-container">
+                              <input type="checkbox" id="detalle-consumo-lineas" class="permiso one-field" name="permiso[]" data-field='{ "name" : "permiso" }' value="detalle-consumo-lineas" checked disabled/>
+                              <label for="detalle-consumo-lineas"><span class="check-sq"></span></label>
+                              <span class="texto">Detalle de consumo de línea(s)</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="col-xs-12">
+                            <div class="data-write checkbox-container">
+                              <input type="checkbox" id="estado-cuentas-lineas" class="permiso one-field" name="permiso[]" data-field='{ "name" : "permiso" }' value="estado-cuentas-lineas" checked disabled/>
+                              <label for="estado-cuentas-lineas"><span class="check-sq"></span></label>
+                              <span class="texto">Estado de cuenta de línea(s)</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="col-xs-12">
+                            <div class="data-write checkbox-container">
+                              <input type="checkbox" id="facturas-cfdi" class="permiso one-field" name="permiso[]" data-field='{ "name" : "permiso" }' value="facturas-cfdi" disabled/>
+                              <label for="facturas-cfdi"><span class="check-sq"></span></label>
+                              <span class="texto">Factura CFDI</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="col-xs-12">
+                            <div class="data-write checkbox-container">
+                              <input type="checkbox" id="facturas-equipos" class="permiso one-field" name="permiso[]" data-field='{ "name" : "permiso" }' value="facturas-equipos" disabled/>
+                              <label for="facturas-equipos"><span class="check-sq"></span></label>
+                              <span class="texto">Facturas de equipo(s)</span>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="user-permiso-box col-sm-4 col-xs-12">
+                    <div class="user-actions-box col-sm-12 col-xs-12">
+                      
+                      <div class="usuario-box col-xs-12 col-sm-12">
+                        <span class="icon io-Cart"></span>
+                        <p class="usuario-title">Compras</p>
+                      </div>
+                    </div>
+                    <div class="permisos-box col-sm-12 col-xs-12">
+
+                      <div class="col-xs-12 col-sm-12 padding-0 checkbox-container-all">
+                        <div>
+                          <input type="checkbox" id="checkbox-permisos-3" name="checkbox-permisos-3">
+                          <label for="checkbox-permisos-3"><span class="check-sq"></span></label>
+                        </div>
+                        <p class="hide-m checkbox-label">Seleccionar todo</p>
+                      </div>
+
+                      <ul class="permisos-ul col-xs-12 col-sm-12">
+                        <li>
+                          <div class="col-xs-12">
+                            <div class="data-write checkbox-container">
+                              <input type="checkbox" id="paquetes-roaming-internacional" class="permiso one-field" name="permiso[]" data-field='{ "name" : "permiso" }' value="paquetes-roaming-internacional" disabled/>
+                              <label for="paquetes-roaming-internacional"><span class="check-sq"></span></label>
+                              <span class="texto">Paquetes roaming internacional</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="aditional-title"><strong class="label-title">Servicios adicionales:</strong></li>
+                        <li>
+                          <div class="col-xs-12">
+                            <div class="data-write checkbox-container">
+                              <input type="checkbox" id="paquetes-mas-megas" class="permiso one-field" name="permiso[]" data-field='{ "name" : "permiso" }' value="paquetes-mas-megas" checked disabled/>
+                              <label for="paquetes-mas-megas"><span class="check-sq"></span></label>
+                              <span class="texto">Paquetes Más Megas</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="col-xs-12">
+                            <div class="data-write checkbox-container">
+                              <input type="checkbox" id="seguro-celular" class="permiso one-field" name="permiso[]" data-field='{ "name" : "permiso" }' value="seguro-celular" disabled/>
+                              <label for="seguro-celular"><span class="check-sq"></span></label>
+                              <span class="texto">Seguro celular</span>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li>
+                          <div class="col-xs-12">
+                            <div class="data-write checkbox-container">
+                              <input type="checkbox" id="telce-sin-fronteras" class="permiso one-field" name="permiso[]" data-field='{ "name" : "permiso" }' value="telce-sin-fronteras" disabled/>
+                              <label for="telce-sin-fronteras"><span class="check-sq"></span></label>
+                              <span class="texto">Telcel sin fronteras</span>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-xs-12 center-block submit-r-asoc componente-submit-block clearfix">
+                  <div class="edit-btns-container col-sm-12 col-xs-12">
+                    <div class="col-xs-12 col-sm-6">
+                      <button class="bton btn-like-a active-selected" type="button" id="btn-cancel-changes">Cancelar</button>
+                    </div>
+                    <div class="hidden-xs col-sm-6">
+                      <button class="bton blue-dark active-selected btn-save-changes" type="submit">Guardar cambios</button>
+                    </div>
+                  </div>
+                  <div class="enable-edit-btns-container col-sm-12 col-xs-12">
+                    <div class="col-sm-12 col-xs-12">
+                      <button class="bton blue-dark active-selected" type="button" id="btn-enable-edit">Solicitar más aprobaciones</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODAL CANCELAR ROL -->
+        <section class="modal-mte" id="modal-cancelar-rol">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Cancelar</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-avatar"></span>
+                          <p class="alias-text">Nombre del perfil</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod" id="confirmar-cancelar-rol">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>¿Estás seguro de cancelar la creación del nuevo perfil?</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" id="btn-cancelar-rol" data-href="configuracion-3.html" type="button">Si, quiero cancelar</button>
+                          <button class="simple m-btn-close-modal" type="button">No quiero cancelar</button>
+                          
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL CANCELAR ROL -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/configuracion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+
+  </body>
+</html>

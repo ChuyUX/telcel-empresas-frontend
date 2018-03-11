@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content autogestion-general-block autogestion-roaming-block bloquear-acciones-masivas" id="autogestion-confirmacion">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+      <!-- MODAL Bloquear Masivo -->
+        <section class="modal-mte" id="modal-bloquear-masivo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">¡Los cambios solicitados se perderán!</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p> Detectamos una reducción de tamaño en la ventana del navegador, si deseas continuar la información capturada se perderá y deberás iniciar nuevamente tu solicitud. Para conservar la información capturada es necesario ampliar nuevamente el navegador.</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <a class="bton blue-dark" id="btn-resize-window" href="roaming-masivo-1.html">Continuar</a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <!-- FIN MODAL Bloquear Masivo -->
+      
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                 <li class="preview-step">
+                    <a title="Roaming" href="roaming-0.html">Roaming</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Paquetes">Paquetes</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Aquí hardcodeo y jalo los paquetes que el usuario añadio para mostrarlos en el carrito -->
+        <div id="paquetes-seleccionados-user" class="hidden" data-paquetes = "paquete-4,paquete-8,paquete-12"></div>
+        <!-- Fin simulación -->
+        
+        <section class="no-margin-bottom">
+            <div class="servicios-tooltip-container to-fixed-block active">
+
+            <div class="btn-resumen flexbox">
+              <div class="button-container v-align-center">
+                <button class="bton orange mostrar-servicios-btn" type="submit" disabled>Continuar</button>
+              </div>
+              <div><span class="icon io-resumen"></span></div>
+              <div><p>Resumen</p></div>
+              <div class="total-block"><span class="total-servicios">0</span></div>
+
+              
+            </div>
+            
+          </div>
+
+            <div class="txt-center form-section-block susp-list-pick">
+              
+              <section class="clearfix no-margin-bottom">
+                <div class="row">
+                  <div class="col-md-12 txt-center">
+                    <!-- <h2 class="txt-center h2">Confirmar las líneas que deseas suspender</h2> -->
+
+                    <h2 class="txt-center h2">Líneas ingresadas [9]</h2>
+                  </div>
+                </div>
+
+                <!-- Contenedor con líneas que no se pudieron suspender -->
+                <div id="listado-sin-autogestion-container">
+                  <div class="listado-mostrar-ocultar">
+                    <p>[4] línea(s) no puede(n) ser gestionada(s). <a class="btn-like-a"><span class="a-mostrar">Mostrar errores</span> <span class="a-ocultar">Ocultar errores</span></a></p>
+
+                  
+                    <div class="container content-slp listado-container">
+
+                      <div class="col-sm-9 center-block">
+                        <div class="col-sm-12 btn-container">
+                          <a href="../../doc/ejemplo-excel.xls" target="_blank" title="Descargar reporte" class="bton blue-dark first-submit">Descargar reporte</a>
+                        </div>
+
+                        <div class="listado-confirmacion-block">
+                          <div class="listado-header-block col-sm-12 center-block flexbox h-align-center linea-batch not-available">
+
+                              <div class="col-sm-12">
+                                <div class="col-sm-2 flexbox v-align-center">
+                                   <strong title="Región">Región</strong>
+                                </div>
+
+                                <div class="col-sm-3 flexbox v-align-center">
+                                    <strong title="Número">Número</strong>
+                                </div>
+
+                                <div class="col-sm-3 flexbox v-align-center">
+                                  <strong title="Cuenta">Cuenta</strong>
+                                </div>
+
+                                <div class="col-sm-4 flexbox v-align-center">
+                                   <strong title="Motivo">Motivo</strong>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="col-sm-12 center-block flexbox h-align-center linea-batch not-available">
+
+                              <div class="col-sm-12 h-align-center flexbox">
+                                <div class="col-sm-2 flexbox v-align-center">
+                                   <p title="5">5</p>
+                                </div>
+
+                                <div class="col-sm-3 flexbox v-align-center">
+                                   <p title="5588778898">5588778898</p>
+                                </div>
+
+                                <div class="col-sm-3 flexbox v-align-center">
+                                  <p title="1016432320">1016432320</p>
+                                </div>
+
+                                <div class="col-sm-4 flexbox v-align-center">
+                                   <p title="No se cuenta con los permisos">No se cuenta con los permisos</p>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="col-sm-12 center-block flexbox h-align-center linea-batch not-available">
+
+                              <div class="col-sm-12 h-align-center flexbox">
+                                <div class="col-sm-2 flexbox v-align-center">
+                                   <p title="9">9</p>
+                                </div>
+
+                                <div class="col-sm-3 flexbox v-align-center">
+                                   <p title="5588778898">5588778898</p>
+                                </div>
+
+                                <div class="col-sm-3 flexbox v-align-center">
+                                  <p title="1013322620">1013322620</p>
+                                </div>
+
+                                <div class="col-sm-4 flexbox v-align-center">
+                                   <p title="Línea con falta de pago">Línea con falta de pago</p>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="col-sm-12 center-block flexbox h-align-center linea-batch not-available">
+
+                              <div class="col-sm-12 h-align-center flexbox">
+                                <div class="col-sm-2 flexbox v-align-center">
+                                   <p title="3">3</p>
+                                </div>
+
+                                <div class="col-sm-3 flexbox v-align-center">
+                                   <p title="5588778898">5588778898</p>
+                                </div>
+
+                                <div class="col-sm-3 flexbox v-align-center">
+                                  <p title="1016209834">1016209834</p>
+                                </div>
+
+                                <div class="col-sm-4 flexbox v-align-center">
+                                   <p title="Línea suspendida previamente">Línea suspendida previamente</p>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="col-sm-12 center-block flexbox h-align-center linea-batch not-available">
+
+                              <div class="col-sm-12 h-align-center flexbox">
+                                <div class="col-sm-2 flexbox v-align-center">
+                                   <p title="-">-</p>
+                                </div>
+
+                                <div class="col-sm-3 flexbox v-align-center">
+                                   <p title="558877">558877</p>
+                                </div>
+
+                                <div class="col-sm-3 flexbox v-align-center">
+                                  <p title="1016202134">1016202134</p>
+                                </div>
+
+                                <div class="col-sm-4 flexbox v-align-center">
+                                   <p title="El número ingresado no existe">El número ingresado no existe</p>
+                                </div>
+                              </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FIN Contenedor con líneas que no se pudieron suspender -->
+
+                <!-- Contenedor con líneas a suspender -->
+                <div id="listado-autogestion-container">
+                  <div class="container content-slp">
+                    <h3 class="txt-center h3 subtext">Confirma las [5] líneas a las que deseas <button type="button" class="btn-autogestion-simular btn-continuar">contratar [3] paquete(s)</button></h3>
+
+                    <div class="col-sm-12 col-xs-12 regresar-masivo">
+                      <a href="roaming-masivo-2.html" class="flexbox"><span class="icon i-angle-left"></span><span>Regresar a ingreso de líneas</span></a>
+                    </div>
+
+                    <div class="to-fixed-block after-general listado-header-autogestion col-sm-12" data-after="#listado-confirmacion-autogestion">
+                      <div class="back-blue1 col-sm-12 flexbox header-actions">
+                        <div class="col-sm-3 flexbox v-align-center flex-col-direction-mobile">
+                            <div class="col-sm-2 checkbox-container" id="checkall">
+                              <input type="checkbox" id="checkbox-all" name="checkbox-all">
+                              <label for="checkbox-all"><span class="check-sq"></span></label>
+                            </div>
+                            <p class="col-sm-10 hide-m checkbox-label">Seleccionar todo</p>
+                        </div>
+
+                        <div class="col-sm-3 flexbox v-align-center flex-col-direction-mobile">
+                          <button class="btn-like-a" id="btn-delete-all" type="button" disabled><span class="icon io-Bin"></span><span>Quitar de la lista</span></button>
+                        </div>
+
+                        <div class="col-sm-6 btn-container">
+                          <button type="button" class="bton orange btn-autogestion-submit btn-autogestion-simular btn-continuar">Contratar</button>
+                        </div>
+                      </div>
+
+                      <div class="listado-delete-block col-sm-12">
+                        <p class="reading-notice">Se ha(n) quitado la(s) línea(s). <a href="#deshacer" id="deshacer-eliminado">Deshacer última acción</a></p>
+                      </div>
+                    </div>
+
+                    <div class="listado-header-block add-padding">
+                      <div class="col-sm-12 center-block flexbox h-align-center">
+
+                          <div class="col-sm-1 checkbox-container">
+                          </div>
+
+                          <div class="col-sm-10">
+                            
+                            <div class="col-sm-2 flexbox h-align-center">
+                              <strong title="Región">Región</strong>
+                              <div class="order-by-modal">
+                                  <button type="button" data-opc='{"key": "region" , "orderby": "desc"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "region" , "orderby": "asc"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-3 flexbox h-align-center">
+                              <strong title="Cuenta">Cuenta</strong>
+                              <div class="order-by-modal">
+                                  <button type="button" data-opc='{"key": "cuenta" , "orderby": "desc"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "cuenta" , "orderby": "asc"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-3 flexbox h-align-center">
+                              <strong title="Número">Número</strong>
+                              <div class="order-by-modal">
+                                  <button type="button" data-opc='{"key": "numero" , "orderby": "desc"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "numero" , "orderby": "asc"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-4 flexbox h-align-center">
+                              <strong title="Asignado a">Asignado a</strong>
+                              <div class="order-by-modal">
+                                  <button type="button" data-opc='{"key": "titular" , "orderby": "desc"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "titular" , "orderby": "asc"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+                            
+                          </div>
+
+                          <div class="col-sm-1 delete-container">
+                          </div>
+                      </div>
+                    </div>
+
+                    <form class="listado-confirmacion-block listado-container" id="listado-confirmacion-autogestion" method="POST" action ="roaming-masivo-4.html">
+                      <div class="col-sm-12 center-block flexbox h-align-center linea-batch" data-meta='{"id": "8898", "numero": "5588778898" , "cuenta" : "165020", "region" : "9",  "ruta" : "M-01/Grupo-1/Subgrupo-1", "titular" : "Guillermo Lechuga"}'>
+                      </div>
+
+                      <div class="col-sm-12 center-block flexbox h-align-center linea-batch" data-meta='{"id": "4567", "numero": "5545678898" , "cuenta" : "502089", "region" : "10","ruta" : "M-01/Grupo-2/Subgrupo-4", "titular" : "Yazmín Aguilar"}'></div>
+
+                      <div class="col-sm-12 center-block flexbox h-align-center linea-batch" data-meta='{"id": "5744", "numero": "5557448898" , "cuenta" : "574433", "region" : "1", "ruta" : "M-05/Grupo-1/Subgrupo-1", "titular" : "Christian Chavez"}'></div>
+
+                      <div class="col-sm-12 center-block flexbox h-align-center linea-batch" data-meta='{"id": "2345", "numero": "5545672345" , "cuenta" : "502345", "region" : "3", "ruta" : "M-03/Grupo-4/Subgrupo-1", "titular" : "Gael Thome"}'></div>
+
+                      <div class="col-sm-12 center-block flexbox h-align-center linea-batch" data-meta='{"id": "4576", "numero": "5547678898" , "cuenta" : "457089", "region" : "9", "ruta" : "M-01/Grupo-5/Subgrupo-6", "titular" : "Guillermo Rubio"}'></div>
+
+                    </form>
+                  </div>
+                </div>
+
+              </section>
+
+            </div>
+
+          
+
+        </section>
+
+        <!-- CONFIRMAR ELIMINAR -->
+        <section class="modal-mte" id="modal-confirmar-eliminar">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Confirmación</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p class="notice-mtg-mod">¿Estás seguro de quitar las líneas de la lista para contratar un paquete?</p>
+
+                          <p class="last-line-confirmation hidden">Has seleccionado quitar todas las líneas restantes del proceso, si deseas continuar te redireccionaremos a la pantalla principal de roaming.</p>
+
+                        </div>
+
+                        <div class="col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" type="submit" id="btn-confirmar-eliminar" data-redirect="roaming-masivo-1.html">Continuar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CONFIRMAR ELIMINAR -->
+
+        <!-- CONFIRMAR AUTOGESTION -->
+        <section class="modal-mte" id="modal-confirmar-autogestion">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Confirmación</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>¿Estás seguro que solo deseas gestionar <span class="c-lines"></span> línea(s) de las <span class="t-lines"></span> que ingresaste?</p>
+
+                        </div>
+
+                        <div class="col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" type="submit" id="btn-confirmar-autogestion">Continuar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CONFIRMAR AUTOGESTION -->
+
+        <!-- Carrito de compra -->
+        <section class="modal-mte" id="modal-servicios">
+          <div class="window-modal align-right visible">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+
+                      <div class="col-xs-12 col-sm-12 title-mod">
+                        <p class="h2">Resumen de [<span class="total-servicios">2</span>] servicios a contratar</p>
+                        <small>Los servicios se activarán y tendrán vigencia con horario de México.</small>
+                        
+                      </div>
+
+
+                      <div class="head-action-mod">
+                        <button class="bton m-btn-close-modal">
+                          <span class="icon i-angle-right"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 col-xs-12 center-block">
+                          <div class="general-table">
+                            <div class="header-block">
+                              <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center v-align-center" id="header-con-servicios">
+
+                                <div class="col-sm-4 col-xs-3 flexbox">
+                                  <strong title="Paquete y fechas">Paquete y fechas</strong>
+                                </div>
+
+                                <div class="col-sm-2 col-xs-3 h-align-center flexbox">
+                                  <strong title="Líneas">Líneas</strong>
+                                </div>
+
+                                <div class="col-sm-3 col-xs-3 h-align-center flexbox">
+                                  <strong title="Costo por línea">Costo por línea</strong>
+                                </div>
+
+                                <div class="col-sm-3 col-xs-3 h-align-center flexbox">
+                                  <strong title="Costo">Costo</strong>
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <div class="table-main-block" id="servicios-activados">
+                              <div class="col-sm-12 col-xs-12 center-block flexbox" id="c-servicio-4"> 
+                                <div class="col-sm-8 col-xs-8 flexbox"> 
+                                  <p title="Paquete Internacional 500 (del 31-10-2016 al 18-02-2017).">
+                                    Paquete Internacional 500 (del 31-10-2016 al 18-02-2017). 
+                                    <a href="">Mostrar legales</a> 
+                                  </p>
+                                </div>
+                                
+                                <div class="col-sm-4 col-xs-4 flexbox h-align-center">
+                                  <p class="p-align-center"><strong> $1794.00</strong></p> 
+                                </div> 
+                              </div>
+                              <div class="col-sm-12 col-xs-12 center-block flexbox" id="c-servicio-5"> 
+                                <div class="col-sm-8 col-xs-8 flexbox"> 
+                                  <p title="Paquete Internacional 500 (del 31-10-2016 al 18-02-2017).">
+                                    Paquete Internacional 500 (del 31-10-2016 al 18-02-2017). 
+                                    <a href="">Mostrar legales</a> 
+                                  </p>
+                                </div>
+                                
+                                <div class="col-sm-4 col-xs-4 flexbox h-align-center">
+                                  <p class="p-align-center"><strong> $1794.00</strong></p> 
+                                </div> 
+                              </div>
+                            </div>
+
+                            <h4 id="servicios-desactivados-head" class="blue-back-heading hidden">Servicios a desactivar</h4>
+                            <div class="table-main-block" id="servicios-desactivados">
+                            </div>
+
+                            <div class="last-td">
+                              <div class="col-sm-12 center-block flexbox h-align-center  v-align-center">
+                                  <div class="col-sm-7 flexbox h-align-center">
+                                    <p class="description"><small class="txt-100">Los precios incluyen IVA al 16%. </br>* El precio total puede disminuir de acuerdo a la compatibilidad del servicio con la(s) línea(s).</small></p>
+                                  </div>
+
+                                  <div class="col-sm-5 flexbox h-align-center">
+                                    <p>Total: <strong class="total"> $<span id="total-carrito">300</span></strong></p>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                  
+                  <div class="terminos-container-modal col-sm-12 center-block">   
+                    <div class="col-sm-10 center-block">
+                      <div class="data-write">
+                        <input type="checkbox" id="checkbox-autogestion-terminos" name="checkboxAutogestion" value="1"/>
+                        <label for="checkbox-autogestion-terminos"><span class="check-sq"></span>He leído y estoy de acuerdo con los Términos y condiciones de uso del servicio.</label>
+                      </div>
+                    </div>
+                      <!-- <div class="data-write">
+                        <p class="reading-notice bg-pink" id="reading-notice-motivo">Al suspender tu línea ésta no quedará cancelada.</p>
+                      </div> -->
+                      <div class="triangle-tooltip blue-triangle fadein" id="terminos-container">
+                        
+                        <div class="head-content col-sm-12">
+                          <div class="close-container col-sm-12 col-xs-12"><span class="icon i-angle-left" data-hide="#terminos-container"></span></div>
+                        </div>
+
+                        <div class="terminos-y-condiciones-block">
+                          <div class="head-content col-sm-12">
+                            <p class="col-sm-10 col-xs-10"><strong>Términos y condiciones de <span id="tyc-name"></span></strong></p>
+                          </div>
+
+                          <div id="tyc-servicio"></div>
+
+                          
+
+                        </div>
+                       
+                      </div>
+                    </div>
+
+                        <div class="col-sm-12 submit-r-asoc padding-10">
+                          <button class="bton orange" type="submit" id="btn-contratar-servicios" data-post ="roaming-masivo-4.html" disabled>Contratar</button>
+                          
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Carrito de compra -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/roaming.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+
+  </body>
+</html>

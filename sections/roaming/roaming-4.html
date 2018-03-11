@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content roaming-block autogestion-general-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a title="Roaming" href="roaming-0.html">Roaming</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Cobertura">Cobertura</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+
+        <section class="no-margin-bottom"> 
+            <form class="form-section-block form-destinos-multiple" id="cobertura-form" method="POST" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php" autocomplete="off">
+              <section class="clearfix padding-20 roaming-step">
+                <div class="container">
+                  <h3 class="h3">¿A dónde viajas y con que equipo?</h3>
+                  <div class="col-sm-8 center-block">
+                    <div class="col-xs-12 col-sm-6 center-block destinos-multiple">
+                      <div class="col-sm-12 col-xs-12 line-field-mod element-input-block">
+                        <div class="col-xs-11 col-sm-12 general-number-container destino-input-container">
+                          <select name="destinos[]" class="destino select-change" id="destino-1"></select>
+                        </div>
+                        <div class="col-xs-1 col-sm-3 icons-container">
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 center-block"> 
+                      <button type="button" class="btn-like-a btn-agregar-destino-general">Agregar destino</button>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 center-block general-number-container">
+                      <div class="data-write slt">
+                        <select name="marca" class="marca select-change" id="marca">
+                          <option value="">Elige la marca</option>
+                          <option value="1">Apple</option>
+                          <option value="2">HTC</option>
+                          <option value="3">Sony</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 center-block general-number-container">
+                      <div class="data-write slt">
+                        <select name="modelo" class="modelo select-change" id="modelo">
+                          <option value="">Elige el modelo</option>
+                          <option value="1">Iphone 3GS</option>
+                          <option value="2">Iphone 4</option>
+                          <option value="3">Iphone 5</option>
+                          <option value="4">Iphone 5S</option>
+                          <option value="5">Iphone 6</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-md-offset-2 padding-10">
+                    <div class="col-md-12 col-xs-12 center-block">
+                      <button class="bton orange" type="submit" disabled>Ver disponibilidad con mi equipo</button>
+                      <button class="bton blue-dark btn-limpiar-busqueda" type="button">Limpiar búsqueda</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="clearfix padding-20 roaming-step back-blue1" id="cobertura-result-container">
+                <div class="container">
+                  <h3 class="h3">Cobertura para tu equipo [Marca] [Modelo]</h3>
+                  <p class="hide-mobile">Si no conoces el modelo de tu equipo da <a href="">clic aquí</a>.</p>
+                  <p class="hide-mobile">Tienes cobertura en el destino seleccionado para los siguientes servicios:</p>
+                  <div class="container-fluid gestion-table" id="main-table-view">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-10 col-md-12 center-block padding-0">
+
+                          <div class="general-table overflow add-borders-simple white-borders">
+                            <div class="header-block general-block clearfix">
+                              <div class="col-sm-pr-100 col-xs-12 center-block flexbox v-align-center padding-0">
+
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <strong title="Operador">Operador</strong>
+                                </div>
+
+                                <div class="col-sm-pr-10 flexbox h-align-center">
+                                  <strong title="Voz">Voz</strong>
+                                </div>
+
+                                <div class="col-sm-pr-10 flexbox h-align-center">
+                                  <strong title="SMS">SMS</strong>
+                                </div>
+
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <strong title="Internet GSM">Internet GSM</strong>
+                                </div>
+
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <strong title="Internet 3G">Internet 3G</strong>
+                                </div>
+
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <strong title="Internet 4G">Internet 4G</strong>
+                                </div>
+
+                                <!-- <div class="col-sm-pr-15 flexbox h-align-center">
+                                  <strong title="Mapa">Mapa</strong>
+                                </div> -->
+                              </div>
+                            </div>
+                            <div class="table-main-block">
+                              
+                              <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center data-detalle">
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <p title="Operador" class="label">Operador:</p>
+                                  <p title="Canadá">Canadá</p>
+                                </div>
+
+                                <div class="col-sm-pr-10 flexbox h-align-center">
+                                  <p title="Voz" class="label">Voz:</p>
+                                  <p><span class="icon io-TickNeg"></span></p>
+                                </div>
+
+                                <div class="col-sm-pr-10 flexbox h-align-center">
+                                  <p title="SMS" class="label">SMS:</p>
+                                  <p><span class="icon io-TickNeg"></span></p>
+                                </div>
+
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <p title="Internet GSM" class="label">Internet GSM:</p>
+                                  <p>-</p>
+                                </div>
+
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <p title="Internet 3G" class="label">Internet 3G:</p>
+                                  <p><span class="icon io-TickNeg"></span></p>
+                                </div>
+
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <p title="Internet 4G" class="label">Internet 4G:</p>
+                                  <p>-</p>
+                                </div>
+
+                                <!-- <div class="col-sm-pr-15 flexbox h-align-center">
+                                  <a href="" class="bton orange">Ver mapa</a>
+                                </div> -->
+                                
+                                
+                              </div>
+
+                              <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center data-detalle">
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <p title="Operador" class="label">Operador:</p>
+                                  <p title="Japón">Japón</p>
+                                </div>
+
+                                <div class="col-sm-pr-10 flexbox h-align-center">
+                                  <p title="Voz" class="label">Voz:</p>
+                                  <p><span class="icon io-TickNeg"></span></p>
+                                </div>
+
+                                <div class="col-sm-pr-10 flexbox h-align-center">
+                                  <p title="SMS" class="label">SMS:</p>
+                                  <p><span class="icon io-TickNeg"></span></p>
+                                </div>
+
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <p title="Internet GSM" class="label">Internet GSM:</p>
+                                  <p><span class="icon io-TickNeg"></span></p>
+                                </div>
+
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <p title="Internet 3G" class="label">Internet 3G:</p>
+                                  <p>-</p>
+                                </div>
+
+                                <div class="col-sm-pr-20 flexbox h-align-center">
+                                  <p title="Internet 4G" class="label">Internet 4G:</p>
+                                  <p><span class="icon io-TickNeg"></span></p>
+                                </div>
+
+                                <!-- <div class="col-sm-pr-15 flexbox h-align-center">
+                                  <a href="" class="bton orange">Ver mapa</a>
+                                </div> -->
+                                
+                                
+                              </div>
+
+                              <div class="col-sm-pr-100 col-xs-12 center-block txt-center btn-container">
+                                <a href="roaming-masivo-1.html" class="">
+                                  Contratar un paquete para viajar
+                                </a>
+                              </div>
+
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </form>
+        </section>
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/roaming.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+
+  </body>
+</html>

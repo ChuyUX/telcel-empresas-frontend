@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content roaming-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a title="Roaming" href="roaming-0.html">Roaming</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Paquetes">Paquetes</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 theme-heading">
+                <h2 class="h2">Paquetes</h2>
+                <p class="txt-center center-block txt-300 col-md-8 col-sm-10 col-xs-12">Elige los paquetes y/o servicios para tu viaje al extranjero.</p>
+              </div>
+              <div class="col-md-12 padding-20">
+                <h3 class="h3 txt-center">Esta es la línea que estas gestionando:</h3>
+                <div class="col-sm-8 center-block">
+                  <div class="col-xs-12 center-block general-number-container">
+                      <div class="flexbox v-align-center h-align-center">
+                        <span class="icon io-Phone"></span>
+                        <p>5522323099</p> 
+                      </div>
+                    </div>
+                   <input type="hidden" id="lineas-hidden-input" name="lineas" value="5522323099"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="back-blue1"> 
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+
+                <div class="a-show-container col-xs-12 col-sm-12"><span id="show-destinos-block">Elige los paises a los que viajarás para filtrar los paquetes.</span></div>
+
+                <div class="destinos-confirm-block txt-center col-xs-12 col-md-10 col-sm-12 center-block clearfix hidden">
+
+                    <div class="icon-container">
+                      <span class="icon io-mapa"></span>
+                      <h3 class="h3">Destinos</h3>
+                    </div>
+                    
+                    <p>Puedes elegir  hasta 7 paises y/o 5 ferries</p>
+                    <form class="form-destinos-multiple input-wrapper col-sm-6 col-md-5 col-xs-12 clearfix center-block" id="destinos-search-block" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php" method="POST">
+
+                      <div class="col-sm-12 col-xs-12 line-field-mod element-input-block">
+                        <div class="col-xs-9 col-sm-12 general-number-container destino-input-container">
+                          <select name="destinos[]" class="destino ferrie" id="destino-1"></select>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 icons-container">
+                          <div class="show-more-details icon">
+                            <button class="icon io-cambiar btn-change" type="button"></button>
+                            <div class="triangle-tooltip">
+                              <div class="description">
+                               <p>Cambiar destino a país.</p> 
+                              </div>
+                            </div>
+                          </div>
+                          <span class="icon io-barco icon-current" title="Ferrie"></span>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12 col-xs-12 btn-container">
+                        
+                        <button type="button" class="btn-like-a btn-agregar-destino">Agregar destino</button>
+
+                        <button type="submit" class="bton orange" id="btn-search-destinos" disabled>Buscar paquetes y tarifas</button>
+
+                        <button class="bton blue-dark btn-limpiar-busqueda hidden" type="button">Limpiar búsqueda</button>
+                      </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="roaming-result-block">
+          <div class="servicios-tooltip-container to-fixed-block">
+
+            <div class="btn-resumen flexbox">
+              <div class="button-container v-align-center">
+                <button class="bton orange mostrar-servicios-btn" type="submit" disabled>Continuar</button>
+              </div>
+              <div><span class="icon io-resumen"></span></div>
+              <div><p>Resumen</p></div>
+              <div class="total-block"><span class="total-servicios">0</span></div>
+
+              
+            </div>
+            
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-xs-12">
+                <h3 class="h3 txt-center general-destinos-title">Te ofrecemos los siguientes paquetes y tarifas para tu viaje.</h3>
+
+                <div class="roaming-ofertas col-xs-12 col-sm-12 hidden">
+                  <div class="roaming-oferta-block isotope-element col-xs-12 col-sm-12 destino-EUA" id="paquete-4" data-item='{"id" : "4", "nombre": "Paquete Viajero Internacional de Internet 1000 MB", "costo": "932.00", "fecha" : false, "tyc" : "Pie jelly beans fruitcake powder cake biscuit. Toffee oat cake biscuit jujubes gummi bears tart I love. Tiramisu fruitcake tiramisu gummies lollipop cake sweet oat cake. Sweet roll sesame snaps donut pastry. Jujubes lemon drops jujubes macaroon carrot cake dragée cake. Liquorice icing gummies jujubes bear claw chocolate candy canes cake. Gingerbread pudding carrot cake icing pudding. Pastry pie tootsie roll marshmallow pastry. Soufflé jelly gingerbread pudding I love. Caramels sugar plum topping topping sweet cake.", "destino" : "EUA"}'>
+                    <div class="roaming-head">
+                      <h4 class="title col-xs-12 col-sm-10 padding-0">Paquete Viajero Internacional de Internet 1000 MB</h4>
+                      <a href="roaming-4.html" target="_blank" class="hidden-xs col-sm-2">Revisa la cobertura de tu equipo</a>
+                    </div>
+
+                    <div class="roaming-oferta no-padding">
+                      <div class="col-sm-8 col-xs-12 bg-blue">
+                        <div class="oferta-box col-sm-3 col-xs-12">
+                          <strong class="big-txt">50</strong>
+                          <span class="element-name">Minutos</span>
+                        </div>
+
+                        <div class="oferta-box col-sm-3 col-xs-12">
+                          <strong class="big-txt">Ilimitado</strong>
+                          <span class="element-name">SMS</span>
+                        </div>
+
+                        <div class="oferta-box col-sm-3 col-xs-12">
+                          <strong class="big-txt">1000MB</strong>
+                          <span class="element-name hidden-xs">Incluidos</span>
+                        </div>
+
+                        <div class="oferta-box col-sm-3 col-xs-12">
+                          <strong class="big-txt">30 días</strong>
+                          <span class="element-name">Vigencia</span>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-4 col-xs-12">
+                        <div class="oferta-box col-sm-6 col-xs-12 column-mobile recomendado-block">
+                          <div class="recomendado">
+                            <strong class="hidden-xs">Ahorro</strong>
+                            <span class=" ahorro hidden-xs">69%</span>
+                            <span class="hidden-sm hidden-md hidden-lg to-uppercase">Recomendado</span>
+                          </div>
+                          <strong class="big-txt">$932</strong>
+                          <span class="element-name hidden-xs">Tarifa en pesos</span>
+                          <span class="extra-txt hidden-sm hidden-md hidden-lg">MXN</span>
+                        </div>
+
+                        <div class="col-sm-6 col-xs-12 btn-container">
+                          <button type="button" class="bton orange btn-agregar-paquete">Agregar paquete</button>
+                          <button type="button" class="bton btn-quitar-paquete">Quitar paquete</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hidden-xs col-sm-12 txt-center mostrar-legales">
+                      <span class="btn-legales">Mostrar legales</span>
+                    </div>
+                    <div class="roaming-fecha-step back-gray1 col-sm-12 hidden-xs padding-10">
+                        <div class="fecha-container col-xs-12 col-sm-12">
+                          <h3 class="h3 txt-center">Entre que fechas usarás estre paquete/tarifa</h3>
+                          <div class="confirmar-fechas-roaming col-sm-8 center-block padding-0 clearfix">                  
+                            <div class="col-sm-12 col-xs-12 v-align-center date-pickers-container limit-month">
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Inicio</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker inicio v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-inicio-6 one-field" data-field='{"name" : "fecha-inicio-6" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar init" data-min="27/02/2016" data-max="27/02/2017"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Término</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker fin v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-fin-6 one-field" data-field='{"name" : "fecha-fin-6" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar fin"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="legales-block back-gray1 col-sm-12 hidden-xs padding-10">
+                      <div class="col-sm-12 padding-0 txt-center">
+                        <span class="btn-legales">Ocultar legales</span>
+                      </div>
+                      <div class="col-sm-12 padding-0 flexbox">
+                        <div class="col-sm-8">
+                          <p><small>Cobertura:<br>NO INCLUYE cobertura aérea ni marítima.<br> Tarifas adicionales $1.2 por minuto, $0.99 por SMS, $0.83 por mb.<br> Tarifas en pesos con 16% de IVA.<br> Estados Unidos (incluye Puerto Rico e islas Vírgenes Americanas) y Canadá</small></p> 
+                          <p><small>Mundial Especial (incluye Australia, Bahréin, Bolivia, Bosnia y Herzegovina, Burkina Faso, Camboya, China, Congo, Egipto, Polinesia Francesa, Ghana, Gibraltar, Hong Kong, India, Indonesia, Iraq, Israel, Japón, Jordan, Kenia, Kuwait, Malasia, Islas Maldivas, Malta, Mauricio, Mónaco, Montenegro, Marruecos, Namibia, Nepal, Nueva Zelanda, Filipinas, Qatar, Corea, Isla Reunión, Moldavia, San Marino, Arabia Saudita, Senegal, Singapur, Sudáfrica, Sri Lanka, Sudán, Suazilandia, Siria, Taiwán, Tayikistán, Tanzania, Tailandia, Túnez, Turquía, Islas Guernesey y Jersey, Emiratos Árabes, Venezuela, Vietnam, Yemen y Zambia, Cuba, Anguilla, Antigua & Barbuda, Antillas Holandesas, Aruba, Bahamas, Barbados, Belice, Bermuda, Dominica, Granada, Guyana, Guadalupe, Haití, Islas Vírgenes Británicas, Islas Caimán, Jamaica, Martinica, Monserrat, San Cristóbal y Nieves, San Pedro y Miquelón, Santa Lucía, San Vicente y Las Granadinas, Surinam, Trinidad y Tobago, Islas Turcas y Caicos). Incluye los países de las coberturas EUA, Canadá y América Latina y Europa Preferente.</small></p>
+                        </div>
+                        <div class="col-sm-4 registro-txt">
+                          <p><span>Registro Público de Concesiones IFT Constancia Folio</span> <strong>43338</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="roaming-otras-ofertas col-xs-12 col-sm-12">
+                    <div class="roaming-oferta-block isotope-element col-xs-6 col-sm-12 destino-EUA" id="paquete-6" data-item='{"id" : "6", "nombre": "Nombre de tarifa tipo 1", "costo": "199.00", "fecha" : true, "tyc" : "Pie jelly beans fruitcake powder cake biscuit. Toffee oat cake biscuit jujubes gummi bears tart I love. Tiramisu fruitcake tiramisu gummies lollipop cake sweet oat cake. Sweet roll sesame snaps donut pastry. Jujubes lemon drops jujubes macaroon carrot cake dragée cake. Liquorice icing gummies jujubes bear claw chocolate candy canes cake. Gingerbread pudding carrot cake icing pudding. Pastry pie tootsie roll marshmallow pastry. Soufflé jelly gingerbread pudding I love. Caramels sugar plum topping topping sweet cake.", "destino" : "EUA"}'>
+                      <div class="roaming-head">
+                        <h4 class="title">Nombre de tarifa tipo 1</h4>
+                        <a href="roaming-4.html" target="_blank" class="hidden-xs">Revisa la cobertura de tu equipo</a>
+                      </div>
+
+                      <div class="roaming-oferta column-mobile">
+                        <div class="col-sm-8 col-xs-12">
+                          <div class="oferta-box col-sm-6 col-xs-12">
+                            <strong class="big-txt">$2.90/min</strong>
+                            <span class="element-name">Tarifa prefente de voz</span>
+                          </div>
+
+                          <div class="oferta-box col-sm-6 col-xs-12">
+                            <strong class="big-txt">$2.35/sms</strong>
+                            <span class="element-name">Tarifa preferente SMS</span>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12">
+                          <div class="oferta-box col-sm-6 col-xs-12 column-mobile">
+                            <strong class="big-txt">$199.00</strong>
+                            <span class="element-name hidden-xs">Tarifa en pesos</span>
+                            <span class="extra-txt hidden-sm hidden-md hidden-lg">MXN</span>
+                          </div>
+
+                          <div class="col-sm-6 col-xs-12 btn-container">
+                            <button type="button" class="bton orange btn-agregar-paquete">Agregar tarifa</button>
+                            <button type="button" class="bton btn-quitar-paquete">Quitar tarifa</button>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="hidden-xs col-sm-12 txt-center mostrar-legales">
+                        <span class="btn-legales">Mostrar legales</span>
+                      </div>
+                      <div class="roaming-fecha-step back-gray1 col-sm-12 hidden-xs padding-10">
+                        <div class="fecha-container col-xs-12 col-sm-12">
+                          <h3 class="h3 txt-center">Entre que fechas usarás estre paquete/tarifa</h3>
+                          <div class="confirmar-fechas-roaming col-sm-8 center-block padding-0 clearfix">                  
+                            <div class="col-sm-12 col-xs-12 v-align-center date-pickers-container limit-month">
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Inicio</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker inicio v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-inicio-6 one-field" data-field='{"name" : "fecha-inicio-6" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar init" data-min="27/02/2016" data-max="27/02/2017"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Término</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker fin v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-fin-6 one-field" data-field='{"name" : "fecha-fin-6" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar fin"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="col-sm-3 col-xs-8">
+                              <button class="bton orange" id="autogestion-btn" type="button" disabled>Agregar y contratar</button>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="legales-block back-gray1 col-sm-12 hidden-xs padding-10">
+                        <div class="col-sm-12 padding-0 txt-center">
+                          <span class="btn-legales">Ocultar legales</span>
+                        </div>
+                        <div class="col-sm-12 padding-0 flexbox">
+                          <div class="col-sm-8">
+                            <p><small>Cobertura:<br>NO INCLUYE cobertura aérea ni marítima.<br> Tarifas adicionales $1.2 por minuto, $0.99 por SMS, $0.83 por mb.<br> Tarifas en pesos con 16% de IVA.<br> Estados Unidos (incluye Puerto Rico e islas Vírgenes Americanas) y Canadá</small></p> 
+                            <p><small>Mundial Especial (incluye Australia, Bahréin, Bolivia, Bosnia y Herzegovina, Burkina Faso, Camboya, China, Congo, Egipto, Polinesia Francesa, Ghana, Gibraltar, Hong Kong, India, Indonesia, Iraq, Israel, Japón, Jordan, Kenia, Kuwait, Malasia, Islas Maldivas, Malta, Mauricio, Mónaco, Montenegro, Marruecos, Namibia, Nepal, Nueva Zelanda, Filipinas, Qatar, Corea, Isla Reunión, Moldavia, San Marino, Arabia Saudita, Senegal, Singapur, Sudáfrica, Sri Lanka, Sudán, Suazilandia, Siria, Taiwán, Tayikistán, Tanzania, Tailandia, Túnez, Turquía, Islas Guernesey y Jersey, Emiratos Árabes, Venezuela, Vietnam, Yemen y Zambia, Cuba, Anguilla, Antigua & Barbuda, Antillas Holandesas, Aruba, Bahamas, Barbados, Belice, Bermuda, Dominica, Granada, Guyana, Guadalupe, Haití, Islas Vírgenes Británicas, Islas Caimán, Jamaica, Martinica, Monserrat, San Cristóbal y Nieves, San Pedro y Miquelón, Santa Lucía, San Vicente y Las Granadinas, Surinam, Trinidad y Tobago, Islas Turcas y Caicos). Incluye los países de las coberturas EUA, Canadá y América Latina y Europa Preferente.</small></p>
+                          </div>
+                          <div class="col-sm-4 registro-txt">
+                            <p><span>Registro Público de Concesiones IFT Constancia Folio</span> <strong>43338</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="roaming-oferta-block isotope-element col-xs-6 col-sm-12 destino-EUA" id="paquete-8" data-item='{"id" : "8", "nombre": "Paquete Completo con Claro Video 50", "costo": "199.00", "fecha" : true, "tyc" : "Pie jelly beans fruitcake powder cake biscuit. Toffee oat cake biscuit jujubes gummi bears tart I love. Tiramisu fruitcake tiramisu gummies lollipop cake sweet oat cake. Sweet roll sesame snaps donut pastry. Jujubes lemon drops jujubes macaroon carrot cake dragée cake. Liquorice icing gummies jujubes bear claw chocolate candy canes cake. Gingerbread pudding carrot cake icing pudding. Pastry pie tootsie roll marshmallow pastry. Soufflé jelly gingerbread pudding I love. Caramels sugar plum topping topping sweet cake.", "destino" : "EUA"}'>
+                      <div class="roaming-head">
+                        <h4 class="title">Paquete Completo con Claro Video 50</h4>
+                        <a href="roaming-4.html" target="_blank" class="hidden-xs">Revisa la cobertura de tu equipo</a>
+                      </div>
+
+                      <div class="roaming-oferta">
+                        <div class="col-sm-8 col-xs-12">
+                          <div class="oferta-box col-sm-2 col-xs-12">
+                            <strong class="big-txt">50</strong>
+                            <span class="element-name">Minutos</span>
+                          </div>
+
+                          <div class="oferta-box col-sm-2 col-xs-12">
+                            <strong class="big-txt">50</strong>
+                            <span class="element-name">SMS</span>
+                          </div>
+
+                          <div class="oferta-box col-sm-2 col-xs-12">
+                            <strong class="big-txt">50MB</strong>
+                            <span class="element-name hidden-xs">Incluidos</span>
+                          </div>
+
+                          <div class="oferta-box column-mobile-reverse col-sm-3 col-xs-12">
+                            <div class="redes-sociales">
+                              <span class="icon io-FacebookNeg"></span>
+                              <span class="icon io-YouTubeNeg"></span>
+                              <span class="icon io-TwitterNeg"></span>
+                            </div>
+                            <span class="element-name">Redes sociales</span>
+                          </div>
+
+                          <div class="oferta-box column-mobile-reverse col-sm-3 col-xs-12">
+                            <span class="icon io-ClaroVideos"></span>
+                            <span class="element-name">sin costo</span>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12">
+                          <div class="oferta-box col-sm-6 col-xs-12 column-mobile">
+                            <strong class="big-txt">$199.00</strong>
+                            <span class="element-name hidden-xs">Tarifa en pesos</span>
+                            <span class="extra-txt hidden-sm hidden-md hidden-lg">MXN</span>
+                          </div>
+
+                          <div class="col-sm-6 col-xs-12 btn-container">
+                            <button type="button" class="bton orange btn-agregar-paquete">Agregar paquete</button>
+                            <button type="button" class="bton btn-quitar-paquete">Quitar paquete</button>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="hidden-xs col-sm-12 txt-center mostrar-legales">
+                        <span class="btn-legales">Mostrar legales</span>
+                      </div>
+
+                      <div class="roaming-fecha-step back-gray1 col-sm-12 hidden-xs padding-10">
+                        <div class="fecha-container col-xs-12 col-sm-12">
+                          <h3 class="h3 txt-center">Entre que fechas usarás estre paquete/tarifa</h3>
+                          <div class="confirmar-fechas-roaming col-sm-8 center-block padding-0 clearfix">                  
+                            <div class="col-sm-12 col-xs-12 v-align-center date-pickers-container limit-month">
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Inicio</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker inicio v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-inicio-8 one-field" data-field='{"name" : "fecha-inicio-8" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar init" data-min="27/02/2016" data-max="27/02/2017"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Término</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker fin v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-fin-8 one-field" data-field='{"name" : "fecha-fin-8" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar fin"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="col-sm-3 col-xs-8">
+                              <button class="bton orange" id="autogestion-btn" type="button" disabled>Agregar y contratar</button>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="legales-block back-gray1 col-sm-12 hidden-xs padding-10">
+                        <div class="col-sm-12 padding-0 txt-center">
+                          <span class="btn-legales">Ocultar legales</span>
+                        </div>
+                        <div class="col-sm-12 padding-0 flexbox">
+                          <div class="col-sm-8">
+                            <p><small>Cobertura:<br>NO INCLUYE cobertura aérea ni marítima.<br> Tarifas adicionales $1.2 por minuto, $0.99 por SMS, $0.83 por mb.<br> Tarifas en pesos con 16% de IVA.<br> Estados Unidos (incluye Puerto Rico e islas Vírgenes Americanas) y Canadá</small></p> 
+                            <p><small>Mundial Especial (incluye Australia, Bahréin, Bolivia, Bosnia y Herzegovina, Burkina Faso, Camboya, China, Congo, Egipto, Polinesia Francesa, Ghana, Gibraltar, Hong Kong, India, Indonesia, Iraq, Israel, Japón, Jordan, Kenia, Kuwait, Malasia, Islas Maldivas, Malta, Mauricio, Mónaco, Montenegro, Marruecos, Namibia, Nepal, Nueva Zelanda, Filipinas, Qatar, Corea, Isla Reunión, Moldavia, San Marino, Arabia Saudita, Senegal, Singapur, Sudáfrica, Sri Lanka, Sudán, Suazilandia, Siria, Taiwán, Tayikistán, Tanzania, Tailandia, Túnez, Turquía, Islas Guernesey y Jersey, Emiratos Árabes, Venezuela, Vietnam, Yemen y Zambia, Cuba, Anguilla, Antigua & Barbuda, Antillas Holandesas, Aruba, Bahamas, Barbados, Belice, Bermuda, Dominica, Granada, Guyana, Guadalupe, Haití, Islas Vírgenes Británicas, Islas Caimán, Jamaica, Martinica, Monserrat, San Cristóbal y Nieves, San Pedro y Miquelón, Santa Lucía, San Vicente y Las Granadinas, Surinam, Trinidad y Tobago, Islas Turcas y Caicos). Incluye los países de las coberturas EUA, Canadá y América Latina y Europa Preferente.</small></p>
+                          </div>
+                          <div class="col-sm-4 registro-txt">
+                            <p><span>Registro Público de Concesiones IFT Constancia Folio</span> <strong>43338</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="roaming-oferta-block isotope-element col-xs-6 col-sm-12 destino-AU" id="paquete-10" data-item='{"id" : "10", "nombre": "Cruceros y Ferries que pertenecen a las siguientes líneas navieras: Royal Caribbean International, Pullmantur Cruices, Celebrity Cruices", "costo": "199.00", "fecha" : false, "tyc" : "Pie jelly beans fruitcake powder cake biscuit. Toffee oat cake biscuit jujubes gummi bears tart I love. Tiramisu fruitcake tiramisu gummies lollipop cake sweet oat cake. Sweet roll sesame snaps donut pastry. Jujubes lemon drops jujubes macaroon carrot cake dragée cake. Liquorice icing gummies jujubes bear claw chocolate candy canes cake. Gingerbread pudding carrot cake icing pudding. Pastry pie tootsie roll marshmallow pastry. Soufflé jelly gingerbread pudding I love. Caramels sugar plum topping topping sweet cake.", "destino" : "AU"}'>
+                      <div class="roaming-head">
+                        <h4 class="title">Cruceros y Ferries que pertenecen a las siguientes líneas navieras: Royal Caribbean International, Pullmantur Cruices, Celebrity Cruices.</h4>
+                        <a href="roaming-4.html" target="_blank" class="hidden-xs">Revisa la cobertura de tu equipo</a>
+                      </div>
+
+                      <div class="roaming-oferta">
+                        <div class="col-sm-8 col-xs-12">
+                          <div class="oferta-box col-sm-3 col-xs-12">
+                            <strong class="big-txt">50</strong>
+                            <span class="element-name">Minutos</span>
+                          </div>
+
+                          <div class="oferta-box col-sm-3 col-xs-12">
+                            <strong class="big-txt">No aplica</strong>
+                            <span class="element-name">SMS</span>
+                          </div>
+
+                          <div class="oferta-box col-sm-3 col-xs-12">
+                            <strong class="big-txt">4000MB</strong>
+                            <span class="element-name hidden-xs">Incluidos</span>
+                          </div>
+
+                          <div class="oferta-box col-sm-3 col-xs-12">
+                            <strong class="big-txt">30 días</strong>
+                            <span class="element-name">Vigencia</span>
+                          </div>
+
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12">
+                          <div class="oferta-box col-sm-6 col-xs-12 column-mobile">
+                            <strong class="big-txt">$1493.00</strong>
+                            <span class="element-name hidden-xs">Tarifa en pesos</span>
+                            <span class="extra-txt hidden-sm hidden-md hidden-lg">MXN</span>
+                          </div>
+
+                          <div class="col-sm-6 col-xs-12 btn-container">
+                            <button type="button" class="bton orange btn-agregar-paquete">Agregar paquete</button>
+                            <button type="button" class="bton btn-quitar-paquete">Quitar paquete</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="hidden-xs col-sm-12 txt-center mostrar-legales">
+                        <span class="btn-legales">Mostrar legales</span>
+                      </div>
+                      <div class="roaming-fecha-step back-gray1 col-sm-12 hidden-xs padding-10">
+                        <div class="fecha-container col-xs-12 col-sm-12">
+                          <h3 class="h3 txt-center">Entre que fechas usarás estre paquete/tarifa</h3>
+                          <div class="confirmar-fechas-roaming col-sm-8 center-block padding-0 clearfix">                  
+                            <div class="col-sm-12 col-xs-12 v-align-center date-pickers-container limit-month">
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Inicio</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker inicio v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-inicio-6 one-field" data-field='{"name" : "fecha-inicio-6" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar init" data-min="27/02/2016" data-max="27/02/2017"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Término</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker fin v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-fin-6 one-field" data-field='{"name" : "fecha-fin-6" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar fin"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="col-sm-3 col-xs-8">
+                              <button class="bton orange" id="autogestion-btn" type="button" disabled>Agregar y contratar</button>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="legales-block back-gray1 col-sm-12 hidden-xs padding-10">
+                        <div class="col-sm-12 padding-0 txt-center">
+                          <span class="btn-legales">Ocultar legales</span>
+                        </div>
+                        <div class="col-sm-12 padding-0 flexbox">
+                          <div class="col-sm-8">
+                            <p><small>Cobertura:<br>NO INCLUYE cobertura aérea ni marítima.<br> Tarifas adicionales $1.2 por minuto, $0.99 por SMS, $0.83 por mb.<br> Tarifas en pesos con 16% de IVA.<br> Estados Unidos (incluye Puerto Rico e islas Vírgenes Americanas) y Canadá</small></p> 
+                            <p><small>Mundial Especial (incluye Australia, Bahréin, Bolivia, Bosnia y Herzegovina, Burkina Faso, Camboya, China, Congo, Egipto, Polinesia Francesa, Ghana, Gibraltar, Hong Kong, India, Indonesia, Iraq, Israel, Japón, Jordan, Kenia, Kuwait, Malasia, Islas Maldivas, Malta, Mauricio, Mónaco, Montenegro, Marruecos, Namibia, Nepal, Nueva Zelanda, Filipinas, Qatar, Corea, Isla Reunión, Moldavia, San Marino, Arabia Saudita, Senegal, Singapur, Sudáfrica, Sri Lanka, Sudán, Suazilandia, Siria, Taiwán, Tayikistán, Tanzania, Tailandia, Túnez, Turquía, Islas Guernesey y Jersey, Emiratos Árabes, Venezuela, Vietnam, Yemen y Zambia, Cuba, Anguilla, Antigua & Barbuda, Antillas Holandesas, Aruba, Bahamas, Barbados, Belice, Bermuda, Dominica, Granada, Guyana, Guadalupe, Haití, Islas Vírgenes Británicas, Islas Caimán, Jamaica, Martinica, Monserrat, San Cristóbal y Nieves, San Pedro y Miquelón, Santa Lucía, San Vicente y Las Granadinas, Surinam, Trinidad y Tobago, Islas Turcas y Caicos). Incluye los países de las coberturas EUA, Canadá y América Latina y Europa Preferente.</small></p>
+                          </div>
+                          <div class="col-sm-4 registro-txt">
+                            <p><span>Registro Público de Concesiones IFT Constancia Folio</span> <strong>43338</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="roaming-oferta-block isotope-element col-xs-6 col-sm-12 destino-AU" id="paquete-12" data-item='{"id" : "12", "nombre": "Nombre de tarifa tipo 3", "costo": "199.00", "fecha" : true, "tyc" : "Pie jelly beans fruitcake powder cake biscuit. Toffee oat cake biscuit jujubes gummi bears tart I love. Tiramisu fruitcake tiramisu gummies lollipop cake sweet oat cake. Sweet roll sesame snaps donut pastry. Jujubes lemon drops jujubes macaroon carrot cake dragée cake. Liquorice icing gummies jujubes bear claw chocolate candy canes cake. Gingerbread pudding carrot cake icing pudding. Pastry pie tootsie roll marshmallow pastry. Soufflé jelly gingerbread pudding I love. Caramels sugar plum topping topping sweet cake.", "destino" : "AU"}'>
+                      <div class="roaming-head">
+                        <h4 class="title">Nombre de tarifa tipo 3</h4>
+                        <a href="roaming-4.html" target="_blank" class="hidden-xs">Revisa la cobertura de tu equipo</a>
+                      </div>
+
+                      <div class="roaming-oferta column-mobile">
+                        <div class="col-sm-8 col-xs-12">
+                          <div class="oferta-box col-sm-4 col-xs-12">
+                            <strong class="big-txt">$2.90/min</strong>
+                            <span class="element-name">Tarifa prefente de voz</span>
+                          </div>
+
+                          <div class="oferta-box col-sm-4 col-xs-12">
+                            <strong class="big-txt">$0.49/mb</strong>
+                            <span class="element-name">Internet</span>
+                          </div>
+
+                          <div class="oferta-box col-sm-4 col-xs-12">
+                            <strong class="big-txt">$2.35/sms</strong>
+                            <span class="element-name">Tarifa preferente SMS</span>
+                          </div>
+
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12">
+                          <div class="oferta-box col-sm-6 col-xs-12 column-mobile">
+                            <strong class="big-txt">$429.00</strong>
+                            <span class="element-name hidden-xs">Tarifa en pesos</span>
+                            <span class="extra-txt hidden-sm hidden-md hidden-lg">MXN</span>
+                          </div>
+
+                          <div class="col-sm-6 col-xs-12 btn-container">
+                            <button type="button" class="bton orange btn-agregar-paquete">Agregar tarifa</button>
+                            <button type="button" class="bton btn-quitar-paquete">Quitar tarifa</button>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="hidden-xs col-sm-12 txt-center mostrar-legales">
+                        <span class="btn-legales">Mostrar legales</span>
+                      </div>
+                      <div class="roaming-fecha-step back-gray1 col-sm-12 hidden-xs padding-10">
+                        <div class="fecha-container col-xs-12 col-sm-12">
+                          <h3 class="h3 txt-center">Entre que fechas usarás estre paquete/tarifa</h3>
+                          <div class="confirmar-fechas-roaming col-sm-8 center-block padding-0 clearfix">                  
+                            <div class="col-sm-12 col-xs-12 v-align-center date-pickers-container limit-month">
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Inicio</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker inicio v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-inicio-12 one-field" data-field='{"name" : "fecha-inicio-12" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar init" data-min="27/02/2016" data-max="27/02/2017"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Término</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker fin v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-fin-12 one-field" data-field='{"name" : "fecha-fin-12" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar fin"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="col-sm-3 col-xs-8">
+                              <button class="bton orange" id="autogestion-btn" type="button" disabled>Agregar y contratar</button>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="legales-block back-gray1 col-sm-12 hidden-xs padding-10">
+                        <div class="col-sm-12 padding-0 txt-center">
+                          <span class="btn-legales">Ocultar legales</span>
+                        </div>
+                        <div class="col-sm-12 padding-0 flexbox">
+                          <div class="col-sm-8">
+                            <p><small>Cobertura:<br>NO INCLUYE cobertura aérea ni marítima.<br> Tarifas adicionales $1.2 por minuto, $0.99 por SMS, $0.83 por mb.<br> Tarifas en pesos con 16% de IVA.<br> Estados Unidos (incluye Puerto Rico e islas Vírgenes Americanas) y Canadá</small></p> 
+                            <p><small>Mundial Especial (incluye Australia, Bahréin, Bolivia, Bosnia y Herzegovina, Burkina Faso, Camboya, China, Congo, Egipto, Polinesia Francesa, Ghana, Gibraltar, Hong Kong, India, Indonesia, Iraq, Israel, Japón, Jordan, Kenia, Kuwait, Malasia, Islas Maldivas, Malta, Mauricio, Mónaco, Montenegro, Marruecos, Namibia, Nepal, Nueva Zelanda, Filipinas, Qatar, Corea, Isla Reunión, Moldavia, San Marino, Arabia Saudita, Senegal, Singapur, Sudáfrica, Sri Lanka, Sudán, Suazilandia, Siria, Taiwán, Tayikistán, Tanzania, Tailandia, Túnez, Turquía, Islas Guernesey y Jersey, Emiratos Árabes, Venezuela, Vietnam, Yemen y Zambia, Cuba, Anguilla, Antigua & Barbuda, Antillas Holandesas, Aruba, Bahamas, Barbados, Belice, Bermuda, Dominica, Granada, Guyana, Guadalupe, Haití, Islas Vírgenes Británicas, Islas Caimán, Jamaica, Martinica, Monserrat, San Cristóbal y Nieves, San Pedro y Miquelón, Santa Lucía, San Vicente y Las Granadinas, Surinam, Trinidad y Tobago, Islas Turcas y Caicos). Incluye los países de las coberturas EUA, Canadá y América Latina y Europa Preferente.</small></p>
+                          </div>
+                          <div class="col-sm-4 registro-txt">
+                            <p><span>Registro Público de Concesiones IFT Constancia Folio</span> <strong>43338</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="roaming-oferta-block isotope-element col-xs-6 col-sm-12 destino-JP" id="paquete-14" data-item='{"id" : "14", "nombre": "Tarifa Marítima Tipo 1", "costo": "189.00", "fecha" : true, "tyc" : "Pie jelly beans fruitcake powder cake biscuit. Toffee oat cake biscuit jujubes gummi bears tart I love. Tiramisu fruitcake tiramisu gummies lollipop cake sweet oat cake. Sweet roll sesame snaps donut pastry. Jujubes lemon drops jujubes macaroon carrot cake dragée cake. Liquorice icing gummies jujubes bear claw chocolate candy canes cake. Gingerbread pudding carrot cake icing pudding. Pastry pie tootsie roll marshmallow pastry. Soufflé jelly gingerbread pudding I love. Caramels sugar plum topping topping sweet cake.", "destino" : "JP"}'>
+                      <div class="roaming-head">
+                        <h4 class="title">Tarifa Marítima Tipo 1</h4>
+                        <a href="roaming-4.html" target="_blank" class="hidden-xs">Revisa la cobertura de tu equipo</a>
+                      </div>
+
+                      <div class="roaming-oferta column-mobile">
+                        <div class="col-sm-8 col-xs-12">
+                          <div class="oferta-box col-sm-4 col-xs-12">
+                            <strong class="big-txt">$1.22/min</strong>
+                            <span class="element-name">Tarifa prefente de voz</span>
+                          </div>
+
+                          <div class="oferta-box col-sm-4 col-xs-12">
+                            <strong class="big-txt">$0.49/mb</strong>
+                            <span class="element-name">Internet</span>
+                          </div>
+
+                          <div class="oferta-box col-sm-4 col-xs-12">
+                            <strong class="big-txt">$0.65/sms</strong>
+                            <span class="element-name">Tarifa preferente SMS</span>
+                          </div>
+
+                        </div>
+
+                        <div class="col-sm-4 col-xs-12">
+                          <div class="oferta-box col-sm-6 col-xs-12 column-mobile">
+                            <strong class="big-txt">$189.00</strong>
+                            <span class="element-name hidden-xs">Tarifa en pesos</span>
+                            <span class="extra-txt hidden-sm hidden-md hidden-lg">MXN</span>
+                          </div>
+
+                          <div class="col-sm-6 col-xs-12 btn-container">
+                            <button type="button" class="bton orange btn-agregar-paquete">Agregar tarifa</button>
+                            <button type="button" class="bton btn-quitar-paquete">Quitar tarifa</button>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="hidden-xs col-sm-12 txt-center mostrar-legales">
+                        <span class="btn-legales">Mostrar legales</span>
+                      </div>
+                      <div class="roaming-fecha-step back-gray1 col-sm-12 hidden-xs padding-10">
+                        <div class="fecha-container col-xs-12 col-sm-12">
+                          <h3 class="h3 txt-center">Entre que fechas usarás estre paquete/tarifa</h3>
+                          <div class="confirmar-fechas-roaming col-sm-8 center-block padding-0 clearfix">                  
+                            <div class="col-sm-12 col-xs-12 v-align-center date-pickers-container limit-month">
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Inicio</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker inicio v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-inicio-14 one-field" data-field='{"name" : "fecha-inicio-14" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar init" data-min="27/02/2016" data-max="27/02/2017"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-xs-6 column-mobile padding-0">
+                                <div class="col-sm-12 col-xs-12"><label>Término</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker fin v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-fin-14 one-field" data-field='{"name" : "fecha-fin-14" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar fin"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- <div class="col-sm-3 col-xs-8">
+                              <button class="bton orange" id="autogestion-btn" type="button" disabled>Agregar y contratar</button>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="legales-block back-gray1 col-sm-12 hidden-xs padding-10">
+                        <div class="col-sm-12 padding-0 txt-center">
+                          <span class="btn-legales">Ocultar legales</span>
+                        </div>
+                        <div class="col-sm-12 padding-0 flexbox">
+                          <div class="col-sm-8">
+                            <p><small>Cobertura:<br>NO INCLUYE cobertura aérea ni marítima.<br> Tarifas adicionales $1.2 por minuto, $0.99 por SMS, $0.83 por mb.<br> Tarifas en pesos con 16% de IVA.<br> Estados Unidos (incluye Puerto Rico e islas Vírgenes Americanas) y Canadá</small></p> 
+                            <p><small>Mundial Especial (incluye Australia, Bahréin, Bolivia, Bosnia y Herzegovina, Burkina Faso, Camboya, China, Congo, Egipto, Polinesia Francesa, Ghana, Gibraltar, Hong Kong, India, Indonesia, Iraq, Israel, Japón, Jordan, Kenia, Kuwait, Malasia, Islas Maldivas, Malta, Mauricio, Mónaco, Montenegro, Marruecos, Namibia, Nepal, Nueva Zelanda, Filipinas, Qatar, Corea, Isla Reunión, Moldavia, San Marino, Arabia Saudita, Senegal, Singapur, Sudáfrica, Sri Lanka, Sudán, Suazilandia, Siria, Taiwán, Tayikistán, Tanzania, Tailandia, Túnez, Turquía, Islas Guernesey y Jersey, Emiratos Árabes, Venezuela, Vietnam, Yemen y Zambia, Cuba, Anguilla, Antigua & Barbuda, Antillas Holandesas, Aruba, Bahamas, Barbados, Belice, Bermuda, Dominica, Granada, Guyana, Guadalupe, Haití, Islas Vírgenes Británicas, Islas Caimán, Jamaica, Martinica, Monserrat, San Cristóbal y Nieves, San Pedro y Miquelón, Santa Lucía, San Vicente y Las Granadinas, Surinam, Trinidad y Tobago, Islas Turcas y Caicos). Incluye los países de las coberturas EUA, Canadá y América Latina y Europa Preferente.</small></p>
+                          </div>
+                          <div class="col-sm-4 registro-txt">
+                            <p><span>Registro Público de Concesiones IFT Constancia Folio</span> <strong>43338</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Carrito de compra -->
+        <section class="modal-mte" id="modal-servicios">
+          <div class="window-modal align-right visible">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+
+                      <div class="col-xs-12 col-sm-12 title-mod">
+                        <p class="h2">Resumen de [<span class="total-servicios">2</span>] paquete(s) a contratar</p>
+                        <small>Los servicios se activarán y tendrán vigencia con horario de México.</small>
+                        <div class="col-xs-12 col-sm-12 name-line-container">
+                          <p><span class="icon io-avatar"></span><span class="txt">5528882895-Ernesto Cordero</span></p>
+                        </div>
+                      </div>
+
+
+                      <div class="head-action-mod">
+                        <button class="bton m-btn-close-modal">
+                          <span class="icon i-angle-right"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 col-xs-12 center-block">
+                          <div class="general-table">
+                            <div class="header-block">
+                              <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center v-align-center" id="header-con-servicios">
+
+                                <div class="col-sm-7 col-xs-7 flexbox">
+                                  <strong title="Paquete y fechas">Paquete y fechas</strong>
+                                </div>
+
+                                <div class="col-sm-5 col-xs-5 h-align-center flexbox">
+                                  <strong title="Costo">Costo</strong>
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <div class="table-main-block" id="servicios-activados">
+                              <div class="col-sm-12 col-xs-12 center-block flexbox" id="c-servicio-4"> 
+                                <div class="col-sm-7 col-xs-7 flexbox"> 
+                                  <p title="Paquete Internacional 500 (del 31-10-2016 al 18-02-2017).">
+                                    Paquete Internacional 500 (del 31-10-2016 al 18-02-2017). 
+                                    <a href="">Mostrar legales</a> 
+                                  </p>
+                                </div>
+                                
+                                <div class="col-sm-5 col-xs-5 flexbox h-align-center">
+                                  <p class="p-align-center"><strong> $1794.00</strong></p> 
+                                </div> 
+                              </div>
+                              <div class="col-sm-12 col-xs-12 center-block flexbox" id="c-servicio-5"> 
+                                <div class="col-sm-7 col-xs-7 flexbox"> 
+                                  <p title="Paquete Internacional 500 (del 31-10-2016 al 18-02-2017).">
+                                    Paquete Internacional 500 (del 31-10-2016 al 18-02-2017). 
+                                    <a href="">Mostrar legales</a> 
+                                  </p>
+                                </div>
+                                
+                                <div class="col-sm-5 col-xs-5 flexbox h-align-center">
+                                  <p class="p-align-center"><strong> $1794.00</strong></p> 
+                                </div> 
+                              </div>
+                            </div>
+
+                            <h4 id="servicios-desactivados-head" class="blue-back-heading hidden">Servicios a desactivar</h4>
+                            <div class="table-main-block" id="servicios-desactivados">
+                            </div>
+
+                            <div class="last-td">
+                              <div class="col-sm-12 center-block flexbox h-align-center  v-align-center">
+                                  <div class="col-sm-7 flexbox h-align-center">
+                                    <p class="description"><small class="txt-100">Los precios incluyen IVA al 16%. </br>* El precio total puede disminuir de acuerdo a la compatibilidad del servicio con la(s) línea(s).</small></p>
+                                  </div>
+
+                                  <div class="col-sm-5 flexbox h-align-center">
+                                    <p>Total: <strong class="total"> $<span id="total-carrito">300</span></strong></p>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                  
+                  <div class="terminos-container-modal col-sm-12 center-block"> 
+                      <div class="col-sm-10 center-block">
+                        <div class="data-write">
+                          <input type="checkbox" id="checkbox-autogestion-terminos" name="checkboxAutogestion" value="1"/>
+                          <label for="checkbox-autogestion-terminos"><span class="check-sq"></span>He leído y estoy de acuerdo con los Términos y condiciones de uso del servicio.</label>
+                        </div>
+                      </div>  
+                      
+                      <div class="triangle-tooltip blue-triangle fadein" id="terminos-container">
+                        
+                        <div class="head-content col-sm-12">
+                          <div class="close-container col-sm-12 col-xs-12"><span class="icon i-angle-left" data-hide="#terminos-container"></span></div>
+                        </div>
+
+                        <div class="terminos-y-condiciones-block">
+                          <div class="head-content col-sm-12">
+                            <p class="col-sm-10 col-xs-10"><strong>Términos y condiciones de <span id="tyc-name"></span></strong></p>
+                          </div>
+
+                          <div id="tyc-servicio"></div>
+
+                          
+
+                        </div>
+                       
+                      </div>
+                    </div>
+
+                        <div class="col-sm-12 submit-r-asoc padding-10">
+                          <button class="bton orange" type="submit" id="btn-contratar-servicios" data-post ="roaming-2.html" disabled>Contratar</button>
+                          
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Carrito de compra -->
+
+        <!-- MODAL Activar paquete -->
+        <section class="modal-mte" id="modal-agregar-paquete">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Agregar paquete</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod" id="confirmar-agregar-paquete">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Entre que fechas utilizaras este paquete/tarifa.</p>
+                          
+                          <div class="col-sm-pr-80 center-block padding-20 clearfix">    
+                            <div class="col-sm-12 col-xs-12 v-align-center date-pickers-container limit-month padding-0">
+                              <div class="col-sm-6 col-xs-12 column-mobile padding-10">
+                                <div class="col-sm-12 col-xs-12"><label>Inicio</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker inicio v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-inicio one-field" data-field='{"name" : "fecha-inicio" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar init" data-min="27/02/2016" data-max="27/02/2017"></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6 col-xs-12 column-mobile padding-10">
+                                <div class="col-sm-12 col-xs-12"><label>Término</label></div>
+                                <div class="col-sm-12 col-xs-12">
+                                  <div class="date-picker fin v-align-center">
+                                    <div class="layer-mobile-aux"></div>
+                                    <div class="input">
+                                      <div class="result flexbox v-align-center">
+                                        <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                        <span class="fecha fecha-fin one-field" data-field='{"name" : "fecha-fin" }'></span>
+                                      </div>
+                                    </div>
+                                    <div class="calendar fin"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>            
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" id="btn-agregar-paquete" type="button" disabled>Agregar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Activar paquete -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/roaming.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+
+  </body>
+</html>

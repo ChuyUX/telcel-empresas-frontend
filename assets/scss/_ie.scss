@@ -1,0 +1,243 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    body{
+      overflow-x: hidden;
+      input[type=password]::-ms-reveal,
+      input[type=password]::-ms-clear
+      {
+          display: none;
+      }
+
+      input:-ms-input-placeholder, select:-ms-input-placeholder{
+        color: $grayTooltip2;
+      }
+
+      .success-tooltip, .error-tooltip{
+        .center-element{
+          p{
+            width: 95%; padding: 0 20px;
+          }
+          .icon{
+            width: 5%;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            @include justify-content(center);
+            &:before{
+              @include align-self(center);
+              
+            }
+          }
+        }
+      }
+      #info-content{
+        #mi-cuenta-view{
+          .password-input-block{
+            .data-write{
+              position: relative;
+
+              label{
+                &.for{
+                  display: block;
+                  width: 100%;
+                }
+              }
+              .button-container{
+                position: absolute !important;
+                top: 0;
+                margin: 0px 10px;
+                vertical-align: middle;
+                .show-text{
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
+  body{
+
+      .full-content{
+
+        &.configuracion-block{
+          .group-list-block{
+            .add-item-mv{
+              bottom: -40px !important;
+            }
+          }
+        }
+        .gestion-ejecutivos{
+          .group-list-block {
+            .mosaico-view {
+              .add-item-mv{
+                bottom: -40px;
+              }
+            }
+          }
+        } 
+        #info-content{
+            
+          .modal-mte{
+           .content-mod {
+              .in-cont-mod {
+                .button-field-mod {
+                  a.bton, button{
+                    width: 240px;
+                  }
+                }
+              }
+            }
+          }
+         #listado-autogestion-container {
+            .linea-batch {
+
+              .has-errors{
+                
+              }
+              .show-more-details-container{
+                left: auto;
+                right: auto;
+
+
+                .triangle-tooltip{
+                  left: -50%;
+                  right: -50%;
+                }
+
+              }
+            }
+
+            .submit-r-asoc{
+              @include justify-content(center);
+              @include align-items(center);
+              .bton{
+                text-align: center;
+              }
+            }
+          }
+          #mi-cuenta-view{
+            .password-input-block{
+              .data-write{
+
+                label{
+                  &.for{
+                    text-align: center;
+                  }
+                }
+                .button-container{
+                  top:30px;
+                  .show-text{
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+@media (max-width: 991px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
+  body{
+    .full-content{
+
+      &.active-greeting{
+        -ms-transform:translateX(0%) !important;
+        -o-transform:translateX(0%);
+        -moz-transform:translateX(0%);
+        -webkit-transform:translateX(0%);
+         transform:translateX(0%);
+         position:fixed;
+         -webkit-transition:all ease 0.3s;
+          left: -40%;
+         .ui-mobile-layer{
+            display:block;
+         }
+      }
+
+      &.active-menu{
+        -ms-transform:translateX(0%) !important;
+        -o-transform:translateX(0%);
+        -moz-transform:translateX(0%);
+        -webkit-transform:translateX(0%);
+         transform:translateX(0%);
+        left: 40%;
+        position:fixed;
+        -webkit-transition:all ease 0.3s;
+         .ui-mobile-layer{
+            display:block;
+         }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
+  body{
+    .full-content{
+      &.active-greeting{
+         position:fixed;
+         -ms-transform:translateX(0%) !important;
+        -o-transform:translateX(0%);
+        -moz-transform:translateX(0%);
+        -webkit-transform:translateX(0%);
+         transform:translateX(0%);
+          left: -50%;
+         .ui-mobile-layer{
+            display:block;
+         }
+      }
+
+      &.active-menu{
+        left: 50%;
+        -ms-transform:translateX(0%) !important;
+        -o-transform:translateX(0%);
+        -moz-transform:translateX(0%);
+        -webkit-transform:translateX(0%);
+         transform:translateX(0%);
+        position:fixed;
+
+         .ui-mobile-layer{
+            display:block;
+         }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
+  body{
+    .full-content{
+      &.active-greeting{
+         position:fixed;
+          left: -80%;
+          -ms-transform:translateX(0%) !important;
+        -o-transform:translateX(0%);
+        -moz-transform:translateX(0%);
+        -webkit-transform:translateX(0%);
+         transform:translateX(0%);
+         .ui-mobile-layer{
+            display:block;
+         }
+      }
+
+      &.active-menu{
+        left: 80%;
+        -ms-transform:translateX(0%) !important;
+        -o-transform:translateX(0%);
+        -moz-transform:translateX(0%);
+        -webkit-transform:translateX(0%);
+         transform:translateX(0%);
+        position:fixed;
+
+         .ui-mobile-layer{
+            display:block;
+         }
+      }
+    }
+  } 
+}

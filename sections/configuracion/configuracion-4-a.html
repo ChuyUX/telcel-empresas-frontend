@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content configuracion-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Perfiles">Perfiles</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section> 
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-10 theme-heading center-block">
+                <h2 class="txt-center h2">Usuarios [Administrador de grupos]</h2>
+                <p class="txt-center txt-300">El usuario administrador de grupo tiene control total sobre uno o varios grupos. En esta sección puedes consultar los usuarios del perfil Administrador de grupos, modificarlos y moverlos de perfil.</p>
+              </div>
+               <div class="v-align-center flexbox ver-todos-roles-block col-sm-12 col-xs-12">
+                <a href="configuracion-3.html"><span class="icon io-Maletin"></span><span class="txt">Ver todos los perfiles</span></a>
+                <a href="configuracion-1-a.html" class="w-border"><span class="icon io-ojo"></span><span class="txt">Ver permiso(s)</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="filtro-bg-blue">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container" data-name="filtrado">Mostrar filtrado</p>
+              <div class="col-sm-7 col-xs-12 center-block padding-0">
+                <form action="configuracion-4-a-con-filtrado.html" id="configuracionRolUsuarios" class="wrapper-gfsc clearfix">
+                  <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container">
+                    <div class="col-sm-pr-50 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Nombre:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <div class="data-write">
+                          <input type="text" name="nombre" placeholder="Mínimo 4 caracteres" value="" class="nombre one-field meet-regex acute" maxlength="40" data-regex = "[^A-Za-zñÑáéíóúÁÉÍÓÚäëïöüÄËÏÖÜ\s]+$" data-field='{ "name" : "nombre", "min" : "4" }'>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-25 col-xs-8 center-block">
+                      <button class="bton blue-dark main-btn full-width" type="button" disabled="disabled" id="btn-filter-usuarios">Filtrar</button>
+                    </div>
+
+                    <div class="col-sm-pr-25 col-xs-8 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" disabled type="button" data-href="configuracion-4-a.html">Limpiar filtros</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container-fluid gestion-table" id="main-table-view">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-10 padding-0 center-block clearfix">
+                  <div class="ver-por-pagina-block col-sm-12 col-xs-12 center-block padding-0">
+                    <div class="col-sm-7 col-xs-12 flexbox v-align-center">
+                      <p class="total-usuarios"><strong>[50]</strong> usuarios</p>
+                    </div>
+                    <div class="col-sm-5 col-xs-12 flexbox v-align-center">
+                      <div class="col-sm-5 col-xs-5">
+                        <label>Ver por página:</label>
+                      </div>
+                      <div class="col-sm-7 col-xs-7">
+                        <div class="data-write slt">
+                          <select name="ver-por" class="ver-por" id="ver-por">
+                            <option value="50">50 usuarios</option>
+                            <option value="100">100 usuarios</option>
+                            <option value="200">200 usuarios</option>
+                            <option value="500">500 usuarios</option>
+                            <option value="1000">1000 usuarios</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="to-fixed-block listado-header-autogestion col-xs-12 col-sm-12 general-block after-general hidden-xs" id="listado-check-all-container" data-elements="#listado-usuarios" data-btn = ".btn-on-change" data-elemento="usuario(s)" data-pronombre="los" data-after="#listado-usuarios">
+                    <div class="back-blue1 col-sm-12 header-actions" data-item = '{"id": "306" ,"nombre": "Usuario administrador"}'>
+                      <div class="col-xs-12 col-sm-12 col-md-12 center-block flexbox">
+                        <div class="col-xs-10 col-sm-6 flexbox v-align-center flex-col-direction-mobile padding-0">
+                            <div class="col-sm-2 checkbox-container" id="checkall">
+                              <input type="checkbox" id="checkbox-pagina-all" name="checkbox-pagina-all">
+                              <label for="checkbox-pagina-all"><span class="check-sq"></span></label>
+                            </div>
+                            <p class="col-sm-10 hide-m checkbox-label">Seleccionar todo</p>
+                        </div>
+                        
+
+                        <div class="col-sm-3 flexbox v-align-center btn-container-block flex-col-direction-mobile">
+                          <button class="btn-like-a btn-on-change btn-quitar-usuarios" id="btn-delete-all" type="button" disabled><span class="icon io-Bin"></span><span>Eliminar usuario(s)</span></button>
+                        </div>
+
+                        <div class="col-sm-3 btn-container-block">
+                          <button type="submit" class="bton orange btn-cambiar-rol btn-on-change" disabled>Cambiar perfil</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="listado-select-all-block col-sm-12">
+                      <p class="reading-notice">Se han seleccionado <strong id="total-checkbox">1</strong> <span class="elements-name">usuario(s)</span> de <span id="total-pagina-checkbox">esta página.</span> <a href="#" id="check-all-elements" data-value="true">Seleccionar las <strong class="total-all-pagina-checkbox">10</strong> <span class="elements-name">usuario(s)</span> del listado</a></p>
+                    </div>
+                  </div>
+
+                  <div class="hidden-sm hidden-md hidden-lg col-xs-12 flexbox v-align-center">
+                    <p class="total-usuarios"><strong>[50]</strong> usuarios</p>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 add-item-usuario">
+                    <button type="button" class="btn-agregar-usuario" data-item = '{"id": "1" ,"nombre": "Administrador de grupos", "showgrupo" : true}' title="Agregar usuario">
+                      <span class="icon i-plus-1 flexbox v-align-center h-align-center"></span>
+                      <span>Agregar usuario</span>
+                    </button>
+                  </div>
+
+                  <div class="general-table usuarios-table overflow col-sm-12 col-xs-12" id="usuarios-table">
+                    <div class="header-block general-block has-filters hidden-xs clearfix" id="ordenamientoUsuarios" data-action="">
+                      <div class="col-sm-pr-100 h-align-center padding-0">
+                          <div class="col-sm-1"></div>
+                          
+                          <div class="col-sm-11 padding-0">
+                            <div class="col-sm-pr-25 flexbox h-align-center">
+                              <strong title="Nombre">Nombre</strong>
+                              <div class="order-by-block order-by-query">
+                                  <button type="button" data-opc='{"key": "nombre" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "nombre" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-pr-20 flexbox h-align-center">
+                              <strong title="Número">Número</strong>
+                              <div class="order-by-block order-by-query">
+                                  <button type="button" data-opc='{"key": "numero" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "numero" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-pr-25 flexbox h-align-center">
+                              <strong title="Correo electrónico">Correo electrónico</strong>
+                              <div class="order-by-block order-by-query">
+                                  <button type="button" data-opc='{"key": "correoelectronico" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "correoelectronico" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-pr-20 flexbox h-align-center">
+                              <strong title="Grupo">Grupo</strong>
+                              <div class="order-by-block order-by-query">
+                                  <button type="button" data-opc='{"key": "correoelectronico" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "correoelectronico" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                          </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="table-main-block listado-principal" id="listado-usuarios">
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-item ='{ "id":"1", "nombre" : "Gael Thome", "telefono" :"45678998", "lada" : "55", "numero" : "5545678998", "correoelectronico" : "gael@multiplica.com", "ruta" : "M-01/Grupo-1/Subgrupo-1", "perfil" : "administrador", "grupos" : "root_0|root_5", "total" : "2" }'></div>
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-item ='{ "id":"2", "nombre" : "Guillermo Lechuga", "telefono" :"45678998", "lada" : "55", "numero" : "5545678998", "correoelectronico" : "guillermo@multiplica.com", "ruta" : "M-01/Grupo-1/Subgrupo-1", "perfil" : "administrador", "grupos" : "root_1|root_5|root_6|root_9", "total" : "4"}'></div>
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-item ='{ "id":"3", "nombre" : "Gael Thome", "telefono" :"45678998", "lada" : "55", "numero" : "5545678998", "correoelectronico" : "gael@multiplica.com", "ruta" : "M-01/Grupo-1/Subgrupo-1", "perfil" : "administrador", "grupos" : "root_0|root_4|root_6", "total" : "3"}'></div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 ct-pagination center-pag">
+                <ol>
+                  <li>
+                    <a href="#" class="active">1</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon io-AccordionRight"></span></a>
+                  </li>                              
+                </ol>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- MODAL EDITAR USUARIO -->
+        <section class="modal-mte" id="modal-editar-usuario">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Editar <span class="grupo-type">usuario</span></p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-Maletin"></span>
+                          <p class="alias-text"></p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-editar-usuario">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-editar-usuario" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Nombre:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="nombre" placeholder="Ejemplo: Usuario A" class="required only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "5" }'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Correo electrónico:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="email" placeholder="juan@correo.com" class="required" maxlength="50">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Teléfono de contacto:</label>
+                            <span class="lite-p">(Opcional)</span>
+                          </div>
+                          <div class="col-sm-4 col-xs-12 number-lada-container">
+                            
+                            <div class="col-sm-12 col-xs-12 input-double-dots">
+                              <div class="data-write number-container">
+                                
+                                <div class="col-sm-4 col-xs-3">
+                                  <input type="number" name="lada" placeholder="552" class="input-group only-numbers lada" data-maxlength="3" value="">
+                                </div>
+
+                                <div class="col-sm-8 col-xs-9">
+                                  <input type="number" name="telefono" placeholder="67889989" class="input-group only-numbers telefono" value="" data-maxlength="8">
+                                  <!-- blur-validation -->
+                                </div>
+
+                                <input type="text" class="numero hidden" name="numero" value="" />
+                              </div>
+                              
+                            </div>
+                          </div>
+
+
+                          <div class="col-sm-3 col-xs-12 input-double-dots extension-block">
+                            <div class="data-write number-container extension-container">
+                              <div class="col-sm-5 label-double-dots">
+                                <label>Ext.:</label>
+                              </div>
+                              <div class="col-sm-7 col-xs-12">
+                                <input type="number" name="extension" class="input-group only-numbers extension" value="" placeholder="5567" data-maxlength="4">
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Perfil:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write slt">
+                              <select name="perfilusuario" class="perfilusuario required" id="perfilusuario">
+                                <option value="">Elige una opción</option>
+                                <option value="administrador">Administrador</option>
+                                <option value="inplant">Inplant</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 col-xs-12 padding-0 grupo-selector-block hidden">
+
+                          <div class="col-sm-8 col-sm-offset-2 add-lines-ge-mod">
+                            <p class="txt-center">Selecciona el grupo  o los grupo(s) que gestionará:</p>
+                            <div class="data-write flexbox col-sm-12 search-box-container">
+                              <input type="text" name="search" placeholder="Nombre del grupo" class="search-input meet-regex col-sm-8" maxlength="45" data-regex = "[^A-Za-z-ñÑ\s]+$" data-min="4">
+                              <button class="bton blue-dark btn-search col-sm-4" type="button" disabled>Buscar</button>
+                            </div>
+
+                            <p class="btn-like-a btn-remover-busqueda">Remover búsqueda</p>
+                          </div>
+
+                          <div class="col-sm-8 col-sm-offset-2 tree-groups-asoc">
+
+                            <div class="col-sm-12 view-tga tree-grupos">
+                            </div>
+
+                            <div class="col-sm-12 view-tga tree-search tree-grupos-search">
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 ingreso-grupos-mobile">
+                          <p>La edición de grupos no está disponible en esta resolución.</p>
+                        </div>
+
+                        <div class="col-sm-12 col-xs-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" disabled type="submit">Guardar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+
+                      </form>
+
+                        <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                          <p>El <span class="grupo-type">usuario</span> [<span class="grupo-txt"></span>] ha sido creado con éxito.</p>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL EDITAR USUARIO -->
+
+        <!-- MODAL CAMBIAR ROL -->
+        <section class="modal-mte" id="modal-cambiar-rol">
+          <!-- LOADING -->
+          <div class="loading-block-screen full-width"><div class="loading-wrapper"><div class="sk-circle"> <div class="sk-circle1 sk-child"></div> <div class="sk-circle2 sk-child"></div> <div class="sk-circle3 sk-child"></div> <div class="sk-circle4 sk-child"></div> <div class="sk-circle5 sk-child"></div> <div class="sk-circle6 sk-child"></div> <div class="sk-circle7 sk-child"></div> <div class="sk-circle8 sk-child"></div> <div class="sk-circle9 sk-child"></div> <div class="sk-circle10 sk-child"></div> <div class="sk-circle11 sk-child"></div> <div class="sk-circle12 sk-child"></div> </div></div></div>
+
+          <!-- FIN LOADING  -->
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Cambiar <span class="grupo-type">perfil</span></p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-Maletin"></span>
+                          <p class="alias-text">Grupo padre</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-cambiar-rol">
+                    <div class="row">
+                      <form class="col-sm-10 col-xs-12 col-sm-offset-1 form-ge-mod step-1" id="form-cambiar-rol" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+                        <p class="txt-center"><strong>Selecciona el perfil de destino:</strong></p>
+                        
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class=" col-sm-8 col-xs-12 center-block">
+                            <div class="data-write slt">
+                                <select name="usuariorol" class="usuariorol required" id="usuariorol">
+                                  <option value="">Elige una opción</option>
+                                  <option value="administrador" data-rol="Administrador">Administrador</option>
+                                  <option value="inplant" data-rol="Inplant">Inplant</option>
+                                </select>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 col-xs-12 padding-0 grupo-selector-block hidden">
+
+                          <div class="col-sm-8 col-sm-offset-2 add-lines-ge-mod">
+                            <p class="txt-center">Selecciona el grupo  o los grupo(s) que gestionará:</p>
+                            <div class="data-write flexbox col-sm-12 search-box-container">
+                              <input type="text" name="search" placeholder="Nombre del grupo" class="search-input meet-regex col-sm-8" maxlength="45" data-regex = "[^A-Za-z-ñÑ\s]+$" data-min="4">
+                              <button class="bton blue-dark btn-search col-sm-4" type="button" disabled>Buscar</button>
+                            </div>
+
+                            <p class="btn-like-a btn-remover-busqueda">Remover búsqueda</p>
+                          </div>
+
+                          <div class="col-sm-8 col-sm-offset-2 tree-groups-asoc">
+
+                            <div class="col-sm-12 view-tga tree-grupos">
+                            </div>
+
+                            <div class="col-sm-12 view-tga tree-search tree-grupos-search">
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 ingreso-grupos-mobile">
+                          <p>La selección de grupos no está disponible en esta resolución.</p>
+                        </div>
+
+                        <div class="col-sm-12 col-xs-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" id="btn-cambiar-rol" type="submit">Cambiar perfil</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+
+                      </form>
+
+                      <!-- INICIO CONFIRMACIÓN -->
+                      <div class="col-sm-12 form-ge-mod step-2">
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                        <!--   <span class="total-lineas-agregar"></span> -->
+                          <p>Se está(n) cambiando la(s) línea(s) al perfil [<span class="rol-txt-new"></span>], se te notificará cuando se complete el movimiento.</p>
+                        </div>
+                      </div>
+                      <!-- FIN CONFIRMACIÓN-->
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success step-3">
+                        <p class="single-msg">La línea [<span class="single-txt">5526302400</span>] ha sido cambiada al perfil [<span class="rol-txt-new"></span>] correctamente.</p>
+
+                        <div class="col-sm-12 multiple-lines">
+                            <p class="error-success">Se han cambiado <span class="total-lineas-success">20</span> líneas al perfil [<span class="rol-txt-new"></span>]  correctamente.</p>
+
+                            <div class="col-sm-8 center-block added-lines info-added-lines">
+
+                              <div class="col-sm-12 head-r-asoc">
+                                <div class="col-sm-12 title-nal">
+                                  <div class="col-sm-12">
+                                    <p>Líneas cambiadas</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-sm-12 content-r-asoc">
+                                <div class="col-sm-12 content-nal">
+                                  <div class="col-sm-12 div-nal">
+                                    
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+
+                            <p class="error-msg">No ha sido posible cambiar <span class="total-lineas-error">10</span> líneas al perfil [<span class="rol-txt-new"></span>].</p>
+
+                            <div class="col-sm-8 center-block not-added-lines info-added-lines">
+
+                              <div class="col-sm-12 head-r-asoc">
+                                <div class="col-sm-12 title-nal">
+                                  <div class="col-sm-12">
+                                    <p>Líneas sin cambiar</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-sm-12 content-r-asoc">
+                                <div class="col-sm-12 content-nal">
+                                  <div class="col-sm-12 div-nal">
+                                    
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL CAMBIAR ROL -->
+
+         <!-- CONFIRMAR ELIMINAR -->
+        <section class="modal-mte" id="modal-quitar-usuario">
+          <!-- LOADING -->
+          <div class="loading-block-screen full-width"><div class="loading-wrapper"><div class="sk-circle"> <div class="sk-circle1 sk-child"></div> <div class="sk-circle2 sk-child"></div> <div class="sk-circle3 sk-child"></div> <div class="sk-circle4 sk-child"></div> <div class="sk-circle5 sk-child"></div> <div class="sk-circle6 sk-child"></div> <div class="sk-circle7 sk-child"></div> <div class="sk-circle8 sk-child"></div> <div class="sk-circle9 sk-child"></div> <div class="sk-circle10 sk-child"></div> <div class="sk-circle11 sk-child"></div> <div class="sk-circle12 sk-child"></div> </div></div></div>
+
+          <!-- FIN LOADING  -->
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Confirmación</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod step-1" id="form-quitar-usuario">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Esta acción no puede deshacerse.</p>
+
+                          <p class="multiple-elements">¿Estás seguro de eliminar [<span class="total-usuarios-txt"></span>] usuario(s)? El acceso de este(os) usuario(s) se eliminará(n) y no podrá(n) acceder al portal.</p>
+
+                          <p class="single-element">¿Estás seguro de eliminar al usuario [<span class="alias-text"></span>] de este perfil? El acceso de este usuario se eliminará y no podrá acceder al portal.</p>
+                          
+                        </div>
+                        <!-- class="last-line-confirmation hidden" -->
+                        <div class="col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" type="submit" id="btn-confirmar-quitar" data-redirect="configuracion-3.html">Eliminar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+                      </div>
+                      <!-- INICIO CONFIRMACIÓN -->
+                      <div class="col-sm-12 form-ge-mod step-2">
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                        <!--   <span class="total-lineas-agregar"></span> -->
+                          <p>Se han eliminado con éxito los usuario(s) seleccionados, se te notificará cuando se complete el movimiento.</p>
+                        </div>
+                      </div>
+                      <!-- FIN CONFIRMACIÓN-->
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success step-3">
+                        <p class="single-msg">El usuario [<span class="single-txt">5526302400</span>] ha sido eliminado correctamente.</p>
+
+                        <div class="col-sm-12 multiple-lines">
+                            <p class="error-success">Se han eliminado <span class="total-lineas-success">20</span> usuario(s).</p>
+
+                            <div class="col-sm-8 center-block added-lines info-added-lines">
+
+                              <div class="col-sm-12 head-r-asoc">
+                                <div class="col-sm-12 title-nal">
+                                  <div class="col-sm-12">
+                                    <p>Usuarios eliminados</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-sm-12 content-r-asoc">
+                                <div class="col-sm-12 content-nal">
+                                  <div class="col-sm-12 div-nal">
+                                    
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+
+                            <p class="error-msg">No ha sido posible eliminar <span class="total-lineas-error">10</span> usuario(s).</p>
+
+                            <div class="col-sm-8 center-block not-added-lines info-added-lines">
+
+                              <div class="col-sm-12 head-r-asoc">
+                                <div class="col-sm-12 title-nal">
+                                  <div class="col-sm-12">
+                                    <p>Usuarios no eliminados </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-sm-12 content-r-asoc">
+                                <div class="col-sm-12 content-nal">
+                                  <div class="col-sm-12 div-nal">
+                                    
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CONFIRMAR ELIMINAR -->
+
+        <!-- MODAL AGREGAR USUARIO -->
+        <section class="modal-mte" id="modal-agregar-usuario">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Agregar <span class="grupo-type">usuario</span></p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-Maletin"></span>
+                          <p class="alias-text">Grupo padre</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-agregar-usuario">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-agregar-usuario" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Nombre:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="nombre" placeholder="Ejemplo: Usuario A" class="required only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "5" }'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Correo electrónico:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="email" placeholder="juan@correo.com" class="required" maxlength="50">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Teléfono de contacto:</label>
+                            <span class="lite-p">(Opcional)</span>
+                          </div>
+                          <div class="col-sm-4 col-xs-12 number-lada-container">
+                            
+                            <div class="col-sm-12 col-xs-12 input-double-dots">
+                              <div class="data-write number-container">
+                                
+                                <div class="col-sm-4 col-xs-3">
+                                  <input type="number" name="lada" placeholder="552" class="input-group only-numbers lada" data-maxlength="3" value="">
+                                </div>
+
+                                <div class="col-sm-8 col-xs-9">
+                                  <input type="number" name="telefono" placeholder="67889989" class="input-group only-numbers telefono" value="" data-maxlength="8">
+                                  <!-- blur-validation -->
+                                </div>
+
+                                <input type="text" class="numero hidden" name="numero" value="" />
+                              </div>
+                              
+                            </div>
+                          </div>
+
+
+                          <div class="col-sm-3 col-xs-12 input-double-dots extension-block">
+                            <div class="data-write number-container extension-container">
+                              <div class="col-sm-5 label-double-dots">
+                                <label>Ext.:</label>
+                              </div>
+                              <div class="col-sm-7 col-xs-12">
+                                <input type="number" name="extension" class="input-group only-numbers extension" value="" placeholder="5567" data-maxlength="4">
+                              </div>
+
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 col-xs-12 padding-0 grupo-selector-block hidden">
+
+                          <div class="col-sm-8 col-sm-offset-2 add-lines-ge-mod">
+                            <p class="txt-center">Selecciona el grupo  o los grupo(s) que gestionará:</p>
+                            <div class="data-write flexbox col-sm-12 search-box-container">
+                              <input type="text" name="search" placeholder="Nombre del grupo" class="search-input meet-regex col-sm-8" maxlength="45" data-regex = "[^A-Za-z-ñÑ\s]+$" data-min="4">
+                              <button class="bton blue-dark btn-search col-sm-4" type="button" disabled>Buscar</button>
+                            </div>
+
+                            <p class="btn-like-a btn-remover-busqueda">Remover búsqueda</p>
+                          </div>
+
+                          <div class="col-sm-8 col-sm-offset-2 tree-groups-asoc">
+
+                            <div class="col-sm-12 view-tga tree-grupos">
+                            </div>
+
+                            <div class="col-sm-12 view-tga tree-search tree-grupos-search">
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 ingreso-grupos-mobile">
+                          <p>La selección de grupos no está disponible en esta resolución.</p>
+                        </div>
+
+                        <div class="col-sm-12 col-xs-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" type="submit">Agregar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL AGREGAR USUARIO -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/configuracion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+
+  </body>
+</html>

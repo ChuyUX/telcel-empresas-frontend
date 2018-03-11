@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content red-privada-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Red privada">Red privada</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h2">Directorio</h2>
+                <p class="col-sm-8 center-block"><span>En esta sección puedes consultar y modificar el directorio de contactos.</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section> 
+            <form class="form-section-block" id="form-directorio" method="POST" action="directorio-2.html">
+              <section class="clearfix back-blue1 red-step">
+                <div class="container padding-20">
+                  <h3 class="h3">Selecciona la empresa y grupo a consultar</h3>
+
+                  <div class="col-sm-7 center-block">
+                    <div class="col-xs-12 col-sm-10 center-block flexbox v-align-center input-block">
+                      <div class="col-xs-12 col-sm-4 general-input-container"> 
+                        <label>Empresa:</label>
+                      </div>
+                      <div class="col-xs-12 col-sm-8 general-input-container">
+                          <div class="data-write slt">
+                            <select name="empresa" class="empresa select-change" id="empresa">
+                              <option value="">Elige una opción</option>
+                              <option value="1">Empresa 1</option>
+                              <option value="2">Empresa 2</option>
+                              <option value="3">Empresa 3</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-10 center-block flexbox v-align-center input-block">
+                      <div class="col-xs-12 col-sm-4 general-input-container"> 
+                        <label>Grupo:</label>
+                      </div>
+                      <div class="col-xs-12 col-sm-8 general-input-container">
+                          <div class="data-write slt">
+                            <select name="grupo" class="grupo select-change" id="grupo">
+                              <option value="">Elige una opción</option>
+                              <option value="1">Grupo 1</option>
+                              <option value="2">Grupo 2</option>
+                              <option value="3">Grupo 3</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-xs-12 second-step-container padding-20">
+                  <div class="col-md-8 col-md-offset-2 bton-container">
+                    <div class="col-md-12 col-xs-8 center-block">
+                      <button class="bton orange" id="btn-rp-submit" type="submit" disabled>Consultar</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </form>
+        </section>
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

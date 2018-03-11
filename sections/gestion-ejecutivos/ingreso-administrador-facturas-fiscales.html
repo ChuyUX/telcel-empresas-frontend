@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado admin-mode first-time">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content facturacion-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="facturacion-1.html" title="Facturación">Facturación</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="facturas-servicios-1.html" title="Facturas de servicio">Facturas de servicio</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Facturas fiscales (CFDI)">Facturas fiscales (CFDI) de [Febrero 2017]</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h2">Facturas fiscales (CFDI) de [Febrero 2017]</h2>
+                <p class="col-sm-8 center-block"><span>Selecciona la Factura fiscal que deseas descargar o selecciona varias cuentas para generar un paquete de descarga.</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container">Mostrar filtrado</p>
+              <div class="col-sm-12 col-xs-12 center-block padding-0 clearfix">
+                <form action="facturas-fiscales-1-con-filtrado.html" id="facturasFiscales" class="wrapper-gfsc clearfix">
+                  <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container">
+
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-5 col-xs-3">
+                        <label>Región:</label>
+                      </div>
+                      <div class="col-sm-7 col-xs-9">
+                        <div class="data-write slt">
+                          <select name="region" class="region one-field" id="region" data-field='{ "name" : "region" }'>
+                            <option value="">Elige una opción</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Cuenta:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <input type="text" name="cuenta" value="" placeholder="Mínimo 1 número" class="one-field cuenta only-numbers" maxlength="10" data-field='{ "name" : "cuenta", "min" : "1" }'/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-20 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-2 col-xs-3">
+                        <label>RFC:</label>
+                      </div>
+                      <div class="col-sm-10 col-xs-9">
+                        <input type="text" name="rfc" value="" placeholder="Mínimo 4 caracteres" class="one-field meet-regex rfc" maxlength="13" data-field='{ "name" : "rfc", "min" : "4"}' data-regex = "[^A-Za-z0-9]+$"/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block">
+                      <button class="bton blue-dark main-btn full-width" type="button" disabled="disabled" id="btn-filter-facturas">Filtrar</button>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" type="button" disabled="disabled" data-href="estados-cuenta-1.html">Limpiar filtros</button>
+                    </div>
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container padding-0-mobile">
+              <div class="to-fixed-block listado-header-autogestion col-xs-12 col-sm-12 general-block after-general" id="listado-check-all-container" data-elements="#listado-facturas" data-btn = "#btn-configuracion" data-elemento="factura(s)" data-after="#listado-facturas">
+                <div class="back-blue1 col-sm-12 header-actions">
+                  <div class="col-xs-12 col-sm-12 col-md-12 center-block flexbox">
+                    <div class="col-xs-10 col-sm-5 col-md-3 flexbox v-align-center flex-col-direction-mobile padding-0">
+                        <div class="col-sm-2 checkbox-container" id="checkall">
+                          <input type="checkbox" id="checkbox-pagina-all" name="checkbox-pagina-all">
+                          <label for="checkbox-pagina-all"><span class="check-sq"></span></label>
+                        </div>
+                        <p class="col-sm-10 hide-m checkbox-label">Seleccionar todo</p>
+                    </div>
+                    
+
+                    <div class="col-xs-2 col-sm-7 col-md-9 configuracion-descarga-facturas padding-0">
+                      <div class="flexbox general-group-options-container" data-item = '{"id": "1" ,"texto": "Gestión de alias"}'>
+                          <div class="icon-container">
+                            <button class="simple btn-open-general-config disabled-admin-mode" id="btn-configuracion" disabled type="button" title="Descargar">
+                              <span class="icon io-download-mte"></span>
+                            </button>
+                          </div>
+                          <div class="col-sm-12 settings-ri">
+                            <div class="col-sm-12 cont-set-ri">
+                              <p class="col-sm-12 title-ri">
+                                <span class="in-text-ri">Descargar en paquete</span>
+                                <button class="simple icon-text-ri btn-close-general-config" title="Cerrar">
+                                  <span class="icon io-Close"></span>
+                                </button>
+                              </p>
+                              <div class="col-sm-12 title-mod">
+                                <span class="icon io-download-mte col-xs-2 left-icon-ri"></span>
+                                <p class="title-ribon-sri">Descargar en paquete</p>
+                              </div>
+                              <div class="col-sm-12 submenu-ri">
+                                <div class="">
+                                  
+                                  <div class="col-sm-12 col-xs-12 flexbox v-align-center flex-col-direction-mobile">
+                                    <div class="col-sm-2 checkbox-container">
+                                      <input type="checkbox" id="check-xls" name="check-xls">
+                                      <label for="check-xls"><span class="check-sq"></span></label>
+                                    </div>
+                                    <p class="col-sm-10 hide-m checkbox-label">Detalle de la(s) factura(s)</p>
+                                  </div>
+
+                                  <div class="col-sm-12 col-xs-12 flexbox v-align-center flex-col-direction-mobile">
+                                    <div class="col-sm-2 checkbox-container">
+                                      <input type="checkbox" id="check-zip" name="check-zip">
+                                      <label for="check-zip"><span class="check-sq"></span></label>
+                                    </div>
+                                    <p class="col-sm-10 hide-m checkbox-label">Zip</p>
+                                  </div>
+
+                                  <div class="col-sm-8 col-xs-10 flexbox v-align-center flex-col-direction-mobile center-block">
+                                    <button class="bton orange" type="button" disabled="disabled" id="btn-download-facturas">Solicitar</button>
+                                  </div>
+
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="listado-select-all-block col-sm-12">
+                  <p class="reading-notice">Se han seleccionado <strong id="total-checkbox">1</strong> <span class="elements-name">factura(s)</span> de <span id="total-pagina-checkbox">esta página.</span> <a href="#" id="check-all-elements" data-value="true">Seleccionar las <strong class="total-all-pagina-checkbox">10</strong> <span class="elements-name">factura(s)</span> del listado</a></p>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid gestion-ejecutivos gestion-administradores" id="gestion-ejecutivos-view">
+            <div class="container">
+              <div class="row">
+                <div class="ver-por-pagina-block col-sm-12 col-xs-12 center-block padding-0">
+                  <div class="col-sm-5 col-xs-12 flexbox v-align-center">
+                    <div class="col-sm-5 col-xs-5">
+                      <label>Ver por página:</label>
+                    </div>
+                    <div class="col-sm-7 col-xs-7">
+                      <div class="data-write slt">
+                        <select name="ver-por" class="ver-por" id="ver-por">
+                          <option value="50">50 resultados</option>
+                          <option value="100">100 resultados</option>
+                          <option value="200">200 resultados</option>
+                          <option value="500">500 resultados</option>
+                          <option value="1000">1000 resultados</option>
+                          
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 center-block padding-0">
+                  
+                  <div class="general-table padding-sides-0">
+                    
+                    <div class="header-block general-block has-filters hidden-xs clearfix">
+                      <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center padding-0">
+                          
+                          <div class="col-sm-pr-5"></div>
+                          
+                          <div class="col-sm-pr-95 padding-0">
+                            <div class="col-sm-pr-10 flexbox h-align-center">
+                              <strong title="Región">Región</strong>
+                              <div class="order-by-block order-by-query">
+                                  <button type="button" data-opc='{"key": "region" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "region" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-pr-20 flexbox h-align-center">
+                              <strong title="Cuenta">Cuenta</strong>
+                              <div class="order-by-block order-by-query">
+                                  <button type="button" data-opc='{"key": "cuenta" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "cuenta" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-pr-20 flexbox h-align-center">
+                              <strong title="RFC">RFC</strong>
+                              <div class="order-by-block order-by-query">
+                                <button type="button" data-opc='{"key": "rfc" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                                <button type="button" data-opc='{"key": "rfc" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-pr-15 flexbox h-align-center">
+                              <strong title="Razón social">Razón social</strong>
+                              <div class="order-by-block order-by-query">
+                                <button type="button" data-opc='{"key": "razonsocial" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                                <button type="button" data-opc='{"key": "numero" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-pr-15 flexbox h-align-center">
+                              <strong title="Fecha de corte">Fecha de corte</strong>
+                              <div class="order-by-block order-by-query">
+                                <button type="button" data-opc='{"key": "fecha" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                                <button type="button" data-opc='{"key": "fecha" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-pr-20 flexbox h-align-center">
+                              <strong title="Factura">Factura</strong>
+                              <div class="order-by-block order-by-query">
+                                <button type="button" data-opc='{"key": "factura" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                                <button type="button" data-opc='{"key": "factura" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+                    </div>
+
+                    <div class="table-main-block cfdi" id="listado-facturas">
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{ "id":"1", "tipo": "1",  "cuenta": "1234567891", "region" : "9", "rfc" : "LRI8956478392876", "razonsocial" : "Lucky Rabbit INC", "fecha" : "20/07/2016", "factura" : "17091708666"}'></div>
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{ "id":"2", "tipo": "1",  "cuenta": "7234567891", "region" : "3", "rfc" : "OSW5478812345678", "razonsocial" : "Oswald Watt", "fecha" : "20/07/2016", "factura" : "17091708666"}'></div>
+
+                      <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{ "id":"3", "tipo": "2",  "cuenta": "2345678913", "region" : "12", "rfc" : "TRO9000478392876", "razonsocial" : "The Royals S.A de C.V", "fecha" : "20/07/2016", "factura" : "74797479420"}'></div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 ct-pagination center-pag">
+                <ol>
+                  <li>
+                    <a href="#" class="active">1</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon io-AccordionRight"></span></a>
+                  </li>                              
+                </ol>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- MODAL DESCARGAR FACTURAS -->
+        <section class="modal-mte" id="modal-descargar">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2" data-before="Solicitud de descarga" data-after="Solicitud de descarga">Solicitud de descarga</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8 center-block in-cont-mod">
+                    <div class="row">
+                      <form class="col-sm-12 form-ge-mod" id="form-confirmar-descargar-facturas">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Haz clic en "Enviar" para que las Facturas fiscales solicitadas sean enviadas al correo electrónico registrado. Si deseas que se envíe copia a otra dirección, ingrésala en este campo.</p>
+
+                          <div class="data-write col-sm-8 center-block">
+                            <input type="text" name="email" class="required only-email" id="email" placeholder="Correo electrónico" value=""/>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark full-width first-submit" id="btn-descargar-facturas" type="submit">Enviar</button>
+                        </div>
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="descargar-facturas-confirmacion">
+                        <p>Tu solicitud ha sido enviada con éxito. Recibirás en tu correo electrónico el enlace para descargar las Facturas fiscales. <br>Para dar seguimiento a tus solicitudes, ingresa a la sección Descargas.</p>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc"> 
+                          <a href="../solicitudes-descargas/descargas-1.html" class="bton blue-dark">Descargas</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL DESCARGAR FACTURAS -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

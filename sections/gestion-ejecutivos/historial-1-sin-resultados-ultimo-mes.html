@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE no_footer_cta header-con-degradado header-ejecutivos">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content historial-movimientos-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="#" title="Historial de movimientos">Historial de movimientos</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Alias 1">Alias 1</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 theme-heading">
+                <h2 class="h2">Historial de movimientos de [alias]</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="filtro-bg-blue">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container" data-name="buscador">Mostrar buscador</p>
+              <div class="col-sm-12 col-xs-12 center-block padding-0">
+                <form action="historial-1-con-busqueda.html" id="historialMovimientos" class="wrapper-gfsc con-busqueda-filtrado clearfix">
+                  <div class="col-md-12 col-sm-12 col-xs-12 general-fs-container" id="search-movimientos-container">
+                    <div class="col-md-12 col-sm-12 col-xs-12 search-container flexbox v-align-center center-block" id="search-basico">
+                      <div class="col-sm-pr-85 col-xs-12 flexbox v-align-center">
+                        <div class="col-sm-pr-50 col-xs-12 v-align-center date-pickers-container limit-month">
+                          <div class="col-sm-pr-50 col-xs-6 flexbox v-align-center">
+                            <div class="col-sm-3 col-xs-12"><label>Desde:</label></div>
+                            <div class="col-sm-9 col-xs-12">
+                              <div class="date-picker inicio v-align-center">
+                                <div class="layer-mobile-aux"></div>
+                                <div class="input">
+                                  <div class="result flexbox v-align-center">
+                                    <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                    <span class="fecha fecha-inicio-basica one-field" data-field='{"name" : "fecha-inicio-basica" }'>20/02/2017</span>
+                                  </div>
+                                </div>
+                                <div class="calendar init" data-min="27/02/2016" data-max="27/02/2017"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-pr-50 col-xs-6 flexbox v-align-center">
+                            <div class="col-sm-3 col-xs-12"><label>Hasta:</label></div>
+                            <div class="col-sm-9 col-xs-12">
+                              <div class="date-picker fin v-align-center">
+                                <div class="layer-mobile-aux"></div>
+                                <div class="input">
+                                  <div class="result flexbox v-align-center">
+                                    <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                    <span class="fecha fecha-fin-basica one-field" data-field='{"name" : "fecha-fin-basica" }'>27/02/2017</span>
+                                  </div>
+                                </div>
+                                <div class="calendar fin"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-pr-50 col-sm-12 col-xs-12 flexbox v-align-center estatus-container">
+                          <div class="col-sm-pr-65 col-xs-12 flexbox v-align-center padding-0">
+                            <label class="col-sm-3 col-xs-12">Estatus:</label>
+                            <div class="col-sm-9 col-xs-12 padding-0">
+                              <div class="data-write slt col-xs-12 center-block">
+                                <select name="estatus-basico" class="estatus-basico one-field" data-field='{ "name" : "estatus-basico" }'>
+                                  <option value="">Elige una opción</option>
+                                  <option value="completado">Completado</option>
+                                  <option value="rechazado" selected>Rechazado</option>
+                                  <option value="en-proceso">En proceso</option>
+                                  <option value="todos">Todos</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-pr-35 flexbox v-align-center">
+                            <button class="bton blue-dark main-btn" id="btn-search-movimientos" type="submit">Buscar</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-pr-15 col-sm-2 flexbox v-align-center busqueda-avanzada-btn h-align-center">
+                        <button type="button" class="btn-like-a btn-limpiar-busqueda" data-href="historial-1.html">Nueva búsqueda</button>
+                      </div>
+
+                    </div>
+                    <div class="col-sm-12 col-xs-12 search-container" id="search-avanzado">
+                      <span class="vista-busqueda">
+                        <span class="icon io-Close"></span>
+                      </span>
+                      <div class="col-sm-12 col-xs-12 first-container">
+                        <p><strong>Búsqueda avanzada</strong></p>
+                        <div class="col-sm-12 col-xs-12 flexbox v-align-center">
+                          <div class="col-sm-pr-75 col-xs-12 flexbox v-align-center date-pickers-container limit-month">
+                            <div class="col-sm-6 col-xs-6 search-element-block">
+                              <div class="col-sm-12 col-xs-12"><label>Desde:</label></div>
+                              <div class="col-sm-12 col-xs-12">
+                                <div class="date-picker inicio v-align-center">
+                                  <div class="layer-mobile-aux"></div>
+                                  <div class="input">
+                                    <div class="result flexbox v-align-center">
+                                      <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                      <span class="fecha fecha-inicio one-field" data-field='{"name" : "fecha-inicio" }'>20/02/2017</span>
+                                    </div>
+                                  </div>
+                                  <div class="calendar init" data-min="2017/01/30" data-max="2017/03/31" id="initAvanzada"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 search-element-block">
+                              <div class="col-sm-12 col-xs-12"><label>Hasta:</label></div>
+                              <div class="col-sm-12 col-xs-12">
+                                <div class="date-picker fin v-align-center">
+                                  <div class="layer-mobile-aux"></div>
+                                  <div class="input">
+                                    <div class="result flexbox v-align-center">
+                                      <i class="fa fa-calendar glyphicon glyphicon-calendar"></i>
+                                      <span class="fecha fecha-fin one-field" data-field='{"name" : "fecha-fin" }'>27/02/2017</span>
+                                    </div>
+                                  </div>
+                                  <div class="calendar fin" id="finAvanzada"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-pr-25 col-xs-12 search-element-block operacion-container">
+                            <div class="col-sm-12 col-xs-12"><label>No. de operación:</label></div>
+                            <div class="col-sm-12 col-xs-12">
+                              <div class="data-write">
+                                <input type="text" name="operacion" class="operacion only-numbers one-field" placeholder="Mínimo 1 número" maxlength="12" data-field='{ "name" : "operacion" }' value="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12 col-xs-12 checkbox-elements-container">
+                        <p class="select-all-busqueda-block"><strong>Tipo de movimiento</strong><span id="todos-movimiento" data-value="true">(Seleccionar todos)</span></p>
+                        <div class="col-sm-12 col-xs-12 flexbox v-align-center">
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="consultar-grupo" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="consultar-grupo"/>
+                                <label for="consultar-grupo"><span class="check-sq"></span><span class="texto">Consultar Grupo</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="consultar-servicios-activos" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="consultar-servicios-activos"/>
+                                <label for="consultar-servicios-activos"><span class="check-sq"></span><span class="texto">Consultar Servicios Activos</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="consultar-servicios-disponibles" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="consultar-servicios-disponibles"/>
+                                <label for="consultar-servicios-disponibles"><span class="check-sq"></span><span class="texto">Consultar Servicios Disponibles</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="suspender-lineas" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="suspender-lineas"/>
+                                <label for="suspender-lineas"><span class="check-sq"></span><span class="texto">Suspender líneas</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="genera-comentario-m2k" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="genera-comentario-m2k"/>
+                                <label for="genera-comentario-m2k"><span class="check-sq"></span><span class="texto">Genera comentario en M2K</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="reactivacion-peticion" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="reactivacion-peticion"/>
+                                <label for="reactivacion-peticion"><span class="check-sq"></span><span class="texto">Reactivación a Petición</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="reactivacion-mismo-sim-imei" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="reactivacion-mismo-sim-imei"/>
+                                <label for="reactivacion-mismo-sim-imei"><span class="check-sq"></span><span class="texto">Reactivación con mismo SIM y mismo IMEI</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="reactivacion-nuevo-sim-imei" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="reactivacion-nuevo-sim-imei"/>
+                                <label for="reactivacion-nuevo-sim-imei"><span class="check-sq"></span><span class="texto">Reactivación con nuevo equipo y nueva SIM</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="cambio-sim" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="cambio-sim"/>
+                                <label for="cambio-sim"><span class="check-sq"></span><span class="texto">Cambio de SIM</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="cambio-imei" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="cambio-imei"/>
+                                <label for="cambio-imei"><span class="check-sq"></span><span class="texto">Cambio de IMEI</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="activar-servicios-anadidos" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="activar-servicios-anadidos"/>
+                                <label for="activar-servicios-anadidos"><span class="check-sq"></span><span class="texto">Activar Servicios Añadidos</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="desactivar-servicios-anadidos" class="movimiento one-field" name="movimiento[]" data-field='{ "name" : "movimiento" }' value="desactivar-servicios-anadidos"/>
+                                <label for="desactivar-servicios-anadidos"><span class="check-sq"></span><span class="texto">Desactivar Servicios Añadidos</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12 col-xs-12 checkbox-elements-container">
+                        <p class="select-all-busqueda-block"><strong>Estatus</strong> <span id="todos-estatus" data-value="true">(Seleccionar todos)</span></p>
+                        <div class="col-sm-12 col-xs-12 flexbox v-align-center">
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="completado" class="estatus one-field" name="estatus[]" data-field='{ "name" : "estatus" }' value="completado"/>
+                                <label for="completado"><span class="check-sq"></span><span class="texto">Completado</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="rechazado" class="estatus one-field" name="estatus[]" data-field='{ "name" : "estatus" }' value="rechazado" checked />
+                                <label for="rechazado"><span class="check-sq"></span><span class="texto">Rechazado</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-6 search-element-block">
+                            <div class="col-xs-12">
+                              <div class="data-write checkbox-container">
+                                <input type="checkbox" id="en-proceso" class="estatus one-field" name="estatus[]" data-field='{ "name" : "estatus" }' value="en-proceso"/>
+                                <label for="en-proceso"><span class="check-sq"></span><span class="texto">En proceso</span></label>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12 col-xs-6 center-block">
+                        <div class="col-sm-12 button-field-mod">
+                            <button class="bton blue-dark main-btn" id="btn-search-movimientos-avanzado" type="submit">Buscar</button>
+
+                            <button class="btn-like-a btn-limpiar-busqueda" id="btn-limpiar-busqueda-avanzada" data-href="historial-1.html" type="button">Nueva búsqueda</button>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 flexbox v-align-center busqueda-avanzada-btn h-align-center hidden-xs">
+                      <button type="button" class="btn-like-a vista-busqueda" id="busqueda-avanzada-btn">Búsqueda avanzada</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="error-ge"> 
+                <div class="notif-bloq"> 
+                  <div class="row"> 
+                    <div class="col-xs-12 col-sm-8 center-block inner-nb no-margin-bottom"> 
+                      <span class="icon io-Alert2"></span> 
+                      
+                      <p class="only-p">No se encontraron movimientos para el criterio de búsqueda seleccionado. Modifica tus criterios de búsqueda.</p>
+
+                    </div> 
+                  </div> 
+                </div> 
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

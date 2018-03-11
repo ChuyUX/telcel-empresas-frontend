@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content red-privada-block descarga-general-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Red privada">Red privada</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 theme-heading">
+                <h2 class="h2">Directorio</h2>
+                <p class="col-sm-8 center-block"><span>En esta sección puedes consultar y modificar el directorio de contactos.</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="filtro-bg-blue no-margin-bottom">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container">Mostrar filtrado</p>
+              <div class="col-sm-12 col-xs-12 center-block padding-0">
+                <form action="directorio-2-con-filtrado.html" id="directorioContactos" class="wrapper-gfsc con-busqueda-filtrado clearfix">
+                  <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container">
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Nombre:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <div class="data-write">
+                          <input type="text" name="nombre" placeholder="Mínimo 4 caracteres" value="" class="nombre one-field meet-regex acute" maxlength="40" data-regex = "[^A-Za-zñÑáéíóúÁÉÍÓÚäëïöüÄËÏÖÜ\s]+$" data-field='{ "name" : "nombre", "min" : "4" }'>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Número:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <input type="text" name="numero" value="" placeholder="Mínimo 1 número" class="one-field numero only-numbers" maxlength="10" data-field='{ "name" : "numero", "min" : "1" }'/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-20 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Grupo:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <div class="data-write">
+                          <input type="text" name="grupo" placeholder="Mínimo 4 caracteres" value="" class="grupo one-field meet-regex acute" maxlength="40" data-regex = "[^A-Za-zñÑáéíóúÁÉÍÓÚäëïöüÄËÏÖÜ\s]+$" data-field='{ "name" : "grupo", "min" : "4" }'>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block">
+                      <button class="bton blue-dark main-btn full-width" type="button" id="btn-filter-directorio">Filtrar</button>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-8 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" type="button" data-href="directorio-2.html">Limpiar filtros</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-gray no-margin-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-xs-12 padding-0">
+                <div class="header-info-movimientos has-double-buttons flexbox col-sm-12">
+                  <div class="col-sm-9 col-xs-12 flexbox v-align-center hidden-xs">
+                    <p id="msg-movimientos">Puedes descargar el directorio de la empresa para consultar o  hacer modificaciones masivas necesarias y cargar de nuevo el archivo.</p>
+                  </div>
+                  <div class="col-sm-3 col-xs-12 flexbox v-align-center align-space-around">
+                    <button title="Subir archivo" class="btn-general-carga-masiva hidden-xs"><span class="icon io-upload"></span><span>Subir archivo</span></button>
+                    <a href="../../doc/ejemplo-excel.xls" target="_blank" title="Descargar" class="btn-general-solicitud-descarga"><span class="icon io-download-mte"></span><span class="hidden-xs">Descargar</span><span class="hidden-sm hidden-md hidden-lg">Descargar directorio</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container-fluid gestion-ejecutivos gestion-administradores" id="gestion-ejecutivos-view">
+            <div class="container">
+              <div class="row">
+                <div class="ver-por-pagina-block col-sm-12 col-xs-12 center-block padding-0">
+                  <div class="col-sm-5 col-xs-12 flexbox v-align-center">
+                    <div class="col-sm-5 col-xs-5">
+                      <label>Ver por página:</label>
+                    </div>
+                    <div class="col-sm-7 col-xs-7">
+                      <div class="data-write slt">
+                        <select name="ver-por" class="ver-por" id="ver-por">
+                          <option value="50">50 contactos</option>
+                          <option value="100">100 contactos</option>
+                          <option value="200">200 contactos</option>
+                          <option value="500">500 contactos</option>
+                          <option value="1000">1000 contactos</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+
+                <div class="general-table edit-table-ejecutivos movimientos-table overflow">
+                  
+                  <div class="header-block general-block has-filters hidden-xs clearfix" id="ordenamientoDirectorio" data-action="">
+                  <div class="col-sm-pr-100 h-align-center">
+
+                      <div class="col-sm-pr-10 flexbox h-align-center">
+                        <strong title="Número">Número</strong>
+                        <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "numero" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "numero" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-15 flexbox h-align-center">
+                        <strong title="Asignado a">Asignado a</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "asignado" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "asignado" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-15 flexbox h-align-center">
+                        <strong title="Puesto">Puesto</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "puesto" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "puesto" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                       <div class="col-sm-pr-10 flexbox h-align-center">
+                        <strong title="Área">Área</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "area" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "area" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-20 flexbox h-align-center">
+                        <strong title="Correo electrónico">Correo electrónico</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "correoelectronico" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "correoelectronico" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-10 flexbox h-align-center">
+                        <strong title="Extensión">Extensión</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "extension" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "extension" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-10 flexbox h-align-center">
+                        <strong title="Marcación">Marcación</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "marcacion" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "marcacion" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                  </div>
+
+                </div>
+
+                  <div class="table-main-block listado-principal" id="listado-directorio">
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"1", "numero" : "5528797485", "asignado" : "Gael Thome", "nombre" : "Gael", "apellido" : "Thome", "empresa" : "Multiplica MX", "grupo" : "Grupo MX", "puesto" : "Jefe de clientes corporativos", "area" : "Marketing", "correoelectronico" : "gael@multiplica.mx", "extension" : "3444", "marcacion" : "1526"}'></div>
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"2", "numero" : "5578675423", "asignado" : "Guillermo Lechuga", "nombre" : "Guillermo", "apellido": "Lechuga", "empresa" : "Multiplica MX", "grupo" : "PM MX", "puesto" : "Project Manager", "area" : "Proyectos", "correoelectronico" : "guillermo@multiplica.mx", "extension" : "5454", "marcacion" : "9898"}'></div>
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"3", "numero" : "5543212345", "asignado" : "Adal Landin", "nombre" : "Adal", "apellido": "Landin", "empresa" : "Multiplica MX", "grupo" : "UI/UX MX", "puesto" : "Consultor", "area" : "Proyectos", "correoelectronico" : "adal@multiplica.mx", "extension" : "6767", "marcacion" : "8787"}'></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-8 col-md-offset-2">
+                    <div class="col-sm-12 ct-pagination center-pag">
+                      <ol>
+                        <li>
+                          <a href="#" class="active">1</a>
+                        </li>
+                        <li>
+                          <a href="#">2</a>
+                        </li>
+                        <li>
+                          <a href="#">3</a>
+                        </li>
+                        <li>
+                          <a href="#"><span class="icon io-AccordionRight"></span></a>
+                        </li>                              
+                      </ol>
+                    </div>
+                  </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- MODAL DESCARGAR HISTORIAL -->
+        <section class="modal-mte" id="modal-descargar">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2" data-before="Solicitud de descarga" data-after="Solicitud de descarga generada">Solicitud de descarga</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8 center-block in-cont-mod">
+                    <div class="row">
+                      <form class="col-sm-12 form-ge-mod" id="form-confirmar-descargar-facturas">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Haz clic en "Enviar" para que el Reporte solicitado sea enviado al correo electrónico registrado. Si deseas que se envíe copia a otra dirección, ingrésala en este campo.</p>
+
+                          <div class="data-write col-sm-8 center-block">
+                            <input type="text" name="email" placeholder="Correo electrónico" class="required only-email" id="email" value=""/>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark full-width first-submit" id="btn-descargar-facturas" type="submit">Enviar</button>
+                        </div>
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="descargar-facturas-confirmacion">
+                        <p>Tu solicitud ha sido enviada con éxito. Recibirás en tu correo electrónico el enlace para descargar el paquete de reporte(s). <br>Para dar seguimiento a tus solicitudes, ingresa a la sección Descargas.</p>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc"> 
+                          <a href="../solicitudes-descargas/descargas-1.html" class="bton blue-dark">Descargas</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL DESCARGAR REGISTROS -->
+
+        <!-- MODAL MODIFICAR CONTACTO -->
+        <section class="modal-mte" id="modal-modificar-contacto">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Modificar contacto</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-avatar"></span>
+                          <p class="alias-text">Grupo padre</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-modificar-contacto">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-modificar-contacto" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Nombre:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="nombre" placeholder="Juan Carlos" class="required only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "3" }'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Apellido(s):</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="apellidos" placeholder="López" class="required only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "3" }'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod">
+
+                          <div class="col-sm-5 col-xs-6 label-double-dots numero-label-container">
+                            <label>Número:</label>
+                          </div>
+                          <div class="col-sm-4 col-xs-6 number-lada-container">
+                            
+                            <div class="col-sm-12 col-xs-12 input-double-dots">
+                              <div class="data-write number-container">
+                                
+                                <div class="col-sm-12 col-xs-12">
+                                  <span class="readonly telefono-value">5528556699</span>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+
+
+                          <div class="col-sm-3 col-xs-12 input-double-dots extension-block one-line-mobile">
+                            <div class="data-write number-container extension-container">
+                              <div class="col-sm-5 col-xs-6 label-double-dots">
+                                <label>Ext.:</label>
+                              </div>
+                              <div class="col-sm-7 col-xs-6">
+                                <div class="data-write">
+                                  <span class="readonly extension-value">4569</span>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block one-line-mobile">
+                          <div class="col-sm-5 col-xs-6 label-double-dots">
+                            <label>Marcación corta:</label>
+                          </div>
+                          <div class="col-sm-7 col-xs-6 input-double-dots">
+                            <div class="data-write">
+                              <span class="readonly marcacion-value">4569</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block one-line-mobile">
+                          <div class="col-sm-5 col-xs-6 label-double-dots">
+                            <label>Empresa:</label>
+                          </div>
+                          <div class="col-sm-7 col-xs-6 input-double-dots">
+                            <div class="data-write">
+                              <span class="readonly empresa-value">Multiplica MX</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block one-line-mobile">
+                          <div class="col-sm-5 col-xs-6 label-double-dots">
+                            <label>Grupo:</label>
+                          </div>
+                          <div class="col-sm-7 col-xs-6 input-double-dots">
+                            <div class="data-write">
+                              <span class="readonly grupo-value">Grupo MX</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Área:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="area" placeholder="Recursos Humanos" class="required only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "5" }'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Puesto:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="puesto" placeholder="CEO" class="required only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "5" }'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Correo electrónico:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="email" placeholder="juan@correo.com" class="required" maxlength="50">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" type="submit">Modificar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+
+                      </form>
+
+                        <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL MODIFICAR CONTACTO -->
+
+        <!-- MODAL SUBIR ARCHIVO-->
+        <section class="modal-mte" id="modal-subir-archivo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Modificación de contactos</p>
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-subir-archivo">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-subir-archivo" action="directorio-3.html">
+                        
+                        <div class="col-sm-12 center-block clearfix subir-archivo-container padding-0">
+                           <!-- COMPONENTE GENERAL -->
+                          <div id="componente-ingresar-lineas">
+                            
+                              <div class="col-sm-12 form-ge-mod form-modal-agregar-lineas componente-lineas-block">
+
+                                <!-- INICIO ARCHIVO -->
+                                <div class= "componente-lb lineas-archivo" data-options='{ "element": "null", "event" : "show" , "showDependant" : "#archivo"}'>
+                                  <div class="col-sm-12 col-xs-12 padding-0">
+
+                                    <div class="col-sm-10 center-block add-lines-ge-mod">
+                                       <div class="txt-center instructions"><p>Son compatibles los archivos con extensión .xls</p> <p><a href="../../doc/ejemplo-excel.xls" target="_blank">Descarga la plantilla</a>  con el formato necesario.</p></div>
+                                        <div class="data-write clearfix">
+                                          <label class="data-write flexbox col-sm-12 input-box-container file" title="">
+                                            <input type="file" name="archivo" id="archivo" placeholder="Elige el archivo que quieres subir" class="element-input col-sm-12">
+                                          </label>
+                                        </div>
+
+                                        <p class="extra-info">Tamaño de archivo: 10 MB máximo</p>
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <!-- FIN ARCHIVO -->
+                                 
+                              </div>
+                          </div>
+
+                          <input type="hidden" id="lineas-hidden-input" name="lineas" value=""/>
+                          <!-- FIN COMPONENTE GENERAL -->
+                        </div>
+
+
+                        <div class="col-sm-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" type="submit">Cargar archivo</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                        </div>
+
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL SUBIR ARCHIVO-->
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

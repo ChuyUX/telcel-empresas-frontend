@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content facturacion-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="facturacion-1.html" title="Facturación">Facturación</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Referencia única">Referencia única</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h2">Genera tu Referencia única</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="filtro-bg-blue no-margin-bottom">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container" data-name="filtrado">Mostrar filtrado</p>
+              <div class="col-sm-10 col-xs-12 center-block padding-0">
+                <form action="referencia-unica-1-con-filtrado.html" id="referenciaUnica" class="wrapper-gfsc clearfix">
+                  <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container">
+                    <div class="col-sm-5 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-2 col-xs-3">
+                        <label>RFC:</label>
+                      </div>
+                      <div class="col-sm-10 col-xs-9">
+                        <input type="text" name="rfc" value="" placeholder="Mínimo 4 caracteres" class="one-field meet-regex rfc" maxlength="13" data-field='{ "name" : "rfc", "min" : "4"}' data-regex = "[^A-Za-z0-9]+$"/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-5 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-4 col-xs-3">
+                        <label>Documento:</label>
+                      </div>
+                      <div class="col-sm-8 col-xs-9">
+                        <input type="text" name="documento" value="" placeholder="Mínimo 4 números" class="one-field only-numbers documento" maxlength="12" data-field='{ "min" : "4", "name" : "documento" }'/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-2 col-xs-8 center-block">
+                      <button class="bton blue-dark main-btn full-width" type="button" disabled="disabled" id="btn-filter-facturas">Filtrar</button>
+                    </div>
+
+                    <div class="col-sm-2 col-xs-8 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" type="button" disabled="disabled" data-href="referencia-unica-1.html">Limpiar filtros</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid gestion-ejecutivos gestion-administradores" id="gestion-ejecutivos-view">
+            <div class="container">
+              <div class="row">
+                <div class="ver-por-pagina-block col-sm-12 col-xs-12 center-block padding-0">
+                  <div class="col-sm-5 col-xs-12 flexbox v-align-center">
+                    <div class="col-sm-5 col-xs-5">
+                      <label>Ver por página:</label>
+                    </div>
+                    <div class="col-sm-7 col-xs-7">
+                      <div class="data-write slt">
+                        <select name="ver-por" class="ver-por" id="ver-por">
+                          <option value="50">50 resultados</option>
+                          <option value="100">100 resultados</option>
+                          <option value="200">200 resultados</option>
+                          <option value="500">500 resultados</option>
+                          <option value="1000">1000 resultados</option>
+                          
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-xs-12 col-sm-12 col-md-12 center-block padding-0">
+
+                  <div class="general-table padding-sides-0">
+                    
+                    <div class="header-block general-block has-filters hidden-xs clearfix">
+                      <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center padding-0">
+
+                        <div class="col-sm-pr-20 flexbox h-align-center">
+                          <strong title="RFC">RFC</strong>
+                          <div class="order-by-block order-by-query">
+                              <button type="button" data-opc='{"key": "rfc" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                              <button type="button" data-opc='{"key": "rfc" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-pr-25 flexbox h-align-center">
+                          <strong title="Razón social">Razón social</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "razonsocial" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "razonsocial" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                         <div class="col-sm-pr-20 flexbox h-align-center">
+                          <strong title="Documento">Documento</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "documento" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "documento" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-pr-15 col-sm-2 flexbox h-align-center">
+                          <strong title="Total">Total</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "total" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "total" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-pr-30 flexbox h-align-center">
+                          <strong title="Referencia única">Referencia única</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "referencia" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "referencia" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="table-main-block referencia-unica col-sm-12 col-xs-12 center-block padding-0" id="listado-facturas">
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"1", "rfc": "3823981238923", "razonsocial" : "Lucky Rabbit INC", "documento" : "1182609", "total": "400", "referencia" : "907G309U4F4E051"}'></div>
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"2", "rfc": "3823981238923", "razonsocial" : "Lucky Rabbit INC", "documento" : "1182609", "total": "400", "referencia" : "Cancelada"}'></div>
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"3", "rfc": "3823981238923", "razonsocial" : "Lucky Rabbit INC", "documento" : "1182609", "total": "400", "referencia" : "Generar"}'></div>
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"4", "rfc": "3823981238923", "razonsocial" : "Lucky Rabbit INC", "documento" : "1182609", "total": "400", "referencia" : "907G309U4F4E051"}'></div>
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"5", "rfc": "3823981238923", "razonsocial" : "Lucky Rabbit INC", "documento" : "1182609", "total": "400", "referencia" : "Cancelada"}'></div>
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"6", "rfc": "3823981238923", "razonsocial" : "Lucky Rabbit INC", "documento" : "1182609", "total": "400", "referencia" : "Generar"}'></div>
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"7", "rfc": "3823981238923", "razonsocial" : "Lucky Rabbit INC", "documento" : "1182609", "total": "400", "referencia" : "907G309U4F4E051"}'></div>
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"8", "rfc": "3823981238923", "razonsocial" : "Lucky Rabbit INC", "documento" : "1182609", "total": "400", "referencia" : "Cancelada"}'></div>
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"9", "rfc": "3823981238923", "razonsocial" : "Lucky Rabbit INC", "documento" : "1182609", "total": "400", "referencia" : "Generar"}'></div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 ct-pagination center-pag">
+                <ol>
+                  <li>
+                    <a href="#" class="active">1</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon io-AccordionRight"></span></a>
+                  </li>                              
+                </ol>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- MODAL DESCARGAR FACTURAS -->
+        <section class="modal-mte" id="modal-generar-referencia">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Referencia única generada</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 center-block in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-8 center-block form-ge-mod hidden" id="form-generar-referencia">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Tu Referencia única es: [<span class="referencia-generada">5C9D2E7W4D4E051</span>]. <br><br>
+                            Realiza la transferencia electrónica para el pago del documento [No. de documento] por un monto de [$489]. <br><br>
+                            Esta Referencia vence el [12/12/2007].<br><br>
+                            Si deseas factura fiscal por esta compra, solicítala en la sección Facturas de equipos.</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark full-width m-btn-close-modal" type="button">Aceptar</button>
+                        </div>
+
+                      </div>
+
+                      <div class="col-sm-12 form-ge-mod error-ge hidden">
+                        <div class="notif-bloq"> 
+                          <div class="row"> 
+                            <div class="col-xs-12 col-sm-12 inner-nb"> 
+                              <span class="icon io-Alert2"></span> 
+                              <p class="only-p">Tu solicitud no puede ser procesada en este momento. <br>Estamos trabajando para servirte mejor, por favor intenta más tarde.</p>
+
+                               <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                                <button class="bton blue-dark full-width m-btn-close-modal" type="button">Aceptar</button>
+                              </div>
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL DESCARGAR FACTURAS -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

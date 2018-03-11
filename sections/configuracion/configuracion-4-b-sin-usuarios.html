@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content configuracion-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Perfiles">Perfiles</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section> 
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-10 theme-heading center-block">
+                <h2 class="txt-center h2">Usuarios [Inplant]</h2>
+                <p class="txt-center txt-300">El usuario inplant tiene los mismos permisos que un administrador general, solo que no puede gestionar roles. En esta sección puedes consultar los usuarios del perfil Inplant, modificarlos y moverlos de perfil.</p>
+              </div>
+
+              <div class="v-align-center flexbox ver-todos-roles-block col-sm-12 col-xs-12">
+                <a href="configuracion-3.html"><span class="icon io-Maletin"></span><span class="txt">Ver todos los perfiles</span></a>
+                <a href="configuracion-1-a.html" class="w-border"><span class="icon io-ojo"></span><span class="txt">Ver permiso(s)</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container-fluid gestion-table sin-usuarios-table" id="main-table-view">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-10 padding-0 center-block clearfix">
+                  <div class="col-xs-12 col-sm-12 add-item-usuario">
+                    <button type="button" class="btn-agregar-usuario" data-item = '{"id": "1" ,"nombre": "Inplant", "showgrupo" : false}' title="Agregar usuario">
+                      <span class="icon i-plus-1 flexbox v-align-center h-align-center"></span>
+                      <span>Agregar usuario</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="error-ge"> 
+                  <div class="notif-bloq"> 
+                    <div class="row"> 
+                      <div class="col-xs-12 col-sm-8 center-block inner-nb no-margin-bottom"> 
+                        <span class="icon io-Alert2"></span> 
+
+                        <p class="only-p">No hay usuarios agregados hasta el momento.</p>
+
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODAL AGREGAR USUARIO -->
+        <section class="modal-mte" id="modal-agregar-usuario">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Agregar <span class="grupo-type">usuario</span></p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-City"></span>
+                          <p class="alias-text">Grupo padre</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-agregar-usuario">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-agregar-usuario" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Nombre:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="nombre" placeholder="Ejemplo: Usuario A" class="required only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "5" }'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Correo electrónico:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="email" placeholder="juan@correo.com" class="required" maxlength="50">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Teléfono de contacto:</label>
+                            <span class="lite-p">(Opcional)</span>
+                          </div>
+                          <div class="col-sm-4 col-xs-12 number-lada-container">
+                            
+                            <div class="col-sm-12 col-xs-12 input-double-dots">
+                              <div class="data-write number-container">
+                                
+                                <div class="col-sm-4 col-xs-3">
+                                  <input type="number" name="lada" placeholder="552" class="input-group only-numbers lada" data-maxlength="3" value="">
+                                </div>
+
+                                <div class="col-sm-8 col-xs-9">
+                                  <input type="number" name="telefono" placeholder="67889989" class="input-group only-numbers telefono" value="" data-maxlength="8">
+                                  <!-- blur-validation -->
+                                </div>
+
+                                <input type="text" class="numero hidden" name="numero" value="" />
+                              </div>
+                              
+                            </div>
+                          </div>
+
+
+                          <div class="col-sm-3 col-xs-12 input-double-dots extension-block">
+                            <div class="data-write number-container extension-container">
+                              <div class="col-sm-5 label-double-dots">
+                                <label>Ext.:</label>
+                              </div>
+                              <div class="col-sm-7 col-xs-12">
+                                <input type="number" name="extension" class="input-group only-numbers extension" value="" placeholder="5567" data-maxlength="4">
+                              </div>
+
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 col-xs-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" type="submit">Agregar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL AGREGAR USUARIO -->
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/configuracion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+
+  </body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content gestion-ejecutivos-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="#" title="Historial de movimientos">Historial de movimientos</a>
+                  </li>
+                  <li>
+                    <a href="#" title="No. de operación 123512531253">No. de operación 123512531253</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="txt-center form-section-block susp-list-pick">
+            <div class="container content-slp">
+                <div class="col-md-7 center-block padding-10 txt-center">
+                  <h2 class="txt-center h2">No. de operación 123512531253</h2>
+                  
+                  
+                </div>
+
+                <div class="row">
+                  <div class="detalle-confirmacion col-sm-12 center-block clearfix collapse-table-block">
+                    <div class="col-sm-12 col-xs-12 center-block flexbox v-align-center main-block">
+                      <div class="col-sm-2 col-xs-2 flexbox h-align-center regresar-container">
+                          <a href="historial-1.html" class="btn-like-a flexbox v-align-center"><span class="icon i-angle-left"></span><span>Regresar</span></a>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-xs-12 flexbox v-align-center">
+                        <div class="col-sm-3 col-xs-12">
+                          <p>No. de operación</p>  
+                          <p><span class="robusta">123512531253</span></p>
+                        </div>
+                        
+                        <div class="col-sm-9 col-xs-12 flexbox v-align-center" id="mobile-info">
+                          
+                          <div class="col-sm-3 col-xs-12">
+                            <p>Solicitud</p> 
+                            <p><span class="robusta">03/10/2016 12:44</span></p>
+                          </div>
+                          <div class="col-sm-3 col-xs-12">
+                            <p>Responsable</p> 
+                            <p><span class="robusta">Guadalupe Renedo</span></p>
+                          </div>
+                          <div class="col-sm-3 col-xs-12">
+                            <p>Teléfono de contacto</p> 
+                            <p><span class="robusta">5512345678</span></p>
+                          </div>
+                        </div>
+
+                        <a class="hide-show-table" data-table="#mobile-info">Mostrar detalle</a>
+                    </div>
+
+                    <div class="col-sm-12 col-xs-12 flexbox v-align-center button-container">
+                      <div class="center-block flexbox">
+                        <form action="historial-2-multiple-aprobado.html">
+                          <input type="hidden" name="aprobar" value="true"/>
+                          <input type="hidden" name="id" value="1230"/>
+                          <button type="submit" class="bton orange full-width action-btn">Aprobar</button>
+                        </form>
+
+                        <form action="historial-2-multiple-rechazado.html">
+                          <input type="hidden" name="rechazar" value="true"/>
+                          <input type="hidden" name="id" value="1230"/>
+                          <button type="submit" class="bton cancel full-width action-btn">Rechazar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Listado de Líneas -->
+
+                <div class="row">
+                  <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container">Mostrar filtrado</p>
+                  <div class="col-sm-12 col-xs-12 center-block padding-0">
+                    <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container back-blue1">
+                      <div class="col-sm-3 col-xs-12 flexbox h-align-center v-align-center">
+                        <div class="col-sm-4 col-xs-4">
+                          <label>Número:</label>
+                        </div>
+                        <div class="col-sm-8 col-xs-8">
+                          <input type="text" name="numero" placeholder="Mínimo 4 números" class="one-field numero" maxlength="13" data-field='{ "name" : "numero" }'/>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-3 col-xs-12 flexbox h-align-center v-align-center">
+                        <div class="col-sm-5 col-xs-4">
+                          <label>Folio:</label>
+                        </div>
+                        <div class="col-sm-7 col-xs-8">
+                          <input type="text" name="folio" placeholder="Mínimo 1 número" class="one-field only-numbers folio" maxlength="13" data-field='{ "name" : "folio" }'/>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-2 col-xs-12 flexbox h-align-center v-align-center">
+                        <div class="col-sm-4 col-xs-4">
+                          <label>Estatus:</label>
+                        </div>
+                        <div class="col-sm-8 col-xs-8">
+                          <div class="data-write slt">
+                            <select name="estatus" class="estatus">
+                              <option value="">Elige una opción</option>
+                              <option value="completado">Completado</option>
+                              <option value="rechazado">Rechazado</option>
+                              <option value="en-proceso">En proceso</option>
+                              <option value="todos">Todos</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-2 col-xs-8 center-block">
+                        <button class="bton blue-dark main-btn full-width" type="button" disabled id="btn-filter-facturas">Filtrar</button>
+                      </div>
+
+                      <div class="col-sm-2 col-xs-8 center-block limpiar-filtro-block">
+                        <button class="btn-limpiar-filtro btn-like-a" type="button" disabled data-href="historial-2-multiple.html">Limpiar filtros</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="general-table add-borders-simple" id="movimientos-table">
+                  <div class="header-block general-block has-filters clearfix" id="ordenamientoHistorialMovimientosDetalle" data-action="">
+                    <div class="col-sm-pr-100 col-xs-12 center-block flexbox v-align-center padding-0">
+                      <div class="col-sm-pr-10 flexbox h-align-center hidden-xs">
+                        <strong title="Región">Región</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "region" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "region" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-15 flexbox h-align-center hidden-xs">
+                        <strong title="Cuenta">Cuenta</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "cuenta" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "cuenta" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <strong title="Número">Número</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "numero" , "orderby": "desc", "type" : "int"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "numero" , "orderby": "asc", "type" : "int"}' title="Orden ascendente">asc</button>
+                        </div>              
+                      </div>
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <strong title="Estatus">Estatus</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "estatus" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "estatus" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-25 col-xs-4 flexbox h-align-center">
+                        <strong title="Realización">Realización</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "fecha" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "fecha" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-pr-20 flexbox h-align-center hidden-xs">
+                        <strong title="Folio">Folio</strong>
+                        <div class="order-by-block order-by-query">
+                          <button type="button" data-opc='{"key": "folio" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                          <button type="button" data-opc='{"key": "folio" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-main-block">
+                    
+                    <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center">
+
+                      <div class="col-sm-pr-10 flexbox h-align-center hidden-xs">
+                        <p>9</p>
+                      </div>
+
+                      <div class="col-sm-pr-15 flexbox h-align-center hidden-xs">
+                        <p>0101623250</p>
+                      </div>
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <p>5512345678</p>                        
+                      </div>
+
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <p>En proceso</p>
+                      </div>
+
+                      <div class="col-sm-pr-25 col-xs-4 flexbox h-align-center">
+                        <div class="en-proceso"><div class="sk-circle"> <div class="sk-circle1 sk-child"></div> <div class="sk-circle2 sk-child"></div> <div class="sk-circle3 sk-child"></div> <div class="sk-circle4 sk-child"></div> <div class="sk-circle5 sk-child"></div> <div class="sk-circle6 sk-child"></div> <div class="sk-circle7 sk-child"></div> <div class="sk-circle8 sk-child"></div> <div class="sk-circle9 sk-child"></div> <div class="sk-circle10 sk-child"></div> <div class="sk-circle11 sk-child"></div> <div class="sk-circle12 sk-child"></div> </div></div>
+                      </div>
+
+                      <div class="col-sm-pr-20 flexbox h-align-center hidden-xs">
+                        <p>98655ER23H4</p>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center">
+
+                      <div class="col-sm-pr-10 flexbox h-align-center hidden-xs">
+                        <p>5</p>
+                      </div>
+
+                      <div class="col-sm-pr-15 flexbox h-align-center hidden-xs">
+                        <p>3849384950</p>
+                      </div>
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <p>5538293808</p>                        
+                      </div>
+
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <p>En proceso</p>
+                      </div>
+
+                      <div class="col-sm-pr-25 col-xs-4 flexbox h-align-center">
+                        <div class="en-proceso"><div class="sk-circle"> <div class="sk-circle1 sk-child"></div> <div class="sk-circle2 sk-child"></div> <div class="sk-circle3 sk-child"></div> <div class="sk-circle4 sk-child"></div> <div class="sk-circle5 sk-child"></div> <div class="sk-circle6 sk-child"></div> <div class="sk-circle7 sk-child"></div> <div class="sk-circle8 sk-child"></div> <div class="sk-circle9 sk-child"></div> <div class="sk-circle10 sk-child"></div> <div class="sk-circle11 sk-child"></div> <div class="sk-circle12 sk-child"></div> </div></div>
+                      </div>
+
+                      <div class="col-sm-pr-20 flexbox h-align-center hidden-xs">
+                        <p>28655EZ23P4</p>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center">
+
+                      <div class="col-sm-pr-10 flexbox h-align-center hidden-xs">
+                        <p>3</p>
+                      </div>
+
+                      <div class="col-sm-pr-15 flexbox h-align-center hidden-xs">
+                        <p>4431623250</p>
+                      </div>
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <p>5512300078</p>                        
+                      </div>
+
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <p>En proceso</p>
+                      </div>
+
+                      <div class="col-sm-pr-25 col-xs-4 flexbox h-align-center">
+                        <div class="en-proceso"><div class="sk-circle"> <div class="sk-circle1 sk-child"></div> <div class="sk-circle2 sk-child"></div> <div class="sk-circle3 sk-child"></div> <div class="sk-circle4 sk-child"></div> <div class="sk-circle5 sk-child"></div> <div class="sk-circle6 sk-child"></div> <div class="sk-circle7 sk-child"></div> <div class="sk-circle8 sk-child"></div> <div class="sk-circle9 sk-child"></div> <div class="sk-circle10 sk-child"></div> <div class="sk-circle11 sk-child"></div> <div class="sk-circle12 sk-child"></div> </div></div>
+                      </div>
+
+                      <div class="col-sm-pr-20 flexbox h-align-center hidden-xs">
+                        <p>40455EG23H1</p>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center">
+
+                      <div class="col-sm-pr-10 flexbox h-align-center hidden-xs">
+                        <p>8</p>
+                      </div>
+
+                      <div class="col-sm-pr-15 flexbox h-align-center hidden-xs">
+                        <p>2013384950</p>
+                      </div>
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <p>5510299380</p>                        
+                      </div>
+
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <p>En proceso</p>
+                      </div>
+
+                      <div class="col-sm-pr-25 col-xs-4 flexbox h-align-center">
+                        <div class="en-proceso"><div class="sk-circle"> <div class="sk-circle1 sk-child"></div> <div class="sk-circle2 sk-child"></div> <div class="sk-circle3 sk-child"></div> <div class="sk-circle4 sk-child"></div> <div class="sk-circle5 sk-child"></div> <div class="sk-circle6 sk-child"></div> <div class="sk-circle7 sk-child"></div> <div class="sk-circle8 sk-child"></div> <div class="sk-circle9 sk-child"></div> <div class="sk-circle10 sk-child"></div> <div class="sk-circle11 sk-child"></div> <div class="sk-circle12 sk-child"></div> </div></div>
+                      </div>
+
+                      <div class="col-sm-pr-20 flexbox h-align-center hidden-xs">
+                        <p>01125EZ23K0</p>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center">
+                      <div class="col-sm-pr-10 flexbox h-align-center hidden-xs">
+                        <p>1</p>
+                      </div>
+
+                      <div class="col-sm-pr-15 flexbox h-align-center hidden-xs">
+                        <p>5010162430</p>
+                      </div>
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <p>5512345678</p>                        
+                      </div>
+
+
+                      <div class="col-sm-pr-15 col-xs-4 flexbox h-align-center">
+                        <p>Completado</p>
+                      </div>
+
+                      <div class="col-sm-pr-25 col-xs-4 flexbox h-align-center">
+                        <p>20/07/2016 a las 15:15:00</p>
+                      </div>
+
+                      <div class="col-sm-pr-20 flexbox h-align-center hidden-xs">
+                        <p>98655ER23H4</p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                
+                <div class="col-md-8 col-md-offset-2 padding-20">
+                  <div class="col-sm-12 ct-pagination center-pag">
+                    <ol>
+                      <li>
+                        <a href="#">1</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">2</a>
+                      </li>
+                      <li>
+                        <a href="#">3</a>
+                      </li>
+                      <li>
+                        <a href="#"><span class="icon io-AccordionRight"></span></a>
+                      </li>                              
+                    </ol>
+                  </div>
+                </div>
+
+  
+              </div>
+
+          </div>
+        </section>
+
+
+        
+
+        
+
+
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

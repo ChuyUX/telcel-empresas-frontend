@@ -1,0 +1,21 @@
+/* Vendors */
+@import '../css/vendors/bootstrap.min.css';
+@import '../css/vendors/swiper.min.css';
+@import '../css/vendors/daterangepicker.css';
+@import '../css/vendors/bootstrap-tokenfield.min.css';
+@import '../css/vendors/tokenfield-typeahead.min.css';
+
+/* Components */
+@import 'fonts';
+@import 'vars';
+@import 'flex';
+
+/* Layout */
+@import 'layout';
+@import 'layout-extra';
+@import 'responsive';
+@import 'ie';
+@import 'aux';
+/*Temporal por faq*/
+@import 'faq-temp';
+@import 'new';

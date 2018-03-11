@@ -1,0 +1,150 @@
+/* Modules & Vars */
+// Mixins
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin linearGradient($top, $bottom, $inicioColor1){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top$inicioColor1, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top$inicioColor1,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top$inicioColor1,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top$inicioColor1,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top$inicioColor1,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+/*Transición*/
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/*Opacidad*/
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+// Fontfamily 
+
+$robusta: 'telcel';
+
+// Colores
+
+$black: #000000;
+$black-50: rgba(0, 0, 0, 0.5);
+$black-60: rgba(0, 0, 0, 0.6);
+$black-80: rgba(0, 0, 0, 0.8);
+
+$white: #ffffff;
+$white-40: rgba(255, 255, 255, 0.4);
+$white-60: rgba(255, 255, 255, 0.6);
+$white-80: rgba(255, 255, 255, 0.8);
+
+$img: '../img/';
+
+/*El orden va desde el mas claro al mas oscuro*/
+$blueTelcel2: #3992b5; //HAY QUE CHECAR DE QUE ES
+
+$gray5a: #999999;
+$gray6a: #888888;
+$gray7a: #777777;
+
+
+//Colores Telcel
+$blueTelcel1 : #f2f7f9;
+$blueTelcel2 : #02b0ef;
+$blueTelcel3 : #1d6fb8;
+
+$greenTelcel1 : #52cab5;
+$pinkTelcel1: #e22285;
+$grayTelcel1 : #5F7175;
+
+$grayTextos: #666666;
+
+$grayTooltip1 : #eeeeee;
+$grayTooltip2 : #dddddd;
+$grayHover: #cccccc;
+$grayAux : #aaa;
+$grayDark : #4A525A;
+$grayDark2 : #4F5D62;
+
+$blueCTA : #0a3d7e;
+$blueCTAHover: #063066;
+$orangeCTA : #ff6600;
+$orangeCTAHover: #e65c00;
+
+$yellow: #ffcc00;
+$green2 : #41A091;
+$pink: #e22285;
+$purple: #a500b0;
+
+// Para Validacion de input
+$pink2: #FAD8F4;
+$purple2: #A1418F;
+$brown: #843534;
+
+//en las fuentes solo es negro, el gris es #666666 y el azul 02b0ef que usamos para los links y a veces el azul oscuro 0a3d7e que usamos para algunos textos como en gestion por ejecutivo
+
+
+
+
+
+
+
+
+
+
+
+
+
+

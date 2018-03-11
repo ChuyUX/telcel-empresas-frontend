@@ -1,0 +1,1048 @@
+/* TELCEL CORPORATIVA TITULARES*/
+@font-face {
+  font-family: 'telcel';
+  src: url("/telcel-ligera-webfont.eot");
+  src: url("/telcel-ligera-webfont.eot?#iefix") format("embedded-opentype"), url("/telcel-ligera-webfont.woff") format("woff"), url("/telcel-ligera-webfont.ttf") format("truetype"), url("/telcel-ligera-webfont.svg#telcelregular") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'telcel';
+  src: url("/telcel-media-webfont.eot");
+  src: url("/telcel-media-webfont.eot?#iefix") format("embedded-opentype"), url("/telcel-media-webfont.woff") format("woff"), url("/telcel-media-webfont.ttf") format("truetype"), url("/telcel-media-webfont.svg#telcelregular") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'telcel';
+  src: url("/telcel-robusta-webfont.eot");
+  src: url("/telcel-robusta-webfont.eot?#iefix") format("embedded-opentype"), url("/telcel-robusta-webfont.woff") format("woff"), url("/telcel-robusta-webfont.ttf") format("truetype"), url("/telcel-robusta-webfont.svg#telcelregular") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'source-sans';
+  src: url("/sourcesanspro-light-webfont.eot");
+  src: url("/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("/sourcesanspro-light-webfont.woff2") format("woff2"), url("/sourcesanspro-light-webfont.woff") format("woff"), url("/sourcesanspro-light-webfont.ttf") format("truetype"), url("/sourcesanspro-light-webfont.svg#source_sans_prolight") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'source-sans';
+  src: url("/sourcesanspro-semibold-webfont.eot");
+  src: url("/sourcesanspro-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("/sourcesanspro-semibold-webfont.woff2") format("woff2"), url("/sourcesanspro-semibold-webfont.woff") format("woff"), url("/sourcesanspro-semibold-webfont.ttf") format("truetype"), url("/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'source-sans';
+  src: url("/sourcesanspro-regular-webfont.eot");
+  src: url("/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/sourcesanspro-regular-webfont.woff2") format("woff2"), url("/sourcesanspro-regular-webfont.woff") format("woff"), url("/sourcesanspro-regular-webfont.ttf") format("truetype"), url("/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+/*FUENTE DE ICONOS Fontastic.me*/
+@font-face {
+  font-family: "icons";
+  src: url("/mte.eot");
+  src: url("/mte.eot?#iefix") format("embedded-opentype"), url("/mte.woff") format("woff"), url("/mte.ttf") format("truetype"), url("/mte.svg#mte") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.glyphicon {
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font: normal normal normal 14px/1 "icons";
+  text-rendering: auto;
+  transform: translate(0, 0);
+  position: relative;
+  top: 1px; }
+
+[data-icon]:before {
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  content: attr(data-icon);
+  line-height: 1;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="i-"]:before,
+[class*=" i-"]:before {
+  font-family: "icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.i-angle-down:before {
+  content: "\61"; }
+
+.i-angle-left:before {
+  content: "\62"; }
+
+.i-angle-right:before {
+  content: "\63"; }
+
+.i-angle-up:before {
+  content: "\64"; }
+
+.i-circle-down:before {
+  content: "\65"; }
+
+.i-circle-left:before {
+  content: "\66"; }
+
+.i-circle-right:before {
+  content: "\67"; }
+
+.i-circle-up:before {
+  content: "\68"; }
+
+.i-bold-down:before {
+  content: "\69"; }
+
+.i-bold-left:before, .fa-chevron-left:before, .glyphicon-chevron-left:before {
+  content: "\6a"; }
+
+.i-bold-right:before, .fa-chevron-right:before, .glyphicon-chevron-right:before {
+  content: "\6b"; }
+
+.i-bold-up:before {
+  content: "\6c"; }
+
+.i-check:before {
+  content: "\6d"; }
+
+.i-ticket:before {
+  content: "\6e"; }
+
+.i-chat:before {
+  content: "\6f"; }
+
+.i-credit-card:before {
+  content: "\70"; }
+
+.i-mail:before {
+  content: "\71"; }
+
+.i-user:before {
+  content: "\72"; }
+
+.i-users:before {
+  content: "\73"; }
+
+.i-phone:before {
+  content: "\74"; }
+
+.i-plus:before {
+  content: "\75"; }
+
+.i-remove:before {
+  content: "\76"; }
+
+.i-icon:before {
+  content: "\77"; }
+
+.i-logo:before {
+  content: "\78"; }
+
+.i-plus-1:before {
+  content: "\79"; }
+
+.i-minus:before {
+  content: "\7a"; }
+
+.io-Message:before {
+  content: "\41"; }
+
+.i-vertical-dots:before {
+  content: "\42"; }
+
+@font-face {
+  font-family: 'TelcelFont';
+  src: url("/TelcelFont.eot?t5odyw");
+  src: url("/TelcelFont.eot?t5odyw#iefix") format("embedded-opentype"), url("/TelcelFont.ttf?t5odyw") format("truetype"), url("/TelcelFont.woff?t5odyw") format("woff"), url("/TelcelFont.svg?t5odyw#TelcelFont") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="io-"], [class*=" io-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'TelcelFont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.io-move-folder:before {
+  content: "\e906"; }
+
+.io-add-folder:before {
+  content: "\e905"; }
+
+.io-save-doc:before {
+  content: "\e903"; }
+
+.io-download-mte:before {
+  content: "\e904"; }
+
+.io-lista:before {
+  content: "\e901"; }
+
+.io-mosaico:before {
+  content: "\e902"; }
+
+.io-dots-vertical:before {
+  content: "\e900"; }
+
+.io-Glossary:before {
+  content: "\f902"; }
+
+.io-Questions:before {
+  content: "\f901"; }
+
+.io-Invoice:before {
+  content: "\f900"; }
+
+.io-SpecialHardware:before {
+  content: "\f70b"; }
+
+.io-Hardware:before {
+  content: "\f70a"; }
+
+.io-BestBrands:before {
+  content: "\f709"; }
+
+.io-PlanRenta:before {
+  content: "\f708"; }
+
+.io-WiFi:before {
+  content: "\f707"; }
+
+.io-Processor:before {
+  content: "\f706"; }
+
+.io-Camera:before {
+  content: "\f705"; }
+
+.io-OsAndroid:before {
+  content: "\f704"; }
+
+.io-OsMac:before {
+  content: "\f703"; }
+
+.io-OsWindows:before {
+  content: "\f702"; }
+
+.io-Memory:before {
+  content: "\f701"; }
+
+.io-Screen:before {
+  content: "\f700"; }
+
+.io-ExtraPack:before {
+  content: "\f616"; }
+
+.io-ExtendedPlan:before {
+  content: "\f615"; }
+
+.io-AmigoPack:before {
+  content: "\f614"; }
+
+.io-Calculator:before {
+  content: "\f613"; }
+
+.io-4GLTE:before {
+  content: "\f612"; }
+
+.io-MoreInfo:before {
+  content: "\f611"; }
+
+.io-Entertainment:before {
+  content: "\f610"; }
+
+.io-OpenMail:before {
+  content: "\f60f"; }
+
+.io-Mail:before {
+  content: "\f60e"; }
+
+.io-Video:before {
+  content: "\f60d"; }
+
+.io-Music:before {
+  content: "\f60c"; }
+
+.io-Games:before {
+  content: "\f60b"; }
+
+.io-Chat:before {
+  content: "\f60a"; }
+
+.io-SocialNetwork:before {
+  content: "\f609"; }
+
+.io-SearchEngine:before {
+  content: "\f608"; }
+
+.io-PC:before {
+  content: "\f607"; }
+
+.io-USBModem:before {
+  content: "\f606"; }
+
+.io-Tablet:before {
+  content: "\f605"; }
+
+.io-Phone:before {
+  content: "\f604"; }
+
+.io-Blackberry:before {
+  content: "\f603"; }
+
+.io-Android:before {
+  content: "\f602"; }
+
+.io-Mac:before {
+  content: "\f601"; }
+
+.io-Windows:before {
+  content: "\f600"; }
+
+.io-WhatsApp:before {
+  content: "\f537"; }
+
+.io-Transfer:before {
+  content: "\f536"; }
+
+.io-iTelcel:before {
+  content: "\f535"; }
+
+.io-SuspendLine2:before {
+  content: "\f534"; }
+
+.io-SuspendLine:before {
+  content: "\f533"; }
+
+.io-ChangeChargingScheme2:before {
+  content: "\f532"; }
+
+.io-ChangeChargingScheme:before {
+  content: "\f531"; }
+
+.io-ManageNumbers:before {
+  content: "\f530"; }
+
+.io-CloseSession:before {
+  content: "\f52f"; }
+
+.io-IntelligentInbox:before {
+  content: "\f52e"; }
+
+.io-InternetPackage:before {
+  content: "\f52d"; }
+
+.io-AccountDownload:before {
+  content: "\f52c"; }
+
+.io-InvoiceSummary:before {
+  content: "\f52b"; }
+
+.io-RegisterInvoice:before {
+  content: "\f52a"; }
+
+.io-CallTransfer:before {
+  content: "\f529"; }
+
+.io-Rescatel:before {
+  content: "\f528"; }
+
+.io-ThreeWayCall:before {
+  content: "\f527"; }
+
+.io-SMSMessages:before {
+  content: "\f526"; }
+
+.io-ZeroDollars:before {
+  content: "\f525"; }
+
+.io-Adaptable:before {
+  content: "\f524"; }
+
+.io-AllClients:before {
+  content: "\f523"; }
+
+.io-StopWatch:before {
+  content: "\f522"; }
+
+.io-RechargeMore:before {
+  content: "\f521"; }
+
+.io-BigBonus:before {
+  content: "\f520"; }
+
+.io-MobileInternet:before {
+  content: "\f51f"; }
+
+.io-FreeNumber:before {
+  content: "\f51e"; }
+
+.io-Compass:before {
+  content: "\f51d"; }
+
+.io-ChooseAmount:before {
+  content: "\f51c"; }
+
+.io-HardwareBargin:before {
+  content: "\f51b"; }
+
+.io-RechargeGift:before {
+  content: "\f51a"; }
+
+.io-ZeroCommitment:before {
+  content: "\f519"; }
+
+.io-KitAmigo:before {
+  content: "\f518"; }
+
+.io-RecommendPlan:before {
+  content: "\f517"; }
+
+.io-Message:before {
+  content: "\f516"; }
+
+.io-ManageBalance:before {
+  content: "\f515"; }
+
+.io-RechargeNetwork:before {
+  content: "\f514"; }
+
+.io-ExtraServices:before {
+  content: "\f513"; }
+
+.io-PasaTiempo:before {
+  content: "\f512"; }
+
+.io-Cart:before {
+  content: "\f511"; }
+
+.io-NoRedTape:before {
+  content: "\f510"; }
+
+.io-QuickBuck:before {
+  content: "\f50f"; }
+
+.io-Inburs:before {
+  content: "\f50e"; }
+
+.io-Competition:before {
+  content: "\f50d"; }
+
+.io-Membership:before {
+  content: "\f50c"; }
+
+.io-SameNumber:before {
+  content: "\f50b"; }
+
+.io-Purse:before {
+  content: "\f50a"; }
+
+.io-Radar:before {
+  content: "\f509"; }
+
+.io-World:before {
+  content: "\f508"; }
+
+.io-Roaming:before {
+  content: "\f507"; }
+
+.io-Internet:before {
+  content: "\f506"; }
+
+.io-3G:before {
+  content: "\f505"; }
+
+.io-GLTE:before {
+  content: "\f504"; }
+
+.io-City:before {
+  content: "\f503"; }
+
+.io-BestPlan:before {
+  content: "\f502"; }
+
+.io-BestHardware:before {
+  content: "\f501"; }
+
+.io-Mexico:before {
+  content: "\f500"; }
+
+.io-SameSim:before {
+  content: "\f407"; }
+
+.io-SameNumber2:before {
+  content: "\f406"; }
+
+.io-Benefits:before {
+  content: "\f405"; }
+
+.io-BestPhone:before {
+  content: "\f404"; }
+
+.io-ChoosePlan:before {
+  content: "\f403"; }
+
+.io-ChangeCompany:before {
+  content: "\f402"; }
+
+.io-InTouch:before {
+  content: "\f401"; }
+
+.io-FreeCalls:before {
+  content: "\f400"; }
+
+.io-Bin:before {
+  content: "\f322"; }
+
+.io-OpenMenu:before {
+  content: "\f321"; }
+
+.io-SpeachBubble:before {
+  content: "\f320"; }
+
+.io-Watch:before {
+  content: "\f31f"; }
+
+.io-Admin:before {
+  content: "\f31e"; }
+
+.io-ExclusivePromo:before {
+  content: "\f31d"; }
+
+.io-Bill:before {
+  content: "\f31c"; }
+
+.io-Help:before {
+  content: "\f31b"; }
+
+.io-Save:before {
+  content: "\f31a"; }
+
+.io-Contract:before {
+  content: "\f319"; }
+
+.io-Points:before {
+  content: "\f318"; }
+
+.io-Subscription:before {
+  content: "\f317"; }
+
+.io-Gaming:before {
+  content: "\f316"; }
+
+.io-Sheild:before {
+  content: "\f315"; }
+
+.io-Finance:before {
+  content: "\f314"; }
+
+.io-Talk:before {
+  content: "\f313"; }
+
+.io-Compare:before {
+  content: "\f312"; }
+
+.io-Accessories:before {
+  content: "\f311"; }
+
+.io-WifiMobil:before {
+  content: "\f310"; }
+
+.io-Modems:before {
+  content: "\f30f"; }
+
+.io-Tablets:before {
+  content: "\f30e"; }
+
+.io-Phones:before {
+  content: "\f30d"; }
+
+.io-Coins:before {
+  content: "\f30c"; }
+
+.io-Abroad:before {
+  content: "\f30b"; }
+
+.io-Learn:before {
+  content: "\f30a"; }
+
+.io-Services:before {
+  content: "\f309"; }
+
+.io-Consumption:before {
+  content: "\f308"; }
+
+.io-Promos:before {
+  content: "\f307"; }
+
+.io-Recommendation:before {
+  content: "\f306"; }
+
+.io-Plans:before {
+  content: "\f305"; }
+
+.io-Amigo:before {
+  content: "\f304"; }
+
+.io-Network:before {
+  content: "\f303"; }
+
+.io-Search:before {
+  content: "\f302"; }
+
+.io-MiTelcel:before {
+  content: "\f301"; }
+
+.io-Bag:before {
+  content: "\f300"; }
+
+.io-BaseBall:before {
+  content: "\f256"; }
+
+.io-BasketBall:before {
+  content: "\f255"; }
+
+.io-Football:before {
+  content: "\f254"; }
+
+.io-Zodiac:before {
+  content: "\f253"; }
+
+.io-Claro:before {
+  content: "\f252"; }
+
+.io-ZonaClaro:before {
+  content: "\f251"; }
+
+.io-Plugger:before {
+  content: "\f250"; }
+
+.io-Imagenes:before {
+  content: "\f24f"; }
+
+.io-ClaroVideos:before {
+  content: "\f24e"; }
+
+.io-ClaroViajes:before {
+  content: "\f24d"; }
+
+.io-ClaroSync:before {
+  content: "\f24c"; }
+
+.io-ClaroJuegos:before {
+  content: "\f24b"; }
+
+.io-ClaroDeportes:before {
+  content: "\f24a"; }
+
+.io-ClaroChat:before {
+  content: "\f249"; }
+
+.io-ClaroIdeas:before {
+  content: "\f248"; }
+
+.io-Pointer:before {
+  content: "\f247"; }
+
+.io-Gear:before {
+  content: "\f246"; }
+
+.io-Pen:before {
+  content: "\f245"; }
+
+.io-Bookmark:before {
+  content: "\f244"; }
+
+.io-FingerSwipe:before {
+  content: "\f243"; }
+
+.io-Van:before {
+  content: "\f242"; }
+
+.io-Alarm:before {
+  content: "\f241"; }
+
+.io-Notes:before {
+  content: "\f240"; }
+
+.io-HardwareSupport:before {
+  content: "\f23f"; }
+
+.io-HardwarePack:before {
+  content: "\f23e"; }
+
+.io-HardwarePrice:before {
+  content: "\f23d"; }
+
+.io-HardwareScratch:before {
+  content: "\f23c"; }
+
+.io-HardwareTool:before {
+  content: "\f23b"; }
+
+.io-HardwareZoom:before {
+  content: "\f23a"; }
+
+.io-HardwareCut:before {
+  content: "\f239"; }
+
+.io-HardwareExplode:before {
+  content: "\f238"; }
+
+.io-HardwareSmash:before {
+  content: "\f237"; }
+
+.io-HardwareWater:before {
+  content: "\f236"; }
+
+.io-HardwareShock:before {
+  content: "\f235"; }
+
+.io-Lightning:before {
+  content: "\f234"; }
+
+.io-SimpleAvatar:before {
+  content: "\f233"; }
+
+.io-TelcelLogo:before {
+  content: "\f232"; }
+
+.io-Cloud:before {
+  content: "\f231"; }
+
+.io-Key:before {
+  content: "\f230"; }
+
+.io-Eye:before {
+  content: "\f22f"; }
+
+.io-NoConnection:before {
+  content: "\f22e"; }
+
+.io-Binoculars:before {
+  content: "\f22d"; }
+
+.io-NoEntry:before {
+  content: "\f22c"; }
+
+.io-Hourglass:before {
+  content: "\f22b"; }
+
+.io-Speedo:before {
+  content: "\f22a"; }
+
+.io-House:before {
+  content: "\f229"; }
+
+.io-Keyboard:before {
+  content: "\f228"; }
+
+.io-Refresh:before {
+  content: "\f227"; }
+
+.io-PlusOne:before {
+  content: "\f226"; }
+
+.io-Soport:before {
+  content: "\f225"; }
+
+.io-TravelAbroad:before {
+  content: "\f224"; }
+
+.io-TutsGuias:before {
+  content: "\f223"; }
+
+.io-PayTelcel:before {
+  content: "\f222"; }
+
+.io-MyTelcel:before {
+  content: "\f21f"; }
+
+.io-AppTelcel:before {
+  content: "\f21e"; }
+
+.io-InternetTelcel:before {
+  content: "\f21d"; }
+
+.io-HelpTuts:before {
+  content: "\f21c"; }
+
+.io-Document:before {
+  content: "\f21b"; }
+
+.io-Contact:before {
+  content: "\f21a"; }
+
+.io-TengoPlan:before {
+  content: "\f219"; }
+
+.io-NoTengoPlan:before {
+  content: "\f218"; }
+
+.io-RechargeBalance:before {
+  content: "\f217"; }
+
+.io-ConsultBalance:before {
+  content: "\f216"; }
+
+.io-TengoAmigo:before {
+  content: "\f215"; }
+
+.io-NoTienesAmigo:before {
+  content: "\f214"; }
+
+.io-PromoBenefits:before {
+  content: "\f213"; }
+
+.io-CirculoAzulPoints:before {
+  content: "\f212"; }
+
+.io-FAQPurchase:before {
+  content: "\f211"; }
+
+.io-FAQMyInternet:before {
+  content: "\f210"; }
+
+.io-FAQInternet:before {
+  content: "\f20f"; }
+
+.io-FAQSolutions:before {
+  content: "\f20e"; }
+
+.io-FAQServices:before {
+  content: "\f20d"; }
+
+.io-FAQPromotions:before {
+  content: "\f20c"; }
+
+.io-FAQPlan:before {
+  content: "\f20b"; }
+
+.io-FAQHardware:before {
+  content: "\f20a"; }
+
+.io-FAQTravelAbroad:before {
+  content: "\f209"; }
+
+.io-FAQAmigo:before {
+  content: "\f208"; }
+
+.io-Sim:before {
+  content: "\f207"; }
+
+.io-Heart:before {
+  content: "\f206"; }
+
+.io-500Cart:before {
+  content: "\f205"; }
+
+.io-CreditCard:before {
+  content: "\f204"; }
+
+.io-Month:before {
+  content: "\f203"; }
+
+.io-Week:before {
+  content: "\f202"; }
+
+.io-GloboTelcel:before {
+  content: "\f201"; }
+
+.io-Wheelchair:before {
+  content: "\f200"; }
+
+.io-TriangleRight:before {
+  content: "\f10d"; }
+
+.io-TriangleLeft:before {
+  content: "\f10c"; }
+
+.io-TriangleDown:before {
+  content: "\f10b"; }
+
+.io-TriangleUp:before {
+  content: "\f10a"; }
+
+.io-AccordionRightNeg:before {
+  content: "\f109"; }
+
+.io-AccordionLeftNeg:before {
+  content: "\f108"; }
+
+.io-AccordionRight:before {
+  content: "\f107"; }
+
+.io-AccordionLeft:before {
+  content: "\f106"; }
+
+.io-AccordionDownNeg:before {
+  content: "\f105"; }
+
+.io-AccordionUpNeg:before {
+  content: "\f104"; }
+
+.io-AccordionDown:before {
+  content: "\f103"; }
+
+.io-AccordionUp:before {
+  content: "\f102"; }
+
+.io-SliderRight:before {
+  content: "\f101"; }
+
+.io-SliderLeft:before {
+  content: "\f100"; }
+
+.io-Alert2:before {
+  content: "\f02a"; }
+
+.io-Alert:before {
+  content: "\f029"; }
+
+.io-MoneyNeg:before {
+  content: "\f028"; }
+
+.io-Money:before {
+  content: "\f027"; }
+
+.io-More:before {
+  content: "\f025"; }
+
+.io-Less:before {
+  content: "\f024"; }
+
+.io-Guide:before {
+  content: "\f023"; }
+
+.io-PDF:before {
+  content: "\f022"; }
+
+.io-Update:before {
+  content: "\f021"; }
+
+.io-Warning:before {
+  content: "\f020"; }
+
+.io-Question:before {
+  content: "\f01f"; }
+
+.io-List:before {
+  content: "\f01e"; }
+
+.io-Grid:before {
+  content: "\f01d"; }
+
+.io-Close:before {
+  content: "\f01c"; }
+
+.io-Share:before {
+  content: "\f01b"; }
+
+.io-Download:before {
+  content: "\f01a"; }
+
+.io-Print:before {
+  content: "\f019"; }
+
+.io-PadlockClosed:before {
+  content: "\f018"; }
+
+.io-PadlockOpen:before {
+  content: "\f017"; }
+
+.io-HalfStar:before {
+  content: "\f016"; }
+
+.io-Star:before {
+  content: "\f015"; }
+
+.io-DontLikeNeg:before {
+  content: "\f014"; }
+
+.io-LikeNeg:before {
+  content: "\f013"; }
+
+.io-DontLike:before {
+  content: "\f012"; }
+
+.io-Like:before {
+  content: "\f011"; }
+
+.io-TickNeg:before {
+  content: "\f010"; }
+
+.io-Tick:before {
+  content: "\f00f"; }
+
+.io-EmailNeg:before {
+  content: "\f00e"; }
+
+.io-GooglePlusNeg:before {
+  content: "\f00d"; }
+
+.io-PinterestNeg:before {
+  content: "\f00c"; }
+
+.io-YouTubeNeg:before {
+  content: "\f00b"; }
+
+.io-TwitterNeg:before {
+  content: "\f00a"; }
+
+.io-FacebookNeg:before {
+  content: "\f009"; }
+
+.io-MobliNeg:before {
+  content: "\f008"; }
+
+.io-Email:before {
+  content: "\f007"; }
+
+.io-GooglePlus:before {
+  content: "\f006"; }
+
+.io-Pinterest:before {
+  content: "\f005"; }
+
+.io-HolaTelcel:before {
+  content: "\f004"; }
+
+.io-YouTube:before {
+  content: "\f003"; }
+
+.io-Twitter:before {
+  content: "\f002"; }
+
+.io-Facebook:before {
+  content: "\f001"; }
+
+.io-Mobli:before {
+  content: "\f000"; }

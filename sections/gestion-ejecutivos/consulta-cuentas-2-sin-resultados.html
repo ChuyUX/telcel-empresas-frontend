@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE no_footer_cta header-con-degradado header-ejecutivos">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content gestion-ejecutivos-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="gestion-ejecutivos-1.html" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a href="consulta-cuentas-1.html" title="Cuentas asociadas">Cuentas asociadas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Alias 1">Alias 1</a>
+                  </li>
+                </ol>  
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h3">Cuentas asociadas de [Alias 1]</h2>
+                <p class="col-sm-8 center-block"><span>Estas son las cuentas asociadas actualmente al alias, puedes quitar las seleccionadas o agregar nuevas cuentas (aún cuando no sean tuyas).</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container" data-name="buscador">Mostrar buscador</p>
+
+              <div class="col-sm-10 col-md-10 col-xs-12 padding-0 center-block clearfix">
+                <form action="consulta-cuentas-2-con-busqueda.html" id="consultaCuentas" class="wrapper-gfsc con-busqueda-filtrado clearfix">
+                  <div class="col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container">
+
+                    <div class="col-sm-4 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-3 col-xs-3">
+                        <label>Cuenta:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <input type="text" name="cuenta" value="0101620" placeholder="Mínimo 1 número" class="one-field cuenta only-numbers" maxlength="10" data-field='{ "name" : "cuenta", "min" : "1" }'/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-2 col-xs-3">
+                        <label>RFC:</label>
+                      </div>
+                      <div class="col-sm-10 col-xs-9">
+                        <input type="text" name="rfc" value="CGC891211" placeholder="Mínimo 4 caracteres" class="one-field meet-regex rfc" maxlength="13" data-field='{ "name" : "rfc", "min" : "4"}' data-regex = "[^A-Za-z0-9]+$"/>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-2 col-xs-8 center-block">
+                      <button class="bton blue-dark main-btn full-width" type="button" id="btn-filter-facturas">Buscar</button>
+                    </div>
+
+                    <div class="col-sm-2 col-xs-8 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" type="button" data-href="consulta-cuentas-2.html">Nueva búsqueda</button>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid gestion-ejecutivos gestion-administradores" id="gestion-ejecutivos-view">
+            <div class="col-xs-12 col-sm-10 col-md-9 padding-0 center-block">
+              <div class="general-table edit-table-ejecutivos" id="edit-cuentas-table">
+                <div class="error-ge" id="sin-cuentas-asociadas"> 
+                  <div class="notif-bloq"> 
+                    <div class="row"> 
+                      <div class="col-xs-12 col-sm-12 inner-nb"> 
+                        <span class="icon io-Alert2"></span> 
+                        <p class="msg">No existen resultados. Modifica tus criterios de búsqueda.</p>
+
+                        <div class="btn-container padding-10">
+                          <button class="send-to-url blue-dark" type="button" data-href="consulta-cuentas-2.html">Nueva búsqueda</button>
+                        </div>
+                      </div> 
+
+                      
+                    </div> 
+                  </div> 
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

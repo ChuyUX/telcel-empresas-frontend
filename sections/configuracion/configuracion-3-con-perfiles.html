@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content configuracion-block roles-block">
+    <!-- gestion-cuentas-block -->
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Perfiles">Perfiles</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 theme-heading">
+                <h2 class="h2">Perfiles</h2>
+                <p class="txt-center center-block txt-300 col-md-8 col-sm-10 col-xs-12">Un perfil es un conjunto de personas que tiene necesidades especificas, por lo mismo estos grupos tienen un conjunto de permisos especificos. En esta sección puedes gestionar tanto los perfiles como sus usuarios y crear nuevos perfiles con permisos personalizados.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="header-block-menu simplify-header back-gray1 clearfix">
+          <div class="container">
+            <div class="options-header-block col-xs-12 col-sm-12 col-md-12">
+              <div class="col-sm-6 col-xs-6">
+                <p class="active" title="Administrador" id="btn-perfil-admin">
+                  <span class="title">Administrador</span>
+                </p>
+              </div>
+
+              <div class="col-sm-6 col-xs-6">
+                <p title="Usuarios" id="btn-perfil-usuario">
+                  <span class="title">Usuarios</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid">
+            <div class="row">
+              <section class="some-header-info col-xs-12 no-margin-bottom">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 flexbox">
+                      
+                      <div class="col-xs-12 col-sm-12 flexbox v-align-center order-by-cont-shi">
+                        <div class="v-align-center flexbox change-view-shi">
+                          <label class="no-margin txt-right label-shi" for="orderby2">Mostrar:</label>
+                          <div class="flexbox icon-container">
+                            <div class="col-xs-12 col-sm-12 change-view-container">
+                              <button class="simple" title="Mosaico" id="vista-mosaico">
+                                <span class="icon io-mosaico"></span>
+                                <span class="txt">Mosaico</span>
+                              </button>
+                              <button class="simple active" title="Lista" id="vista-lista">
+                                <span class="icon io-lista"></span>
+                                <span class="txt">Lista</span>
+                              </button>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              
+              <section class="group-list-block col-xs-12 no-margin-bottom" id="main-view-block">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 theme-heading header-perfil-administrador">
+                      <h3 class="h3">Perfiles administración</h3>
+                      <p class="txt-center center-block txt-300 col-md-8 col-sm-10 col-xs-12">Puedes añadir perfiles para gestionar a los usuarios que tendrán un perfil de administración sobre los usuarios finales, estos perfiles son creados por defecto, por lo cual no podrás modificar sus permisos, ni crear nuevos.</p>
+                    </div>
+
+                    <div class="col-md-12 theme-heading hidden header-perfil-usuarios">
+                      <h3 class="h3">Perfiles usuarios</h3>
+                      <p class="txt-center center-block txt-300 col-md-8 col-sm-10 col-xs-12">Puedes crear perfiles para gestionar a los usuarios finales, podrás modificar sus permisos y crear nuevos.</p>
+                    </div>
+
+                    <div class="mosaico-view col-xs-12 col-sm-12" id="perfiles-administrador">
+
+                      <div class="col-xs-12 col-sm-6 col-md-4 add-item-mv">
+                        <button type="button" class="add-group-btn-block btn-add-rol-admin" title="Agregar usuario">
+                          <span class="icon i-plus-1 flexbox v-align-center h-align-center"></span>
+                          <span>Agregar usuario</span>
+                        </button>
+                      </div>
+
+                      <div class="col-xs-6 col-sm-6 col-md-4 item-mv">
+                        <div class="rol-element" id="rol-administrador" data-item = '{"id": "administrador" ,"nombre": "Administrador de grupos", "usuarios" : "20", "showgrupo" : true}'>
+                          <div class="header-group flexbox clearfix">
+                            <div class="ribbon flexbox">
+                              <span class="icon io-Maletin col-sm-2 left-icon-ri" title="Perfil de usuario"></span>
+                              <div class="flexbox v-align-center col-sm-10 padding-0 name-container">
+                                <strong class="ribbon-content no-edit col-sm-10">Administrador de grupos</strong>
+                              </div>
+                            </div>
+                            <div class="icon-container flexbox v-align-center">
+                              <button class="btn-gear simple" title="Configuración">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                            <div class="col-sm-12 settings-ri">
+                              <div class="col-sm-12 cont-set-ri">
+                                <p class="col-sm-12 title-ri">
+                                  <span class="in-text-ri">Configuración</span>
+                                  <button class="simple btn-close-config" title="Cerrar">
+                                    <span class="icon io-Close"></span>
+                                  </button>
+                                </p>
+                                <div class="col-sm-12 title-mod">
+                                  <span class="icon io-Maletin col-xs-2 left-icon-ri"></span>
+                                  <p class="title-ribon-sri">Administrador de grupos</p>
+                                </div>
+                                <div class="col-sm-12 submenu-ri">
+                                  <div class="first-bloq-ri">
+                                    <button class="simple btn-agregar-usuario" type="button">
+                                      <span class="icon io-More"></span>
+                                      <span class="in-text-fbr">Agregar usuario</span>
+                                    </button>
+                                    <a class="simple bton btn-editar-nombre" href="configuracion-1-a.html">
+                                      <span class="icon io-ojo"></span>
+                                      <span class="in-text-fbr">Ver permiso(s)</span>
+                                    </a>
+                                    <button class="simple bton btn-eliminar-rol-admin hide-mobile" type="button">
+                                      <span class="icon io-Bin"></span>
+                                      <span class="in-text-fbr">Eliminar perfil</span>
+                                    </button>
+                                     <a class="simple bton" href="configuracion-2.html">
+                                      <span class="icon io-Message"></span>
+                                      <span class="in-text-fbr">Configurar notificaciones</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="body-group">
+                            <div class="group-total">
+                              <p class="usuarios-total"><strong>[20]</strong> usuarios</p>
+                            </div>
+
+                            <div class="extend-imv">
+                              <a href="configuracion-4-a.html" class="see-more-gt" title="Ver usuarios">Ver usuarios</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-6 col-sm-6 col-md-4 item-mv">
+                        <div class="rol-element" id="rol-inplant" data-item = '{"id": "inplant" ,"nombre": "Inplant", "usuarios" : "5"}'>
+                          <div class="header-group flexbox clearfix">
+                            <div class="ribbon flexbox">
+                              <span class="icon io-City col-sm-2 left-icon-ri" title="Perfil de usuario"></span>
+                              <div class="flexbox v-align-center col-sm-10 padding-0 name-container">
+                                <strong class="ribbon-content no-edit col-sm-10">Inplant</strong>
+                              </div>
+                            </div>
+                            <div class="icon-container flexbox v-align-center">
+                              <button class="btn-gear simple" title="Configuración">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                            <div class="col-sm-12 settings-ri">
+                              <div class="col-sm-12 cont-set-ri">
+                                <p class="col-sm-12 title-ri">
+                                  <span class="in-text-ri">Configuración</span>
+                                  <button class="simple btn-close-config" title="Cerrar">
+                                    <span class="icon io-Close"></span>
+                                  </button>
+                                </p>
+                                <div class="col-sm-12 title-mod">
+                                  <span class="icon io-City col-xs-2 left-icon-ri"></span>
+                                  <p class="title-ribon-sri">Inplant</p>
+                                </div>
+                                <div class="col-sm-12 submenu-ri">
+                                  <div class="first-bloq-ri">
+
+                                    <button class="simple btn-agregar-usuario" type="button">
+                                      <span class="icon io-More"></span>
+                                      <span class="in-text-fbr">Agregar usuario</span>
+                                    </button>
+                                    <a class="simple bton btn-editar-nombre" href="configuracion-1-a.html">
+                                      <span class="icon io-ojo"></span>
+                                      <span class="in-text-fbr">Ver permiso(s)</span>
+                                    </a>
+                                    <button class="simple bton btn-eliminar-rol-admin hide-mobile" type="button">
+                                      <span class="icon io-Bin"></span>
+                                      <span class="in-text-fbr">Eliminar perfil</span>
+                                    </button>
+                                     <a class="simple bton" href="configuracion-2.html">
+                                      <span class="icon io-Message"></span>
+                                      <span class="in-text-fbr">Configurar notificaciones</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="body-group">
+                            <div class="group-total">
+                              <p class="usuarios-total"><strong>[5]</strong> usuarios</p>
+                            </div>
+
+                            <div class="extend-imv">
+                              <a href="configuracion-4-b.html" class="see-more-gt" title="Ver usuarios">Ver usuarios</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--
+                      <div class="col-xs-6 col-sm-6 col-md-4 item-mv">
+                        <div class="rol-element" id="rol-supervisor" data-item = '{"id": "supervisor" ,"nombre": "Supervisor", "usuarios" : "500"}'>
+                          <div class="header-group flexbox clearfix">
+                            <div class="ribbon flexbox">
+                              <span class="icon io-star col-sm-2 left-icon-ri" title="Perfil de usuario"></span>
+                              <div class="flexbox v-align-center col-sm-10 padding-0 name-container">
+                                <strong class="ribbon-content no-edit col-sm-10">Supervisor</strong>
+                              </div>
+                            </div>
+                            <div class="icon-container flexbox v-align-center">
+                              <button class="btn-gear simple" title="Configuración">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                            <div class="col-sm-12 settings-ri">
+                              <div class="col-sm-12 cont-set-ri">
+                                <p class="col-sm-12 title-ri">
+                                  <span class="in-text-ri">Configuración</span>
+                                  <button class="simple btn-close-config" title="Cerrar">
+                                    <span class="icon io-Close"></span>
+                                  </button>
+                                </p>
+                                <div class="col-sm-12 title-mod">
+                                  <span class="icon io-avatar col-xs-2 left-icon-ri"></span>
+                                  <p class="title-ribon-sri">Supervisor</p>
+                                </div>
+                                <div class="col-sm-12 submenu-ri">
+                                  <div class="first-bloq-ri">
+                                    <button class="simple btn-agregar-lineas" type="button">
+                                      <span class="icon io-More"></span>
+                                      <span class="in-text-fbr">Agregar usuario(s)</span>
+                                    </button>
+                                    <a class="simple bton btn-editar-nombre" href="configuracion-1-c.html">
+                                      <span class="icon io-ojo"></span>
+                                      <span class="in-text-fbr">Ver permiso(s)</span>
+                                    </a>
+                                    <button class="simple bton btn-eliminar-rol-admin hide-mobile" type="button">
+                                      <span class="icon io-Bin"></span>
+                                      <span class="in-text-fbr">Eliminar perfil</span>
+                                    </button>
+                                     <a class="simple bton" href="configuracion-2.html">
+                                      <span class="icon io-Message"></span>
+                                      <span class="in-text-fbr">Configurar notificaciones</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="body-group">
+                            <div class="group-total">
+                              <p class="usuarios-total"><strong>[500]</strong> usuarios</p>
+                            </div>
+
+                            <div class="extend-imv">
+                              <a href="configuracion-4-c.html" class="see-more-gt" title="Ver usuarios">Ver usuarios</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+
+                    <div class="mosaico-view col-xs-12 col-sm-12 hidden" id="perfiles-usuarios">
+
+                      <div class="col-xs-12 col-sm-6 col-md-4 add-item-mv">
+                        <button type="button" class="add-group-btn-block btn-add-rol" title="Crear perfil">
+                          <span class="icon i-plus-1 flexbox v-align-center h-align-center"></span>
+                          <span>Crear perfil</span>
+                        </button>
+                      </div>
+
+                      <div class="col-xs-6 col-sm-6 col-md-4 item-mv">
+                        <div class="rol-element" id="rol-4" data-item = '{"id": "4" ,"nombre": "Usuario final", "usuarios" : "50"}'>
+                          <div class="header-group flexbox clearfix">
+                            <div class="ribbon flexbox">
+                              <span class="icon io-avatar col-sm-2 left-icon-ri" title="Perfil de usuario"></span>
+                              <div class="flexbox v-align-center col-sm-10 padding-0 name-container">
+                                <strong class="ribbon-content no-edit col-sm-10">Usuario final</strong>
+                              </div>
+                            </div>
+                            <div class="icon-container flexbox v-align-center">
+                              <button class="btn-gear simple" title="Configuración">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                            <div class="col-sm-12 settings-ri">
+                              <div class="col-sm-12 cont-set-ri">
+                                <p class="col-sm-12 title-ri">
+                                  <span class="in-text-ri">Configuración</span>
+                                  <button class="simple btn-close-config" title="Cerrar">
+                                    <span class="icon io-Close"></span>
+                                  </button>
+                                </p>
+                                <div class="col-sm-12 title-mod">
+                                  <span class="icon io-avatar col-xs-2 left-icon-ri"></span>
+                                  <p class="title-ribon-sri">Usuario final</p>
+                                </div>
+                                <div class="col-sm-12 submenu-ri">
+                                  <div class="first-bloq-ri">
+                                    <a class="simple bton btn-editar-nombre" href="configuracion-1-b.html">
+                                      <span class="icon io-ojo"></span>
+                                      <span class="in-text-fbr">Ver permiso(s)</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="body-group">
+                            <div class="group-total">
+                              <p class="usuarios-total"><strong>[50]</strong> usuarios</p>
+                            </div>
+
+                            <div class="extend-imv">
+                              <a href="configuracion-4-d.html" class="see-more-gt" title="Ver usuarios">Ver usuarios</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-6 col-sm-6 col-md-4 item-mv">
+                        <div class="rol-element general-rol-element" id="rol-5" data-item = '{"id": "5" ,"nombre": "Nuevo perfil", "usuarios" : "0"}'>
+                          <div class="header-group flexbox clearfix">
+                            <div class="ribbon flexbox">
+                              <span class="icon io-avatar col-sm-2 left-icon-ri" title="Perfil de usuario"></span>
+                              <div class="flexbox v-align-center col-sm-10 padding-0 name-container">
+                                <strong class="ribbon-content col-sm-10">Nuevo perfil</strong>
+                                <input type="text" value="Nuevo perfil" name="editar-alias" class="editar-alias only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$"/> 
+                                <button class="simple edit-name-ri col-sm-2 btn-guardar-nombre" title="Guardar Nombre"><span class="icon io-save-doc"></span></button> 
+                                <button class="simple edit-name-ri col-sm-2 btn-editar-nombre" title="Editar Nombre"><span class="icon io-Admin"></span></button>
+                              </div>
+                            </div>
+                            <div class="icon-container flexbox v-align-center">
+                              <button class="btn-gear simple" title="Configuración">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                            <div class="col-sm-12 settings-ri">
+                              <div class="col-sm-12 cont-set-ri">
+                                <p class="col-sm-12 title-ri">
+                                  <span class="in-text-ri">Configuración</span>
+                                  <button class="simple btn-close-config" title="Cerrar">
+                                    <span class="icon io-Close"></span>
+                                  </button>
+                                </p>
+                                <div class="col-sm-12 title-mod">
+                                  <span class="icon io-avatar col-xs-2 left-icon-ri"></span>
+                                  <p class="title-ribon-sri">Nuevo perfil</p>
+                                </div>
+                                <div class="col-sm-12 submenu-ri">
+                                  <div class="first-bloq-ri">
+                                    <button class="simple btn-editar-nombre hide-mobile" type="button">
+                                      <span class="icon io-lapiz"></span>
+                                      <span class="in-text-fbr">Cambiar nombre del perfil</span>
+                                    </button>
+
+                                    <button class="simple btn-agregar-lineas" type="button">
+                                      <span class="icon io-More"></span>
+                                      <span class="in-text-fbr">Agregar usuario(s)</span>
+                                    </button>
+                                    <a class="simple bton btn-editar-nombre" href="configuracion-1-c.html">
+                                      <span class="icon io-Admin"></span>
+                                      <span class="in-text-fbr">Ver/Editar permiso(s)</span>
+                                    </a>
+                                    <button class="simple bton btn-eliminar-rol hide-mobile" type="button">
+                                      <span class="icon io-Bin"></span>
+                                      <span class="in-text-fbr">Quitar perfil</span>
+                                    </button>
+
+                                    <a class="simple bton" href="configuracion-2.html">
+                                      <span class="icon io-Message"></span>
+                                      <span class="in-text-fbr">Configurar notificaciones</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="body-group">
+                            <div class="extend-imv">
+                              <button type="button" class="btn-like-a btn-agregar-usuarios btn-agregar-lineas">Agregar usuario(s) a este perfil</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+
+          </div>
+        </section>
+
+        
+
+        <!-- MODAL AGREGAR Perfil -->
+        <section class="modal-mte" id="modal-agregar-rol">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Crear <span class="grupo-type">perfil</span></p>
+                        
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-agregar-rol">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-agregar-rol" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Nombre del <span class="grupo-type">perfil</span>:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="nombre" placeholder="Ejemplo: Perfil A" class="required only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "5" }'>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" type="submit">Crear</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+
+                      </form>
+
+                        <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                          <p>El <span class="grupo-type">perfil</span> [<span class="rol-txt"></span>] ha sido creado con éxito.</p>
+                          <div class="col-sm-12 submit-r-asoc">
+                            <button class="bton blue-dark btn-agregar-lineas-grupo-modal" type="button" data-item ='{"id": "null" ,"nombre": "null"}'>Agregar usuarios a este <span class="grupo-type">perfil</span></button>
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL AGREGAR Perfil -->
+
+        <!-- MODAL AGREGAR Perfil -->
+        <section class="modal-mte" id="modal-agregar-rol-admin">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Agregar <span class="grupo-type">usuario</span></p>                        
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-agregar-rol-admin">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-agregar-rol-admin" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+                        <div class="col-sm-12 col-xs-12 padding-0" id="perfil-selector-block">
+
+                          <p class="txt-center"><strong>Selecciona el tipo de usuario que deseas agregar:</strong></p>
+
+                          <div class="col-sm-8 col-xs-12 center-block roles-container clearfix">
+                            <div class="rol-line admin-rol col-sm-12 col-xs-12 perfil-opc administrador">
+                              <div class="data-write checkbox-container radio">
+                                <input type="radio" id="perfil-2" class="perfil one-field" name="perfil" data-perfil="Administrador de grupos" data-field='{ "name" : "perfil" }' value="administrador"/>
+                                <label for="perfil-2"><span class="check-sq"></span></label>
+                              </div>
+                              <div class="icon-container">
+                                <span class="icon io-Maletin"></span>
+                              </div>
+                              <div class="name-container">
+                                <span class="texto">Administrador de grupos</span>
+                              </div>
+                              
+                            </div>
+
+                            <div class="rol-line admin-rol col-sm-12 col-xs-12 perfil-opc inplant">
+                              <div class="data-write checkbox-container radio">
+                                <input type="radio" id="perfil-1" class="perfil one-field" name="perfil" data-perfil="Inplant" data-field='{ "name" : "perfil" }' value="inplant"/>
+                                <label for="perfil-1"><span class="check-sq"></span></label>
+                              </div>
+                              <div class="icon-container">
+                                <span class="icon io-City"></span>
+                              </div>
+                              <div class="name-container">
+                                <span class="texto">Inplant</span>
+                              </div>
+                              
+                            </div>
+
+                            <!-- <div class="rol-line admin-rol col-sm-12 col-xs-12 perfil-opc supervisor">
+                              <div class="data-write checkbox-container radio">
+                                <input type="radio" data-perfil="Supervisor de grupo" id="perfil-3" class="perfil one-field" name="perfil" data-field='{ "name" : "perfil" }' value="supervisor"/>
+                                <label for="perfil-3"><span class="check-sq"></span></label>
+                              </div>
+                              <div class="icon-container">
+                                <span class="icon io-Maletin"></span>
+                              </div>
+                              <div class="name-container">
+                                <span class="texto">Supervisor de grupo</span>
+                              </div>
+                              
+                            </div> -->
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" type="submit">Aceptar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+
+                      </form>
+
+                        <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                          <p>El perfil [<span class="rol-txt"></span>] ha sido añadido con éxito.</p>
+                          <div class="col-sm-12 submit-r-asoc">
+                            <button class="bton blue-dark btn-agregar-lineas-grupo-modal" type="button" data-item ='{"id": "null" ,"nombre": "null"}'>Agregar usuarios a este <span class="grupo-type">perfil</span></button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-info">
+                          <p>Has añadido todos los perfiles de administrador de usuarios que existen.</p>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL AGREGAR Perfil -->
+
+        <!-- MODAL Eliminar perfil -->
+        <section class="modal-mte" id="modal-eliminar-rol">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Quitar perfil</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-avatar"></span>
+                          <p class="alias-text"></p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod" id="confirmar-eliminar-rol">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Esta acción no puede deshacerse.</p>
+
+                          <p>¿Estás seguro de quitar el perfil [<span class="alias-text"></span>]? Los usuarios de este perfil pasarán automáticamente al perfil [Usuario final] y perderá(n) los permisos personalizados.</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" id="btn-eliminar-rol" type="button">Quitar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+                      </div>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="eliminar-rol-confirmacion">
+                        <p>Se ha quitado con éxito el perfil de [<span class="alias-text"></span>] y los [<span class="total-usuarios-txt"></span>] usuario(s) se movieron al perfil de [Usuario final] correctamente.</p>
+                      </div>
+
+                        <div class="col-sm-12 mid-txt-ge-mod" id="eliminar-rol-ya-eliminado">
+                          <p>El perfil se quitó anteriormente, favor de actualizar la página para mostrar los cambios realizados.</p>
+                          
+                          <div class="col-xs-12 col-sm-12 submit-r-asoc no-margin-bottom">
+                            <button type="button" class="bton blue-dark refresh-site">Actualizar</button>
+                          </div>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Eliminar perfil -->
+
+        <!-- MODAL Eliminar perfil admin -->
+        <section class="modal-mte" id="modal-eliminar-rol-admin">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Eliminar perfil</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-avatar"></span>
+                          <p class="alias-text"></p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod" id="confirmar-eliminar-rol-admin">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Esta acción no puede deshacerse. <br>¿Estás seguro de eliminar el perfil [<span class="alias-text"></span>]? <br>El acceso de este(os) usuario(s) se eliminará(n) y no podrá(n) acceder al portal.</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" id="btn-eliminar-rol-admin" type="button">Eliminar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+                      </div>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="eliminar-rol-admin-confirmacion">
+                        <p>Se ha eliminado con éxito el perfil de [<span class="alias-text"></span>] y los [<span class="total-usuarios-txt"></span>] usuarios.</p>
+                      </div>
+
+                        <div class="col-sm-12 mid-txt-ge-mod" id="eliminar-rol-admin-ya-eliminado">
+                          <p>El perfil se elimino anteriormente, favor de actualizar la página para mostrar los cambios realizados.</p>
+                          
+                          <div class="col-xs-12 col-sm-12 submit-r-asoc no-margin-bottom">
+                            <button type="button" class="bton blue-dark refresh-site">Actualizar</button>
+                          </div>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Eliminar perfil admin -->
+
+        <!-- MODAL AGREGAR USUARIOS -->
+        <section class="modal-mte" id="modal-agregar-usuarios">  
+          <!-- LOADING -->
+          <div class="loading-block-screen full-width"><div class="loading-wrapper"><div class="sk-circle"> <div class="sk-circle1 sk-child"></div> <div class="sk-circle2 sk-child"></div> <div class="sk-circle3 sk-child"></div> <div class="sk-circle4 sk-child"></div> <div class="sk-circle5 sk-child"></div> <div class="sk-circle6 sk-child"></div> <div class="sk-circle7 sk-child"></div> <div class="sk-circle8 sk-child"></div> <div class="sk-circle9 sk-child"></div> <div class="sk-circle10 sk-child"></div> <div class="sk-circle11 sk-child"></div> <div class="sk-circle12 sk-child"></div> </div></div></div>
+
+          <!-- FIN LOADING  -->
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Agregar usuario(s)</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-avatar"></span>
+                          <p class="alias-text">Desarrollo</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+
+                      <!-- COMPONENTE GENERAL -->
+                      <div id="componente-ingresar-lineas" class="step-1">
+
+                      <!-- Botones -->
+                        <div class="col-sm-12 componente-btn-block">
+                          <div class="col-sm-4">
+                            <button class="btn-al btn-lineas-archivo"  type="button" data-show=".componente-lineas-block .lineas-archivo">
+                              <span class="icon io-File"></span>
+                              <span class="text">Sube un Excel con todas las líneas a gestionar</span>
+                            </button>
+                          </div>
+
+                          <div class="col-sm-4">
+                            <button class="btn-al btn-lineas-autocomplete" type="button" data-show=".componente-lineas-block .lineas-autocomplete">
+                              <span class="icon io-Ingresar"></span>
+                              <span class="text">Captura las líneas en bloques de hasta 50</span>
+                            </button>
+                            
+                          </div>
+
+                          <div class="col-sm-4">
+                            <button class="btn-al btn-lineas-arbol" type="button" data-show=".componente-lineas-block .lineas-arbol">
+                              <span class="icon io-Listado"></span>
+                              <span class="text">Selecciona de la lista hasta 50 líneas</span>
+                            </button>
+                            
+                          </div>
+                        </div>
+                      <!-- Fin Botones -->
+
+                      
+                        <div class="col-sm-12 form-ge-mod form-modal-agregar-lineas componente-lineas-block">
+
+
+                          <!-- INICIO ARCHIVO -->
+                          <form class="componente-lb lineas-archivo">
+                            <div class="triangle-tooltip">
+
+                              <div class="col-sm-10 center-block add-lines-ge-mod">
+                                 <div class="txt-center instructions"><p>Son compatibles los archivos con extensión .xls</p> <p><a href="../../doc/ejemplo-excel.xls" target="_blank">Descarga la plantilla</a>  con el formato necesario.</p></div>
+                                  <div class="data-write clearfix"><label class="data-write flexbox col-sm-12 input-box-container file" title="">
+                                    <input type="file" name="archivo" id="archivo" placeholder="Elige el archivo que quieres subir" class="element-input col-sm-12">
+                                  </label></div>
+
+                                  <p class="extra-info">Tamaño de archivo: 10 MB máximo</p>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 submit-r-asoc componente-submit-block">
+                              <button class="bton blue-dark first-submit" id="btn-add-lineas-archivo" type="submit" disabled>Agregar</button>
+                              <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                              
+                            </div>
+                          </form>
+                          <!-- FIN ARCHIVO -->
+
+
+                          <!-- INICIO AUTOCOMPLETE -->
+                          <div class="componente-lb lineas-autocomplete">
+
+                            <div class="triangle-tooltip">
+
+                              <div class="col-sm-10 col-xs-12 center-block add-lines-ge-mod clearfix">
+                                 <p class="txt-center">Ingresa el número<span class="hide-mobile">, </span> <span class="only-mobile"> o </span> nombre <span class="hide-mobile">o grupo asociado al alías </span>que deseas agregar.</p>
+                                 <p class="total-autocomplete hidden hidden-xs txt-center"><span class="total"></span> línea(s) seleccionada(s) </p>
+                                  <div class="data-write flexbox col-sm-12 col-xs-12 input-box-container">
+                                    <div class="tokenfield-block col-sm-12 col-xs-12 center-block">
+                                      <input type="text" class="form-control token-field-input element-input" id="tokenfield-agregar-lineas" value="" placeholder="Número Telcel, nombre del titular o nombre del grupo" data-options='{ "limit": 0, "placeholder" : "Número Telcel, nombre del titular o nombre del grupo", "placeholderM" : "Número Telcel/nombre del titular", "activate" : "#btn-add-lineas-autocomplete", "groups" : true}'/>
+
+                                      <input type="hidden" id="tokenfield-hidden-input" name="tokens" />
+                                  </div>
+                                    
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 submit-r-asoc componente-submit-block">
+                              <button class="bton blue-dark btn-modal-add-lineas" type="button" disabled id="btn-add-lineas-autocomplete">Agregar</button>
+                              <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                              
+                            </div>
+
+                          </div>
+                          <!-- FIN AUTOCOMPLETE -->
+
+                          <!-- INICIO ÁRBOLES -->
+                          <div class="componente-lb componente-lb lineas-arbol">
+                            <div class="triangle-tooltip">
+                              <div class="col-sm-8 center-block add-lines-ge-mod">
+                                 <p class="txt-center">Elige las líneas de la lista:</p>
+                                  <div class="data-write flexbox col-sm-12 search-box-container input-box-container">
+                                    <input type="text" name="search" placeholder="Nombre del grupo o número Telcel" class="search-input meet-regex element-input col-sm-8" maxlength="45" data-regex = "[^A-Za-z0-9-\s]+$" data-min="4">
+                                    <button class="bton blue-dark btn-search col-sm-4" type="button" disabled>Buscar</button>
+                                  </div>
+
+                                  <div class="block-content-arbol-btn hidden">
+                                    <p class="total-arbol col-sm-6"><span class="total">0</span> línea(s) seleccionada(s)</p>
+
+                                    <p class="btn-like-a btn-remover-busqueda col-sm-6">Remover búsqueda</p>
+
+                                    <p class="btn-like-a btn-remover-seleccion col-sm-6">Remover selección</p>
+                                  </div>
+                              </div>
+
+                              <div class="col-sm-8 center-block tree-groups-asoc">
+                                <div id="tree-lineas" class="col-sm-12 view-tga">
+                                </div>
+
+                                <div id="tree-lineas-search" class="col-sm-12 view-tga tree-search">
+                                </div>
+
+                              </div>
+
+                            </div>
+
+                            <div class="col-sm-12 submit-r-asoc componente-submit-block">
+                              <button class="bton blue-dark" type="button" id="btn-add-lineas-arbol" disabled>Agregar</button>
+                              <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                              
+                            </div>
+                            
+                          </div>
+                          <!-- FIN ÁRBOLES -->
+                           
+                        </div>
+                      </div>
+                      
+                      <!-- FIN COMPONENTE GENERAL -->
+
+                      <!-- INICIO CONFIRMACIÓN -->
+                      <div class="col-sm-12 form-ge-mod step-2">
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                        <!--   <span class="total-lineas-agregar"></span> -->
+                          <p>Se están agregando las líneas a [<span class="txt-current"></span>], se te norificará cuando se complete el movimiento.</p>
+                        </div>
+                      </div>
+                      <!-- FIN CONFIRMACIÓN-->
+
+
+                      <!-- INICIO FINAL -->
+                      <div class="col-sm-12 form-ge-mod step-3">
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          
+                          <p class="error-success">Se han agregado <span class="total-lineas-success">20</span> líneas correctamente.</p>
+
+                          <div class="col-sm-8 center-block added-lines info-added-lines">
+
+                            <div class="col-sm-12 head-r-asoc">
+                              <div class="col-sm-12 title-nal">
+                                <div class="col-sm-12">
+                                  <p>Líneas agregadas</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 content-r-asoc">
+                              <div class="col-sm-12 content-nal">
+                                <div class="col-sm-12 div-nal">
+                                  
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+
+                          <p class="error-msg">No ha sido posible agregar <span class="total-lineas-error">10</span> líneas.</p>
+
+                          <div class="col-sm-8 center-block not-added-lines info-added-lines">
+
+                            <div class="col-sm-12 head-r-asoc">
+                              <div class="col-sm-12 title-nal">
+                                <div class="col-sm-12">
+                                  <p>Líneas no agregadas</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 content-r-asoc">
+                              <div class="col-sm-12 content-nal">
+                                <div class="col-sm-12 div-nal">
+                                  
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL AGREGAR USUARIOS -->
+
+        <!-- MODAL Bloquear Ingreso Masivo -->
+        <section class="modal-mte" id="modal-limitar-masivo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Selección de líneas</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Para gestionar tu solicitud es necesario seleccionar bloques de hasta 50 líneas. También puedes realizar el ingreso a través de un Excel con todas las líneas.</p>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Bloquear Ingreso Masivo -->
+
+        <!-- MODAL AGREGAR USUARIO -->
+        <section class="modal-mte" id="modal-agregar-usuario">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Agregar <span class="grupo-type">usuario</span></p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-avatar"></span>
+                          <p class="alias-text">Grupo padre</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-agregar-usuario">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-agregar-usuario" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Nombre:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="nombre" placeholder="Ejemplo: Usuario A" class="required only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "5" }'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Correo electrónico:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="email" placeholder="juan@correo.com" class="required" maxlength="50">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Teléfono de contacto:</label>
+                            <span class="lite-p">(Opcional)</span>
+                          </div>
+                          <div class="col-sm-4 col-xs-12 number-lada-container">
+                            
+                            <div class="col-sm-12 col-xs-12 input-double-dots">
+                              <div class="data-write number-container">
+                                
+                                <div class="col-sm-4 col-xs-3">
+                                  <input type="number" name="lada" placeholder="552" class="input-group only-numbers lada" data-maxlength="3" value="">
+                                </div>
+
+                                <div class="col-sm-8 col-xs-9">
+                                  <input type="number" name="telefono" placeholder="67889989" class="input-group only-numbers telefono" value="" data-maxlength="8">
+                                  <!-- blur-validation -->
+                                </div>
+
+                                <input type="text" class="numero hidden" name="numero" value="" />
+                              </div>
+                              
+                            </div>
+                          </div>
+
+
+                          <div class="col-sm-3 col-xs-12 input-double-dots extension-block">
+                            <div class="data-write number-container extension-container">
+                              <div class="col-sm-5 label-double-dots">
+                                <label>Ext.:</label>
+                              </div>
+                              <div class="col-sm-7 col-xs-12">
+                                <input type="number" name="extension" class="input-group only-numbers extension" value="" placeholder="5567" data-maxlength="4">
+                              </div>
+
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 col-xs-12 padding-0 grupo-selector-block hidden">
+
+                          <div class="col-sm-8 col-sm-offset-2 add-lines-ge-mod">
+                            <p class="txt-center">Selecciona el grupo  o los grupo(s) que gestionará:</p>
+                            <div class="data-write flexbox col-sm-12 search-box-container">
+                              <input type="text" name="search" placeholder="Nombre del grupo" class="search-input meet-regex col-sm-8" maxlength="45" data-regex = "[^A-Za-z-ñÑ\s]+$" data-min="4">
+                              <button class="bton blue-dark btn-search col-sm-4" type="button" disabled>Buscar</button>
+                            </div>
+
+                            <p class="btn-like-a btn-remover-busqueda">Remover búsqueda</p>
+                          </div>
+
+                          <div class="col-sm-8 col-sm-offset-2 tree-groups-asoc">
+
+                            <div class="col-sm-12 view-tga tree-grupos">
+                            </div>
+
+                            <div class="col-sm-12 view-tga tree-search tree-grupos-search">
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 ingreso-grupos-mobile">
+                          <p>La selección de grupos no está disponible en esta resolución.</p>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" type="submit">Agregar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL AGREGAR USUARIO -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/configuracion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+
+  </body>
+</html>

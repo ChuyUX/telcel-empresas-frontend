@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content roaming-block autogestion-general-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a title="Roaming" href="roaming-0.html">Roaming</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Paquetes">Paquetes</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <!-- Aquí hardcodeo y jalo los paquetes que el usuario añadio para mostrarlos en el carrito -->
+        <div id="paquetes-seleccionados-user" class="hidden" data-paquetes = "paquete-4,paquete-8,paquete-12"></div>
+        <!-- Fin simulación -->
+
+        <section class="no-margin-bottom">
+          <div class="servicios-tooltip-container to-fixed-block active">
+
+            <div class="btn-resumen flexbox">
+              <div class="button-container v-align-center">
+                <button class="bton orange mostrar-servicios-btn" type="submit" disabled>Confirmar y contratar</button>
+              </div>
+              <div><span class="icon io-resumen"></span></div>
+              <div><p>Resumen</p></div>
+              <div class="total-block"><span class="total-servicios">0</span></div>
+
+              
+            </div>
+            
+          </div>
+
+          <section>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 theme-heading">
+                    <h2 class="txt-center h2 subtext"><span class="hidden-xs">Ingresa la(s) línea(s) a la(s) que deseas contratar <button type="button" class="btn-autogestion-simular btn-continuar">contratar [3] paquete(s)</button></span> <span class="hidden-sm hidden-md hidden-lg">Ingresa la línea a la que deseas contratar <button type="button" class="btn-autogestion-simular btn-continuar">contratar [3] paquete(s)</button></span></h2>
+
+                    <p class="col-sm-8 center-block hide-mobile">Puedes ingresar números Telcel, grupos e incluso subir datos desde una hoja de cálculo.</p></p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+            <form class="form-section-block autogestion-form" id="autogestion-form" method="POST" action="roaming-masivo-3.html" data-actionmobile = "roaming-2.html">
+              <section class="clearfix roaming-step back-blue1 all-blue-bg">
+                <div class="row">
+                  <div class="container padding-20">
+                    <div class="col-sm-12 col-xs-12 regresar-masivo">
+                      <a href="roaming-masivo-1.html" class="flexbox"><span class="icon i-angle-left"></span><span>Regresar a selección de paquetes</span></a>
+                    </div>
+                    <div class="col-sm-8 center-block">
+                       <!-- COMPONENTE GENERAL -->
+                      <div id="componente-ingresar-lineas" class="clearfix">
+
+                        <!-- Botones -->
+                          <div class="col-sm-12 componente-btn-block">
+                            <div class="col-sm-4">
+                              <button class="btn-al btn-lineas-archivo"  type="button" data-show=".componente-lineas-block .lineas-archivo">
+                                <span class="icon io-File"></span>
+                                <span class="text">Sube un Excel con todas las líneas a gestionar</span>
+                              </button>
+                              
+                            </div>
+
+                            <div class="col-sm-4">
+                              <button class="btn-al btn-lineas-autocomplete" type="button" data-show=".componente-lineas-block .lineas-autocomplete">
+                                <span class="icon io-Ingresar"></span>
+                                <span class="text">Captura las líneas en bloques de hasta 50</span>
+                              </button>
+                              
+                            </div>
+
+                            <div class="col-sm-4">
+                              <button class="btn-al btn-lineas-arbol" type="button" data-show=".componente-lineas-block .lineas-arbol">
+                                <span class="icon io-Listado"></span>
+                                <span class="text">Selecciona de la lista hasta 50 líneas</span>
+                              </button>
+                              
+                            </div>
+                          </div>
+                        <!-- Fin Botones -->
+
+                        
+                          <div class="col-sm-12 form-ge-mod form-modal-agregar-lineas componente-lineas-block">
+
+
+                            <!-- INICIO ARCHIVO -->
+                            <div class= "componente-lb lineas-archivo" data-options='{ "element": "#autogestion-paso-2", "event" : "show" , "showDependant" : "#archivo"}'>
+                              <div class="triangle-tooltip">
+
+                                <div class="col-sm-10 center-block add-lines-ge-mod">
+                                   <div class="txt-center instructions"><p>Son compatibles los archivos con extensión .xls</p> <p><a href="../../doc/ejemplo-excel.xls" target="_blank">Descarga la plantilla</a>  con el formato necesario.</p></div>
+                                  <div class="data-write clearfix"><label class="data-write flexbox col-sm-12 input-box-container file" title="">
+                                    <input type="file" name="archivo" id="archivo" placeholder="Elige el archivo que quieres subir" class="element-input col-sm-12">
+                                  </label></div>
+
+                                    <p class="extra-info">Tamaño de archivo: 10 MB máximo</p>
+                                </div>
+                              </div>
+
+                            </div>
+                            <!-- FIN ARCHIVO -->
+
+
+                            <!-- INICIO AUTOCOMPLETE -->
+                            <div class="componente-lb lineas-autocomplete"  data-options='{ "element": "#autogestion-paso-2", "event" : "show"}'>
+
+                              <div class="triangle-tooltip">
+
+                                <div class="col-sm-10 col-xs-12 center-block add-lines-ge-mod clearfix">
+                                   <p class="txt-center hidden-xs">Ingresa el número<span class="hide-mobile">, </span> <span class="only-mobile"> o </span> nombre <span class="hide-mobile">o grupo asociado al alías </span>que deseas agregar.</p>
+                                   <p class="total-autocomplete hidden hidden-xs"><span class="total"></span> línea(s) seleccionada(s) </p>
+                                    <div class="data-write flexbox col-sm-12 col-xs-12 input-box-container">
+                                      <div class="tokenfield-block col-sm-12 col-xs-12 center-block">
+                                        <input type="text" class="form-control token-field-input element-input" id="tokenfield-agregar-lineas" value="" placeholder="Número Telcel, nombre del titular o nombre del grupo" data-options='{ "limit": 0, "placeholder" : "Número Telcel, nombre del titular o nombre del grupo", "placeholderM" : "Número Telcel/nombre del titular", "groups" : true, "show" : "#autogestion-paso-2", "inSteps" : ".roaming-step" }'/>
+                                    </div>
+                                      
+                                    </div>
+                                </div>
+                              </div>
+
+                            </div>
+                            <!-- FIN AUTOCOMPLETE -->
+
+                            <!-- INICIO ÁRBOLES -->
+                            <div class="componente-lb componente-lb lineas-arbol" data-options='{ "element": "#autogestion-paso-2", "event" : "show"}'>
+                              <div class="triangle-tooltip">
+                                <div class="col-sm-8 center-block add-lines-ge-mod">
+                                   <p class="txt-center">2. Elige las líneas de la lista:</p>
+                                    <div class="data-write flexbox col-sm-12 search-box-container input-box-container">
+                                      <input type="text" name="search" placeholder="Nombre del grupo o número Telcel" class="search-input meet-regex element-input col-sm-8" maxlength="45" data-regex = "[^A-Za-z0-9-\s]+$" data-min="4">
+                                      <button class="bton blue-dark btn-search col-sm-4" type="button" disabled>Buscar</button>
+                                    </div>
+
+                                    <div class="block-content-arbol-btn hidden">
+                                      <p class="total-arbol col-sm-6"><span class="total">0</span> línea(s) seleccionada(s)</p>
+
+                                      <p class="btn-like-a btn-remover-busqueda col-sm-6">Remover búsqueda</p>
+
+                                      <p class="btn-like-a btn-remover-seleccion col-sm-6">Remover selección</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-8 center-block tree-groups-asoc">
+                                  <div id="tree-lineas" class="col-sm-12 view-tga">
+                                  </div>
+
+                                  <div id="tree-lineas-search" class="col-sm-12 view-tga tree-search">
+                                  </div>
+
+                                </div>
+
+                              </div>
+                              
+                            </div>
+                            <!-- FIN ÁRBOLES -->
+                             
+                          </div>
+                      </div>
+
+                      <input type="hidden" id="lineas-hidden-input" name="lineas" value=""/>
+                      <!-- FIN COMPONENTE GENERAL -->
+                    </div>
+
+
+                  </div>
+
+              </section>
+              
+              <section class="clearfix roaming-step" id="autogestion-paso-2">
+                <div class="container">
+                  <div class="col-md-12 col-xs-8 center-block btn-container-nmb">
+                    <button class="bton orange no-margin-bottom btn-continuar" id="autogestion-btn" type="submit" disabled>Continuar</button>
+                  </div>
+                </div>
+              </section>  
+            </form>
+
+        </section>
+
+        <!-- MODAL Bloquear Ingreso Masivo -->
+        <section class="modal-mte" id="modal-limitar-masivo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Ingreso de líneas</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Para gestionar tu solicitud es necesario ingresar bloques de hasta 50 líneas. También puedes realizar el ingreso a través de un Excel con todas las líneas.</p>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Bloquear Ingreso Masivo -->
+
+        <!-- Carrito de compra -->
+        <section class="modal-mte" id="modal-servicios">
+          <div class="window-modal align-right visible">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+
+                      <div class="col-xs-12 col-sm-12 title-mod">
+                        <p class="h2">Resumen de [<span class="total-servicios">2</span>] servicios a contratar</p>
+                        <small>Los servicios se activarán y tendrán vigencia con horario de México.</small>
+                        
+                      </div>
+
+
+                      <div class="head-action-mod">
+                        <button class="bton m-btn-close-modal">
+                          <span class="icon i-angle-right"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 col-xs-12 center-block">
+                          <div class="general-table">
+                            <div class="header-block">
+                              <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center v-align-center" id="header-con-servicios">
+
+                                <div class="col-sm-7 col-xs-7 flexbox">
+                                  <strong title="Paquete y fechas">Paquete y fechas</strong>
+                                </div>
+
+                                <div class="col-sm-3 col-xs-3 h-align-center flexbox">
+                                  <strong title="Costo por línea">Costo por línea</strong>
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <div class="table-main-block" id="servicios-activados">
+                              <div class="col-sm-12 col-xs-12 center-block flexbox" id="c-servicio-4"> 
+                                <div class="col-sm-8 col-xs-8 flexbox"> 
+                                  <p title="Paquete Internacional 500 (del 31-10-2016 al 18-02-2017).">
+                                    Paquete Internacional 500 (del 31-10-2016 al 18-02-2017). 
+                                    <a href="">Mostrar legales</a> 
+                                  </p>
+                                </div>
+                                
+                                <div class="col-sm-4 col-xs-4 flexbox h-align-center">
+                                  <p class="p-align-center"><strong> $1794.00</strong></p> 
+                                </div> 
+                              </div>
+                              <div class="col-sm-12 col-xs-12 center-block flexbox" id="c-servicio-5"> 
+                                <div class="col-sm-8 col-xs-8 flexbox"> 
+                                  <p title="Paquete Internacional 500 (del 31-10-2016 al 18-02-2017).">
+                                    Paquete Internacional 500 (del 31-10-2016 al 18-02-2017). 
+                                    <a href="">Mostrar legales</a> 
+                                  </p>
+                                </div>
+                                
+                                <div class="col-sm-4 col-xs-4 flexbox h-align-center">
+                                  <p class="p-align-center"><strong> $1794.00</strong></p> 
+                                </div> 
+                              </div>
+                            </div>
+
+                            <h4 id="servicios-desactivados-head" class="blue-back-heading hidden">Servicios a desactivar</h4>
+                            <div class="table-main-block" id="servicios-desactivados">
+                            </div>
+
+                            <div class="last-td">
+                              <div class="col-sm-12 center-block flexbox h-align-center  v-align-center">
+                                  <div class="col-sm-7 flexbox h-align-center">
+                                    <p class="description"><small class="txt-100">Los precios incluyen IVA al 16%. </br>* El precio total puede disminuir de acuerdo a la compatibilidad del servicio con la(s) línea(s).</small></p>
+                                  </div>
+
+                                  <div class="col-sm-5 flexbox h-align-center">
+                                    <p>Total: <strong class="total"> $<span id="total-carrito">300</span></strong></p>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                  
+                  <div class="terminos-container-modal col-sm-12 center-block">   
+                    <div class="col-sm-10 center-block">
+                      <div class="data-write">
+        
+                      </div>
+                    </div>
+                      <div class="triangle-tooltip blue-triangle fadein" id="terminos-container">
+                        
+                        <div class="head-content col-sm-12">
+                          <div class="close-container col-sm-12 col-xs-12"><span class="icon i-angle-left" data-hide="#terminos-container"></span></div>
+                        </div>
+
+                        <div class="terminos-y-condiciones-block">
+                          <div class="head-content col-sm-12">
+                            <p class="col-sm-10 col-xs-10"><strong>Términos y condiciones de <span id="tyc-name"></span></strong></p>
+                          </div>
+
+                          <div id="tyc-servicio"></div>
+
+                          
+
+                        </div>
+                       
+                      </div>
+                    </div>
+
+                        <div class="col-sm-12 submit-r-asoc padding-10">
+                          <button class="bton orange btn-continuar" type="submit" id="btn-contratar-servicios" data-post ="roaming-masivo-3.html" disabled>Continuar</button>
+                          
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Carrito de compra -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/roaming.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+
+  </body>
+</html>

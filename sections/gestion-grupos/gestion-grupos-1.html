@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content gestion-cuentas-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Gestión de grupos">Gestión de grupos</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 theme-heading">
+                <h2 class="h2">Gestión de grupos</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid gestion-ejecutivos" id="gestion-cuentas-view">
+            <div class="row">
+
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container" data-name="buscador">Mostrar buscador</p>
+              <form action="resultados-busqueda-lista.html" id="gestionGrupos" class="wrapper-gfsc clearfix">
+                <div class="some-header-filter col-xs-12 no-margin-bottom general-fs-container">
+                  <div class="container">
+
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-10 col-sm-offset-1 center-block flexbox v-align-center h-align-center flex-col-direction-mobile search-by-container gestion-cuentas-search">
+
+                          <div class="col-xs-12 col-sm-6 flexbox v-align-center flex-col-direction-mobile">
+                            <div class="col-xs-12 col-sm-5 data-write">
+                              <label for="searchby" class="txt-center">Búsqueda por:</label>
+                            </div>
+                          
+                            <div class="col-xs-12 col-sm-7 data-write slt">
+                              <select name="searchby" class="searchby" title="Búsqueda por">
+                                <option value=''>Elige una opción</option>
+                                <option data-value='{"key": "cuenta" ,"min": 1, "view" : "resultados-busqueda-lista.html"  }'>Cuenta</option>
+                                <option data-value='{"key": "grupo" ,"min": 4, "view" : "resultados-busqueda.html"}'>Nombre de grupo</option>
+                                <!-- <option value='grupo'>Por grupo</option> -->
+                                <option data-value='{"key": "numero" ,"min": 4, "view" : "resultados-busqueda-lista.html"}'>Número Telcel</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-6 flexbox v-align-center flex-col-direction-mobile search-input-block">
+                            <div class="col-xs-12 col-sm-7 data-write">
+                              <input type="number" name="cuenta" class="search-input-cuenta only-numbers" value="" placeholder="Mínimo 1 número" data-maxlength="10"/>
+                              <input type="text" name="grupo" class="search-input-grupo meet-regex" value="" placeholder="Mínimo 4 caracteres" maxlength="45" data-regex = "[^A-Za-z-ñÑ\s]+$"/>
+                              <input type="number" class="search-input-numero only-numbers" name="numero" value="" placeholder="Mínimo 4 números" data-maxlength="10"/>
+                            </div>
+                            <div class="col-xs-12 col-sm-5">
+                              <div class="data-write">
+                                <button class="bton no-margin main-btn blue-dark full-width" type="submit" disabled="disabled">Buscar</button>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <section class="some-header-info col-xs-12 no-margin-bottom">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 flexbox">
+                      <div class="col-xs-12 col-sm-5 number-info-block">
+                        <div class="col-xs-6 col-sm-3 number-info">
+                          <span class="robusta" id="total-grupos">4</span>
+                          <p title="Grupos">Grupos</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 number-info">
+                          <span class="robusta" id="total-lineas">1200</span>
+                          <p title="Líneas">Líneas</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-7 flexbox v-align-center order-by-cont-shi">
+                        <div class="col-xs-12 col-sm-7 v-align-center flexbox order-by-shi">
+                          <div class="col-xs-12 col-sm-4 data-write">
+                            <label for="orderby-gestiongrupos">Ordenar por:</label>
+                          </div>
+                          <div class="col-xs-12 col-sm-9 data-write slt">
+                            <select name="orderby-gestiongrupos" id="orderby-gestiongrupos" title="Ordenar por">
+                              <option data-value='{"key": "texto" , "orderby": "asc"}'>Elige una opción</option>
+                              <option data-value='{"key": "texto" , "orderby": "asc"}'>​​​Ascendente orden alfabético</option>
+                              <option data-value='{"key": "texto" , "orderby": "desc"}'>Descendente orden alfabético</option>
+                              <option data-value='{"key": "lineas" , "orderby": "desc"}'>Mayor cantidad de líneas</option>
+                              <option data-value='{"key": "lineas" , "orderby": "asc"}'>Menor cantidad de líneas</option>
+                              <option data-value='{"key": "grupos" , "orderby": "desc"}'>Mayor cantidad de grupos</option>
+                              <option data-value='{"key": "grupos" , "orderby": "asc"}'>Menor cantidad de grupos</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-5 v-align-center flexbox change-view-shi">
+                          <label class="no-margin col-sm-6 txt-right label-shi" for="orderby2">Mostrar:</label>
+                          <div class="col-xs-6 col-sm-3 flexbox icon-container">
+                            <div class="col-xs-12 col-sm-12 change-view-container">
+                              <button class="simple" title="Mosaico" id="vista-mosaico">
+                                <span class="icon io-mosaico"></span>
+                                <p>Mosaico</p>
+                              </button>
+                              <button class="simple active" title="Lista" id="vista-lista">
+                                <span class="icon io-lista"></span>
+                                <p>Lista</p>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="col-sm-3 flexbox general-group-options-container" data-item = '{"id": "306" ,"texto": "Gestión de grupos"}'>
+                            <div class="icon-container">
+                              <button class="simple btn-open-general-config" type="button" title="Configuración">
+                                <span class="icon io-Gear"></span>
+                                <p>Configuración</p>
+                              </button>
+                            </div>
+                            <div class="col-sm-12 settings-ri">
+                              <div class="col-sm-12 cont-set-ri">
+                                <p class="col-sm-12 title-ri">
+                                  <span class="in-text-ri">Configuración de <span class="main-group-text">grupo</span></span>
+                                  <button class="simple icon-text-ri" title="Cerrar">
+                                    <span class="icon io-Close"></span>
+                                  </button>
+                                </p>
+                                <div class="col-sm-12 title-mod">
+                                  <span class="icon io-Gear col-xs-2 left-icon-ri"></span>
+                                  <p class="title-ribon-sri">Configuración de Gestión de grupos</p>
+                                </div>
+                                <div class="col-sm-12 submenu-ri">
+                                  <div class="first-bloq-ri">
+                                    
+                                    <button class="simple btn-add-subgrupo" type="button">
+                                      <span class="icon io-add-folder"></span>
+                                      <span class="in-text-fbr">Crear grupo</span>
+                                    </button>
+                                    <button class="simple btn-cuentas-asociadas" type="button">
+                                      <span class="icon io-lista"></span>
+                                      <span class="in-text-fbr">Consultar cuentas asociadas</span>
+                                    </button>
+                                  </div>
+                                  <div class="second-bloq-ri">
+                                    <!-- <a href="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/doc/ejemplo-excel-carga-masiva.xls" target="_blank" class="bton simple">
+                                      <span class="icon io-download-mte"></span>
+                                      <span class="in-text-fbr">Descargar reporte de grupo</span>
+                                    </a> -->
+                                    <a href="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/doc/ejemplo-excel-carga-masiva.xls" target="_blank" class="bton simple">
+                                      <span class="icon io-download-mte"></span>
+                                      <span class="in-text-fbr">Descargar reporte de grupo</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div id="group-data-info" class="hidden" data-item = '{"id": "306" ,"texto": "Gestión de grupos"}'></div>
+              
+              <section class="group-list-block col-xs-12 no-margin-bottom" id="main-view-block">
+                <div class="container">
+                  <div class="row">
+                    <div class="mosaico-view col-xs-12 col-sm-12">
+
+                      <div class="col-xs-12 col-sm-6 col-md-4 add-item-mv">
+                        <button type="button" class="add-group-btn-block btn-add-grupo" data-item = '{"id": "306" ,"texto": "Gestión de grupos"}' title="Crear grupo">
+                          <span class="icon i-plus-1 flexbox v-align-center h-align-center"></span>
+                          <span>Crear grupo</span>
+                        </button>
+                      </div>
+
+                      <div class="col-xs-6 col-sm-6 col-md-4 item-mv">
+                        <div class="group-block with-legal-name-mv" id="group-1" data-item = '{"id": "1" ,"texto": "M-TNBC", "lineas" : "300", "grupos" : "25"}'>
+                          <div class="header-group flexbox clearfix">
+                            <div class="ribbon flexbox">
+                              <span class="icon io-City col-sm-2 left-icon-ri" title="Grupo creado por el sistema"></span>
+                              <div class="flexbox v-align-center col-sm-10 padding-0 name-container">
+                                <strong class="ribbon-content col-sm-10">M-TNBC</strong>
+                                <input type="text" value="M-TNBC" name="editar-alias" class="editar-alias only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$"/> 
+                                <button class="simple edit-name-ri col-sm-2 btn-guardar-nombre" title="Guardar Nombre"><span class="icon io-save-doc"></span></button> 
+                                <button class="simple edit-name-ri col-sm-2 btn-editar-nombre" title="Editar Nombre"><span class="icon io-Admin"></span></button>
+                              </div>
+                            </div>
+                            <div class="icon-container flexbox v-align-center">
+                              <button class="btn-gear simple" title="Configuración">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                            <div class="col-sm-12 settings-ri">
+                              <div class="col-sm-12 cont-set-ri">
+                                <p class="col-sm-12 title-ri">
+                                  <span class="in-text-ri">Configuración</span>
+                                  <button class="simple icon-text-ri" title="Cerrar">
+                                    <span class="icon io-Close"></span>
+                                  </button>
+                                </p>
+                                <div class="col-sm-12 title-mod">
+                                  <span class="icon io-City col-xs-2 left-icon-ri"></span>
+                                  <p class="title-ribon-sri">M-TNBC</p>
+                                </div>
+                                <div class="col-sm-12 submenu-ri">
+                                  <div class="first-bloq-ri">
+                                    <button class="simple btn-editar-nombre hide-mobile" type="button">
+                                      <span class="icon io-Admin"></span>
+                                      <span class="in-text-fbr">Cambiar nombre de grupo</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-add-subgrupo" type="button">
+                                      <span class="icon io-add-folder"></span>
+                                      <span class="in-text-fbr">Crear subgrupo</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-cuentas-asociadas" type="button">
+                                      <span class="icon io-lista"></span>
+                                      <span class="in-text-fbr">Consultar cuentas asociadas</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-agregar-lineas" type="button">
+                                      <span class="icon io-More"></span>
+                                      <span class="in-text-fbr">Agregar líneas a este grupo</span>
+                                    </button>
+
+                                    <button class="simple btn-mover-grupo" type="button" >
+                                      <span class="icon io-move-folder"></span>
+                                      <span class="in-text-fbr">Mover grupo</span>
+                                    </button>
+
+                                    <button class="simple btn-eliminar-grupo" type="button">
+                                      <span class="icon io-Bin"></span>
+                                      <span class="in-text-fbr">Eliminar grupo</span>
+                                    </button>
+                                  </div>
+                                  <div class="second-bloq-ri">
+                                    <button class="simple hide-mobile btn-single-action" type="button" data-post="../autogestion-suspension/suspension-masivo-1-data-preseleccionada.html">
+                                      <span class="icon io-Less"></span>
+                                      <span class="in-text-fbr">Suspender líneas de grupo</span>
+                                    </button>
+                                    <button class="simple hide-mobile btn-single-action" type="button" data-post="../autogestion-reactivacion/reactivacion-masivo-1-data-preseleccionada.html">
+                                      <span class="icon io-TickNeg"></span>
+                                      <span class="in-text-fbr">Reactivar líneas de grupo</span>
+                                    </button>
+                                    <a href="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/doc/ejemplo-excel-carga-masiva.xls" target="_blank" class="bton simple">
+                                      <span class="icon io-download-mte"></span>
+                                      <span class="in-text-fbr">Descargar reporte de grupo</span>
+                                    </a>
+                                    <!-- <a href="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/doc/ejemplo-excel-carga-masiva.xls" target="_blank" class="bton simple">
+                                      <span class="icon io-download-mte"></span>
+                                      <span class="in-text-fbr">Descargar reporte de grupo</span>
+                                    </a> -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="body-group">
+                            <div class="group-total">
+                              <p class="legal-name-imv">Artes y Regalos MAG, S. de RL de C.V.</p>
+                              <p class="legal-name-imv"><strong>ARM921022G17-R1</strong></p>
+                              <div class="row desc-imv">
+                                <div class="col-sm-12 details-desc-imv">
+                                  <p>300</p>
+                                  <span>líneas</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-xs-12 extend-imv">
+                              <a href="../gestion-grupos/gestion-grupos-2.html" class="see-more-gt" title="Ver todo">Ver todo</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-6 col-sm-6 col-md-4 item-mv">
+                        <div class="group-block with-legal-name-mv" id="group-2" data-item = '{"id": "2" ,"texto": "M-SKITCHEN", "lineas" : "300", "grupos" : "10"}'>
+                          <div class="header-group flexbox clearfix">
+                            <div class="ribbon flexbox">
+                              <span class="icon io-City col-sm-2 left-icon-ri" title="Grupo creado por el sistema"></span>
+                              <div class="flexbox v-align-center col-sm-10 padding-0 name-container">
+                                <strong class="ribbon-content col-sm-10">M-SKITCHEN</strong>
+                                <input type="text" value="M-SKITCHEN" name="editar-alias" class="editar-alias only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$"/> 
+                                <button class="simple edit-name-ri col-sm-2 btn-guardar-nombre" title="Guardar Nombre"><span class="icon io-save-doc"></span></button> 
+                                <button class="simple edit-name-ri col-sm-2 btn-editar-nombre" title="Editar Nombre"><span class="icon io-Admin"></span></button>
+                              </div>
+                            </div>
+                            <div class="icon-container flexbox v-align-center">
+                              <button class="btn-gear simple" title="Configuración">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                            <div class="col-sm-12 settings-ri">
+                              <div class="col-sm-12 cont-set-ri">
+                                <p class="col-sm-12 title-ri">
+                                  <span class="in-text-ri">Configuración</span>
+                                  <button class="simple icon-text-ri" title="Cerrar">
+                                    <span class="icon io-Close"></span>
+                                  </button>
+                                </p>
+                                <div class="col-sm-12 title-mod">
+                                  <span class="icon io-City col-xs-2 left-icon-ri"></span>
+                                  <p class="title-ribon-sri">M-SKITCHEN</p>
+                                </div>
+                                <div class="col-sm-12 submenu-ri">
+                                  <div class="first-bloq-ri">
+                                    <button class="simple btn-editar-nombre hide-mobile" type="button">
+                                      <span class="icon io-Admin"></span>
+                                      <span class="in-text-fbr">Cambiar nombre de grupo</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-add-subgrupo" type="button">
+                                      <span class="icon io-add-folder"></span>
+                                      <span class="in-text-fbr">Crear subgrupo</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-cuentas-asociadas" type="button">
+                                      <span class="icon io-lista"></span>
+                                      <span class="in-text-fbr">Consultar cuentas asociadas</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-agregar-lineas" type="button">
+                                      <span class="icon io-More"></span>
+                                      <span class="in-text-fbr">Agregar líneas a este grupo</span>
+                                    </button>
+
+                                    <button class="simple btn-mover-grupo" type="button" >
+                                      <span class="icon io-move-folder"></span>
+                                      <span class="in-text-fbr">Mover grupo</span>
+                                    </button>
+
+                                    <button class="simple btn-eliminar-grupo" type="button">
+                                      <span class="icon io-Bin"></span>
+                                      <span class="in-text-fbr">Eliminar grupo</span>
+                                    </button>
+                                  </div>
+                                  <div class="second-bloq-ri">
+                                    <button class="simple hide-mobile btn-single-action" type="button" data-post="../autogestion-suspension/suspension-masivo-1-data-preseleccionada.html">
+                                      <span class="icon io-Less"></span>
+                                      <span class="in-text-fbr">Suspender líneas de grupo</span>
+                                    </button>
+                                    <button class="simple hide-mobile btn-single-action" type="button" data-post="../autogestion-reactivacion/reactivacion-masivo-1-data-preseleccionada.html">
+                                      <span class="icon io-TickNeg"></span>
+                                      <span class="in-text-fbr">Reactivar líneas de grupo</span>
+                                    </button>
+                                    <a href="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/doc/ejemplo-excel-carga-masiva.xls" target="_blank" class="bton simple">
+                                      <span class="icon io-download-mte"></span>
+                                      <span class="in-text-fbr">Descargar reporte de grupo</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="body-group">
+                            <div class="group-total">
+                              <p class="legal-name-imv">Atención Médica y Ayuda Rural, A.C.</p>
+                              <p class="legal-name-imv"><strong>AMA990928HE5-R9</strong></p>
+                              <div class="row desc-imv">
+                                <div class="col-sm-12 details-desc-imv">
+                                  <p>300</p>
+                                  <span>líneas</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-xs-12 extend-imv">
+                              <a href="../gestion-grupos/gestion-grupos-2.html" class="see-more-gt" title="Ver todo">Ver todo</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-6 col-sm-6 col-md-4 item-mv">
+                        <div class="group-block with-legal-name-mv" id="group-3" data-item = '{"id": "3" ,"texto": "M-XTREM", "lineas" : "100", "grupos" : "4"}'>
+                          <div class="header-group flexbox clearfix">
+                            <div class="ribbon flexbox">
+                              <span class="icon io-City col-sm-2 left-icon-ri" title="Grupo creado por el sistema"></span>
+                              <div class="flexbox v-align-center col-sm-10 padding-0 name-container">
+                                <strong class="ribbon-content col-sm-10">M-XTREM</strong>
+                                <input type="text" value="M-XTREM" name="editar-alias" class="editar-alias only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$"/> 
+                                <button class="simple edit-name-ri col-sm-2 btn-guardar-nombre" title="Guardar Nombre"><span class="icon io-save-doc"></span></button> 
+                                <button class="simple edit-name-ri col-sm-2 btn-editar-nombre" title="Editar Nombre"><span class="icon io-Admin"></span></button>
+                              </div>
+                            </div>
+                            <div class="icon-container flexbox v-align-center">
+                              <button class="btn-gear simple" title="Configuración">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                            <div class="col-sm-12 settings-ri">
+                              <div class="col-sm-12 cont-set-ri">
+                                <p class="col-sm-12 title-ri">
+                                  <span class="in-text-ri">Configuración</span>
+                                  <button class="simple icon-text-ri" title="Cerrar">
+                                    <span class="icon io-Close"></span>
+                                  </button>
+                                </p>
+                                <div class="col-sm-12 title-mod">
+                                  <span class="icon io-City col-xs-2 left-icon-ri"></span>
+                                  <p class="title-ribon-sri">M-XTREM</p>
+                                </div>
+                                <div class="col-sm-12 submenu-ri">
+                                  <div class="first-bloq-ri">
+                                    <button class="simple btn-editar-nombre hide-mobile" type="button">
+                                      <span class="icon io-Admin"></span>
+                                      <span class="in-text-fbr">Cambiar nombre de grupo</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-add-subgrupo" type="button">
+                                      <span class="icon io-add-folder"></span>
+                                      <span class="in-text-fbr">Crear subgrupo</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-cuentas-asociadas" type="button">
+                                      <span class="icon io-lista"></span>
+                                      <span class="in-text-fbr">Consultar cuentas asociadas</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-agregar-lineas" type="button">
+                                      <span class="icon io-More"></span>
+                                      <span class="in-text-fbr">Agregar líneas a este grupo</span>
+                                    </button>
+
+                                    <button class="simple btn-mover-grupo" type="button" >
+                                      <span class="icon io-move-folder"></span>
+                                      <span class="in-text-fbr">Mover grupo</span>
+                                    </button>
+
+                                    <button class="simple btn-eliminar-grupo" type="button">
+                                      <span class="icon io-Bin"></span>
+                                      <span class="in-text-fbr">Eliminar grupo</span>
+                                    </button>
+                                  </div>
+                                  <div class="second-bloq-ri">
+                                    <button class="simple hide-mobile btn-single-action" type="button" data-post="../autogestion-suspension/suspension-masivo-1-data-preseleccionada.html">
+                                      <span class="icon io-Less"></span>
+                                      <span class="in-text-fbr">Suspender líneas de grupo</span>
+                                    </button>
+                                    <button class="simple hide-mobile btn-single-action" type="button" data-post="../autogestion-reactivacion/reactivacion-masivo-1-data-preseleccionada.html">
+                                      <span class="icon io-TickNeg"></span>
+                                      <span class="in-text-fbr">Reactivar líneas de grupo</span>
+                                    </button>
+                                    <a href="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/doc/ejemplo-excel-carga-masiva.xls" target="_blank" class="bton simple">
+                                      <span class="icon io-download-mte"></span>
+                                      <span class="in-text-fbr">Descargar reporte de grupo</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="body-group">
+                            <div class="group-total">
+                              <p class="legal-name-imv">Quality Foods International Mexico, S.A. de C.V.</p>
+                              <p class="legal-name-imv"><strong>QFI0302046M1-R3</strong></p>
+                              <div class="row desc-imv">
+                                <div class="col-sm-12 details-desc-imv">
+                                  <p>100</p>
+                                  <span>líneas</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-xs-12 extend-imv">
+                              <a href="../gestion-grupos/gestion-grupos-2.html" class="see-more-gt" title="Ver todo">Ver todo</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-xs-6 col-sm-6 col-md-4 item-mv">
+                        <div class="group-block with-legal-name-mv" id="group-4" data-item = '{"id": "4" ,"texto": "M-WILSON", "lineas" : "500", "grupos" : "5"}'>
+                          <div class="header-group flexbox clearfix">
+                            <div class="ribbon flexbox">
+                              <span class="icon io-City col-sm-2 left-icon-ri" title="Grupo creado por el sistema"></span>
+                              <div class="flexbox v-align-center col-sm-10 padding-0 name-container">
+                                <strong class="ribbon-content col-sm-10">M-WILSON</strong>
+                                <input type="text" value="M-WILSON" name="editar-alias" class="editar-alias only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$"/> 
+                                <button class="simple edit-name-ri col-sm-2 btn-guardar-nombre" title="Guardar Nombre"><span class="icon io-save-doc"></span></button> 
+                                <button class="simple edit-name-ri col-sm-2 btn-editar-nombre" title="Editar Nombre"><span class="icon io-Admin"></span></button>
+                              </div>
+                            </div>
+                            <div class="icon-container flexbox v-align-center">
+                              <button class="btn-gear simple" title="Configuración">
+                                <span class="icon io-Gear"></span>
+                              </button>
+                            </div>
+                            <div class="col-sm-12 settings-ri">
+                              <div class="col-sm-12 cont-set-ri">
+                                <p class="col-sm-12 title-ri">
+                                  <span class="in-text-ri">Configuración</span>
+                                  <button class="simple icon-text-ri" title="Cerrar">
+                                    <span class="icon io-Close"></span>
+                                  </button>
+                                </p>
+                                <div class="col-sm-12 title-mod">
+                                  <span class="icon io-City col-xs-2 left-icon-ri"></span>
+                                  <p class="title-ribon-sri">M-WILSON</p>
+                                </div>
+                                <div class="col-sm-12 submenu-ri">
+                                  <div class="first-bloq-ri">
+                                    <button class="simple btn-editar-nombre hide-mobile" type="button">
+                                      <span class="icon io-Admin"></span>
+                                      <span class="in-text-fbr">Cambiar nombre de grupo</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-add-subgrupo" type="button">
+                                      <span class="icon io-add-folder"></span>
+                                      <span class="in-text-fbr">Crear subgrupo</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-cuentas-asociadas" type="button">
+                                      <span class="icon io-lista"></span>
+                                      <span class="in-text-fbr">Consultar cuentas asociadas</span>
+                                    </button>
+                                    
+                                    <button class="simple btn-agregar-lineas" type="button">
+                                      <span class="icon io-More"></span>
+                                      <span class="in-text-fbr">Agregar líneas a este grupo</span>
+                                    </button>
+
+                                    <button class="simple btn-mover-grupo" type="button" >
+                                      <span class="icon io-move-folder"></span>
+                                      <span class="in-text-fbr">Mover grupo</span>
+                                    </button>
+
+
+                                    <button class="simple btn-eliminar-grupo" type="button">
+                                      <span class="icon io-Bin"></span>
+                                      <span class="in-text-fbr">Eliminar grupo</span>
+                                    </button>
+                                  </div>
+                                  <div class="second-bloq-ri">
+
+                                    <button class="simple hide-mobile btn-single-action" type="button" data-post="../autogestion-suspension/suspension-masivo-1-data-preseleccionada.html">
+                                      <span class="icon io-Less"></span>
+                                      <span class="in-text-fbr">Suspender líneas de grupo</span>
+                                    </button>
+                                    <button class="simple hide-mobile btn-single-action" type="button" data-post="../autogestion-reactivacion/reactivacion-masivo-1-data-preseleccionada.html">
+                                      <span class="icon io-TickNeg"></span>
+                                      <span class="in-text-fbr">Reactivar líneas de grupo</span>
+                                    </button>
+                                    <a href="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/doc/ejemplo-excel-carga-masiva.xls" target="_blank" class="bton simple">
+                                      <span class="icon io-download-mte"></span>
+                                      <span class="in-text-fbr">Descargar reporte de grupo</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="body-group">
+                            <div class="group-total">
+                              <p class="legal-name-imv"> Comercializadora y Reproductora de Música, S.A.</p>
+                              <p class="legal-name-imv"><strong>CRM85061127A-R7</strong></p>
+                              <div class="row desc-imv">
+                                <div class="col-sm-12 details-desc-imv">
+                                  <p>500</p>
+                                  <span>líneas</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-xs-12 extend-imv">
+                              <a href="../gestion-grupos/gestion-grupos-2.html" class="see-more-gt" title="Ver todo">Ver todo</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+
+            <div class="pagination-block">
+            </div>
+          </div>
+        </section>
+
+        <!-- MODAL AGREGAR GRUPO -->
+        <section class="modal-mte" id="modal-agregar-grupo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Crear <span class="grupo-type">grupo</span></p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-Maletin"></span>
+                          <p class="alias-text">Grupo padre</p>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-agregar-grupo">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-agregar-grupo" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Nombre del <span class="grupo-type">grupo</span>:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="nombre" placeholder="Ejemplo: Grupo A" class="required only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "5" }'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 button-field-mod">
+						              <button class="bton blue-dark first-submit" type="submit">Crear</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+
+                      </form>
+
+                        <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                          <p>El <span class="grupo-type">grupo</span> [<span class="grupo-txt"></span>] ha sido creado con éxito.</p>
+                          <div class="col-sm-12 submit-r-asoc">
+                            <button class="bton blue-dark" type="button" id="btn-agregar-lineas-grupo-modal" data-item ='{"id": "null" ,"texto": "null"}'>Agregar líneas a este <span class="grupo-type">grupo</span></button>
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL AGREGAR GRUPO -->
+
+        <!-- MODAL Eliminar grupo -->
+        <section class="modal-mte" id="modal-eliminar-grupo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Eliminar grupo</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-Maletin"></span>
+                          <p class="alias-text"></p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod" id="confirmar-eliminar-grupo">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>El grupo se eliminará incluyendo los elementos que contiene, ¿deseas continuar?</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" id="btn-eliminar-grupo" type="button">Eliminar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+                      </div>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="eliminar-grupo-confirmacion">
+                        <p>El grupo [<span class="alias-text"></span>] ha sido eliminado con éxito.</p>
+                      </div>
+
+                        <div class="col-sm-12 mid-txt-ge-mod" id="eliminar-grupo-ya-eliminado">
+                          <p>El grupo se eliminó anteriormente, favor de actualizar la página para mostrar los cambios realizados.</p>
+                          
+                          <div class="col-xs-12 col-sm-12 submit-r-asoc no-margin-bottom">
+                            <button type="button" class="bton blue-dark refresh-site">Actualizar</button>
+                          </div>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Eliminar grupo -->
+
+        <!-- MODAL Agregar líneaS -->
+        <section class="modal-mte" id="modal-agregar-lineas">  
+          <!-- LOADING -->
+          <div class="loading-block-screen full-width"><div class="loading-wrapper"><div class="sk-circle"> <div class="sk-circle1 sk-child"></div> <div class="sk-circle2 sk-child"></div> <div class="sk-circle3 sk-child"></div> <div class="sk-circle4 sk-child"></div> <div class="sk-circle5 sk-child"></div> <div class="sk-circle6 sk-child"></div> <div class="sk-circle7 sk-child"></div> <div class="sk-circle8 sk-child"></div> <div class="sk-circle9 sk-child"></div> <div class="sk-circle10 sk-child"></div> <div class="sk-circle11 sk-child"></div> <div class="sk-circle12 sk-child"></div> </div></div></div>
+
+          <!-- FIN LOADING  -->
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Agregar línea(s)</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-Maletin"></span>
+                          <p class="alias-text">Desarrollo</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+
+                      <!-- COMPONENTE GENERAL -->
+                      <div id="componente-ingresar-lineas" class="step-1">
+
+                      <!-- Botones -->
+                        <div class="col-sm-12 componente-btn-block">
+                          <div class="col-sm-4">
+                            <button class="btn-al btn-lineas-archivo"  type="button" data-show=".componente-lineas-block .lineas-archivo">
+                              <span class="icon io-File"></span>
+                              <span class="text">Sube un Excel con todas las líneas a gestionar</span>
+                            </button>
+                          </div>
+
+                          <div class="col-sm-4">
+                            <button class="btn-al btn-lineas-autocomplete" type="button" data-show=".componente-lineas-block .lineas-autocomplete">
+                              <span class="icon io-Ingresar"></span>
+                              <span class="text">Captura las líneas en bloques de hasta 50</span>
+                            </button>
+                            
+                          </div>
+
+                          <div class="col-sm-4">
+                            <button class="btn-al btn-lineas-arbol" type="button" data-show=".componente-lineas-block .lineas-arbol">
+                              <span class="icon io-Listado"></span>
+                              <span class="text">Selecciona de la lista hasta 50 líneas</span>
+                            </button>
+                            
+                          </div>
+                        </div>
+                      <!-- Fin Botones -->
+
+                      
+                        <div class="col-sm-12 form-ge-mod form-modal-agregar-lineas componente-lineas-block">
+
+
+                          <!-- INICIO ARCHIVO -->
+                          <form class="componente-lb lineas-archivo">
+                            <div class="triangle-tooltip">
+
+                              <div class="col-sm-10 center-block add-lines-ge-mod">
+                                 <div class="txt-center instructions"><p>Son compatibles los archivos con extensión .xls</p> <p><a href="../../doc/ejemplo-excel.xls" target="_blank">Descarga la plantilla</a>  con el formato necesario.</p></div>
+                                  <div class="data-write clearfix"><label class="data-write flexbox col-sm-12 input-box-container file" title="">
+                                    <input type="file" name="archivo" id="archivo" placeholder="Elige el archivo que quieres subir" class="element-input col-sm-12">
+                                  </label></div>
+
+                                  <p class="extra-info">Tamaño de archivo: 10 MB máximo</p>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 submit-r-asoc componente-submit-block">
+                              <button class="bton blue-dark first-submit" id="btn-add-lineas-archivo" type="submit" disabled>Agregar línea(s)</button>
+                              <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                              
+                            </div>
+                          </form>
+                          <!-- FIN ARCHIVO -->
+
+
+                          <!-- INICIO AUTOCOMPLETE -->
+                          <div class="componente-lb lineas-autocomplete">
+
+                            <div class="triangle-tooltip">
+
+                              <div class="col-sm-10 col-xs-12 center-block add-lines-ge-mod clearfix">
+                                 <p class="txt-center">Ingresa el número<span class="hide-mobile">, </span> <span class="only-mobile"> o </span> nombre <span class="hide-mobile">o grupo asociado al alías </span>que deseas agregar.</p>
+                                 <p class="total-autocomplete hidden hidden-xs txt-center"><span class="total"></span> línea(s) seleccionada(s) </p>
+                                  <div class="data-write flexbox col-sm-12 col-xs-12 input-box-container">
+                                    <div class="tokenfield-block col-sm-12 col-xs-12 center-block">
+                                      <input type="text" class="form-control token-field-input element-input" id="tokenfield-agregar-lineas" value="" placeholder="Número Telcel, nombre del titular o nombre del grupo" data-options='{ "limit": 0, "placeholder" : "Número Telcel, nombre del titular o nombre del grupo", "placeholderM" : "Número Telcel/nombre del titular", "activate" : "#btn-add-lineas-autocomplete", "groups" : true}'/>
+
+                                      <input type="hidden" id="tokenfield-hidden-input" name="tokens" />
+                                  </div>
+                                    
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 submit-r-asoc componente-submit-block">
+                              <button class="bton blue-dark btn-modal-add-lineas" type="button" disabled id="btn-add-lineas-autocomplete">Agregar línea(s)</button>
+                              <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                              
+                            </div>
+
+                          </div>
+                          <!-- FIN AUTOCOMPLETE -->
+
+                          <!-- INICIO ÁRBOLES -->
+                          <div class="componente-lb componente-lb lineas-arbol">
+                            <div class="triangle-tooltip">
+                              <div class="col-sm-8 center-block add-lines-ge-mod">
+                                 <p class="txt-center">Elige las líneas de la lista:</p>
+                                  <div class="data-write flexbox col-sm-12 search-box-container input-box-container">
+                                    <input type="text" name="search" placeholder="Nombre del grupo o número Telcel" class="search-input meet-regex element-input col-sm-8" maxlength="45" data-regex = "[^A-Za-z0-9-\s]+$" data-min="4">
+                                    <button class="bton blue-dark btn-search col-sm-4" type="button" disabled>Buscar</button>
+                                  </div>
+
+                                  <div class="block-content-arbol-btn hidden">
+                                    <p class="total-arbol col-sm-6"><span class="total">0</span> línea(s) seleccionada(s)</p>
+
+                                    <p class="btn-like-a btn-remover-busqueda col-sm-6">Remover búsqueda</p>
+
+                                    <p class="btn-like-a btn-remover-seleccion col-sm-6">Remover selección</p>
+                                  </div>
+                              </div>
+
+                              <!-- <div class="col-sm-8 col-sm-offset-2 add-lines-ge-mod">
+                                <div class="row">
+                                  <div class="col-sm-6">
+                                    <p>O elige las líneas de la línea</p>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <div class="data-write">
+                                      <input type="text" name="search" placeholder="Ingresa tu búsqueda" class="search-input">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div> -->
+
+                              <div class="col-sm-8 center-block tree-groups-asoc">
+                                <div id="tree-lineas" class="col-sm-12 view-tga">
+                                </div>
+
+                                <div id="tree-lineas-search" class="col-sm-12 view-tga tree-search">
+                                </div>
+
+                              </div>
+
+                            </div>
+
+                            <div class="col-sm-12 submit-r-asoc componente-submit-block">
+                              <button class="bton blue-dark" type="button" id="btn-add-lineas-arbol" disabled>Agregar línea(s)</button>
+                              <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                              
+                            </div>
+                            
+                          </div>
+                          <!-- FIN ÁRBOLES -->
+                           
+                        </div>
+                      </div>
+                      
+                      <!-- FIN COMPONENTE GENERAL -->
+
+                      <!-- INICIO CONFIRMACIÓN -->
+                      <div class="col-sm-12 form-ge-mod step-2">
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                        <!--   <span class="total-lineas-agregar"></span> -->
+                          <p>Se están agregando las líneas a [<span class="txt-grupo"></span>].</p>
+                        </div>
+                      </div>
+                      <!-- FIN CONFIRMACIÓN-->
+
+
+                      <!-- INICIO FINAL -->
+                      <div class="col-sm-12 form-ge-mod step-3">
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          
+                          <p class="error-success">Se han agregado <span class="total-lineas-success">20</span> líneas correctamente.</p>
+
+                          <div class="col-sm-8 center-block added-lines info-added-lines">
+
+                            <div class="col-sm-12 head-r-asoc">
+                              <div class="col-sm-12 title-nal">
+                                <div class="col-sm-12">
+                                  <p>Líneas agregadas</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 content-r-asoc">
+                              <div class="col-sm-12 content-nal">
+                                <div class="col-sm-12 div-nal">
+                                  
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+
+                          <p class="error-msg">No ha sido posible agregar <span class="total-lineas-error">10</span> líneas.</p>
+
+                          <div class="col-sm-8 center-block not-added-lines info-added-lines">
+
+                            <div class="col-sm-12 head-r-asoc">
+                              <div class="col-sm-12 title-nal">
+                                <div class="col-sm-12">
+                                  <p>Líneas no agregadas</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-12 content-r-asoc">
+                              <div class="col-sm-12 content-nal">
+                                <div class="col-sm-12 div-nal">
+                                  
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                      
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Agregar líneaS -->
+
+        <!-- MODAL MOVER GRUPO -->
+        <section class="modal-mte" id="modal-mover-grupo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Mover grupo</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-City"></span>
+                          <p class="alias-text">Desarrollo</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod" id="form-mover-grupo">
+
+                        <div class="col-sm-8 col-sm-offset-2 add-lines-ge-mod">
+                          <p class="txt-center">Selecciona la nueva ubicación:</p>
+                          <div class="data-write flexbox col-sm-12 search-box-container">
+                            <input type="text" name="search" placeholder="Nombre del grupo" class="search-input meet-regex col-sm-8" maxlength="45" data-regex = "[^A-Za-z-ñÑ\s]+$" data-min="4">
+                            <button class="bton blue-dark btn-search col-sm-4" type="button" disabled>Buscar</button>
+                          </div>
+
+                          <p class="btn-like-a btn-remover-busqueda">Remover búsqueda</p>
+                        </div>
+
+                        <div class="col-sm-8 col-sm-offset-2 tree-groups-asoc">
+
+                          <div id="tree-grupo" class="col-sm-12 view-tga">
+                          </div>
+
+                          <div id="tree-grupo-search" class="col-sm-12 view-tga tree-search">
+                          </div>
+                          
+
+
+                        </div>
+
+                        <div class="col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" id="btn-mover-grupo" type="button">Mover grupo</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                        </div>
+                        
+                      </div>
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg">
+                        <p>El grupo [<span class="grupo-txt-old"></span>] ha sido movido a [<span class="grupo-txt-new"></span>] correctamente.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL MOVER GRUPO -->
+
+        <!-- MODAL Cuentas asociadas -->
+        <section class="modal-mte" id="modal-cuentas-asociadas" data-api = "http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Consulta de cuentas asociadas</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-Maletin"></span>
+                          <p class="alias-text"></p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+                        <div class="col-sm-12 let-allow-asoc">
+
+                          <div class="col-sm-12 head-r-asoc">
+                            <div class="col-sm-12 title-hra">
+                              <div class="col-sm-2 flexbox">
+                                <p title="Región">Región</p>
+                                <div class="order-by-modal">
+                                  <button type="button" data-opc='{"key": "region" , "orderby": "desc", "modal": "cuentasAsociadas"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "region" , "orderby": "asc", "modal": "cuentasAsociadas"}' title="Orden ascendente">asc</button>
+                                </div>
+                              </div>
+
+                              <div class="col-sm-3 flexbox">
+                                <p title="Cuenta">Cuenta</p>
+                                <div class="order-by-modal">
+                                  <button type="button" data-opc='{"key": "cuenta" , "orderby": "desc", "modal": "cuentasAsociadas"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "cuenta" , "orderby": "asc", "modal": "cuentasAsociadas"}' title="Orden ascendente">asc</button>
+                                </div>
+                              </div>
+                              <div class="col-sm-3 flexbox">
+                                <p title="RFC">RFC</p>
+                                <div class="order-by-modal">
+                                  <button type="button" data-opc='{"key": "rfc" , "orderby": "desc", "modal": "cuentasAsociadas"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "rfc" , "orderby": "asc", "modal": "cuentasAsociadas"}' title="Orden ascendente">asc</button>
+                                </div>
+                              </div>
+                              <div class="col-sm-4 flexbox">
+                                <p title="Razón social">Razón social</p>
+                                <div class="order-by-modal">
+                                  <button type="button" data-opc='{"key": "razonsocial" , "orderby": "desc", "modal": "cuentasAsociadas"}' title="Orden descendente">desc</button>
+                                  <button type="button" data-opc='{"key": "razonsocial" , "orderby": "asc", "modal": "cuentasAsociadas"}' title="Orden ascendente">asc</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-12 content-r-asoc">
+                            <div class="col-sm-12 content-item-block">
+                              <div class="col-sm-3">
+                                <span class="icon io-Maletin"></span>
+                                <p class="account-hra">2435243</p>
+                              </div>
+                              <div class="col-sm-4">
+                                <p>ALMD210389HST</p>
+                              </div>
+                              <div class="col-sm-5">
+                                <p>TDMA Celular S.A. de C.V.</p>
+                              </div>
+                              <div class="vis-mobile-hra">
+                                <button class="simple">
+                                  <span class="icon io-dots-vertical"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-12 content-r-asoc">
+                            <div class="col-sm-12 content-item-block">
+                              <div class="col-sm-3">
+                                <span class="icon io-Maletin"></span>
+                                <p class="account-hra">2435243</p>
+                              </div>
+                              <div class="col-sm-4">
+                                <p>ALMD210389HST</p>
+                              </div>
+                              <div class="col-sm-5">
+                                <p>TDMA Celular S.A. de C.V.</p>
+                              </div>
+                              <div class="vis-mobile-hra">
+                                <button class="simple">
+                                  <span class="icon io-dots-vertical"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-12 content-r-asoc">
+                            <div class="col-sm-12 content-item-block">
+                              <div class="col-sm-3">
+                                <span class="icon io-Maletin"></span>
+                                <p class="account-hra">2435243</p>
+                              </div>
+                              <div class="col-sm-4">
+                                <p>ALMD210389HST</p>
+                              </div>
+                              <div class="col-sm-5">
+                                <p>TDMA Celular S.A. de C.V.</p>
+                              </div>
+                              <div class="vis-mobile-hra">
+                                <button class="simple">
+                                  <span class="icon io-dots-vertical"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-12 content-r-asoc">
+                            <div class="col-sm-12 content-item-block">
+                              <div class="col-sm-3">
+                                <span class="icon io-Maletin"></span>
+                                <p class="account-hra">2435243</p>
+                              </div>
+                              <div class="col-sm-4">
+                                <p>ALMD210389HST</p>
+                              </div>
+                              <div class="col-sm-5">
+                                <p>TDMA Celular S.A. de C.V.</p>
+                              </div>
+                              <div class="vis-mobile-hra">
+                                <button class="simple">
+                                  <span class="icon io-dots-vertical"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-12 content-r-asoc">
+                            <div class="col-sm-12 content-item-block">
+                              <div class="col-sm-3">
+                                <span class="icon io-Maletin"></span>
+                                <p class="account-hra">2435243</p>
+                              </div>
+                              <div class="col-sm-4">
+                                <p>ALMD210389HST</p>
+                              </div>
+                              <div class="col-sm-5">
+                                <p>TDMA Celular S.A. de C.V.</p>
+                              </div>
+                              <div class="vis-mobile-hra">
+                                <button class="simple">
+                                  <span class="icon io-dots-vertical"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-12 content-r-asoc">
+                            <div class="col-sm-12 content-item-block">
+                              <div class="col-sm-3">
+                                <span class="icon io-Maletin"></span>
+                                <p class="account-hra">2435243</p>
+                              </div>
+                              <div class="col-sm-4">
+                                <p>ALMD210389HST</p>
+                              </div>
+                              <div class="col-sm-5">
+                                <p>TDMA Celular S.A. de C.V.</p>
+                              </div>
+                              <div class="vis-mobile-hra">
+                                <button class="simple">
+                                  <span class="icon io-dots-vertical"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-12 content-r-asoc">
+                            <div class="col-sm-12 content-item-block">
+                              <div class="col-sm-3">
+                                <span class="icon io-Maletin"></span>
+                                <p class="account-hra">2435243</p>
+                              </div>
+                              <div class="col-sm-4">
+                                <p>ALMD210389HST</p>
+                              </div>
+                              <div class="col-sm-5">
+                                <p>TDMA Celular S.A. de C.V.</p>
+                              </div>
+                              <div class="vis-mobile-hra">
+                                <button class="simple">
+                                  <span class="icon io-dots-vertical"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="pagination-block">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Cuentas asociadas -->
+
+        <!-- MODAL AUXILIAR Cuentas asociadas -->
+        <section class="modal-mte-up-black" id="modal-cuentas-auxiliar">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-xs-12 title-mod">
+                <span class="icon io-City"></span>
+                <p class="cuenta-txt"></p>
+              </div>
+              <div class="col-xs-12 content-mod">
+                <div class="row in-cont-mub">
+                  <div class="col-xs-12 average-mod">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="row">
+                          <div class="col-xs-4">
+                            <p><strong>RFC:</strong></p>
+                          </div>
+                          <div class="col-xs-8">
+                            <p class="rfc-txt"></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12">
+                        <div class="row">
+                          <div class="col-xs-4">
+                            <p><strong>Razón social:</strong></p>
+                          </div>
+                          <div class="col-xs-8">
+                            <p class="razonsocial-txt"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL AUXILIAR Cuentas asociadas -->
+
+        <!-- MODAL DESCARGAR REPORTE -->
+        <section class="modal-mte" id="modal-descargar">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2" data-before="Solicitud de descarga" data-after="Solicitud de descarga">Solicitud de descarga</p>
+                        <div class="sublevel-tm">
+                          <span class="icon io-Maletin"></span>
+                          <p class="alias-text"></p>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8 center-block in-cont-mod">
+                    <div class="row">
+                      <form class="col-sm-12 form-ge-mod" id="form-confirmar-descargar-facturas" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Haz clic en "Enviar" para que el Reporte de grupo solicitado sea enviado al correo electrónico registrado. Si deseas que se envíe copia a otra dirección, ingrésala en este campo.</p>
+
+                          <div class="data-write col-sm-8 center-block">
+                            <input type="text" name="email" placeholder="Correo electrónico" class="required only-email" id="email" value=""/>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark full-width first-submit" id="btn-descargar-facturas" type="submit">Enviar</button>
+                        </div>
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="descargar-facturas-confirmacion">
+                        <p>Tu solicitud ha sido enviada con éxito. Recibirás en tu correo electrónico el enlace para descargar el Reporte de grupo. <br>Para dar seguimiento a tus solicitudes, ingresa a la sección Descargas.</p>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc"> 
+                          <a href="../solicitudes-descargas/descargas-1.html" class="bton blue-dark">Descargas</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL DESCARGAR REPORTE -->
+
+        <!-- MODAL Bloquear Ingreso Masivo -->
+        <section class="modal-mte" id="modal-limitar-masivo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Selección de líneas</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Para gestionar tu solicitud es necesario seleccionar bloques de hasta 50 líneas. También puedes realizar el ingreso a través de un Excel con todas las líneas.</p>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Bloquear Ingreso Masivo -->
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

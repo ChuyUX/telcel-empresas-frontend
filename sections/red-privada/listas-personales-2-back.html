@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content red-privada-block descarga-general-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Red privada">Red privada</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 theme-heading">
+                <h2 class="h2">Listas personales</h2>
+                <p class="col-sm-8 center-block"><span>En esta sección puedes consultar y modificar las listas personales de cada línea.</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="bg-gray no-margin-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-xs-12 padding-0">
+                <div class="header-info-movimientos has-double-buttons flexbox col-sm-12">
+                  <div class="col-sm-9 col-xs-12 flexbox v-align-center hidden-xs">
+                    <p id="msg-movimientos">Puede editar individualmente o también descargar la lista personal de esta línea para hacer modificaciones masivas y cargar de nuevo el archivo.</p>
+                  </div>
+                  <div class="col-sm-3 col-xs-12 flexbox v-align-center align-space-around">
+                    <button title="Subir archivo" class="btn-general-carga-masiva hidden-xs"><span class="icon io-upload"></span><span>Subir archivo</span></button>
+                    <a href="../../doc/ejemplo-excel.xls" target="_blank" title="Descargar" class="btn-general-solicitud-descarga"><span class="icon io-download-mte"></span><span>Descargar</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-xs-12 center-block red-contactos-table-block clearfix">
+                <div class="col-xs-12 col-sm-12 add-item-usuario">
+                  <button type="button" class="btn-agregar-contacto" id="btn-agregar-contacto" title="Agregar contacto">
+                    <span class="icon i-plus-1 flexbox v-align-center h-align-center"></span>
+                    <span>Agregar contacto</span>
+                  </button>
+                </div>
+                <div class="col-xs-12 col-sm-12 general-table padding-sides-0">
+                  <div class="header-block general-block hidden-xs clearfix">
+                    <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center">
+
+                      <div class="col-sm-pr-50 flexbox h-align-center">
+                        <strong title="Número">Número</strong>
+                      </div>
+
+                      <div class="col-sm-pr-50 flexbox h-align-center">
+                        <strong title="Nombre">Nombre</strong>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="table-main-block col-sm-12 col-xs-12 center-block padding-0">
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" id="lt-1" data-meta='{"id" : "1", "numero" : "5512345678", "nombre" : "Carlos Medel"}'>
+                      <div class="col-sm-12 col-xs-12 content-item-block padding-0">
+                        <div class="col-sm-pr-45 col-xs-12 flexbox h-align-center v-align-center">
+                          <label for="numero" class="input-label hidden-sm hidden-md hidden-lg">Número: </label>
+                          <div class="data-write">
+                            <input type="text" name="numero" placeholder="10 dígitos" maxlength="10" value="5512345678" disabled="/">
+                          </div>
+                        </div>
+                        
+                      <div class="col-sm-pr-45 col-xs-12 flexbox h-align-center v-align-center nombre-container">
+                          <label for="nombre" class="input-label hidden-sm hidden-md hidden-lg">Nombre: </label>
+                          <div class="data-write">
+                            <input type="text" name="nombre" placeholder="Ingresa el nombre completo" maxlength="40" value="Carlos Medel" disabled="/">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="btn-container">
+                        <div class="edit-container col-sm-6 col-xs-6">
+                          <span class="icon io-Admin btn-edit hidden-xs" title="Editar"></span>
+                          <span class="col-xs-12 btn-mobile btn-edit hidden-sm hidden-md hidden-lg">Editar</span>
+                        </div>
+
+                        <div class="delete-container col-sm-6 col-xs-6">
+                          <span class="icon io-CloseSession btn-delete hidden-xs" title="Quitar"></span>
+                          <span class="col-xs-12 btn-mobile btn-delete hidden-sm hidden-md hidden-lg">Quitar</span>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" id="lt-2" data-meta='{"id" : "2", "numero" : "5528487895", "nombre" : "Carlos Lopez"}'>
+                      <div class="col-sm-12 col-xs-12 content-item-block padding-0">
+                        <div class="col-sm-pr-45 col-xs-12 flexbox h-align-center v-align-center">
+                          <label for="numero" class="input-label hidden-sm hidden-md hidden-lg">Número: </label>
+                          <div class="data-write">
+                            <input type="text" name="numero" placeholder="10 dígitos" maxlength="10" value="5528487895" disabled="/">
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-pr-45 col-xs-12 flexbox h-align-center v-align-center nombre-container">
+                          <label for="nombre" class="input-label hidden-sm hidden-md hidden-lg">Nombre: </label>
+                          <div class="data-write">
+                            <input type="text" name="nombre" placeholder="Ingresa el nombre completo" maxlength="40" value="Carlos Lopez" disabled="/">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="btn-container">
+                        <div class="edit-container col-sm-6 col-xs-6">
+                          <span class="icon io-Admin btn-edit hidden-xs" title="Editar"></span>
+                          <span class="col-xs-12 btn-mobile btn-edit hidden-sm hidden-md hidden-lg">Editar</span>
+                        </div>
+
+                        <div class="delete-container col-sm-6 col-xs-6">
+                          <span class="icon io-CloseSession btn-delete hidden-xs" title="Quitar"></span>
+                          <span class="col-xs-12 btn-mobile btn-delete hidden-sm hidden-md hidden-lg">Quitar</span>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+
+                    <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" id="lt-3" data-meta='{"id" : "3", "numero" : "5543568974", "nombre" : "Manuel Medel"}'>
+                      <div class="col-sm-12 col-xs-12 content-item-block padding-0">
+                        <div class="col-sm-pr-45 col-xs-12 flexbox h-align-center v-align-center">
+                          <label for="numero" class="input-label hidden-sm hidden-md hidden-lg">Número: </label>
+                          <div class="data-write">
+                            <input type="text" name="numero" placeholder="10 dígitos" maxlength="10" value="5543568974" disabled="/">
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-pr-45 col-xs-12 flexbox h-align-center v-align-center nombre-container">
+                          <label for="nombre" class="input-label hidden-sm hidden-md hidden-lg">Nombre: </label>
+                          <div class="data-write">
+                            <input type="text" name="nombre" placeholder="Ingresa el nombre completo" maxlength="40" value="Manuel Medel" disabled="/">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="btn-container">
+                        <div class="edit-container col-sm-6 col-xs-6">
+                          <span class="icon io-Admin btn-edit hidden-xs" title="Editar"></span>
+                          <span class="col-xs-12 btn-mobile btn-edit hidden-sm hidden-md hidden-lg">Editar</span>
+                        </div>
+
+                        <div class="delete-container col-sm-6 col-xs-6">
+                          <span class="icon io-CloseSession btn-delete hidden-xs" title="Quitar"></span>
+                          <span class="col-xs-12 btn-mobile btn-delete hidden-sm hidden-md hidden-lg">Quitar</span>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODAL AGREGAR CONTACTO -->
+        <section class="modal-mte" id="modal-agregar-contacto">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Agregar <span class="grupo-type">contacto</span></p>
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-agregar-contacto">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-agregar-contacto" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+                        
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Número:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="numero" placeholder="5567889989" maxlength="10" class="required only-numbers numero" value="" data-required='{ "minLength" : "10" }'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Nombre:</label>
+                            <span class="lite-p">(Opcional)</span>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="nombre" placeholder="Ejemplo: Usuario A" class="only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "5" }'>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="col-sm-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" type="submit">Agregar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL AGREGAR CONTACTO -->
+
+        <!-- MODAL MODIFICAR CONTACTO-->
+        <section class="modal-mte" id="modal-editar-contacto">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Editar <span class="grupo-type">contacto</span></p>
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-editar-contacto">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-editar-contacto" action="http://multiplicamx.com/cliente/2016/mi-telcel-empresas/assets/test.php">
+                        
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Número:</label>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="numero" placeholder="5567889989" maxlength="10" class="required only-numbers numero" value="" data-required='{ "minLength" : "10" }'>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 line-field-mod element-input-block">
+                          <div class="col-sm-5 label-double-dots">
+                            <label>Nombre:</label>
+                            <span class="lite-p">(Opcional)</span>
+                          </div>
+                          <div class="col-sm-7 input-double-dots">
+                            <div class="data-write">
+                              <input type="text" name="nombre" placeholder="Ejemplo: Usuario A" class="only-alphanumeric meet-regex" maxlength="45" data-regex = "[^0-9A-Za-z-ñÑ\s]+$" data-required='{ "minLength" : "5" }'>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="col-sm-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" type="submit">Modificar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                        </div>
+
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL MODIFICAR CONTACTO-->
+
+        <!-- CONFIRMAR ELIMINAR -->
+        <section class="modal-mte" id="modal-confirmar-eliminar">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" alt="Logo Telcel" height="55">
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Eliminar contacto</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+
+                      <div class="col-sm-12 form-ge-mod">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>¿Estas seguro de eliminar de tu lista personal a [<span class="txt-nombre"></span>] con el número [<span class="txt-numero"></span>]?</p>
+                        </div>
+
+                        <div class="col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" type="submit" id="btn-confirmar-eliminar">Eliminar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                        </div>
+
+                      </div>
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- CONFIRMAR ELIMINAR -->
+
+        <!-- MODAL SUBIR ARCHIVO-->
+        <section class="modal-mte" id="modal-subir-archivo">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-sm-6 title-mod">
+                        <p class="h2">Modificación de contactos</p>
+                      </div>
+                      <div class="col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal" type="button">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod form-subir-archivo">
+                    <div class="row">
+                      <form class="col-sm-10 col-sm-offset-1 form-ge-mod" id="form-subir-archivo" action="listas-personales-3.html">
+                        
+                        <div class="col-sm-12 center-block clearfix subir-archivo-container padding-0">
+                           <!-- COMPONENTE GENERAL -->
+                          <div id="componente-ingresar-lineas">
+                            
+                              <div class="col-sm-12 form-ge-mod form-modal-agregar-lineas componente-lineas-block">
+
+                                <!-- INICIO ARCHIVO -->
+                                <div class= "componente-lb lineas-archivo" data-options='{ "element": "null", "event" : "show" , "showDependant" : "#archivo"}'>
+                                  <div class="col-sm-12 col-xs-12 padding-0">
+
+                                    <div class="col-sm-10 center-block add-lines-ge-mod">
+                                       <div class="txt-center instructions"><p>Son compatibles los archivos con extensión .xls</p> <p><a href="../../doc/ejemplo-excel.xls" target="_blank">Descarga la plantilla</a>  con el formato necesario.</p></div>
+                                        <div class="data-write clearfix">
+                                          <label class="data-write flexbox col-sm-12 input-box-container file" title="">
+                                            <input type="file" name="archivo" id="archivo" placeholder="Elige el archivo que quieres subir" class="element-input col-sm-12">
+                                          </label>
+                                        </div>
+
+                                        <p class="extra-info">Tamaño de archivo: 10 MB máximo</p>
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <!-- FIN ARCHIVO -->
+                                 
+                              </div>
+                          </div>
+
+                          <input type="hidden" id="lineas-hidden-input" name="lineas" value=""/>
+                          <!-- FIN COMPONENTE GENERAL -->
+                        </div>
+
+
+                        <div class="col-sm-12 button-field-mod">
+                          <button class="bton blue-dark first-submit" type="submit">Cargar archivo</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                        </div>
+
+
+                      </form>
+
+                      <div class="col-sm-12 mid-txt-ge-mod api-msg api-msg-success">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL SUBIR ARCHIVO-->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
+
+  </body>
+</html>

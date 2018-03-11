@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content red-privada-block autogestion-general-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li>
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li class="preview-step">
+                    <a title="Listas personales">Listas personales</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h2">Listas personales</h2>
+                <p class="col-sm-8 center-block"><span>En esta sección puedes consultar y modificar las listas personales de cada línea.</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+            <form class="form-section-block autogestion-form" id="autogestion-form" method="POST" action="listas-personales-2.html" data-actionmobile = "listas-personales-2.html">
+
+              <section class="clearfix back-blue1 padding-20 red-block">
+                <div class="container">
+                  <h3 class="h3">Escribe la línea a consultar</h3>
+                  <p class="hide-mobile">Ingresa el número Telcel, el nombre del titular o el nombre del grupo que deseas agregar</strong>.</p>
+                  <div class="col-sm-12 center-block">
+                    <div class="col-sm-12">
+                      <div class="col-sm-8 tokenfield-block center-block data-write">
+
+                        <input type="text" class="form-control token-field-input token-field" id="tokenfield-agregar-lineas" value="" placeholder="Número Telcel o nombre del titular" data-options='{ "limit": "1", "activate" : "#autogestion-btn", "placeholder" : "Número Telcel o nombre del titular", "groups" : false, "show" : "#autogestion-paso-2", "inSteps" : ".red-block", "isCitas" : false }'/>
+                      </div>
+                    </div>
+
+                    <input type="hidden" id="lineas-hidden-input" name="lineas" value=""/>
+                    <!-- FIN COMPONENTE GENERAL -->
+                  </div>
+                </div>
+              </section>
+
+              <section class="clearfix red-step no-margin-bottom" id="autogestion-paso-2">
+                <div class="container">
+                  <div class="col-md-8 col-md-offset-2 padding-0">
+                    <div class="col-md-12 col-xs-8 center-block">
+                      <button class="bton orange no-margin-bottom" id="autogestion-btn" type="submit" disabled>Consultar</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            </form>
+
+        </section>
+
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/red-privada.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+  </body>
+</html>

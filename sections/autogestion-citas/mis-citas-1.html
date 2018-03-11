@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name = "format-detection" content = "telephone=no">
+    <title>MiTelcel Empresas</title>
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link href="../../assets/css/style.css?ver=1.4.3" rel="stylesheet">
+  </head>
+  <body class="MTE header-con-degradado">
+
+    <!-- CONTENEDOR GENERAL -->
+    <div class="full-content mis-citas-block autogestion-general-block autogestion-citas-block detalle-citas-block">
+      
+      <!-- Contenedor para info de landing page -->
+      <div class="container-fluid" id="info-content">
+
+        <section>
+          <div class="container breadcrumb">
+            <div class="row">
+              <div class="col-md-12">
+                <ol>
+                  <li class="preview-step">
+                    <a href="#" title="Mi Telcel Empresas">Mi Telcel Empresas</a>
+                  </li>
+                  <li>
+                    <a href="#" title="Citas">Citas</a>
+                  </li>
+                </ol> 
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+        <section class="header-block-menu back-gray1 clearfix">
+          <div class="container">
+            <div class="options-header-block col-xs-12 col-sm-12 col-md-12">
+              <div class="col-sm-6 col-xs-6">
+                <a href="citas-masivo-1.html" title="Agendar cita">
+                  <span class="icon-container">
+                    <i class="icon io-Month"></i>
+                  </span>
+                  <span class="title">Agendar cita</span>
+                </a>
+              </div>
+
+              <div class="col-sm-6 col-xs-6">
+                <a href="mis-citas-1.html" class="active" title="Mis citas">
+                  <span class="icon-container">
+                    <i class="icon io-citas"></i>
+                  </span>
+                  <span class="title">Mis citas</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 theme-heading">
+                <h2 class="h2">Consulta el estatus de tus citas de los últimos 30 días</h2>
+                <p class="col-sm-8 center-block">Si necesitas reprogramar una cita prioritaria, has clic en el ícono de configuración y solicítalo  en el detalle de la cita. Si quieres consultar citas anteriores a los últimos 30 días puedes ir a la sección de Historial de movimientos.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="filtro-bg-blue no-margin-bottom">
+          <div class="container">
+            <div class="row">
+              <p class="btn-like-a hide-show-filter hidden-sm hidden-md hidden-lg" data-filter=".general-fs-container">Mostrar filtrado</p>
+              <div class="col-sm-12 col-xs-12 center-block padding-0">
+                <form action="mis-citas-1-con-busqueda.html" id="misCitas" class="wrapper-gfsc clearfix">
+                  <div class="col-sm-pr-100 col-sm-12 col-md-12 col-xs-12 flexbox h-align-center v-align-center general-fs-container">
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center padding-0">
+                      <div class="col-sm-3 col-xs-3 label-s-container padding-0">
+                        <label>Folio:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <div class="data-write">
+                          <input type="text" name="folio" class="folio only-numbers one-field" placeholder="Mínimo 4 dígitos" maxlength="12" data-field='{ "name" : "folio", "min" : "4" }'>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-25 col-xs-12 flexbox h-align-center v-align-center">
+                      <div class="col-sm-4 col-xs-3 label-s-container padding-0">
+                        <label>Se autorizó a:</label>
+                      </div>
+                      <div class="col-sm-8 col-xs-9">
+                        <div class="data-write">
+                          <input type="text" name="autorizado" placeholder="Mínimo 4 caracteres" value="" class="autorizado one-field meet-regex acute" maxlength="40" data-regex = "[^A-Za-zñÑáéíóúÁÉÍÓÚäëïöüÄËÏÖÜ\s]+$" data-field='{ "name" : "autorizado", "min" : "4" }'>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-20 col-xs-12 flexbox h-align-center v-align-center padding-0">
+                      <div class="col-sm-3 col-xs-3 label-s-container padding-0">
+                        <label>Número:</label>
+                      </div>
+                      <div class="col-sm-9 col-xs-9">
+                        <div class="data-write">
+                          <input type="text" name="numero" value="" placeholder="Mínimo 4 dígitos" class="one-field numero only-numbers" maxlength="10" data-field='{ "name" : "numero", "min" : "4" }'/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-pr-15 col-xs-12">
+                      <button class="bton blue-dark main-btn full-width" type="button" disabled="disabled" id="btn-filter-citas">Filtrar</button>
+                    </div>
+                    
+                    <div class="col-sm-pr-15 col-xs-12 center-block limpiar-filtro-block">
+                      <button class="btn-limpiar-filtro btn-like-a" type="button" disabled="disabled" data-href="mis-citas-1.html">Limpiar filtros</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="no-margin-bottom">
+          <div class="container-fluid gestion-ejecutivos gestion-administradores" id="gestion-ejecutivos-view">
+            <div class="container">
+              <div class="row">
+                <div class="ver-por-pagina-block col-sm-12 col-xs-12 center-block padding-0">
+                  <div class="col-sm-5 col-xs-12 flexbox v-align-center">
+                    <div class="col-sm-5 col-xs-5">
+                      <label>Ver por página:</label>
+                    </div>
+                    <div class="col-sm-7 col-xs-7">
+                      <div class="data-write slt">
+                        <select name="ver-por" class="ver-por" id="ver-por">
+                          <option value="20">20 citas</option>
+                          <option value="50">50 citas</option>
+                          <option value="100">100 citas</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 center-block padding-0">
+
+                  <div class="general-table padding-sides-0 overflow">
+                    
+                    <div class="header-block general-block has-filters hidden-xs clearfix">
+                      <div class="col-sm-pr-100 col-xs-12 center-block flexbox h-align-center v-align-center">
+
+                        <div class="col-sm-pr-15 flexbox h-align-center">
+                          <strong title="Folio">Folio</strong>
+                          <div class="order-by-block order-by-query">
+                              <button type="button" data-opc='{"key": "folio" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                              <button type="button" data-opc='{"key": "folio" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-pr-15 flexbox h-align-center">
+                          <strong title="Línea(s)">Línea(s)</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "lineas" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "lineas" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-pr-15 flexbox h-align-center">
+                          <strong title="Se autorizó a">Se autorizó a</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "autorizado" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "autorizado" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-pr-20 flexbox h-align-center">
+                          <strong title="Trámite(s)">Trámite(s)</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "tramites" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "tramites" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-pr-25 flexbox h-align-center">
+                          <strong title="Resumen">Resumen</strong>
+                          <div class="order-by-block order-by-query">
+                            <button type="button" data-opc='{"key": "resumen" , "orderby": "desc", "type" : "string"}' title="Orden descendente">desc</button>
+                            <button type="button" data-opc='{"key": "resumen" , "orderby": "asc", "type" : "string"}' title="Orden ascendente">asc</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-pr-10">
+                          <strong class="hidden" title="Configuración">Configuración</strong>
+                        </div>
+
+
+                      </div>
+  
+                    </div>
+
+                    <div class="table-main-block col-sm-12 col-xs-12 center-block padding-0" id="listado-citas">
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"1", "tipo" : 1 , "folio" : "000333444123", "lineas" : "5545367890|6543217654|5578900980","autorizado" : "Priscila Pérez",  "tramite": "Servicio técnico", "estatus" : 1, "fecha" : "11/12/2017", "hora": "16:00", "cac" : "CAC Plaza Carso", "detalle" : "mis-citas-masivo-2-b.html"}'></div>  
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"2", "tipo" : 1, "folio" : "000876111222", "lineas" : "5545367890|6543217654|5578900980","autorizado" : "Juan José Prieto",  "tramite": "Venta de chip(s)", "estatus" : 0, "detalle" : "mis-citas-2-b-cancelada.html"}'></div>  
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"3", "tipo" : 2, "folio" : "000123111222", "lineas" : "5545367890|6543217654|5578900980","autorizado" : "Juan José Prieto",  "tramite": "Venta de chip(s)", "estatus" : 1, "fecha" : "11/12/2017", "hora": "16:00", "detalle" : "mis-citas-2-a.html"}'></div>  
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"4", "tipo" : 2, "folio" : "000111222123", "lineas" : "5545367890|6543217654|5578900980","autorizado" : "Juan José Prieto",  "tramite": "Venta de equipo(s), Venta de chip(s)", "estatus" : 1, "fecha" : "11/12/2017", "hora": "16:00", "detalle" : "mis-citas-masivo-2-a.html"}'></div> 
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"5", "tipo" : 1 , "folio" : "000333444098", "lineas" : "5545367890|6543217654|5578900980","autorizado" : "Priscila Pérez",  "tramite": "Venta de equipo(s)", "estatus" : 1, "fecha" : "11/12/2017", "hora": "16:00", "cac" : "CAC Plaza Carso", "detalle" : "mis-citas-2-b.html"}'></div>
+
+                     <div class="col-sm-12 col-xs-12 center-block flexbox h-align-center linea-batch" data-meta ='{"id":"6", "tipo" : 1, "folio" : "000111222888", "lineas" : "5545367890|6543217654|5578900980","autorizado" : "Juan José Prieto",  "tramite": "Venta de chip(s), Venta de equipo(s)", "estatus" : 0, "detalle" : "mis-citas-masivo-2-b-cancelada.html"}'></div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 ct-pagination center-pag">
+                <ol>
+                  <li>
+                    <a href="#" class="active">1</a>
+                  </li>
+                  <li class="active">
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon io-AccordionRight"></span></a>
+                  </li>                              
+                </ol>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- MODAL Reprogramar cita -->
+        <section class="modal-mte" id="modal-reprogramar-cita">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Reprogramar cita</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod" id="confirmar-reprogramar-cita">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p>Puedes elegir una fecha con un rango de 30 días posteriores al día de hoy (si necesitas cambiar el CAC deberás cancelar esta cita y generar una nueva).</p>
+                          
+                          <div class="col-sm-pr-80 center-block padding-20 fecha-hora-cac-block clearfix">                  
+                            <div class="col-sm-6 col-xs-6 padding-0 date-picker-container">
+                              <i class="icon io-Month"></i>
+                              <div class="date-picker v-align-center">
+                                <div class="layer-mobile-aux"></div>
+                                <div class="input">
+                                  <div class="result flexbox v-align-center">
+                                    <span class="fecha fecha-inicio fecha-corte one-field" data-field='{"name" : "fecha-corte" }'></span></div>
+                                </div>
+                                <div class="calendar" data-min="10/04/2017" data-max="10/05/2017"></div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 padding-0 time-picker-container">
+                              <i class="icon io-reloj"></i>
+                              <div class="time-picker v-align-center">
+                                <div class="data-write slt">
+                                  <select name="time" id="time-picker" class="time-select" disabled>
+                                    <option value="0">Elige la hora</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" id="btn-reprogramar-cita" type="button" disabled>Reprogramar</button>
+                          <button class="simple m-btn-close-modal" type="button">Cancelar</button>
+                          
+                        </div>
+
+                      </div>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="reprogramar-cita-confirmacion">
+                        <p>La cita se ha reprogramado exitosamente para el día [<span class="cita-fecha"></span>] a las [<span class="cita-hora"></span>] hrs.</p>
+                      </div>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="reprogramar-cita-24-hrs">
+                        <p>No es posible reprogramar esta cita ya que el tiempo límite para reprogramar una cita es de [24] horas antes de la misma.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Reprogramar cita -->
+
+        <!-- MODAL Cancelar cita -->
+        <section class="modal-mte" id="modal-cancelar-cita">
+          <div class="window-modal">
+            <div class="row">
+              <div class="col-sm-12 content-mod">
+                <div class="row">
+                  <div class="col-sm-12 heading-mod">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-3 logo-mod">
+                        <img src="../../assets/img/logo-letra-blanca.png" height="55" alt="Telcel" >
+                      </div>
+                      <div class="col-xs-12 col-sm-6 title-mod">
+                        <p class="h2">Cancelar cita</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-3 head-action-mod">
+                        <button class="bton blue-light m-btn-close-modal">
+                          <span class="icon io-Close"></span>
+                          <span class="bton-side-text-mod">Cerrar</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 in-cont-mod">
+                    <div class="row">
+                      <div class="col-sm-12 form-ge-mod" id="confirmar-cancelar-cita">
+
+                        <div class="col-sm-12 mid-txt-ge-mod">
+                          <p><small>Puedes cancelar tus citas hasta [24 horas] antes del día agendado.</small></p>
+                          <p>¿Estás seguro de cancelar la cita del [<span class="cita-fecha"></span>] a las [<span class="cita-hora"></span>] hrs. en [<span class="cita-cac"></span>]?</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 submit-r-asoc">
+                          <button class="bton blue-dark" id="btn-cancelar-cita" type="button">Si, quiero cancelar</button>
+                          <button class="simple m-btn-close-modal" type="button">No quiero cancelar</button>
+                          
+                        </div>
+
+                      </div>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="cancelar-cita-confirmacion">
+                        <p>Tu cita del día [<span class="cita-fecha"></span>] ha sido cancelada con éxito.</p>
+                      </div>
+
+                      <div class="col-sm-12 mid-txt-ge-mod" id="cancelar-cita-24-hrs">
+                        <p>No es posible cancelar esta cita ya que el tiempo límite para cancelar una cita es de [24] horas antes de la misma.</p>
+                        
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FIN MODAL Cancelar cita -->
+
+      </div>
+      <!-- FIN Contenedor para info de landing page -->
+
+    </div>
+    <!-- FIN CONTENEDOR GENERAL -->
+    
+    <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
+    <!-- <script src="../../assets/js/main.min.js?ver=1.4.5"></script> -->
+    <script src="../../assets/js/services.development.js?ver=1.4.5"></script>
+    <script src="../../assets/js/services.production.js?ver=1.4.5"></script>
+    <script src="../../assets/js/modalesTelcel.js?ver=1.4.5"></script>
+    <script src="../../assets/js/functions.js?ver=1.4.5"></script>
+    <script src="../../assets/js/general.js?ver=1.4.5"></script>
+    <script src="../../assets/js/menu.js?ver=1.4.5"></script>
+    <script src="../../assets/js/tokenfield.js?ver=1.4.5"></script>
+    <script src="../../assets/js/main.js?ver=1.4.5"></script>
+    <script src="../../assets/js/autogestion.js?ver=1.4.5"></script>
+    <script src="../../assets/js/citas.js?ver=1.4.5"></script>
+    <script src="../../assets/js/loaded.js?ver=1.4.5"></script>
+  </body>
+</html>
