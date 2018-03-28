@@ -12882,7 +12882,7 @@ body .full-content {
     -webkit-justify-content: flex-end;
     -moz-justify-content: flex-end;
     justify-content: flex-end; }
-    body .full-content.facturacion-block .configuracion-descarga-facturas #btn-configuracion {
+    body .full-content.facturacion-block .configuracion-descarga-facturas #btn-configuracion, body .full-content.facturacion-block .configuracion-descarga-facturas #btn-download-facturas {
       color: #52cab5;
       font-size: 26px;
       display: -webkit-box;
@@ -12899,7 +12899,7 @@ body .full-content {
       -moz-align-content: center;
       -ms-flex-line-pack: center;
       align-content: center; }
-      body .full-content.facturacion-block .configuracion-descarga-facturas #btn-configuracion:disabled {
+      body .full-content.facturacion-block .configuracion-descarga-facturas #btn-configuracion:disabled, body .full-content.facturacion-block .configuracion-descarga-facturas #btn-download-facturas:disabled {
         color: #cccccc; }
     body .full-content.facturacion-block .configuracion-descarga-facturas .checkbox-container {
       height: auto;
@@ -27138,8 +27138,24 @@ body .tokenfield--auto .tokenfield {
   margin-bottom: 5px;
   min-height: auto; }
 
+body .full-content .notif-bloq p {
+  width: 75%; }
+
+.code-wrapper {
+  background: white;
+  display: inline-block;
+  font-size: 26px;
+  margin-bottom: 10px;
+  padding: 5px 20px; }
+
 .img-responsive {
   display: inline-block; }
 
 .m-b-30 {
   margin-bottom: 30px; }
+
+.gray-color {
+  color: #777; }
+
+hr.white {
+  border-color: white; }

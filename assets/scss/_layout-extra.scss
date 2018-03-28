@@ -62,7 +62,7 @@ body {
               border-color: $grayTooltip2 transparent;
             }
           }
-          
+
         }
 
         .sin-notificaciones-block{
@@ -84,10 +84,10 @@ body {
 
             p{ font-size: 16px;}
           }
-          
+
         }
       }
-      
+
     }
 
     .gestionar-grupos-block{
@@ -119,7 +119,7 @@ body {
         background-color: $orangeCTA;
       }
     }
-    
+
 
     &.btn-generar-referencia{
       opacity: 1;
@@ -146,7 +146,7 @@ body {
 
   &.admin-mode{
 
-    .chat-flotante{ 
+    .chat-flotante{
       display: none;
     }
 
@@ -203,7 +203,7 @@ body {
             }
           }
         }
-      } 
+      }
     #gestion-ejecutivo-ver-admin{
 
       .main-block{
@@ -260,7 +260,7 @@ body {
         &#modal-landscape{
           display: block !important;
           z-index: 999999999999;
-          
+
           .window-modal{
             top:0;
             height: 100%;
@@ -359,7 +359,7 @@ body {
             }
           }
         }
-        
+
         &:after{
           content: "";
           display: block;
@@ -498,7 +498,7 @@ body {
       }
   }
   .pie-chart-container{
-      
+
     .pie-chart-block{
       width: 100%;
 
@@ -549,7 +549,7 @@ body {
       @include justify-content(center);
       @include align-items(center);
       padding: 0;
-      
+
       .notif-bloq {
         #error-autogestion-block {
           &.inner-nb{
@@ -649,7 +649,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    
+
 
     .system-msg{
       position: absolute;
@@ -667,7 +667,7 @@ body {
         cursor: pointer;
         .icon{
           font-size: 20px;
-          
+
         }
       }
     }
@@ -675,8 +675,8 @@ body {
   .subflujo{ background: #eee; margin: 0 15px 30px;
     h1,h2,h3,h4{ margin: 0;}
 
-    .titulo-caso{ 
-      width: 100%; 
+    .titulo-caso{
+      width: 100%;
       border-bottom: 2px solid white;
       font-size: 120%;
       padding: 5px;
@@ -859,7 +859,7 @@ body {
           // border-left: 2px solid $blueTelcel1;
           // border-right: 2px solid $blueTelcel1;
         }
-       
+
       }
       .option{
         padding: 5px 0;
@@ -867,7 +867,7 @@ body {
         line-height: 24px;
         overflow: hidden;
         width: 100%;
-        
+
 
         &.dropdown-selected-option{
           border-bottom: 2px solid $blueTelcel1;
@@ -932,7 +932,7 @@ body {
         }
       }
 
-      
+
 
       ul {
         margin: -1px 0 0 0;
@@ -984,7 +984,7 @@ body {
       $height: 40px;
       $width: 100%;
       $color-one-dark: #68768A;
-        
+
       width: $width;
       height: auto;
       max-height: $height;
@@ -1020,7 +1020,7 @@ body {
         font-size: 0;
         cursor: pointer;
         border: 1px solid $blueTelcel1;
-        
+
         .result{
           width:100%;
           height: $height;
@@ -1051,7 +1051,7 @@ body {
             &.ui-state-disabled{
               visibility: hidden;
             }
-          } 
+          }
         }
         &:before{
           content: "";
@@ -1079,7 +1079,7 @@ body {
           border-color: $blueTelcel1 transparent;
         }
       }
-      
+
       .ui-datepicker-inline{
         position: relative;
         width: 100%;
@@ -1160,7 +1160,7 @@ body {
                   color: $white;
                   margin:0;
                   font-size: 16px;
-                  
+
                   line-height: 30px;
                   font-weight: 300;
                   margin: 0 auto;
@@ -1231,7 +1231,7 @@ body {
           border: 2px solid transparent;
         }
       }
-      
+
       &.open{
         max-height: 400px;
         .calendar{
@@ -1256,7 +1256,7 @@ body {
         padding: 0;
       }
 
-      
+
       .listado-principal{
 
         .ver-detalle-block{
@@ -1275,8 +1275,8 @@ body {
               }
               .show-more-details-container{
                 @include flexbox;
-                @include align-items(center); 
-                @include justify-content(center); 
+                @include align-items(center);
+                @include justify-content(center);
                 padding: 0;
                 >.p-value{
                   max-width: 80%;
@@ -1451,7 +1451,7 @@ body {
             background-color: $grayTooltip1;
           }
           p{
-            font-size: 16px; margin: 0; 
+            font-size: 16px; margin: 0;
           }
           .description{
             color: $grayTextos; font-size: 14px;
@@ -1520,7 +1520,7 @@ body {
               font-size: 12px;
             }
           }
-          
+
         }
         .total{
           color: $blueCTA;
@@ -1546,7 +1546,7 @@ body {
 	.full-content {
     .susp-list-pick{
         .detalle-confirmacion{
-        
+
           &.detalle-cita{
             margin: 10px auto;
             >div{
@@ -1573,7 +1573,7 @@ body {
 
       /*Servicios inicio*/
       .servicios-tooltip-container{
-        position: fixed;   z-index: 99; 
+        position: fixed;   z-index: 99;
         -ms-transition: all 1s ease-in-out;
         -o-transition: all 1s ease-in-out;
         -moz-transition: all 1s ease-in-out;
@@ -1606,7 +1606,7 @@ body {
           }
           >div{
             background: $grayTelcel1;
-            padding: 10px; 
+            padding: 10px;
             @include flexbox;
             @include align-items(center);
 
@@ -1634,7 +1634,7 @@ body {
               }
             }
             p{
-              margin: 0 auto; text-align: center; padding: 0 5px 0 0; font-size: 18px; 
+              margin: 0 auto; text-align: center; padding: 0 5px 0 0; font-size: 18px;
             }
           }
         }
@@ -1646,7 +1646,7 @@ body {
         .btn-chat, .btn-resumen{
           @include box-shadow( 0, 0, 11px, rgba(0, 0, 0, 0.35));
         }
-        .btn-chat{  
+        .btn-chat{
           display: none;
           padding: 8px 0;
           width: 50px;
@@ -1715,7 +1715,7 @@ body {
         .green-elements{
 
           .servicios-li{
-            
+
             .servicio-item{
               &.checked{
                 .servicios-li-content{
@@ -1782,7 +1782,7 @@ body {
           @include justify-content(center);
           .i-container{
             .icon{
-              
+
               font-size: 60px;
               display: block;
               margin: 0 auto;
@@ -1852,7 +1852,7 @@ body {
           }
 
           >div{
-            
+
             overflow:hidden;
             // &:nth-child(odd){
             //   margin-right: 1%;
@@ -1965,7 +1965,7 @@ body {
 
                 .status{
                   margin : 0;
-                  margin-left : 20px; 
+                  margin-left : 20px;
                 }
 
                 .info-servicio{
@@ -1976,7 +1976,7 @@ body {
                     display:block;
                   }
                   label{
-                    
+
                     >strong, small{
                       display: block;
                     }
@@ -2010,7 +2010,7 @@ body {
       /*Servicios fin*/
 
       .acciones-masivas{
-       
+
       }
       .modal-mte {
 
@@ -2191,7 +2191,7 @@ body {
           .header-actions{
             padding: 10px 0;
           }
-          
+
           p{
             margin: 0;
             text-align: left;
@@ -2363,14 +2363,14 @@ body {
                     margin-bottom: 0;
                   }
                 }
-                
+
               }
             }
             &.active{
               display: block;
             }
           }
-          
+
           .componente-lineas-block{
             .triangle-tooltip{
               padding: 10px 20px;
@@ -2398,9 +2398,9 @@ body {
           }
         }
       }
-      
+
     }
-    
+
     .btn-container-detalle-visita{
       padding-top: 30px;
       .btn-cancelar-visita{
@@ -2574,7 +2574,7 @@ body {
                   border: 1px solid $purple2;
                   background: $pink2;
                 }
-                  
+
               }
               .error-fecha{
                 display: block;
@@ -2594,7 +2594,7 @@ body {
               }
             }
           }
-          
+
         }
         .time-picker-container{
           @include flexbox;
@@ -2608,7 +2608,7 @@ body {
                   border: 1px solid $purple2;
                   background: $pink2;
                 }
-                  
+
               }
               .error-hora{
                 display: block;
@@ -2628,7 +2628,7 @@ body {
               }
             }
           }
-          
+
         }
         >div{
           @include flexbox;
@@ -2672,7 +2672,7 @@ body {
       .listado-confirmacion-block{
         .linea-batch{
           .mobile-only{
-            
+
           }
         }
       }
@@ -2709,7 +2709,7 @@ body {
                 margin: 0;
                 padding: 10px;
                 cursor: pointer;
-                
+
                 &.active, &:hover{
                   border-bottom: 3px solid $blueTelcel2;
                   span{
@@ -2729,17 +2729,17 @@ body {
                 }
               }
             }
-            
+
           }
         }
         padding: 20px;
         .options-header-block{
           >div{
             text-align: center;
-            
+
             a, .radio-ch-block{
 
-             
+
               span{
                 display: block;
                 text-align: center;
@@ -2766,7 +2766,7 @@ body {
                 border-radius: 100%;
                 @include flexbox;
                 @include align-items(center);
-                @include justify-content(center); 
+                @include justify-content(center);
                 border: 2px solid $white;
                 .icon{
                   font-size: 50px;
@@ -2816,7 +2816,7 @@ body {
                 width: auto;
                 margin: 0 15px;
                 text-decoration: none;
-                  
+
                 label{
                   cursor: pointer;
                   &:hover{
@@ -2874,7 +2874,7 @@ body {
 
                 }
               }
-              
+
             }
           }
 
@@ -2884,14 +2884,14 @@ body {
               .icon{
                  color: $grayTooltip2;
               }
-             
+
             }
           }
         }
         .content-item-block{
           @include flexbox;
           @include justify-content(center);
-          
+
           &.item-cancelado{
             >div{
               p{
@@ -2996,7 +2996,7 @@ body {
           @include align-items(stretch);
           @include flex-grow(1);
           @include flex-basis(auto);
-            
+
 
             label{
               border: 2px solid $blueTelcel1; text-align: center;
@@ -3050,7 +3050,7 @@ body {
               display: block;
             }
           }
-          
+
           .shrt-cut-links {
             // &:hover {
             //  .icon, .h5 {
@@ -3081,7 +3081,7 @@ body {
           .drag-slide-block {
 
             p {
-              text-align: right; 
+              text-align: right;
             }
             .txt-near {
               padding: 0;
@@ -3128,7 +3128,7 @@ body {
           &.listado-header-block{
              border-bottom: 0px !important;
           }
-          
+
         }
       }
       #modal-geolocation{
@@ -3160,7 +3160,7 @@ body {
             display: block;
             margin-top: 20px;
           }
-          
+
         }
       }
 
@@ -3222,7 +3222,7 @@ body {
                       border: 1px solid $purple2;
                       background: $pink2;
                     }
-                      
+
                   }
                   .error-tramite{
                     display: block;
@@ -3261,7 +3261,7 @@ body {
                 }
               }
             }
-            
+
             .data-write{
               margin: 0;
             }
@@ -3368,7 +3368,7 @@ body {
                         z-index: 99;
                         color :$white;
                       }
-                      
+
                   }
 
                   &:hover{
@@ -3431,7 +3431,7 @@ body {
                     display:none;
                   }
                   .span-btn{
-                    display: block; color: $blueTelcel2; font-size: 60px; font-weight: 500; 
+                    display: block; color: $blueTelcel2; font-size: 60px; font-weight: 500;
                   }
                 }
               }
@@ -3455,7 +3455,7 @@ body {
               width: 100%;
               padding: 20px;
               margin-bottom: 2px;
-             
+
               div{
                 @extend %flexbox;
                 width: 100%;
@@ -3496,7 +3496,7 @@ body {
 
     .inputs-block{
       padding: 20px 0 0 0;
-      
+
       .input-wrapper{
         margin-bottom: 15px;
         .error-aux {
@@ -3529,7 +3529,7 @@ body {
         }
       }
     }
-      
+
     }
 
     &.home-block{
@@ -3540,13 +3540,13 @@ body {
           }
         }
          .swiper-container{
-            
+
             @include flexbox;
             .tab-content{
-              
+
               @include flexbox;
               .tab-pane{
-                
+
                 //min-height: 100%;
                 @include align-items(initial);
                 >.container{
@@ -3598,7 +3598,7 @@ body {
             padding: 0 10px;
 
 
-            
+
           }
           .title-mobile{
             width:100%;
@@ -3616,7 +3616,7 @@ body {
               max-width:90%;
 
             }
-        
+
           }
           .row-subtotal-details {
             .h5{
@@ -3634,7 +3634,7 @@ body {
               // margin: 20px auto;
             }
 
-            
+
             >div{
               >div{
                 .value{
@@ -3701,7 +3701,7 @@ body {
                 }
               }
 
-            
+
           }
         }
 
@@ -3739,7 +3739,7 @@ body {
             @include align-items(center);
             margin: 10px auto;
 
-            
+
             &.one-line{
               @include flex-direction(column);
               .label-double-dots{
@@ -3779,10 +3779,10 @@ body {
           }
         }
         .s-slider{
-          border-top: 2px solid $blueTelcel1; 
-          
+          border-top: 2px solid $blueTelcel1;
+
           &:last-child{
-            border-bottom: 2px solid $blueTelcel1; 
+            border-bottom: 2px solid $blueTelcel1;
           }
 
           .rest-block{
@@ -3894,7 +3894,7 @@ body {
       .configuracion-descarga-facturas{
         @include flexbox;
         @include justify-content(flex-end);
-        #btn-configuracion{
+        #btn-configuracion, #btn-download-facturas{
           color: $greenTelcel1;
           font-size: 26px;
           @include flexbox;
@@ -3965,7 +3965,7 @@ body {
           .icon{
             font-size: 25px;
             position: relative;
-            display: block; 
+            display: block;
             width: 100%;
 
             &:before{
@@ -4157,8 +4157,8 @@ body {
             }
           }
         }
-      } 
-      
+      }
+
       .last-btn-block{
         padding: 20px 0 0 0;
         button{
@@ -4178,7 +4178,7 @@ body {
             }
           }
         }
-       
+
       }
       .detalle-sertec{
         >div{
@@ -4239,8 +4239,8 @@ body {
 
         }
       }
-     } 
-      
+     }
+
     #btn-show-extra-detail{
       background-color: $blueTelcel2;
     }
@@ -4341,7 +4341,7 @@ body {
         .body-group{
           padding-bottom: 10px;
         }
-        
+
         .some-header-info {
             background-color: $blueTelcel1;
             margin-bottom: 30px;
@@ -4362,7 +4362,7 @@ body {
                 }
               }
             }
-        } 
+        }
 
         .group-list-block{
           padding-top: 45px;
@@ -4500,7 +4500,7 @@ body {
             .content-item-block{
               padding: 10px 0;
               .cuenta-container{
-                
+
                 .icon{
                   font-size: 18px;
                   margin-right:5px;
@@ -4513,10 +4513,10 @@ body {
             .linea-batch{
               padding: 0;
               form{
-                padding : 10px; 
+                padding : 10px;
                 .settings-ri{
                   display: none;
-                  
+
 
                   .title-ri{
                     text-align: left;
@@ -4586,7 +4586,7 @@ body {
                   }
                 }
                 p{ padding: 0;}
-                
+
               }
 
               button{
@@ -4628,14 +4628,14 @@ body {
 
               > div {
                 border-right: 1px solid $grayTooltip1;
-                
+
                 &:first-child{
                   padding: 0;
                   p{
                     padding: 0;
                   }
                 }
-     
+
 
                 &:last-child{
                   border: 0;
@@ -4678,7 +4678,7 @@ body {
                 padding: 0;
               }
               .simple {
-                
+
               }
 
               button {
@@ -4776,12 +4776,12 @@ body {
           }
           .to-fixed-block{
             //max-width: 1120px;
-            padding:0; 
-          
+            padding:0;
+
             &.fixed{
               .header-actions{
                 max-width: 1170px;
-                display: block; 
+                display: block;
                 margin: 0 auto;
                 float: none;
 
@@ -4815,7 +4815,7 @@ body {
               cursor: pointer;
             }
             #filter-movimientos-container{
-              
+
 
             &.filtrado{
               >div{
@@ -5017,7 +5017,7 @@ body {
         }
         // FIN SEARCH MOVIMIENTOS
     }
-    
+
 	}
 }
 /**** FIN ****/
@@ -5204,7 +5204,7 @@ body {
         margin: 20px auto; display: block; font-size: 50px;
         .sk-child{
           &:before{
-            background-color: $blueTelcel2; 
+            background-color: $blueTelcel2;
           }
         }
       }
@@ -5455,7 +5455,7 @@ body {
             @include justify-content(center);
               padding: 0;
               list-style-type: none;
-              
+
               margin: 20px 0;
               li{
 
@@ -5597,7 +5597,7 @@ body {
   .detail-group{
     color: $blueTelcel2;
     font-size: 12px;
-    margin: 0 5px; 
+    margin: 0 5px;
   }
 }
 .jstree-anchor {
@@ -6017,7 +6017,7 @@ body {
       &.jstree-ocl{
         height: 20px;
       }
-    } 
+    }
   }
 }
 .jstree-default .jstree-open > .jstree-ocl {
@@ -6726,7 +6726,7 @@ body {
 
       .subflujo{
         .pasos {
-          >div{ 
+          >div{
             a.bton.blue-normal{ width: 100%; max-width: 100%; }
           }
         }
@@ -6760,7 +6760,7 @@ body {
       &.listado-container{
         //margin-bottom: 10px;
       }
-     
+
       padding-bottom: 0;
       .linea-batch{
 
@@ -6811,7 +6811,7 @@ body {
             display:block;
           }
         }
-      } 
+      }
     }
     p,a{
       margin: 10px auto;
@@ -6819,7 +6819,7 @@ body {
         font-size: 16px;
         cursor: pointer;
         display: inline-block;
-  
+
       .a-mostrar{
         display: block;
       }
@@ -6869,7 +6869,7 @@ form{
   .log-square{
     >div{
       >.data-write{
-        
+
         >div{
           label, p{
             margin: 0;
@@ -7057,7 +7057,7 @@ form{
     .show-text{
       padding: 0;
       text-align: center;
-     
+
       .icon{
         font-size: 20px;
         color: $grayTooltip2;
@@ -7094,7 +7094,7 @@ form{
 .subtext{
     margin-bottom: 30px;
   }
-  
+
 #mi-cuenta-view{
   .log-square {
     .password-input-block{
@@ -7107,7 +7107,7 @@ form{
         }
         &.for{
           padding: 10px 0;
-          
+
         }
       }
     }
@@ -7167,7 +7167,7 @@ form{
         bottom: 0px;
         z-index: 9;
         padding: 2px 0 5px 0;
-        
+
 
         .icon{
           display: block;
@@ -7193,7 +7193,7 @@ form{
           }
         }
       }
-     
+
     }
   }
 }
@@ -7214,7 +7214,7 @@ form{
       .triangle-tooltip{
         @include box-shadow( 0, 0, 15px, rgba(0, 0, 0, 0.35));
         min-width: 320px;
-        width: 100%; 
+        width: 100%;
         padding: 0;
         right: -24px;
         left: initial;
@@ -7237,14 +7237,14 @@ form{
           overflow: hidden;
           text-overflow: initial;
       }
-      
+
     }
 
     .head-question{
       background: $blueTelcel2;
       color: $white;
       padding: 10px 5px;
-      margin: 0; 
+      margin: 0;
       @include justify-content(center);
       .icon{ font-size: 24px; margin-right: 5px;}
     }
@@ -7385,7 +7385,7 @@ form{
   label{
     margin-bottom: 0;
   }
-  
+
   .to-column-mobile{
     label{
       margin-bottom: 0;
@@ -7417,13 +7417,13 @@ form{
     @include align-items(center);
 
     .btn-limpiar-filtro{
-      
+
       background-color: transparent;
       width: 100%;
       text-align: center;
-      
+
       &:disabled{
-       color: $gray5a; 
+       color: $gray5a;
        cursor: auto;
       }
     }
@@ -7514,7 +7514,7 @@ form{
         }
         .header-actions{
           padding: 10px 20px;
-          
+
         }
       }
     +.header-fixed-auxiliar{
@@ -7538,7 +7538,7 @@ form{
   &.fixed{
     .header-actions{
       max-width: 1140px;
-      display: block; 
+      display: block;
       margin: 0 auto;
       float: none;
     }
@@ -7551,7 +7551,7 @@ form{
   .header-actions{
     padding: 10px 20px;
     overflow: hidden;
-    #checkall{ 
+    #checkall{
        label { margin-bottom: 0; }
     }
 
@@ -7565,7 +7565,7 @@ form{
     }
 
   }
- 
+
   p{
     text-align: left;
     margin: 0;
@@ -7779,7 +7779,7 @@ form{
 @media screen and (min-width:0\0) {
     body {
       #info-content {
-        .bar-block {  
+        .bar-block {
           p{
           width: auto; }
         }
@@ -7787,58 +7787,3 @@ form{
       }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

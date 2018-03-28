@@ -70,7 +70,7 @@
 		-webkit-box-sizing:border-box;
 		-moz-box-sizing:border-box;
 		box-sizing:border-box;
-		
+
 		border: 0;
 		text-rendering: auto;
 		letter-spacing: normal;
@@ -127,7 +127,7 @@
 	::-ms-input-placeholder f{
 		color:#A9A9A9;
 	}
-	
+
 	input, textarea {
 		cursor: text;
 		white-space: nowrap;
@@ -305,7 +305,7 @@
 						color: $white;
 					}
 					&.disabled {
-						&:hover {						
+						&:hover {
 							color: $grayTooltip2;
 							background: $blueTelcel1;
 						}
@@ -339,7 +339,7 @@
 				}
 			}
 			.prev, .next {
-				font-size: 17px; line-height: 17px; 
+				font-size: 17px; line-height: 17px;
 				i {
 					color: $blueTelcel2;
 				}
@@ -353,7 +353,7 @@
 		}
 		.ui-layer{
 
-		    display:none;    
+		    display:none;
 		    height: 100% !important;
 		    width: 100%;
 
@@ -374,7 +374,7 @@
 			    height: auto;
 			    background: $white;
 			    top: 30px;
-			    
+
 		    }
 
 		    &#ui-search-block{
@@ -479,7 +479,7 @@
 					position: relative; padding: 5px; width: 100%;
 					display: block; text-align: left;
 					.icon {
-						//position: absolute; left: 0; top: 0; bottom: 0; 
+						//position: absolute; left: 0; top: 0; bottom: 0;
 						font-size: 20px; height: 20px; width: 20px; line-height: 1; margin: 0 5px 0 0; color: $gray7a; vertical-align: middle;
 					}
 					.in-text-fbr {
@@ -591,7 +591,7 @@
 				&.ui-autocomplete-category {
 					font-weight: 400; margin-top: 10px;
 				}
-				
+
 			}
 
 			&.autocomplete-search-menu{
@@ -599,7 +599,7 @@
 				margin: 0;
 				width: 85% !important;
 				top: 60px !important;
-				
+
 				padding: 25px 0 20px;
 				&:after{
 					content: "";
@@ -639,15 +639,15 @@
 				// left: 0 !important;
 				.ui-menu-item{
 					font-weight: 100; border-bottom: 2px solid $grayHover !important;
-					padding: 6px 10px !important; 
+					padding: 6px 10px !important;
 					@include flexbox;
 					&:last-child{
 						border-bottom: 0px !important;
 					}
 					&:hover{
-						background: $blueTelcel2; 
+						background: $blueTelcel2;
 						a{
-							 
+
 							strong, .icon, span{
 							 	color: $white;
 							 }
@@ -664,8 +664,8 @@
 						}
 
 						>span{
-							
-							
+
+
 							&:first-child{
 								@include flexbox;
 							}
@@ -693,7 +693,7 @@
 
 
 	.flexbox { @extend %flexbox; }
-	
+
 	.cmn-toggle {
 	  position: absolute;
 	  margin-left: -9999px;
@@ -758,7 +758,7 @@
 	.kill-row-eq-height {
 		display: block;
 		-ms-flex-align: initial;
-		-ms-flex-pack: initial;	
+		-ms-flex-pack: initial;
 	}
 	.full-slider, .full-width {
 		padding: 0;
@@ -784,7 +784,7 @@
 				@include box-shadow(1px, 1px, 3px, rgba(0, 0, 0, 0.4));
 			}
 		}
-	} 
+	}
 
 	// FIX BOOTSTRAP PADDING DE 10PX
 	.col-xs-15,
@@ -1008,10 +1008,10 @@
 			margin-bottom: 20px;
 			margin-top: 20px;
 
-			&+.detail-info{ 
+			&+.detail-info{
 				color: $grayTextos;
 				margin-top: -10px !important;
-				margin-bottom:20px !important; 
+				margin-bottom:20px !important;
 
 				&+p{margin-top:20px !important;}
 			}
@@ -1058,7 +1058,7 @@
 			}
 		}
 	}
-	
+
 	.ui-state-highlight-tokenfield{
 		font-weight: 400; color: $blueTelcel2;
 	}
@@ -1225,7 +1225,7 @@
 				-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $pink;
 				box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $pink;
 			}
-		
+
 		}
 	}
 
@@ -1320,7 +1320,7 @@
 			}
 		}
 		&.pink {
-			background: $pink;	
+			background: $pink;
 		}
 		&.icon-cont {
 			min-width: auto;
@@ -1330,7 +1330,7 @@
 		}
 		&.simple {
 			min-height: initial; padding: 5px; background: transparent; color: $blueTelcel2; font-weight: 300; text-align: left; min-width: auto;
-		
+
 			&.active{
 				.icon{
 					color: $blueTelcel2 !important;
@@ -1347,7 +1347,7 @@
 		&:hover {
 			text-decoration: underline;
 		}
-		&.bton {	
+		&.bton {
 			@extend button;
 			margin: 0 auto 10px auto;
 			display: inline-block;
@@ -1424,7 +1424,7 @@
 							-moz-osx-font-smoothing: grayscale;
 					    &:before {
 					    	display: none;
-							
+
 							content: "";
 
 					    	height: 23px;
@@ -1502,7 +1502,7 @@
 					-moz-osx-font-smoothing: grayscale;
 			    &:before {
 			    	display: none;
-					
+
 					content: "\f00f";
 
 			    	height: 23px;
@@ -1578,14 +1578,14 @@
 	}
 
 	.error-tooltip, .success-tooltip{
-		padding: 10px; 
+		padding: 10px;
 		.center-element{
 			width: 100%;
 			@include flexbox;
 			@include justify-content(center);
-			@include align-items(center);			
+			@include align-items(center);
 			margin: 0 auto;
-			
+
 			.cta-shows-block{
 				color: $white;
 				text-decoration: underline;
@@ -1658,7 +1658,7 @@
     		top: 90px;
     		background-color: $white;
     		border: 2px solid $blueTelcel1;
-    		right: 10px; 
+    		right: 10px;
 
     		.mas-notificaciones{
     			width:100%;
@@ -1698,8 +1698,8 @@
     			}
     			.telefono{ color: $blueCTA; }
     			.email{color: $grayTelcel1;}
-    			.avatar-g{ 
-    				
+    			.avatar-g{
+
     				img{padding: 0px; border-radius: 100%;}
 					a{
 						display: block;
@@ -1797,7 +1797,7 @@
 	    .data-btn{
 	    	margin: 0; padding: 0px 0px 0px 4px;
 	    	.bton{
-	    		padding: 10px; 
+	    		padding: 10px;
 	    	}
 	    }
 
@@ -1812,11 +1812,11 @@
 	input, select, input[type="text"], input[type="password"] {
 
 		&.error, &.error-dd{
-			border: 1px solid $purple2; background: $pink2 !important; 
+			border: 1px solid $purple2; background: $pink2 !important;
 			//color: $pink;
 			&:focus {
 			    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px $brown;
-			    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px $brown;	
+			    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px $brown;
 
 			}
 		}
@@ -1846,7 +1846,7 @@
 					-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $pink;
 					box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px $pink;
 				}
-			
+
 			}
 		}
 		.to-hi-check {
@@ -1870,7 +1870,7 @@
 
 			    &:before {
 			    	display: none;
-					
+
 					content: "";
 			    	height: 12px;
 			    	width: 12px;
@@ -1933,7 +1933,7 @@
 			}
 		}
 		&.pen-pos {
-			position: relative; 
+			position: relative;
 			cursor: pointer;
 			button {
 				position: absolute;
@@ -1950,10 +1950,10 @@
 				color: $blueTelcel2;
 				text-align: center;
 				min-width: auto;
-			}		
+			}
 		}
 		&.slt {
-			position: relative; 
+			position: relative;
 			cursor: pointer;
 			select, input{
 				padding: 6px 45px 6px 12px;
@@ -2001,7 +2001,7 @@
 		}
 
 		&.calendarBoxCont {
-			position: relative;	
+			position: relative;
 			&:after {
 				content: "\f203";
 				font-family: 'TelcelFont' !important;
@@ -2070,7 +2070,7 @@
 			font-weight: 400;
 		}
 		&:before {
-			position: absolute; left: 10px; top: 0; bottom: 0; margin: auto; height: 40px; width: 40px; text-align: center; content: "\77"; display: inline-block; line-height: 10px; font-size: 40px; color: $white; 
+			position: absolute; left: 10px; top: 0; bottom: 0; margin: auto; height: 40px; width: 40px; text-align: center; content: "\77"; display: inline-block; line-height: 10px; font-size: 40px; color: $white;
 			font-family: "icons" !important;
 			font-style: normal !important;
 			font-weight: normal !important;
@@ -2172,7 +2172,7 @@
 				}
 			}
 
-			p{    
+			p{
 				font-weight: 400;
     			font-size: 16px;
 
@@ -2247,8 +2247,8 @@
 					.only-mobile{
 						display: none;
 					}
-					
-					
+
+
 					.input-box-container{
 						margin-bottom: 0px;
 						max-width: 100%;
@@ -2271,7 +2271,7 @@
 							clear: both;
 							padding: 5px 2px;
 						}
-					}	
+					}
 
 					&.lineas-archivo{
 
@@ -2355,7 +2355,7 @@
 		.full-content {
 
 			&.autogestion-general-block{
-				
+
 				&.autogestion-servicios-block{
 					.detalle-confirmacion-header{
 						.btn-like-a{
@@ -2395,7 +2395,7 @@
 				    text-align: right;
 				    font-weight: 400;
 
-				    
+
 
 				    .element-input{
 				    	position: absolute;
@@ -2476,7 +2476,7 @@
 				clear:both;
 				font-size:14px;
 				background-color: transparent;
-				
+
 				&.btn-remover-busqueda{
 					display: none;
 				}
@@ -2517,9 +2517,9 @@
 				}
 
 				.h1,.h2,.h3{
-					&+.detail-info{ 
+					&+.detail-info{
 						margin-top: -5px !important;
-						margin-bottom:20px !important; 
+						margin-bottom:20px !important;
 
 						&+p{margin-top:20px !important;}
 					}
@@ -2531,11 +2531,11 @@
 			}
 
 			.v-align-center{
-				@include align-items(center); 
+				@include align-items(center);
 			}
 
 			.h-align-center{
-				@include justify-content(center); 
+				@include justify-content(center);
 			}
 
 			.ui-mobile-layer{
@@ -2566,7 +2566,7 @@
 
 			.container {
 				.availability-description{
-					padding: 24px 0; 
+					padding: 24px 0;
 					.none { .circle{background: $grayHover;} p{ border-color: $grayHover;}}
 					.high { .circle{background: $greenTelcel1;} p{ border-color: $greenTelcel1;}}
 					.low { .circle{background: $yellow;}  p{ border-color: $yellow;}}
@@ -2620,7 +2620,7 @@
 							@include opacity(1);
 						}
 
-						
+
 					}
 
 					.week{
@@ -2646,7 +2646,7 @@
 					  cursor: pointer;
 					  border: 1px solid $grayTelcel1;
 
-					  	
+
 					  	&.selected{
 					  		&.none{
 					  			background: $grayHover;
@@ -2659,34 +2659,34 @@
 					  		}
 
 					  		&.low{
-					  			background: $yellow; 
+					  			background: $yellow;
 					  		}
 
 					  		.day-number {
 
 								&:after{
-									background: $white !important; 
+									background: $white !important;
 								}
 							}
 					  	}
-						&.none { 
+						&.none {
 							.day-number {
 
 								&:after{
-									background: $grayHover; 
+									background: $grayHover;
 								}
 							}
 						}
-						&.high { 
+						&.high {
 							.day-number {
 								&:after{
 									background: $greenTelcel1; }
 								}
 						}
-						&.low { 
+						&.low {
 							.day-number {
 								&:after{
-									background: $yellow; 
+									background: $yellow;
 								}
 							}
 						}
@@ -2694,7 +2694,7 @@
 					  &.other{
 					  	background: $grayTooltip1;
 					  	.day-number{visibility: hidden;}
-					  	
+
 					  }
 					  &.today {
 						  // background: $greenTelcel1;
@@ -2725,7 +2725,7 @@
 					  }
 					}
 				}
-				
+
 				.children-same-height{
 					width: 100%;
 					&.elements-4{
@@ -2816,7 +2816,7 @@
 			// A ELIMINAR
 			.greeting{
 				padding: 0 10px; cursor: pointer;
-				>p{ 
+				>p{
 					font-size: 20px; margin: 0 0 0 10px; text-align: left;
 				}
 
@@ -2824,7 +2824,7 @@
 				.avatar-g {
 					display: inline-block; vertical-align: middle;
 					img {
-						height: 40px; width: 40px; border-radius: 100%; 
+						height: 40px; width: 40px; border-radius: 100%;
 					}
 					a{
 						display: block;
@@ -2943,7 +2943,7 @@
 					    			&.double-triangle-block{
 					    				top: 62px;
 					    			}
-					    		}	
+					    		}
 				    		}
 				    	}
 				    }
@@ -3022,7 +3022,7 @@
 
 									    li{
 
-									    	
+
 									    	.icon, span{
 									    		color: $blueTelcel2;
 									    	}
@@ -3056,7 +3056,7 @@
 						.father-link {
 
 							font-size: 15px; color: $grayTelcel1; display: block; text-decoration: none;
-							
+
 						}
 
 						.icon{
@@ -3101,7 +3101,7 @@
 								}
 							}
 
-							.triangle-tooltip{ display: none; 
+							.triangle-tooltip{ display: none;
 								z-index: 9999; max-width: 380px;
 								@include box-shadow( 0, 0, 8px, rgba(0, 0, 0, 0.35));
 								border: 0px;
@@ -3109,7 +3109,7 @@
 									max-height: 320px;
 									height: auto;
 									overflow-y: auto;
-								} 
+								}
 								&:before{
 									left: 115px;
 									right: initial;
@@ -3118,7 +3118,7 @@
 								&:after{
 									left: 118px;
 									right: initial;
-									
+
 								}
 							}
 
@@ -3138,7 +3138,7 @@
 							@include justify-content(flex-start);
 							width: 270px;
 							.triangle-tooltip{ display: none;
-								max-width: 300px; 
+								max-width: 300px;
 								z-index: 9999;
 
 								.greeting{
@@ -3154,7 +3154,7 @@
 									left: 41px;
 									right: auto;
 									right: initial;
-									
+
 								}
 							}
 
@@ -3166,7 +3166,7 @@
 						}
 
 						.greeting{
-							
+
 
 							padding: 10px 0; cursor: pointer;
 							>p{ font-size: 20px; margin: 0 0 0 10px; text-align: left;}
@@ -3177,7 +3177,7 @@
 								}
 								display: inline-block; vertical-align: middle;
 								img {
-									height: 40px; width: 40px; border-radius: 100%; 
+									height: 40px; width: 40px; border-radius: 100%;
 									&.bigger{
 										width: 100%; height: auto;
 										max-width: 65px;
@@ -3200,7 +3200,7 @@
 							}
 						}
 						&.more-nav{
-							padding: 0; 
+							padding: 0;
 							>div{
 								border-right: 2px solid $blueTelcel1;
 								text-align: center;
@@ -3209,7 +3209,7 @@
 									border-right: 0;
 								}
 							}
-						
+
 
 						}
 						>.children-link {
@@ -3254,9 +3254,9 @@
 
 							>ul {
 								padding: 0;
-								margin: 0;		
-								background: $white;	
-								width: 292px;	
+								margin: 0;
+								background: $white;
+								width: 292px;
 								>li {
 									font-weight: 300;
 									text-align: left;
@@ -3292,8 +3292,8 @@
 									}
 									a {
 										border-bottom: 1px solid $grayTextos;
-										padding: 8px 0; 
-										font-size: 16px; color: $grayTextos; 
+										padding: 8px 0;
+										font-size: 16px; color: $grayTextos;
 										text-decoration: none;
 										@include flexbox;
 										@include align-items(center);
@@ -3301,7 +3301,7 @@
 											margin: 0;
 											padding: 0;
 										}
-										
+
 									}
 								}
 							}
@@ -3309,17 +3309,17 @@
 						&:hover {
 							.father-link {
 								color: $blueTelcel2; text-decoration: none;
-								
+
 							}
 							.children-link {
 						 		//display: block;
 						 		@include flexbox;
 						 		@include align-items(flex-start);
 						 	}
-							
+
 						}
 
-						
+
 						// &.hover {
 						// 	.children-link {
 						// 		display: block;
@@ -3341,7 +3341,7 @@
 			#gestionar-favoritos{
 				padding: 30px 0 0;
 				h3{ color : $blueCTA; text-align:center; font-weight: 300; font-size: 20px; margin: 10px 0px;}
-				
+
 				&.active{
 					#ui-layer-gestionar{
 						display:block;
@@ -3435,7 +3435,7 @@
 					}
 					input[type="text"]{
 						font-size: 18px;
-						
+
 						&:read-only{
 							border-color: $white;
 							background-color: $white;
@@ -3536,7 +3536,7 @@
 						display: block;
 					}
 				}
-				
+
     			&:hover{
     				right: 0px;
     			}
@@ -3653,14 +3653,14 @@
 					@include flexbox;
 					@include align-items(center);
 					@include justify-content(center);
-					
+
 					//height: 95px;
 
 					>div{
 						display: inline-block;
 						img{
 							display: block; margin: 0 auto;
-							max-width: 120px; 
+							max-width: 120px;
 						}
 
 						&.soluciones{
@@ -3702,12 +3702,12 @@
 				.down-child-f {
 					padding: 30px 15px;
 					> div {
-						vertical-align: middle;	
+						vertical-align: middle;
 					}
 					ul {
 						padding: 3px 0; margin: 0 auto;
 						li {
-							display: inline-block; 
+							display: inline-block;
 							a {
 								color: $white-80; font-size: 18px; padding: 5px; display: inline-block;
 								&:hover {
@@ -3829,7 +3829,7 @@
 
 			.link-secondary-tabs {
 				// @include linearGradient(#ffffff, $grayTooltip1, 100%);
-				//@include linearGradient(blue, $grayTooltip1, 100%); 
+				//@include linearGradient(blue, $grayTooltip1, 100%);
 
 				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,a5c9e5+100 */
 				background: #ffffff; /* Old browsers */
@@ -3858,7 +3858,7 @@
 						> a {
 							font-size: 20px;
 							padding: 8px 20px;
-						}  
+						}
 					}
 				}
 				.nav-tabs {
@@ -3901,7 +3901,7 @@
 								max-width: 240px;
 							}
 							&.bton {
-							margin: 0 2px 0 0; 				
+							margin: 0 2px 0 0;
 								&.new {
 									background: $blueTelcel2; padding: 21px 5px 20px 5px; border: 0; min-width: auto; width: 60px; border-bottom: 3px solid $blueTelcel2;
 									span {
@@ -3923,7 +3923,7 @@
 								float: left; height: 100%;
 								p{
 									margin: 0 auto; font-size: 16px; font-weight: 300;
-									
+
 									max-width: 150px;
 									white-space: nowrap;
 									overflow: hidden;
@@ -3935,7 +3935,7 @@
 								}
 							}
 						}
-						
+
 
 						&.active {
 
@@ -4010,7 +4010,7 @@
 							font-size: 0;
 							> li {
 								float: none;
-								display: inline-block; 
+								display: inline-block;
 							}
 							&.setMobile {
 								float: left;
@@ -4297,7 +4297,7 @@
 					margin: 0 auto;
 				}
 			}
-			
+
 			.find-suggest-package {
 				padding: 10px 0; text-align: center;
 				b, strong {
@@ -4342,7 +4342,7 @@
 
 				}
 				.cta-cont {
-					text-align: right; padding: 0; 
+					text-align: right; padding: 0;
 					.bton{ width: 220px; margin:0;}
 				}
 			}
@@ -4391,7 +4391,7 @@
 					.simple, .m-btn-close-admin-view{
 						margin: 0 5px;
 						@include flexbox;
-						@include align-items(center);		
+						@include align-items(center);
 					}
 
 					.simple{ font-size: 15px; }
@@ -4417,7 +4417,7 @@
 				}
 				/*fin*/
 
-				
+
 
 				text-align: center;
 
@@ -4465,7 +4465,7 @@
 				    }
 				    #listado-sin-autogestion-container{
 				    	display: none;
-				    	
+
 				    }
 				  }
 				}
@@ -4543,7 +4543,7 @@
 
 				}
 				.error-stat {
-				
+
 				}
 				p {
 					line-height: 1.2; width: 65%; margin: 10px auto;
@@ -4640,7 +4640,7 @@
 							}
 						}
 					}
-					
+
 				}
 
 				position: relative;
@@ -4669,7 +4669,7 @@
 				> .row {
 					margin: 0 auto;
 				}
-				&.with-triang {	
+				&.with-triang {
 					&:after {
 						width: 0;
 						height: 0;
@@ -4691,7 +4691,7 @@
 				.io-CloseSession {
 					position: absolute; top: 15px; right: 15px; font-size: 30px; cursor: pointer; z-index: 1; padding: 5px;
 				}
-				.border-out {	
+				.border-out {
 					> .h2 {
 						margin-bottom: 40px;
 					}
@@ -4916,7 +4916,7 @@
 								color: $blueCTA;
 							}
 							.h5 {
-								margin-bottom: 10px !important; margin-bottom: 10px !important; color: $blueCTA; font-weight: 300; 
+								margin-bottom: 10px !important; margin-bottom: 10px !important; color: $blueCTA; font-weight: 300;
 							}
 							.h3 {
 								margin: 5px auto !important; font-weight: 400 !important;
@@ -4955,7 +4955,7 @@
 							padding: 5px 0;
 							border-top: 1px solid $grayTooltip1;
 							border-bottom: 1px solid $grayTooltip1;
-							.row {							
+							.row {
 								@extend %flexbox; @include align-items(center);
 								> div {
 									border-right: 1px solid $grayTooltip1;
@@ -5002,7 +5002,7 @@
 							@include align-items(center);
 							@include justify-content(center);
 						}
-						
+
 					}
 
 					&.cita-block-forw{
@@ -5101,7 +5101,7 @@
 											display: block;
 										}
 									}
-									
+
 								}
 							}
 
@@ -5135,7 +5135,7 @@
 							}
 						}
 					}
-					
+
 				}
 
 				.op-resend-id {
@@ -5156,7 +5156,7 @@
 					}
 
 					.data-write {
-						&.no-valid {						
+						&.no-valid {
 							label {
 								text-align: left; display: block;
 							}
@@ -5370,7 +5370,7 @@
 					span {
 						color: $blueTelcel2;
 					}
-					
+
 				}
 			}
 
@@ -5494,7 +5494,7 @@
 
 							.li-cont {
 								background: $blueTelcel1; padding: 0; position: relative;
-								border-left: 4px solid $blueTelcel1; 
+								border-left: 4px solid $blueTelcel1;
 								@extend %flexbox;
 								.ti-date {
 									color: $blueCTA; font-weight: 100;
@@ -5587,7 +5587,7 @@
 									@include flex-direction(column);
 									padding: 0;
 									background: $gray5a; color: $white; text-align: center;
-									
+
 									.bton{
 										margin: 0 auto;
 										text-align: center;
@@ -5606,7 +5606,7 @@
 											color: $black;
 										}
 
-										
+
 									}
 									.ct-sep-mob {
 										display: none; font-size: 16px;
@@ -5692,7 +5692,7 @@
 					text-align: center;
 				}
 			}
-			
+
 			/* Quitar Eliminar cuando se termine el nuevo faq */
 			// .faq-main {
 			// 	.data-write {
@@ -5772,7 +5772,7 @@
 			// 					p {
 			// 						text-decoration: underline;
 			// 					}
-			// 				} 
+			// 				}
 			// 			}
 			// 		}
 			// 	}
@@ -5847,7 +5847,7 @@
 			// 		}
 			// 	}
 			// }
-			
+
 			// Nuevas clases para faq
 			.faq-home {
 				.h1, .h2, .h3, .h4 {
@@ -5864,7 +5864,7 @@
 					&.search {
 						text-align: left;
 						ul {
-							margin: 0 auto; padding: 12px; width: 40%; background: $white; border: 1px solid $grayHover; z-index: 99; 
+							margin: 0 auto; padding: 12px; width: 40%; background: $white; border: 1px solid $grayHover; z-index: 99;
 						// 	li {
 						// 		list-style: none;
 						// 		&.ui-menu-item {
@@ -5939,7 +5939,7 @@
 						@include justify-content(center);
 
 						li {
-							@include flexbox; @include align-items(center); margin: 10px; 
+							@include flexbox; @include align-items(center); margin: 10px;
 							background: $blueTelcel1; border: 2px solid $blueTelcel1; padding: 0; cursor: pointer;
 							&:hover {
 								border: 2px solid $blueTelcel2; color: $blueTelcel2;
@@ -5949,7 +5949,7 @@
 							}
 							a {
 								@include flexbox; @include align-content(center); @include flex-direction(column);
-								
+
 								text-decoration: none; width: 135px; height: auto; color: $grayTextos; padding: 12px 10px;
 								span {
 									margin: 0 auto 10px auto; display: block; font-size: 40px;
@@ -5957,7 +5957,7 @@
 								p {
 									font-size: 18px; line-height: 18px; margin: 0 auto;
 								}
-								
+
 							}
 						}
 					}
@@ -5978,7 +5978,7 @@
 								&:hover {
 									background: $blueTelcel1; color: $blueTelcel2;
 									span {
-										background: $blueTelcel2; 
+										background: $blueTelcel2;
 									}
 									p {
 										color: $blueTelcel2;
@@ -6017,7 +6017,7 @@
 					background: $blueTelcel1;
 
 					@include opacity(0.45);
-					
+
 					@include transition(0.3s ease-in-out);
 
 					&:hover {
@@ -6077,7 +6077,7 @@
 								&:hover {
 									color: $blueTelcel2; background: $grayTooltip1;
 									span {
-										background: $blueTelcel2; 
+										background: $blueTelcel2;
 									}
 									p {
 										color: $blueTelcel2;
@@ -6161,7 +6161,7 @@
 											&:hover {
 												color: $blueTelcel2; background: $grayTooltip1;
 												span {
-													background: $blueTelcel2; 
+													background: $blueTelcel2;
 												}
 												p {
 													color: $blueTelcel2;
@@ -6232,7 +6232,7 @@
 										display: block;
 									}
 									.loading-block {
-										margin-bottom: 20px; 
+										margin-bottom: 20px;
 									}
 								}
 							}
@@ -6598,7 +6598,7 @@
 						min-width: auto;
 					}
 					.onleft-eli {
-						display: inline-block; font-size: 30px; vertical-align: middle; color: $gray7a; margin: 0px 10px; 
+						display: inline-block; font-size: 30px; vertical-align: middle; color: $gray7a; margin: 0px 10px;
 					}
 					button {
 						vertical-align: middle; display: inline-block; padding: 0;
@@ -6612,7 +6612,7 @@
     					text-overflow: ellipsis; max-width: 210px; width: 100%;
 					}
 					.point-input-eli {
-						display: inline-block; margin: 0; 
+						display: inline-block; margin: 0;
 						input {
 							font-size: 20px; font-weight: 300; padding: 6px 10px;
 						}
@@ -6702,7 +6702,7 @@
 								}
 							}
 						}
-							
+
 					}
 				}
 				.row {
@@ -6893,7 +6893,7 @@
 							}
 						}
 
-						p { font-size: 16px; margin: 0 auto; 
+						p { font-size: 16px; margin: 0 auto;
 							/* For Firefox */
 							word-break: keep-all;
 
@@ -7028,7 +7028,7 @@
 								}
 
 								.icon-container{
-		
+
 									.icon{
 										 color: $grayTelcel1;
 									}
@@ -7065,7 +7065,7 @@
 										    overflow: hidden;
 										    text-overflow: ellipsis;
 										}
-										
+
 									}
 									.icon-container {
 										position: absolute; right: 10px; top: 0; bottom: 0; margin: auto;
@@ -7117,8 +7117,8 @@
 												.admin-correo, .no-admin{
 													font-weight: 400;
 												}
-												
-												
+
+
 											}
 										}
 										a {
@@ -7163,7 +7163,7 @@
 						height: 100%;
 						position:relative;
 						// display: none;
-						
+
 
 						@extend .clearfix;
 						&.empresa-group-block {
@@ -7213,7 +7213,7 @@
 
 							.icon-container {
 								width: 13%; margin-left: -5px;
-								@include justify-content(center);  
+								@include justify-content(center);
 								> div {
 									text-align: center;
 								}
@@ -7280,7 +7280,7 @@
 										min-width: 50px;
 										.icon {
 											font-size: 22px; padding-left: 10px; cursor: pointer; color: $grayTelcel1; line-height: 1;
-											
+
 											width: 45px; height: 45px; padding: 10px;
 											&:hover {
 												color: $blueTelcel2;
@@ -7333,7 +7333,7 @@
 											color: $blueCTA;
 											font-weight: 300;
 											@include align-items(center);
-											width: 100%;	
+											width: 100%;
 
 											span{
 												width:100%;
@@ -7355,7 +7355,7 @@
 											font-weight: 300;
 											@include align-items(center);
 											width: 100%;
-											
+
 											.icon{
 												font-size: 30px;
 												margin-right: 6px;
@@ -7400,7 +7400,7 @@
 								-moz-border-radius: 0 25px 0 0;
 								border-radius: 0 25px 0 0;
 
-								
+
 
 								@include box-shadow( 1px, 2px, 5px, rgba(50, 50, 50, 0.75) );
 
@@ -7475,7 +7475,7 @@
 							// .body-group{
 							// 	min-height: 100px; height: auto;
 							// }
-							
+
 						}
 
 						&.with-legal-name-mv {
@@ -7533,7 +7533,7 @@
 									&.admin-info-block{
 										position: static;
 										margin-top: 10px;
-										
+
 										.msg-no-admin{
 											color: $blueCTA;
 											font-weight: 300;
@@ -7548,7 +7548,7 @@
 											font-weight: 300;
 											@include flexbox;
 											@include align-items(center);
-											
+
 											.icon{
 												font-size: 30px;
 												margin-right: 6px;
@@ -7730,7 +7730,7 @@
 								padding: 10px 0;
 							}
 						}
-							
+
 						//FOURTH
 						.settings-ri{
 
@@ -7739,7 +7739,7 @@
 							margin: 0 auto;
 
 						}
-						
+
 
 					}
 
@@ -7758,7 +7758,7 @@
 								border-bottom: 0px;
 								padding: 0;
 
-								
+
 								&:hover{
 									background-color: $blueTelcel1;
 
@@ -7824,8 +7824,8 @@
 						.half-ls {
 							padding: 0;
 							.single-cell-ls {
-								padding: 0 5px; text-align: center; 
-								
+								padding: 0 5px; text-align: center;
+
 							}
 						}
 					}
@@ -7872,12 +7872,12 @@
 								margin: 0 auto; font-size: 16px;
 							}
 
-						
+
 
 						// CHECKED ELEMENT
 						&.checked-element {
 							background: $grayHover;
-							//border: 0;							
+							//border: 0;
 
 							&:hover, &.active-settings{
 								background: $grayHover;
@@ -7916,7 +7916,7 @@
 							}
 
 							background: $white;
-							 
+
 							.half-ls{
 								.single-cell-ls{
 									border-color: $blueTelcel1;
@@ -7996,7 +7996,7 @@
 									&.fit-element{
 										height: 22px;
 									}
-									
+
 									// height: 30px;
 									button {
 										 padding: 0;
@@ -8007,7 +8007,7 @@
 										 min-width: 0px;
 
 										 span{
-										 	
+
 										    font-size: 40px;
 										    width: 100%;
 										    text-align: center;
@@ -8055,11 +8055,11 @@
 
 
 						}
-							
+
 							&:nth-last-child(1){
 								// border: 0;
 							}
-							
+
 							&.settings-view {
 								padding: 5px 0 0 0;
 								border-bottom: 2px solid $blueTelcel1;
@@ -8085,7 +8085,7 @@
 									}
 									.settings-ico-ls {
 										background: $white;
-										border: 0 !important; 
+										border: 0 !important;
 										button {
 											color: $blueTelcel2;
 											&:hover {
@@ -8157,9 +8157,9 @@
 								}
 
 							}
-							
+
 						}
-						
+
 					}
 				}
 
@@ -8205,7 +8205,7 @@
 				}
 
 				.group-total{
-					p{ 
+					p{
 						font-weight: 300;
 						margin-bottom: 10px;
 						strong{
@@ -8276,8 +8276,8 @@
 							@include justify-content(center);
 							@include align-items(center);
 							background-color: $blueTelcel1;
-							p{ 
-								color: $blueTelcel2; 
+							p{
+								color: $blueTelcel2;
 								/* For Firefox */
 								word-break: keep-all;
 
@@ -8300,7 +8300,7 @@
 						@include justify-content(center);
 					    padding: 0;
 					    list-style-type: none;
-					    
+
 					    margin: 20px 0;
 					    li{
 
@@ -8338,7 +8338,7 @@
 						}
 					}
 				}
-			
+
 			}
 
 			.modal-mte {
@@ -8468,7 +8468,7 @@
 							position: absolute;
 							left: -56px;
 							top: 0;
-							
+
 
 							button{
 								min-width: 56px;
@@ -8489,7 +8489,7 @@
 						}
 
 						.title-mod{
-							
+
 							.h2{
 								font-size: 20px;
 								text-align: left;
@@ -8540,7 +8540,7 @@
 											position: static;
 											&:after{
 												content:"Regresar";
-												font-size: 14px;	
+												font-size: 14px;
 												position: absolute;
 												top: 4px;
 												width: auto;
@@ -8670,7 +8670,7 @@
 							}
 
 							font-weight: 300; font-size: 18px; margin: 10px auto; line-height: 1.2;
-							
+
 							&.last-line-confirmation{
 								margin: 20px auto;
 							}
@@ -8740,7 +8740,7 @@
 											&:nth-child(odd){
 												border-right: 2px solid $grayTooltip1;
 											}
-											
+
 										}
 									}
 									// > div {
@@ -8766,7 +8766,7 @@
 						padding: 0;
 
 						&.form-modal-agregar-lineas{
-						
+
 						}
 
 						&.success{
@@ -8790,14 +8790,14 @@
 								margin: 10px auto 0 auto;
 							}
 						}
-						
+
 						.add-lines-ge-mod {
 							p {
 								font-weight: 400; font-size: 16px;
 
 							}
 						}
-						
+
 						.let-allow-asoc, .allow-unasoc {
 							padding: 0 5px 10px 5px; border: 2px solid $grayHover; margin: 0 auto 15px auto;
 							@extend .clearfix;
@@ -8892,7 +8892,7 @@
 									background: $grayTooltip1;
 								}
 
-								
+
 								.rol-info {
 									display: none;
 									.simple {
@@ -8928,23 +8928,23 @@
 									border-color: $white;
 									.content-item-block {
 
-										> div {									
+										> div {
 											border-color: $white;
 										}
 									}
 								}
-		
+
 
 								.content-item-block {
 									padding: 0;
 									@extend %flexbox; @include align-items(center);
-									
 
-									> div {				
-										&:first-child{				
-											>div{	
+
+									> div {
+										&:first-child{
+											>div{
 												border-right: 1px solid $blueTelcel1;
-												
+
 											}
 										}
 									}
@@ -9188,12 +9188,12 @@
 
 									&.label-double-dots{
 										@include justify-content(flex-end);
-					
+
 										label{margin: 0;}
 
 									}
 
-									
+
 									.alias-text{
 										@include flexbox;
 										@include align-items(center);
@@ -9212,7 +9212,7 @@
 
 									&.extension-container{
 										>div{
-											
+
 										}
 									}
 									>div{
@@ -9269,9 +9269,9 @@
 							@include justify-content(center);
 							@include align-content(center);
 							@include flex-direction(row-reverse);
-							
+
 							button {
-								margin: 0 5px; 
+								margin: 0 5px;
 								width: auto;
 							}
 						}
@@ -9323,7 +9323,7 @@
 							font-size: 20px;
 						}
 						p {
-							display: inline-block; margin: 0; padding: 0 10px; 
+							display: inline-block; margin: 0; padding: 0 10px;
 						}
 
 					}
@@ -9367,7 +9367,7 @@
 						}
 					}
 
-					
+
 					.exito-enviar-submit, .enviar-set-info-block{
 						display:none;
 					}
@@ -9393,7 +9393,7 @@
 						.exito-enviar-submit{
 							display: block;
 							padding: 20px;
-							
+
 							.descripcion{
 								font-size:18px;
 								padding: 0 20px;
@@ -9458,7 +9458,7 @@
 							.folio-container{
 								background-color: $blueTelcel1;
 
-								p{ color: $blueTelcel2; font-weight: 400; 
+								p{ color: $blueTelcel2; font-weight: 400;
 									/* For Firefox */
 									word-break: keep-all;
 
@@ -9469,7 +9469,7 @@
 									white-space: nowrap;
 								    overflow: hidden;
 								    text-overflow: ellipsis;
-									
+
 								}
 							}
 						}
@@ -9534,7 +9534,7 @@
 						&.no-margin-bottom{
 							margin-bottom: 0;
 						}
-						
+
 						>div{
 							width: 49%;
 							margin: 0;
@@ -9576,7 +9576,7 @@
 						}
 					}
 					.group-total{
-						p{ 
+						p{
 							font-weight: 300;
 							strong{
 									color: $blueCTA;
@@ -9638,7 +9638,7 @@
 								  color: #fff;
 								  text-align: center;
 								  padding: 10px 0;
-								  margin: 0; 
+								  margin: 0;
 								  @include box-shadow( 1px, 2px, 5px, rgba(50, 50, 50, 0.75) );
 									// -webkit-box-shadow: 1px 2px 5px 0px rgba(50, 50, 50, 0.75);
 									// -moz-box-shadow:    1px 2px 5px 0px rgba(50, 50, 50, 0.75);
@@ -9668,7 +9668,7 @@
 								  border-right-width: 1.5em;
 								  border-left-color: transparent;
 								}
-								
+
 								.ribbon .ribbon-content:before{
 								  content: "";
 								  position: absolute;
@@ -9745,12 +9745,12 @@
 						}
 
 						.button-container{
-							
+
 							>div{border-right: 0px;
 							@include flexbox; @include justify-content(center); }
 							form{margin: 20px 5px 0;}
 							button{
-								
+
 								&.cancel{
 									background-color: $grayTelcel1;
 								}
@@ -9886,7 +9886,7 @@
 							@include justify-content(center);
 						    padding: 0;
 						    list-style-type: none;
-						    
+
 						    margin: 20px 0;
 						    li{
 
@@ -9997,7 +9997,7 @@
 							.folio-container{
 								background-color: $blueTelcel1;
 
-								p{ color: $blueTelcel2; font-weight: 400; 
+								p{ color: $blueTelcel2; font-weight: 400;
 									/* For Firefox */
 									word-break: keep-all;
 
@@ -10140,9 +10140,9 @@
 						&.listado-post-confirmacion{
 							.linea-batch{
 								padding: 0;
-								
+
 								&:first-child{
-									
+
 
 									.details-main{
 										>div{
@@ -10169,7 +10169,7 @@
 											border-bottom: 2px solid $blueTelcel1;
 										}
 									}
-									
+
 								}
 								.en-proceso{
 									@include flexbox;
@@ -10194,7 +10194,7 @@
 								p{
 									&.value-p{
 										width: 100%;
-			
+
 										-ms-word-breabreak-k: word;
 
 										&.single-word{
@@ -10249,7 +10249,7 @@
 										}
 									}
 
-								
+
 								.details-main{
 									border-left: 0px !important;
 									.extra-mob-dt-ls{
@@ -10261,13 +10261,13 @@
 										}
 									}
 									>div{
-										
+
 										&:first-child{
 											border-bottom: 2px solid $blueTelcel1;
 											//border-bottom: 2px solid $blueTelcel1;
 										}
 
-										
+
 										>div{
 											//border-left: 1px solid $blueTelcel1;
 
@@ -10284,14 +10284,14 @@
 										&:first-child{
 											@include justify-content(center);
 											padding: 10px 0;
-											
+
 											//border-right: 1px solid $blueTelcel1;
 
 										}
 
 										&.extra-info{
-											p{ margin: 0 auto; 
-											
+											p{ margin: 0 auto;
+
 											}
 										}
 									}
@@ -10325,10 +10325,10 @@
 									border-left: 2px solid $blueTelcel1;
 									p{
 										margin: 0 auto;
-										
+
 									}
 								}
-								
+
 
 								.details-ls{
 									display: none;
@@ -10392,7 +10392,7 @@
 								@include align-items(center);
 								background-color: $blueTelcel1;
 
-								p{ color: $blueTelcel2; font-weight: 400; 
+								p{ color: $blueTelcel2; font-weight: 400;
 									/* For Firefox */
 									word-break: keep-all;
 
@@ -10444,7 +10444,7 @@
 							@include flex-direction(column);
 							@include justify-content(flex-start);
 							max-width: 220px;
-							
+
 							.input-container{
 								width: 100%;
 								position:relative;
@@ -10491,7 +10491,7 @@
 		    						padding-right: 20px;
 		    						height:38px;
 		    						font-weight: 300;
-		    						
+
 									&:focus{
 										border-color: $blueTelcel2;
 						    			outline: 0;
@@ -10529,7 +10529,7 @@
 		    							border-color: $pink;
 		    							//font-weight: 400;
 		    						}
-		   							
+
 		   							&.valid-element{
 		   								border-color: $blueTelcel2;
 		   							}
@@ -10574,7 +10574,7 @@
 							&.checked{
 								background-color: $grayTooltip1;
 							}
-							
+
 							&.not-available{
 								background-color: $blueTelcel1;
 								border-color: $white;
@@ -10708,7 +10708,7 @@
 							font-size: 18px;
 						}
 					}
-					
+
 					.listado-general{
 						.row {
 							margin: 0 auto;
@@ -10794,7 +10794,7 @@
 			}
 
 			.s-slider{
-				
+
 			}
 			.last-section-cnt{
 				.container{
@@ -10827,7 +10827,7 @@
 				&.bg-gray{
 					background: $grayTooltip1;
 				}
-				
+
 			}
 
 			> .row {
@@ -10881,8 +10881,8 @@
 				margin:0;
 				overflow: hidden;
 				.btn-w-icon{
-					text-decoration: none; display: block; padding: 15px 5px; 
-					margin: 15px auto 10px; background-color: $white; 
+					text-decoration: none; display: block; padding: 15px 5px;
+					margin: 15px auto 10px; background-color: $white;
 					border: 2px solid $white;
 					&.full{
 						padding: 20px 8px;
@@ -10890,7 +10890,7 @@
 							display:block; position:static; font-size: 40px; margin: 10px 0;
 						}
 					}
-					
+
 					*{
 						margin-top:0;
 						margin-bottom: 0;
@@ -11103,15 +11103,15 @@
 
 			.facturas-block{
 
-				
+
 				.bold-text{ font-size: 22px; font-weight: 400;}
 				>div{
-					
+
 					&:last-child, &:first-child{
 						border: 0px;
 					}
 
-					
+
 					small{margin:10px auto; display:block; font-size: 18px;}
 					.bton{display:block;}
 				}
@@ -11121,11 +11121,11 @@
 				.number-container{
 					@extend %flexbox;
 					@include align-items(center);
-					
+
 					p{
-						margin:0; color:$black; 
+						margin:0; color:$black;
 						.icon{
-							font-size:44px; color:$blueTelcel2; 
+							font-size:44px; color:$blueTelcel2;
 							&:before{
 								display:block;
 							}
@@ -11133,7 +11133,7 @@
 					}
 				}
 			}
-			
+
 			.header-login{
 				margin-bottom: 30px; overflow: hidden; padding-bottom: 40px;
 				.logo{
@@ -11235,7 +11235,7 @@
 		    				padding: 10px 0;
 							>.io-Gear{ color: $pink; font-size: 40px; }
 							*{
-								margin: 0; 
+								margin: 0;
 							}
 							p{font-size: 18px;}
 							>.i-angle-up, >.i-angle-down{
@@ -11483,7 +11483,7 @@
 				   	display: inline-block;
 				   	@extend %flexbox; @include align-items(center);
 				   	@include justify-content(flex-end);
-				   >p{padding: 0 6px; text-align: right; 
+				   >p{padding: 0 6px; text-align: right;
 				   	position: absolute; right: 0; top: 6px;}
 				}
 			}
@@ -11513,7 +11513,7 @@
 				    		&.one {
 					          clip: rect(0 ,110px, 55px, 0);
 					        }
-					        
+
 					        &.two {
 					          clip: rect(0, 55px, 110px, 0);
 					        }
@@ -11534,7 +11534,7 @@
 			  	}
 
 			  	&.flip-colors{
-			    	
+
 			    	.donut-chart{
 			    		// background: $pink;
 
@@ -11551,7 +11551,7 @@
 							&.one {
 					          background: $grayTelcel1;
 					        }
-					        
+
 					        &.two {
 					          background: $grayTelcel1;
 					        }
@@ -11581,7 +11581,7 @@
 				         	background-color: $orangeCTA;
 
 				        }
-				        
+
 				        &.two {
 				        	clip: rect(0, 80px, 160px, 0);
 				        	background-color: $orangeCTA;
@@ -11606,7 +11606,7 @@
 				          padding-top: 12px;
 				          line-height: 22px;
 				          small{ font-size: 20px; margin: 15px 0; display: block; line-height: 18px;}
-				        
+
 				          &:after {
 				          	content: '';
 				          }
@@ -11623,35 +11623,3 @@
 
 
 /*=====       FIN ESTILOS DE APP       ======*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

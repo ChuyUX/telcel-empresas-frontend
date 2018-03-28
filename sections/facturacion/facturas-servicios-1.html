@@ -13,7 +13,7 @@
 
     <!-- CONTENEDOR GENERAL -->
     <div class="full-content facturacion-block">
-      
+
       <!-- Contenedor para info de landing page -->
       <div class="container-fluid" id="info-content">
 
@@ -31,7 +31,7 @@
                   <li>
                     <a href="#" title="Facturas de servicio">Facturas de servicio</a>
                   </li>
-                </ol> 
+                </ol>
               </div>
             </div>
           </div>
@@ -43,21 +43,21 @@
             <div class="row">
               <div class="col-md-12 col-sm-12 theme-heading">
                 <h2 class="h2">Facturas de servicio</h2>
-                <p class="col-sm-8 center-block"><span>En esta sección puedes obtener las facturas fiscales (CFDI) o los Estados de cuenta de las líneas que desees consultar. (Disponible de los últimos 12 meses).</span></p>
+                <p class="col-sm-8 center-block"><span>En esta sección puedes obtener las Facturas Fiscales, Estados de cuenta, Facturas pendientes y el Complemento de Recepción de pago (CRP).</span></p>
               </div>
             </div>
           </div>
         </section>
 
-        <section> 
+        <section>
             <form class="form-section-block form-facturas-servicio" id="form-facturas" method="POST" action="facturas-fiscales-1.html">
               <section class="clearfix back-blue1 padding-20 facturacion-step">
                 <div class="container">
-                  <h3 class="h3">Selecciona el tipo de consulta y mes de facturación</h3>
+                  <h3 class="h3">Selecciona el tipo de consulta y periodo.</h3>
 
                   <div class="col-sm-7 center-block padding-10">
                     <div class="col-xs-12 col-sm-10 center-block flexbox v-align-center input-block">
-                      <div class="col-xs-12 col-sm-4 general-input-container"> 
+                      <div class="col-xs-12 col-sm-4 general-input-container">
                         <label>Tipo de consulta:</label>
                       </div>
                       <div class="col-xs-12 col-sm-8 general-input-container">
@@ -67,12 +67,13 @@
                               <option value="1" data-meta='{"post" : "../facturacion/facturas-fiscales-1.html", "action" : "factura", "cta" : "Consultar"}'>Facturas fiscales (CFDI)</option>
                               <option value="2" data-meta='{"post" : "../facturacion/estados-cuenta-1.html", "action" : "factura", "cta" : "Consultar"}'>Estados de cuenta</option>
                               <option value="3" data-meta='{"post" : "../facturacion/facturas-pendientes-2.html", "action" : "factura", "periodo" : false, "cta" : "Consultar"}'>Facturas pendientes de pago</option>
+                              <option value="4" data-meta='{"post" : "../facturacion/facturas-fiscales-1.html", "action" : "factura", "cta" : "Consultar"}'>Complemento de recepción de Pago</option>
                             </select>
                           </div>
                       </div>
                     </div>
                     <div class="col-xs-12 col-sm-10 center-block flexbox v-align-center input-block periodo-input-block hidden">
-                      <div class="col-xs-12 col-sm-4 general-input-container"> 
+                      <div class="col-xs-12 col-sm-4 general-input-container">
                         <label>Periodo de facturación:</label>
                       </div>
                       <div class="col-xs-12 col-sm-8 general-input-container">
@@ -106,7 +107,7 @@
 
     </div>
     <!-- FIN CONTENEDOR GENERAL -->
-    
+
     <script src="../../assets/js/vendors.min.js?ver=1.4.5"></script>
     <script src="../../assets/js/main.min.js?ver=1.4.5"></script>
 
