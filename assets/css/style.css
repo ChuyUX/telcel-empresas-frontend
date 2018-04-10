@@ -7759,7 +7759,6 @@ body {
           margin-bottom: 0px; }
         body .full-content .gestion-ejecutivos .elements-2-same > div {
           width: 49%;
-          margin: 0;
           padding: 0; }
           body .full-content .gestion-ejecutivos .elements-2-same > div:nth-child(odd) {
             margin-right: 1%; }
@@ -8719,7 +8718,6 @@ body {
         margin-bottom: 0; }
       body .full-content .susp-list-pick .content-slp .elements-2-same > div {
         width: 49%;
-        margin: 0;
         padding: 0; }
         body .full-content .susp-list-pick .content-slp .elements-2-same > div:nth-child(odd) {
           margin-right: 1%; }
@@ -27122,6 +27120,12 @@ form.form-ge-mod label.error {
   text-overflow: ellipsis;
   width: 200px; }
 
+@media screen and (max-width: 767px) {
+  .greeting__label {
+    background: none;
+    padding: 10px 20px;
+    width: 260px; } }
+
 .btn-secondary {
   background: #ddd;
   box-shadow: none;
@@ -27137,6 +27141,16 @@ form.form-ge-mod label.error {
 body .tokenfield--auto .tokenfield {
   margin-bottom: 5px;
   min-height: auto; }
+
+body #info-content .form-section-block .motivos-autogestion-container .data-write label {
+  -webkit-align-items: start;
+  -moz-align-items: start;
+  align-items: start; }
+
+.data-write__dsc {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300; }
 
 body .full-content .notif-bloq p {
   width: 75%; }

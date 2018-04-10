@@ -12,3 +12,11 @@
 	text-overflow: ellipsis;
 	width: 200px;
 }
+
+@media screen and (max-width: 767px) {
+	.greeting__label{
+		background: none;
+		padding: 10px 20px;
+		width: 260px;
+	}
+}
